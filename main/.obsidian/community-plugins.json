@@ -6,7 +6,6 @@
   "obsidian-columns",
   "obsidian-minimal-settings",
   "obsidian-style-settings",
-  "obsidian-git",
   "obsidian-excalidraw-plugin",
   "obsidian-circuitjs",
   "circuit-sketcher",
@@ -15,5 +14,6 @@
   "obsidian-latex-suite",
   "obsidian-export-image",
   "obsidian-pandoc",
-  "obsidian-tikzjax"
+  "obsidian-tikzjax",
+  "obsidian-git"
 ]
