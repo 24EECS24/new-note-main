@@ -1,524 +1,496 @@
+# 1 极限的定义2.0_第1页.png
+
+## 邻域的基本概念
+为了玩“极限”我们引入“邻域”。
+若$\varphi>0$，左侧有数轴示意图，标注点$x_0-\varphi$、$x_0$、$x_0+\varphi$。
+开区间$(x_0-\varphi, x_0+\varphi)$为$x_0$的**邻域**，是一个“开区间”，又叫“$x_0$的附近”。
+右侧为单侧邻域内容，下方有数轴示意图，标注点$x_0-\varphi$、$x_0$、$x_0+\varphi$：
+- 左邻域：集合表示为$\{x \mid x_0 - x < \varphi\}$，对应数轴上$x_0-\varphi$到$x_0$的区间。
+- 右邻域：集合表示为$\{x \mid x - x_0 < \varphi\}$，对应数轴上$x_0$到$x_0+\varphi$的区间。
+邻域记作：
+$$U(x_0, \varphi) = \{x \mid x_0-\varphi < x < x_0+\varphi\} = \{x \mid |x - x_0| < \varphi\}$$
 ---
-
-# A 函数极限的计算方法_第1页.png
-
-## 极限的计算方法——极限的四则运算
-若$\lim f(x)=A$，$\lim g(x)=B$，使用法则的前提：
-只有$f(x), g(x)$的极限都存在时，才可拆分极限，使用以下运算规则。
-
-- 线性组合运算法则：
-$$
-\lim\left[kf(x)\pm lg(x)\right] = k\cdot\lim f(x) \pm l\cdot\lim g(x) = kA\pm lB
-$$
-其中$k,l$为常数。
-
-- 乘积运算法则：
-$$
-\lim\left[f(x)\cdot g(x)\right] = \lim f(x)\cdot \lim g(x) = A\cdot B
-$$
-特例：若$\lim f(x)$存在，$n$为正整数，则
-$$
-\lim\left[f(x)\right]^n = \left[\lim f(x)\right]^n
-$$
-
-- 商的运算法则：
-$$
-\lim \frac{f(x)}{g(x)} = \frac{\lim f(x)}{\lim g(x)} = \frac{A}{B} \quad (B\neq 0)
-$$
-
-即：当$f(x), g(x)$的极限都存在时，函数加减乘除的极限，等于各自极限的加减乘除。
+### 去心邻域
+什么是去心邻域？去心邻域如何表示？
+去心邻域不包含中心点$x_0$，即满足$x \neq x_0$，其集合表示为：
+$$\mathring{U}(x_0, \varphi) = \{x \mid 0 < |x - x_0| < \varphi\}$$
+---
+### 思考问题
+1.  这里的$\varphi$是个什么样的东西？
+2.  极限是什么？
 
 ---
 
-## Caution（注意事项）
-核心原则：不求极限，不去$\lim$；不去$\lim$，不求极限。
+# 1 极限的定义2.0_第2页.png
 
-若写$\lim\limits_{x\to x_0} f(x) = \lim\limits_{x\to x_0} g(x)$，必须满足$f(x)=g(x)$，即$f(x)$到$g(x)$的变形是恒等变形。
+## $x\to x_0$时函数极限的$\varepsilon$-$\delta$定义
+- **前提**：若$f(x)$在$(x_0-\delta, x_0)\cup(x_0, x_0+\delta)$上有定义。
+  （附去心邻域数轴示意图：数轴上标注$x_0-\delta$、$x_0$、$x_0+\delta$，$x_0$为空心点，去心邻域对应的两个开区间以弧线标注）
+- 若存在常数$A$，对于任给$\varepsilon>0$，存在$\delta>0$满足：当$0<|x-x_0|<\delta$时，有$|f(x)-A|<\varepsilon$。
+  上述定义与极限记法等价：
+  $$
+  \begin{cases}
+  \forall \varepsilon>0 \\
+  \exists \delta>0,\ \text{当 }0<|x-x_0|<\delta \text{ 时}, \\
+  \text{有 }|f(x)-A|<\varepsilon
+  \end{cases}
+  \\
+  \Updownarrow
+  \\
+  \lim_{x\to x_0} f(x) = A
+  $$
+- 则称$A$为$f(x)$当$x\to x_0$时的极限。
+  说明：
+  1.  $x$无限趋近于$x_0$，过程中满足$x\neq x_0$；
+  2.  $f(x)$无限趋近于$A$，过程中满足$f(x)\neq A$；
+  3.  由极限过程中$x\neq x_0$，可得$f(x)\neq A$。
 
-### 典型错误示例
-禁止提前对部分表达式单独取极限：
-$$
-\lim_{x\to 0} \frac{\frac{\sin x}{x} -1}{x^2} \neq \lim_{x\to 0} \frac{1-1}{x^2}
-$$
-错误原因：$\lim\limits_{x\to 0}\frac{\sin x}{x}=1$是极限运算的结果，但在极限过程中$\frac{\sin x}{x}\neq 1$，因此$\frac{\frac{\sin x}{x}-1}{x^2} \neq \frac{1-1}{x^2}$，不能提前将$\frac{\sin x}{x}$替换为1计算。
+---
 
-正确恒等变形（先通分再运算）：
+# 1 极限的定义2.0_第3页.png
+
+## 函数极限的$\boldsymbol{\varepsilon\text{-}\delta}$定义
+$\forall \varepsilon>0,\exists\delta>0$，当$0<|x-x_0|<\delta$时，有$|f(x)-A|<\varepsilon$ $\iff$ $\lim\limits_{x\to x_0}f(x)=A$。
+
+$\exists\delta>0$，有$x_0-\delta \to x_0 \gets x_0+\delta$，对应$0<|x-x_0|<\delta$时$|f(x)-A|<\varepsilon$；
+$\forall \varepsilon>0$，有$A-\varepsilon \to A \gets A+\varepsilon$，对应$|f(x)-A|<\varepsilon$。
+
+则$\lim\limits_{x\to x_0}f(x)=A$，即$x\to x_0$时，有$f(x)\to A$。
+
+**函数极限几何意义示意图**：
+纵向标注：$f(x)=A+\varepsilon$，与$f(x)=A$纵向间距为$\varepsilon$；$f(x)=A$（水平虚线）；$f(x)=A-\varepsilon$，与$f(x)=A$纵向间距为$\varepsilon$。
+横向标注：$x=x_0-\delta$，与$x=x_0$横向间距为$\delta$；$x=x_0$（竖直虚线）；$x=x_0+\delta$，与$x=x_0$横向间距为$\delta$。
+
+$\delta=?\quad A=?\quad x_0=?$
+
+---
+
+# 1 极限的定义2.0_第4页.png
+
+## 函数极限概念相关疑问
+- $\varphi = ?\quad A = ?\quad x_0 = ?$
+关于$x$，这里无限趋近$A$、但又不等于$A$的数，已不属于实数范围了，$x$属于超实数。
+$$\lim_{x \to x_0} f(x) = A$$
+$f(x)$也属于超实数。
+$f(x)$无限趋近于$A$，$f(x) \neq f(x_0)$。
+$$\lim_{x \to x_0} f(x) = :$$
+当$x$无限趋近于$x_0$，$x \neq x_0$时，
+$f(x)$无限趋近于谁？$f(x) \neq$谁？
+- 这里$\lim\limits_{x \to x_0} f(x) =$ <u>超实数</u>还是<u>实数</u>？
+- $A = f(x_0)$吗？
+
+---
+
+# 1 极限的定义2.0_第5页.png
+
+## 进一步理解
+- 邻域上标注点$x_0-\delta$、$x_0$、$x_0+\delta$，邻域半径为$\delta$：
+  $\delta$：某一值，某一距离。
+- $\exists \delta$：$x$位于$x_0$的去心邻域内，$x$到$x_0$的距离趋近于0，$x$无限趋近于$x_0$；
+  则有
+  $\forall \varepsilon$：$f(x)$位于$A$的邻域内，邻域上标注点$A-\varepsilon$、$A$、$A+\varepsilon$，$f(x)$到$A$的距离趋近于0，$f(x)$无限趋近于$A$。
+  上述直观过程等价于：
+$$\lim_{x \to x_0} f(x) = A$$
+- 极限思想示例：
+$$\lim_{x \to 0} \frac{x-\sin x}{x^3} = \frac{(x-0) - (\sin x - 0)}{x^3} = \frac{1}{6} = \frac{x\text{到}\sin x\text{的距离}}{x^3\text{到}0\text{的距离}}$$
+，极限思想！
+
+---
+
+# 1 极限的定义2.0_第6页.png
+
+## 函数极限的超实数直观解释
+$$\lim_{x \to x_0} f(x) = A$$
+对应函数趋势示意图说明：
+- 坐标系横轴为$x$轴，纵轴为$f(x)$轴，图中绘制函数曲线展示$x \to x_0$时$f(x) \to A$的趋势。
+- 纵轴沿轴从下到上依次划分为：比$A$小的所有实数、以$A$为标准的超实数、点$A$、以$A$为标准的超实数、比$A$大的所有实数。
+- 横轴沿轴从左到右依次划分为：比$x_0$小的所有实数、以$x_0$为标准的超实数、点$x_0$、以$x_0$为标准的超实数、比$x_0$大的所有实数。
+
+### 极限示例
+若
+$$\lim_{x \to 0} \frac{x-\sin x}{x^3} = A$$
+则对应数轴示意图说明：数轴以向右为正方向，标注有点$A$，展示$x \to 0$时$\frac{x-\sin x}{x^3}$的取值无限接近$A$。
+
+---
+
+# 1 极限的定义2.0_第7页.png
+
+## 超实数的引入
+为了让$\infty$在数轴上表示，引入**超实数**。
+数系扩充路径：
+$$\text{有理数}\xrightarrow{\sqrt{2}}\text{实数}\mathbb{R}\begin{cases}
+\xrightarrow{\sqrt{-1}}\text{复数}\\
+\xrightarrow{\infty}\text{超实数}
+\end{cases}$$
+任何实数边上都有无数个超实数。
+超实数的分解：对任意超实数$x$，有
+$$x = \operatorname{std}(x) + \underbrace{x - \operatorname{std}(x)}_{\text{无穷量}}$$
+其中$\operatorname{std}(x)$为$x$对应的标准实数。
+
+## 超实数解释函数极限示例
+eg：
+$$\lim_{x \to 2} f(x) = 3$$
+- x轴示意图对应文字说明：超实数$x$无限趋近于实数$2$。
+- 函数值轴示意图对应文字说明：超实数$f(x)$无限趋近于实数$3$。
+
+---
+
+# 1 极限的定义2.0_第8页.png
+
+## 极限的概念与极限和无穷小的关系
+> 本次回答了前面的问题：
+> ① $\lim\limits_{x \to x_0} f(x) = A$（极限值为实数）
+> ② $f(x_0) = A$
+> ③ 即为无穷小量
+
+（实数轴示意图：标注点$3$，左侧区域标注“任何比3小的实数”，右侧区域标注“任何比3大的实数”，3的邻域位置标注密集刻度）
+
+3周围有许多以3为标准的超实数<u>≠3</u>，满足：
+$$\text{任何比3小的实数} < \text{上述超实数} < \text{任何比3大的实数}$$
+
+$f(2)=3 \implies 2 \to f(\quad) \to 3$，这是函数的对应关系。
+
+$$\lim_{x \to 2} f(x) = 3 \implies \begin{cases} 
+\text{当} \ x \ \text{无限趋近于} \ 2 \ \text{时} \\
+f(x) \ \text{无限趋近于} \ 3
+\end{cases} \quad \text{这是极限的逻辑关系}.$$
+
+eg：对于$\lim\limits_{x \to 2} f(x) = 3$：
+- $f(x)$无限趋近于3，但$f(x) \neq 3$
+- $x$无限趋近于2，但$x \neq 2$
+
+$f(x)$就为3周围的超实数之一，$x$为2周围的许多超实数之一。
+
+对$f(x)$做分解：
 $$
-\lim_{x\to 0} \frac{\frac{\sin x}{x} -1}{x^2} = \lim_{x\to 0} \frac{\sin x - x}{x^3}
+\begin{aligned}
+f(x) &= \operatorname{std}(f(x)) + f(x) - \operatorname{std}(f(x)) \\
+&= 3 + \underbrace{f(x) - \operatorname{std}(f(x))}_{\text{无穷小量，对应} \ f(x) \to 3} \\
+&= 3 + \underbrace{f(x) - 3}_{\text{$f(x)$与3之间的无穷小距离}}
+\end{aligned}
 $$
 
 ---
 
-# A 函数极限的计算方法_第2页.png
+# 1 极限的定义2.0_第9页.png
 
-## ④ 构造满足$x_0$处导数匹配条件的多项式$g(x)$
-要求$g(x)$在$x_0$处与$f(x)$的函数值、一至三阶导数值相等，即满足：
+## $x \to x_0$型函数极限分类对照表
+| 自变量趋近方式 | $f(x) \to A$ | $f(x) \to \infty$ | $f(x) \to +\infty$ | $f(x) \to -\infty$ |
+| --- | --- | --- | --- | --- |
+| $x \to x_0$ |  |  |  |  |
+| $x \to x_0^+$<br>（右极限） |  |  |  |  |
+| $x \to x_0^-$<br>（左极限） |  |  |  |  |
+
+---
+
+# 1 极限的定义2.0_第10页.png
+
+## 自变量趋于无穷时的函数极限分类
+|          | $f(x)\to A$ | $f(x)\to \infty$ | $f(x)\to +\infty$ | $f(x)\to -\infty$ |
+|----------|-------------|------------------|-------------------|-------------------|
+| $x\to \infty$ |             |                  |                   |                   |
+| $x\to +\infty$ |            |                  |                   |                   |
+| $x\to -\infty$ |            |                  |                   |                   |
+
+---
+
+# 1 极限的定义2.0_第11页.png
+
+## 函数极限的定义
+### $x \to x_0$时的函数极限
+1.  $f(x) \to A$：
+    $\forall \varepsilon > 0,\ \exists \delta > 0$
+    当$0 < |x - x_0| < \delta$时，
+    有$|f(x) - A| < \varepsilon$。
+2.  $f(x) \to \infty$：
+    $\forall M > 0,\ \exists \delta > 0$
+    当$0 < |x - x_0| < \delta$时，
+    有$|f(x)| > M$。
+3.  $f(x) \to +\infty$：
+    $\forall M > 0,\ \exists \delta > 0$
+    当$0 < |x - x_0| < \delta$时，
+    有$f(x) > M$。
+4.  $f(x) \to -\infty$：
+    $\forall M > 0,\ \exists \delta > 0$
+    当$0 < |x - x_0| < \delta$时，
+    有$-M > f(x)$。
+### $x \to x_0^+$（右极限）时的函数极限
+1.  $f(x) \to A$：
+    $\forall \varepsilon > 0,\ \exists \delta > 0$
+    当$0 < x - x_0 < \delta$时，
+    有$|f(x) - A| < \varepsilon$。
+2.  $f(x) \to \infty$：
+    $\forall M > 0,\ \exists \delta > 0$
+    当$0 < x - x_0 < \delta$时，
+    有$|f(x)| > M$。
+3.  $f(x) \to +\infty$：
+    $\forall M > 0,\ \exists \delta > 0$
+    当$0 < x - x_0 < \delta$时，
+    有$f(x) > M$。
+4.  $f(x) \to -\infty$：
+    $\forall M > 0,\ \exists \delta > 0$
+    当$0 < x - x_0 < \delta$时，
+    有$-M > f(x)$。
+
+---
+
+# 1 极限的定义2.0_第12页.png
+
+## $x \to x_0^-$（左极限）相关定义
+1.  左极限$\boldsymbol{\lim\limits_{x \to x_0^-} f(x) = A}$的$\varepsilon$-$\delta$定义：
+$$\forall \varepsilon>0,\ \exists \delta>0$$
+当$0 < x_0 - x < \delta$时，有
+$$|f(x) - A| < \varepsilon$$
+
+2.  $x \to x_0^-$时$f(x)$为无穷大的定义：
+$$\forall M>0,\ \exists \delta>0$$
+当$0 < x_0 - x < \delta$时，有
+$$|f(x)| > M$$
+
+3.  $x \to x_0^-$时$f(x)$为正无穷大的定义：
+$$\forall M>0,\ \exists \delta>0$$
+当$0 < x_0 - x < \delta$时，有
+$$f(x) > M$$
+
+4.  $x \to x_0^-$时$f(x)$为负无穷大的定义：
+$$\forall M>0,\ \exists \delta>0$$
+当$0 < x_0 - x < \delta$时，有
+$$f(x) < -M$$
+
+## $x \to \infty$相关极限定义
+1.  极限$\boldsymbol{\lim\limits_{x \to \infty} f(x) = A}$的$\varepsilon$-$N$定义：
+$$\forall \varepsilon>0,\ \exists N>0$$
+当$|x| > N$时，有
+$$|f(x) - A| < \varepsilon$$
+
+2.  $x \to \infty$时$f(x)$为无穷大的定义：
+$$\forall M>0,\ \exists N>0$$
+当$|x| > N$时，有
+$$|f(x)| > M$$
+
+3.  $x \to \infty$时$f(x)$为正无穷大的定义：
+$$\forall M>0,\ \exists N>0$$
+当$|x| > N$时，有
+$$f(x) > M$$
+
+4.  $x \to \infty$时$f(x)$为负无穷大的定义：
+$$\forall M>0,\ \exists N>0$$
+当$|x| > N$时，有
+$$f(x) < -M$$
+
+---
+
+# 1 极限的定义2.0_第13页.png
+
+## 自变量趋于无穷时函数极限与无穷大的定义
+### $x \to +\infty$
+$$\forall \varepsilon>0,\ \exists N>0$$
+当
+$x>N$时
+有
+$$|f(x)-A|<\varepsilon$$
+$$\forall M>0,\ \exists N>0$$
+当
+$x>N$时
+有
+$$|f(x)|>M$$
+$$\forall M>0,\ \exists N>0$$
+当
+$x>N$时
+有
+$$f(x)>M$$
+$$\forall M>0,\ \exists N>0$$
+当
+$x>N$时
+有
+$$-M > f(x)$$
+### $x \to -\infty$
+$$\forall \varepsilon>0,\ \exists N>0$$
+当
+$-N > x$时
+有
+$$|f(x)-A|<\varepsilon$$
+$$\forall M>0,\ \exists N>0$$
+当
+$-N > x$时
+有
+$$|f(x)|>M$$
+$$\forall M>0,\ \exists N>0$$
+当
+$-N > x$时
+有
+$$f(x)>M$$
+$$\forall M>0,\ \exists N>0$$
+当
+$-N > x$时
+有
+$$-M > f(x)$$
+
+---
+
+# 1 极限的定义2.0_第14页.png
+
+## $x \to x_0$时函数有限极限的$\varepsilon$-$\delta$定义
+当$x \to x_0$时，$f(x) \to A$，其严格定义与直观语义对应如下：
+- $\forall \varepsilon > 0,\ \exists \delta > 0$ —— 任给$\varepsilon>0$，存在$\delta>0$
+- 当 $0<|x-x_0|<\delta$ 时 —— 当$x$无限趋近于$x_0$时
+- 有 $|f(x)-A|<\varepsilon$ —— 有$f(x)$无限趋近于$A$
+
+## $x \to x_0$时函数为无穷大量的定义
+当$x \to x_0$时，$f(x) \to \infty$，其直观描述为：
+存在$\delta>0$，当$x$无限趋近于$x_0$时，可推出：对$\forall M>0$，都有$|f(x)|>M$。
+上述定义等价于标准极限记法：
+$$\lim_{x \to x_0} f(x) = \infty = \mathrm{Std}(f(x))$$
+
+---
+
+# 1 极限的定义2.0_第15页.png
+
+## 无穷大的概念与定义
+$\infty$：无穷，为超实数，变化趋势为 $-\infty \xleftarrow{f(x)} \xrightarrow{} +\infty$
+$x \to x_0$时$f(x)$为无穷大的M-δ定义：
+$$
+\left.
+\begin{aligned}
+&\forall M>0,\ \exists \delta>0\\
+&\text{当 }0<|x-x_0|<\delta \text{ 时}\\
+&\text{有 }|f(x)|>M
+\end{aligned}
+\right\}
+$$
+对应数轴示意图：标注$f(x)$、$\infty$、$f(x)$，相关性质：
+- $|\infty| >$ 任何实数
+- $|\infty| > |f(x)| >$ 任何实数
+- $\Rightarrow$ 此时$|f(x)| >$ 任何实数
+正无穷大（$f(x) \to +\infty$）：
+$+\infty > f(x) >$ 所有正实数，对应数轴示意图：$f(x)$沿数轴箭头指向$+\infty$，表示$f(x)$趋向$+\infty$
+负无穷大（$f(x) \to -\infty$）：
+所有正实数 $> f(x) > -\infty$，对应数轴示意图：$f(x)$沿数轴箭头指向$-\infty$，表示$f(x)$趋向$-\infty$
+## 单侧极限
+右极限：
+$x \to x_0^+$
+$f(x) \to A$
+对应数轴示意图：标注$x$与$x_0^+$，箭头指向$x_0^+$，表示$x$从右侧趋近于$x_0$的过程
+左极限：
+对应数轴示意图：标注$x_0^-$与$x$，箭头指向$x_0^-$，表示$x$从左侧趋近于$x_0$的过程（即$x \to x_0^-$）
+## $x \to \infty$时的函数极限
+$x \to \infty$
+$f(x) \to A$
+对应数轴示意图：数轴两端标注$-\infty$与$+\infty$，箭头分别指向$-\infty$和$+\infty$，标注$x$，表示$|x|$无限增大的过程
+相关性质：
+- $|\infty| > |x| >$ 任何实数
+- $+\infty > x >$ 所有实数，对应$x \to +\infty$
+- 所有实数 $> x > -\infty$，对应$x \to -\infty$，对应数轴示意图：$x$沿数轴箭头指向$-\infty$，表示$x$趋向$-\infty$
+
+---
+
+# 1 极限的定义2.0_第16页.png
+
+在不同场合
 $$
 \begin{cases}
-f(x_0) = g(x_0) = a_0 \\
-f'(x_0) = g'(x_0) = a_1 \\
-f''(x_0) = g''(x_0) = a_2 \\
-f'''(x_0) = g'''(x_0) = a_3
+在不同场景理解\\
+做不同的题理解
 \end{cases}
 $$
 
-若仅构造到二次项：
-$$g(x)=a_0+a_1(x-x_0)+\frac{a_2(x-x_0)^2}{2!}$$
-此时$g'''(x)=0$，无法满足三阶导数匹配的要求。
+## 极限的定义题
 
-由高阶求导规律：$(x^3)'''=3!$，$\left(\frac{x^3}{3!}\right)'''=1$，因此尝试添加三次项，最初构造的错误形式为：
-$$g(x)=a_0+a_1(x-x_0)+\frac{a_2(x-x_0)^2}{2!}+\frac{a_3x^3}{3!} \tag{4.0 错误形式}$$
-此时计算得$g'''(x)=a_3$，满足$g'''(x_0)=a_3$，但代入$x=x_0$可得：
-$$g(x_0)=a_0+\frac{a_3x_0^3}{3!}\neq a_0$$
-不满足函数值匹配的条件，因此将三次项修正为$(x-x_0)^3$，得到正确的三次多项式：
-$$g(x)=a_0+a_1(x-x_0)+\frac{a_2(x-x_0)^2}{2!}+\frac{a_3(x-x_0)^3}{3!} \tag{4.1}$$
+1.9 已知$\lim\limits_{x \to 0} \frac{f(x)}{x}$存在，且函数$f(x)=\ln(1+x)+2x$，$\lim\limits_{x \to 0} \frac{f(x)}{\sin x}$，则$\lim\limits_{x \to 0} \frac{f(x)}{x}=$\underline{\qquad}。
 
-逐阶求导验证匹配性：
-$$
-\begin{aligned}
-g'(x) &= a_1 + a_2(x-x_0)+\frac{a_3(x-x_0)^2}{2!} \\
-g''(x) &= a_2 + a_3(x-x_0) \\
-g'''(x) &= a_3
-\end{aligned}
-$$
-该多项式在$x_0$处满足预设的函数值、各阶导数匹配条件。
+∵题上说“$\lim\limits_{x \to 0} \frac{f(x)}{x}$存在”
+∴有$\lim\limits_{x \to 0} \frac{f(x)}{x} = \mathrm{std}\left( \frac{f(x)}{x} \right)$
 
-推广到无穷阶（泰勒级数形式）：
-$$g(x)=a_0+a_1(x-x_0)+\frac{a_2(x-x_0)^2}{2!}+\dots+\frac{a_n(x-x_0)^n}{n!}+\frac{a_{n+k}(x-x_0)^{n+k}}{(n+k)!}+\dots$$
-其中系数由$f(x)$在$x_0$处的各阶导数确定：
-$$a_0=f(x_0),\ a_1=f'(x_0),\ a_2=f''(x_0),\dots$$
+（极限趋近示意图：示意$x \to 0$时，$\frac{f(x)}{x}$从两侧趋近于作为定值的极限值）
 
 ---
 
-# A 函数极限的计算方法_第3页.png
+# 1 极限的定义2.0_第17页.png
 
-这里，我们就找到了一个可以无限拟合$f(x)$的多项式函数$g(x)$：
-$$\therefore g(x)=f(x_0)+f'(x_0)(x-x_0)+\frac{f''(x_0)(x-x_0)^2}{2!}+\dots+\frac{f^{(n)}(x_0)(x-x_0)^n}{n!}+\frac{f^{(n+k)}(x_0)(x-x_0)^{n+k}}{(n+k)!}+\dots\infty$$
-
----
-
-# A 函数极限的计算方法_第4页.png
-
-## 泰勒公式
-可以用多项式函数模拟任何函数。
-设$f(x)$在点$x=0$处$n$阶可导，则存在$x=0$的一个邻域，对于该邻域内的任何一点$x$，有：
-$$f(x) = f(0) + f'(0)x + \frac{f''(0)x^2}{2!} + \dots + \frac{f^{(n)}(0)x^n}{n!} + o(x^n)$$
-（越加越相近）
-佩亚诺余项：后面剩的许多项不想写了，用佩亚诺余项表示。
-$\alpha(x)$是$\beta(x)$的高阶无穷小，记：
-$$\alpha(x) = o(\beta(x))$$
-则$o(x^n)$指比$\frac{f^{(n)}(0)x^n}{n!}$更高阶的项们。
-
-eg:
-$$\sin x = \sin 0 + \left.(\sin x)'\right|_{x=0}\cdot x + \frac{\left.(\sin x)''\right|_{x=0}\cdot x^2}{2!} + \frac{\left.(\sin x)'''\right|_{x=0}\cdot x^3}{3!} + o(x^3)$$
-化简：
-$$\Rightarrow \sin x = x - \frac{1}{6}x^3 + o(x^3)$$
-
-同理，可得如下重要函数的泰勒公式 主打一个提速：
-$$\sin x = x - \frac{x^3}{3!} + o(x^3),\quad \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + o(x^4)$$
-$$\arcsin x = x + \frac{x^3}{3!} + o(x^3),\quad \tan x = x + \frac{x^3}{3} + o(x^3)$$
-$$\arctan x = x - \frac{x^3}{3} + o(x^3),\quad \ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} + o(x^3)$$
-$$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + o(x^3),\quad (1+x)^\alpha = 1 + \alpha x + \frac{\alpha(\alpha-1)x^2}{2!} + o(x^2)$$
-
-背会$\longrightarrow$“一站直达”
-
----
-
-# A 函数极限的计算方法_第5页.png
-
-$\because \sin x = x - \frac{x^3}{3!} + o(x^3)$
-$\therefore x - \sin x = \frac{1}{6}x^3 + o(x^3)$
-
-$$
-\lim_{x \to 0} \frac{x-\sin x}{\frac{1}{6}x^3} = \lim_{x \to 0} \frac{\frac{1}{6}x^3 + o(x^3)}{\frac{1}{6}x^3} = 1+0 = 1
-$$
-$\Longrightarrow x - \sin x \sim \frac{1}{6}x^3 \quad (x \to 0)$
-
-广义化，让$x$换成$g(x)$，即$g(x) \to 0$：
-$g(x) - \sin g(x) \sim \frac{1}{6}g^3(x)$
-
-$\Longrightarrow$
-## 一些差函数的等价无穷小
-$x - \sin x \sim \frac{1}{6}x^3 \quad (x \to 0)$
-$\arcsin x - x \sim \frac{1}{6}x^3 \quad (x \to 0)$
-$\tan x - x \sim \frac{1}{3}x^3 \quad (x \to 0)$
-$x - \arctan x \sim \frac{1}{3}x^3 \quad (x \to 0)$
-
-以上结论都可做广义化。
-
-## 高阶无穷小的运算
-$\alpha(x)$是$\beta(x)$的高阶无穷小
-记$\alpha(x) = o(\beta(x))$
-
-$o(x^m)$是$x^m$的高阶无穷小
-设$m,n$为正整数，则：
-- $$o(x^m) \pm o(x^n) = o(x^l),\ l = \min[m,n]$$
-  $l$为$m,n$中的最小值。
-  无穷小次数越低，$x \to 0$时趋于0越慢，值就越大，$\therefore$ 大的说了算；加减法时，低阶吸收高阶。
-  例：
-  $o(x^2) - o(x^3) = o(x^2)$
-  $o(x^2) - o(x^2) = o(x^2)$
-  $o(x^2) + o(x^2) = o(x^2)$
-
-- $$o(x^m) \cdot o(x^n) = o(x^{m+n})$$
-  $$x^m \cdot o(x^n) = o(x^{m+n})$$
-  相乘时，阶数累加。
-
-- $$o(x^m) = o(kx^m) = k \cdot o(x^m),\ k \neq 0$$
-  非零常数相乘不影响阶数。
-  例：
-  $o(x^2) = 2o(x^2)$
-
----
-
-# A 函数极限的计算方法_第6页.png
-
-## 泰勒公式展开原则
-- $\boldsymbol{\frac{A}{B}}$型（分式型），适用**“上下同阶”原则**：
-  若分母为$k$次方，则分子展开到$k$次方；
-  若分子为$k$次方，则分母展开到$k$次方。
-
-- $\boldsymbol{A-B}$型，适用**幂次最低原则**：
-  该原则也适用于$A+B$型，转化方式为$A+B = A - (-B)$；
-  规则：将$A,B$分别展开到它们的系数不相等的$x$的最低次幂为止。
-
----
-
-**例题**：已知当$x \to 0$时，$\cos x - e^{-\frac{x^2}{2}}$与$ax^b$为等价无穷小，求$a,b$。
-
-**解**：利用麦克劳林展开（$x=0$处的泰勒展开）计算：
-可直接使用常用函数的麦克劳林展开式，其中$e^{-\frac{x^2}{2}}$可通过将$e^u$展开式中的$u$替换为$-\frac{x^2}{2}$得到。
-1.  首先展开到0次幂（常数项）：
-    $\cos x = 1$，$e^{-\frac{x^2}{2}}=1$，两者常数项系数相同，需继续展开。
-2.  展开到$x^2$项：
-    $$\cos x = 1 - \frac{1}{2}x^2$$
-    $$e^{-\frac{x^2}{2}} = 1 - \frac{1}{2}x^2$$
-    两者$x^2$项系数仍相同，继续展开。
-3.  展开到$x^4$项，添加佩亚诺余项：
-    $$\cos x = 1 - \frac{1}{2}x^2 + \frac{1}{24}x^4 + o(x^4)$$
-    $$e^{-\frac{x^2}{2}} = 1 - \frac{1}{2}x^2 + \frac{1}{8}x^4 + o(x^4)$$
-    此时$x^4$项系数已不相等，无需继续向更高次展开，用佩亚诺余项结尾即可。
-
-计算两式的差，利用佩亚诺余项的运算性质$o(x^4) - o(x^4) = o(x^4)$：
-$$
-\begin{align*}
-\cos x - e^{-\frac{x^2}{2}} &= \left(1 - \frac{1}{2}x^2 + \frac{1}{24}x^4 + o(x^4)\right) - \left(1 - \frac{1}{2}x^2 + \frac{1}{8}x^4 + o(x^4)\right) \\
-&= -\frac{1}{12}x^4 + o(x^4)
-\end{align*}
-$$
-根据等价无穷小的定义，可得：
-$$\Rightarrow a = -\frac{1}{12},\quad b=4$$
-
----
-
-# A 函数极限的计算方法_第7页.png
-
-## 两个重要的极限
-$$\lim_{x \to 0} \frac{\sin x}{x} = 1,\quad \lim_{x \to \infty} \left(1+\frac{1}{x}\right)^x = e$$
-扩义：$x$可为任一函数。
-eg：$x$换成$\frac{1}{x}$
-$$\lim_{\frac{1}{x} \to 0} \frac{\sin \frac{1}{x}}{\frac{1}{x}} = 1 \quad 即 \quad \lim_{x \to \infty} x\sin\frac{1}{x} = 1$$
-
-$$\lim_{\frac{1}{x} \to \infty} \left(1+\frac{1}{\frac{1}{x}}\right)^{\frac{1}{x}} = e \quad 即 \quad \lim_{x \to 0} (1+x)^{\frac{1}{x}} = e$$
-
-## 夹逼准则
-先用，之后会开朗
-夹：中间 逼：逼近
-向中间逼近准则
-若$f(x)$被夹在两个量之间：$h(x) \leq f(x) \leq g(x)$
-这两个量的极限存在且相同：
-$$\lim h(x)=A,\quad \lim g(x)=A$$
-则，大喊一声，哪里跑
-则$\lim f(x)$存在，且$\lim f(x) = A$。
-极限逼近示意：
-$$
-\begin{aligned}
-h(x) &\leq f(x) \leq g(x)\\
-\downarrow &\quad \Downarrow \quad \downarrow\\
-A &\Rightarrow A \Leftarrow A
-\end{aligned}
-$$
-向中间逼近
-
----
-
-# A 函数极限的计算方法_第8页.png
-
-## 例题
-eg:
-$$\lim_{x \to 0} \frac{1-\cos x}{x^2} \neq \lim_{x \to 0} \frac{\frac{1}{2}x^2}{x^2}$$
-$x \to 0$时$1-\cos x \sim \frac{1}{2}x^2$，但$1-\cos x \neq \frac{1}{2}x^2$，因此函数满足：
-$$\frac{1-\cos x}{x^2} \neq \frac{\frac{1}{2}x^2}{x^2}$$
-正确推导需依据极限乘法法则：
-$$
-\lim_{x \to 0} \frac{1-\cos x}{x^2} = \lim_{x \to 0} \left( \frac{\frac{1}{2}x^2}{x^2} \cdot \frac{1-\cos x}{\frac{1}{2}x^2} \right) = \lim_{x \to 0} \frac{\frac{1}{2}x^2}{x^2} \cdot \lim_{x \to 0} \frac{1-\cos x}{\frac{1}{2}x^2}
-$$
-## 注意（Caution）
-只有当$f(x),g(x)$的极限都存在（$\lim g(x)$与$\lim f(x)$是实数）时，
-$$\lim [g(x)\pm f(x)] = \lim g(x) \pm \lim f(x)$$
-才有意义，这相当于实数的四则运算。
-如果$g(x)$的极限存在，$f(x)$的极限不存在，则$\lim [g(x)\pm f(x)]$一定不存在。
-此时$\lim g(x) \pm \lim f(x)$无意义，可直接得出$\lim [g(x)\pm f(x)]$不存在的结论。
-如果$g(x),f(x)$的极限都不存在，即$\lim_{x \to 0} f(x)$不存在，$\lim_{x \to 0} g(x)$不存在，但$f(x)\pm g(x) = 3$（实常数），$\lim_{x \to 0} 3 = 3$存在。
-则$\lim_{x \to 0} [f(x)\pm g(x)] = 3$，需直接写出结论，仅依据$\lim_{x \to 0} 3=3$计算；不能写成$\lim_{x \to 0} f(x) \pm \lim_{x \to 0} g(x) =3$，该式无意义。
-若$\lim f(x) = A$，则
-$$\lim [f(x)g(x)] = A \lim g(x)$$
-同理，当$\lim f(x)=0$时，
-$$\lim f(x)g(x)=0$$
-
----
-
-# A 函数极限的计算方法_第9页.png
-
-## 结论
-若同一极限过程下$\lim \frac{f(x)}{g(x)}=A$，且$\lim g(x)=0$，则$\lim f(x)=0$。
-**证明：**
-由极限四则运算法则：
-$$\lim \frac{f(x)}{g(x)} \cdot \lim g(x) = \lim \left( \frac{f(x)}{g(x)} \cdot g(x) \right) = \lim f(x)$$
-代入已知条件得：
-$$\lim f(x) = A\cdot 0 = 0$$
-
-若同一极限过程下$\lim \frac{f(x)}{g(x)}=A\neq0$，且$\lim f(x)=0$，则$\lim g(x)=0$。
-**证明：**
-由极限四则运算法则：
-$$\frac{\lim f(x)}{\lim \frac{f(x)}{g(x)}} = \lim \frac{f(x)}{\frac{f(x)}{g(x)}} = \lim g(x)$$
-代入已知条件得：
-$$\lim g(x) = \frac{0}{A} = 0$$
-
-即：当$\lim \frac{f(x)}{g(x)}=A\neq0$时，$f(x)\to0$与$g(x)\to0$互为充要条件：若$f(x)\to0$则必有$g(x)\to0$，若$g(x)\to0$则必有$f(x)\to0$。
-注：该性质对应：当两个函数商的极限为非零常数时，二者为同阶无穷小。
-
-## 例1.21
-设$\lim\limits_{x \to 0} \frac{\sin x}{e^x - a}(\cos x - b)=5$，则$b=\underline{\quad\quad}$。
 解：
-当$x\to0$时，$\sin x \to 0$，因此分子$\sin x (\cos x - b) \to 0$；
-由于题设极限为非零常数5，因此分母必须满足$e^x - a \to 0$（否则极限为0，与题设矛盾）。
-当$x\to0$时$e^x \to 1$，因此：
-$$\lim_{x \to 0} (e^x - a) = \lim_{x \to 0}e^x - \lim_{x \to 0}a = 1 - a = 0$$
-解得$a=1$。
-当$x\to0$时，有等价无穷小$e^x -1 \sim \sin x$，因此$\lim\limits_{x\to0}\frac{\sin x}{e^x -1}=1$，代入原式可得：
-$$\lim_{x \to 0} \frac{\sin x}{e^x -1} \cdot (\cos x - b) = \lim_{x \to 0} (\cos x - b) =5$$
-计算极限：
-$$\lim_{x \to 0}\cos x - \lim_{x \to 0}b = 1 - b =5$$
-解得$b=-4$。
+$$\frac{f(x)}{x} = \frac{\ln(1+x)}{x} + 2\lim_{x \to 0} \frac{f(x)}{\sin x}$$
+建立方程（这里的$\frac{f(x)}{x}$为实数）
+（这里的$\frac{f(x)}{\sin x}$为超实数）
 
-（右侧附$\cos x$函数示意图）
+$$\frac{f(x)}{x} = \frac{\ln(1+x)}{x} + 2\lim_{x \to 0} \left( \frac{f(x)}{x} \cdot \frac{x}{\sin x} \right)$$
+“后面会讲”
+$$\lim_{x \to 0} \frac{\sin x}{x} = 1 = std\left( \frac{\sin x}{x} \right)$$
 
----
+$$\frac{f(x)}{x} = \frac{\ln(1+x)}{x} + 2\lim_{x \to 0} \frac{f(x)}{x} \cdot \frac{x}{\sin x}$$
+$$\lim_{x \to 0} std\left( \frac{f(x)}{x} \right) = std\left( \frac{f(x)}{x} \right)$$
+因为$std\left( \frac{f(x)}{x} \right)$是实数。
+又对任意实数$A$，有$A = std(A) + A - std(A) = A + A - A = A$，即实数的标准部分为其自身。
 
-# A 函数极限的计算方法_第10页.png
+$$\frac{f(x)}{x} = \frac{\ln(1+x)}{x} + 2\ std\left( \frac{f(x)}{x} \right)$$
+$$\Rightarrow \lim_{x \to 0} \frac{f(x)}{x} = \lim_{x \to 0} \frac{\ln(1+x)}{x} + 2\ std\left( \frac{f(x)}{x} \right)$$
+$$\Rightarrow std\left( \frac{f(x)}{x} \right) = \lim_{x \to 0} \frac{\ln(1+x)}{x} + 2std\left( \frac{f(x)}{x} \right)$$
 
-## 0/0型未定式的直观推导（洛必达法则思想）
-当 $\lim_{x \to x_0} f(x) = 0$，$\lim_{x \to x_0} g(x) = 0$ 时，
-$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = ?$$ 该如何计算？
+（数轴示意图：标注0点位置，说明$\lim\limits_{x\to0}\frac{\ln(1+x)}{x}$为0点附近的极限，$std\left( \frac{\ln(1+x)}{x} \right)=1$，旁注“为啥是在0旁边？”，注释“之后讲”）
 
-给出具体例子：
-$$
-\begin{align*}
-f(x) &= x^2 + 3x - 4 \\
-g(x) &= \ln x
-\end{align*}
-$$
-求 $\lim_{x \to 1} \frac{f(x)}{g(x)}$。
-
-（函数示意图1：平面直角坐标系中绘制了开口向上的抛物线$f(x)$与对数曲线$g(x)=\ln x$，两曲线在$(1,0)$处相交，交点处标注了圆圈。）
-
-对交点处的局部区域做无限放大：
-> 类比：地球整体是球面（对应曲线），但在人站立的局部区域看起来是平面（对应直线），即脚下的地板是平直的。
-> 对应到函数：交点附近的曲线被无限放大后会近似为直线（切线）。
-
-（函数示意图2：$x=1$处局部放大后的示意图，以$(1,0)$为原点，标注了水平向右的自变量增量$dx$，以及两个函数近似得到的两条过原点的直线：更陡的直线对应$f(x)$，更平缓的对应$g(x)$，标注了竖直方向的增量$df$、$dy$。）
+代入$\lim\limits_{x\to0}\frac{\ln(1+x)}{x}=1$：
+$$std\left( \frac{f(x)}{x} \right) = 1 + 2std\left( \frac{f(x)}{x} \right)$$
+$$\Rightarrow std\left( \frac{f(x)}{x} \right) = -1 = \lim_{x \to 0} \frac{f(x)}{x}$$
 
 ---
 
-明显，当$dx \to 0$时，两个无穷小趋近于0的速度快慢取决于切线斜率：可以看出$dy$更快趋近于0，因此该推导仅适用于$f(x)\to0$、$g(x)\to0$的0/0型情况。
+# 1 极限的定义2.0_第18页.png
 
-$dy \to 0$、$df \to 0$的速度差距可以由斜率的差距来表现：由于放大后曲线近似为直线，直线上各点斜率恒定等于该点切线斜率，因此：
-$$
-k_1 = \frac{df}{dx} = f'(1), \quad k_2 = \frac{dg}{dx} = g'(1)
-$$
-因此可以得到：
-$$
-\lim_{x \to 1} \frac{f(x)}{g(x)} = \frac{f'(1)}{g'(1)}$$
-只需要求出$x=1$处两个函数的导数值即可计算极限。
+已知$\lim\limits_{x \to 0} \frac{f(x)}{x^2}$存在，且函数
+$$f(x) = \frac{x-\sin x}{x} + x^2 \lim_{x \to 0} \frac{f(x)}{1-\cos x}$$
+则$\lim\limits_{x \to 0} \frac{f(x)}{x^2} = \underline{\quad\quad}$。
 
-根据导数的定义，结合$f(1)=0, g(1)=0$，因此：
-$$
-\lim_{x \to 1} \frac{f(x)}{x-1} = f'(1), \quad \lim_{x \to 1} \frac{g(x)}{x-1} = g'(1)
-$$
-两式相除消去共同的无穷小因子$x-1$，可得：
-$$
-\lim_{x \to 1} \frac{f(x)}{g(x)} = \lim_{x \to 1} \frac{f'(x)}{g'(x)}$$
-即0/0型极限可以通过对分子、分母分别求导后，再取极限相除得到结果。
+## 解答
+解：记$\lim\limits_{x \to 0} \frac{f(x)}{x^2} = \mathop{\mathrm{std}}\left( \frac{f(x)}{x^2} \right) = A$，其中$\mathop{\mathrm{std}}$为书写者自用的定值记号，代表对应极限的常数值。
 
-方法推广：
-1.  若一阶导数求完后，$\lim_{x \to x_0}\frac{f'(x)}{g'(x)}$仍是0/0型（即一阶趋近速度相同），可以用二阶导数（对应“加速度”）的比值计算；
-2.  若二阶导数仍为0/0型，可以继续用更高阶导数的比值计算，以此类推。
+将$f(x)$的表达式两边同时除以$x^2$，可得：
+$$\frac{f(x)}{x^2} = \frac{x-\sin x}{x^3} + \lim_{x \to 0} \frac{f(x)}{1-\cos x}$$
 
----
+对极限$\lim\limits_{x \to 0} \frac{f(x)}{1-\cos x}$做恒等变形：
+$$\lim_{x \to 0} \frac{f(x)}{1-\cos x} = \lim_{x \to 0} \left( \frac{f(x)}{x^2} \cdot \frac{x^2}{1-\cos x} \right)$$
 
-# A 函数极限的计算方法_第11页.png
+计算得：
+$$\lim_{x \to 0} \frac{x^2}{1-\cos x} = 2$$
 
-## 洛必达法则
-### 法则1
-- 在$x \to x_0$（或$x \to \infty$）时，$\begin{cases} f(x) \to 0 \\ g(x) \to 0 \end{cases}$
-- 在$x \to x_0$（或$x \to \infty$）时，$\lim f'(x)$存在，$\lim g'(x)$存在
-- 在$x \to x_0$（或$x \to \infty$）时，$\lim \frac{f'(x)}{g'(x)}$存在
-
-则在$x \to x_0$（或$x \to \infty$）时：
-$$\lim \frac{f(x)}{g(x)} = \lim \frac{f'(x)}{g'(x)} = \lim \frac{f''(x)}{g''(x)}$$
-
-$\frac{1}{无穷小} = \infty$
-
-$\Rightarrow$ 当$\lim\limits_{x \to x_0} f(x) = \infty$，$\lim\limits_{x \to x_0} g(x) = \infty$时，
-$\lim\limits_{x \to x_0} \frac{f(x)}{g(x)} = ?$ 也能算
-
-证明：
-$$\frac{f(x)}{g(x)} = \frac{\frac{1}{g(x)}}{\frac{1}{f(x)}}$$
-
-$\lim\limits_{x \to x_0} f(x) = \infty$，$\lim\limits_{x \to x_0} \frac{1}{f(x)} = 0$
-$\lim\limits_{x \to x_0} g(x) = \infty$，$\lim\limits_{x \to x_0} \frac{1}{g(x)} = 0$
-
-$$\lim_{x \to x_0} \frac{f(x)}{g(x)} = \lim_{x \to x_0} \frac{\frac{1}{g(x)}}{\frac{1}{f(x)}} = \lim_{x \to x_0} \frac{f'(x)}{g'(x)} = \frac{f'(x_0)}{g'(x_0)}$$
-
-### 法则2
-- 在$x \to x_0$（或$x \to \infty$）时，$\begin{cases} f(x) \to \infty \\ g(x) \to \infty \end{cases}$
-- 在$x \to x_0$（或$x \to \infty$）时，$\lim f'(x)$存在，$\lim g'(x)$存在且$\lim g'(x) \neq 0$
-- 在$x \to x_0$（或$x \to \infty$）时，$\lim \frac{f'(x)}{g'(x)}$存在
-
-则在$x \to x_0$（或$x \to \infty$）时：
-$$\lim \frac{f(x)}{g(x)} = \lim \frac{f'(x)}{g'(x)} = \lim \frac{f''(x)}{g''(x)}$$
+> 旁注：后续通过建立方程求解，此处用到极限结论：
+> $$\lim_{x \to 0} \frac{1-\cos x}{\frac{1}{2}x^2} = 1$$
+> 该知识点后续会讲解。
+> 即$\mathop{\mathrm{std}}\left( \frac{1-\cos x}{\frac{1}{2}x^2} \right) = 1$，书写者个人理解为：在极限$\lim\limits_{x \to 0} \frac{1-\cos x}{\frac{1}{2}x^2}$中，$\frac{1-\cos x}{\frac{1}{2}x^2}$是1周围的超实数。
 
 ---
 
-# A 函数极限的计算方法_第12页.png
+# 1 极限的定义2.0_第19页.png
 
-## 双曲正弦与反双曲正弦函数
-双曲正弦函数：$y=\frac{e^x - e^{-x}}{2}$，为奇函数。
-
-反双曲正弦函数：$y=\ln\left(x+\sqrt{1+x^2}\right)$，为奇函数，其导数为：
-$$y'=\frac{1}{\sqrt{1+x^2}}$$
-（附反双曲正弦函数示意图：过原点的奇函数形态曲线）
-
-## 1.22  $x \to 0$时的等价无穷小
-### (1) $\ln\left(x+\sqrt{1+x^2}\right) \sim x$
-推导：
-当$x \to 0$时，$\lim\limits_{x \to 0} \ln\left(x+\sqrt{1+x^2}\right)=0$，$\lim\limits_{x \to 0} x=0$，该极限为$\frac{0}{0}$型，使用洛必达法则计算：
-对分子分母分别求导：
-$$\left[\ln\left(x+\sqrt{1+x^2}\right)\right]' = \frac{1}{\sqrt{1+x^2}}$$
-$$(x)' = 1$$
-因此：
-$$\lim_{x \to 0} \frac{\ln\left(x+\sqrt{1+x^2}\right)}{x} = \lim_{x \to 0} \frac{\frac{1}{\sqrt{1+x^2}}}{1} = 1$$
-$\Rightarrow$ 结论：当$x \to 0$时，$\ln\left(x+\sqrt{1+x^2}\right) \sim x$。
-
-### (2) $1-(\cos x)^a \sim \frac{1}{2}a x^2 \quad (a \neq 0)$
-推导：
-当$x \to 0$时，该极限为$\frac{0}{0}$型，使用洛必达法则计算：
-对分子分母分别求导：
-$$\left[1-(\cos x)^a\right]' = -a (\cos x)^{a-1} \cdot (-\sin x)$$
-$$\left[\frac{1}{2}a x^2\right]' = a x$$
-由洛必达法则：
-$$\lim_{x \to 0} \frac{1-(\cos x)^a}{\frac{1}{2}a x^2} = \lim_{x \to 0} \frac{-a (\cos x)^{a-1} \cdot (-\sin x)}{a x} = 1$$
-（化简利用$x \to 0$时$\sin x \sim x$约去无穷小因子，且$\lim\limits_{x\to0}(\cos x)^{a-1}=1$）
-$\Rightarrow$ 结论：当$x \to 0$时，$1-(\cos x)^a \sim \frac{1}{2}a x^2 \quad (a \neq 0)$。
-
-#### 例子
-取$a=\frac{1}{2}$代入结论，可得：
-$$1-\sqrt{\cos x} \sim \frac{1}{4}x^2$$
+## 极限等式求解
+$$\Rightarrow \frac{f(x)}{x^2} = \frac{x-\sin x}{x^3} + 2A$$
+记$A = \lim_{x\to0}\frac{f(x)}{x^2}$，两边同时取$x\to0$的极限：
+$$A = \lim_{x\to0}\frac{x-\sin x}{x^3} + 2A$$
+计算右侧极限（划去错误的极限书写方式）：
+$$\lim_{x\to0}\frac{x-\sin x}{x^3} = \mathrm{Std}\left(\frac{x-\sin x}{x^3}\right) = \frac{1}{6}$$
+批注：[之后展开]，<泰勒公式>（手写“开朗”为连笔笔误，“秦朝公式”为形近笔误）
+（数轴示意图：以0为原点，标注0点位置，示意0点两侧的邻域区间）
+红色批注疑问：<为啥是在0周围？>
+移项求解得：
+$$\Rightarrow A = -\frac{1}{6}$$
 
 ---
 
-# A 函数极限的计算方法_第13页.png
+# 1 极限的定义2.0_第20页.png
 
-## 1.23 无穷大大小比较
-设$f(x)=\ln^{10}x$，$g(x)=x$，$h(x)=e^{\frac{x}{10}}$，则当$x$充分大时，试比较三者的大小。
-$\frac{\infty}{\infty}$型，用洛必达法则。
-$$\lim_{x \to +\infty} \frac{x}{\ln^{10}x} \xlongequal{\text{洛}} \lim_{x \to +\infty} \frac{1}{10\ln^{9}x \cdot \frac{1}{x}} \xlongequal{\text{化简}} \lim_{x \to +\infty} \frac{x}{10\ln^{9}x}$$
-$$\xlongequal{\text{洛}} \lim_{x \to +\infty} \frac{x}{10\cdot9\ln^{8}x} \xlongequal{\text{洛}} \dots \xlongequal{\text{洛}} \lim_{x \to +\infty} \frac{x}{10\cdot9\cdot8\cdots2\cdot1\cdot \ln x}$$
-$$\xlongequal{\text{洛}} \frac{1}{10!} \cdot \lim_{x \to +\infty} \frac{1}{\frac{1}{x}} = +\infty$$
-$\implies x \gg \ln^{10}x$（远远大于）
-$$\lim_{x \to +\infty} \frac{e^{\frac{x}{10}}}{x} \xlongequal{\text{洛}} \lim_{x \to +\infty} \frac{e^{\frac{x}{10}} \cdot \frac{1}{10}}{1} = +\infty$$
-（复合函数求导：$(e^u)' = e^u \cdot u'$）
-$\implies e^{\alpha x} \gg x^\beta \quad (\alpha,\beta>0)$
----
-### 常用结论
-结论：当$x \to +\infty$时，（考试直接用）有
-$$\ln^\alpha x \ll x^\beta \ll a^x \quad (\alpha,\beta>0,\ a>1)$$
-提速记忆：对数函数、幂函数、指数函数，增长速度依次递增。
-当$n \to \infty$时，有
-$$\ln^\alpha n \ll n^\beta \ll a^n \ll n! \ll n^n \quad (\alpha,\beta>0,\ a>1)$$
+## 函数极限的直观演示
+$$\lim_{x \to x_0} f(x) = 3$$
+以下演示$x \to x_0$时，$f(x)$趋近于3的过程：
+1.  初始状态：纵轴为$f(x)$轴，标注刻度3、4，函数值初始位于4附近；随着$x$向$x_0$趋近，$f(x)$开始向3冲去、靠近。
+2.  第一逼近阶段：以$f(x)=3$为基准线，此时$f(x)$与3的距离为$0.03$，对应说明：快到了，还差$0.03$。
+3.  第二逼近阶段：以$f(x)=3$为基准线，此时$f(x)$与3的距离缩小为$0.0003$（即$\frac{3}{10000}$），对应说明：快到了，还差$0.0003$。
+4.  极限状态：以$f(x)=3$为基准线，此时$f(x)$与3的距离为无穷小量（直观表示为$\frac{1}{+\infty}$，即距离趋近于0），对应说明：马上到了，还差无穷小的距离。
 
 ---
 
-# A 函数极限的计算方法_第14页.png
+# 1 极限的定义2.0_第21页.png
 
-## 函数差异与逐阶比较的直观逻辑
-- 函数与函数不同的原因就是：在自变量相同的变化下，因变量变化不同，而斜率是变化不同的原因。
-- 洛必达用$f(x)$与$g(x)$在$x_0$上的斜率的差距，来表现出$f(x),g(x)$趋近于$f(x_0),g(x_0)$的快慢差距：
-  即$f(x_0)=g(x_0)$，且$f'(x_0) \neq g'(x_0)$；
-  若$f'(x_0)=g'(x_0)$，则$f''(x_0) \neq g''(x_0)$，则比较$g''(x_0)$与$f''(x_0)$。
-- 若两者在$x_0$上的斜率相同，即$f'(x_0)=g'(x_0)$，则两个函数在数值上就更相近；
-  同样，若两者在$x_0$上的斜率的斜率也相同，则两个函数在数值上就更加相近。
-
-今想让两个函数无限相近，则需要满足：
-$$
-\begin{aligned}
-f(x_0) &= g(x_0) \\
-f'(x_0) &= g'(x_0) \\
-f''(x_0) &= g''(x_0) \\
-&\vdots \\
-f^{(+\infty)}(x_0) &= g^{(+\infty)}(x_0)
-\end{aligned}
-\quad \bigg\downarrow \text{两函数越来越相近}
-$$
-
-## 函数拟合的条件与分步思路
-若想找一个$g(x)$无限拟合于$f(x)$的话，只用让$g(x)$满足：
-① $f(x_0) = g(x_0) = a_0$
-② $f'(x_0) = g'(x_0) = a_1$
-③ $f''(x_0) = g''(x_0) = a_2$
-④ $f'''(x_0) = g'''(x_0) = a_3$
-$\vdots$
-$\infty$. $f^{(\infty)}(x_0) = g^{(\infty)}(x_0) = a_\infty$
-
-直接找的话，这是一个很抽象的问题。那，我们先不看②、③、④…，先看①，先满足①，再在①的基础上，再看②。
-就将一个复杂的问题分割成一个个的小问题。
-
----
-
-# A 函数极限的计算方法_第15页.png
-
-## 点$x_0$处泰勒近似多项式构造
-① 找$g(x)$满足$f(x_0)=g(x_0)=a_0$
-设$g(x)=a_0$ \tag{1.0}
-则$g(x_0)=a_0$
-
-② 找$g(x)$满足
-$$\begin{cases}
-f(x_0)=g(x_0)=a_0 \\
-f'(x_0)=g'(x_0)=a_1
-\end{cases}$$
-$\because g(x)=a_0$时，$g'(x)=0$，
-又$(x)'=1!$，
-$\therefore$ 设$g(x)=a_0+a_1 x$ \tag{2.0}
-则$g'(x)=a_1$，$g'(x_0)=a_1$
-$\because g(x_0)=a_0+a_1 x_0 \neq a_0$
-$\therefore g(x)=a_0+a_1(x-x_0)$ \tag{2.1}
-即$g(x)=a_0+a_1 x - a_1 x_0$
-则$g'(x)=a_1$，$g(x_0)=a_0$
-
-③ 找$g(x)$满足
-$$\begin{cases}
-f(x_0)=g(x_0)=a_0 \\
-f'(x_0)=g'(x_0)=a_1 \\
-f''(x_0)=g''(x_0)=a_2
-\end{cases}$$
-$\because g(x)=a_0+a_1(x-x_0)$时，$g''(x)=0$，
-又$(x^2)''=2!$，$\left(\frac{x^2}{2!}\right)''=1$，
-$\therefore$ 设$g(x)=a_0+a_1(x-x_0)+\frac{a_2 x^2}{2!}$ \tag{3.0}
-则$g''(x)=a_2$，$g''(x_0)=a_2$
-$\because g(x_0)=a_0+\frac{a_2 x_0^2}{2!} \neq a_0$
-$\therefore g(x)=a_0+a_1(x-x_0)+\frac{a_2(x-x_0)^2}{2!}$ \tag{3.1}
-即
-$$g(x)=a_0+a_1 x - a_1 x_0 + \frac{a_2 x^2 - 2a_2 x x_0 + a_2 x_0^2}{2!}$$
-则$g(x_0)=a_0$，$g'(x_0)=a_1$，$g''(x_0)=a_2$
+## 超实数系中点3的无穷小邻域
+点$3$的无穷小邻域简化示意图：邻域尺度为$\frac{1}{+\infty}$，箭头指向邻域内点$x$，邻域包含圈注强调的点$3$。
+点$3$的无穷小邻域放大示意图：邻域尺度为$\frac{1}{+\infty}$，邻域内对点$x$的说明如下：
+这里是超实数系
+是离$3$很近的地方
+你离$3$的距离是$\frac{1}{+\infty}$
