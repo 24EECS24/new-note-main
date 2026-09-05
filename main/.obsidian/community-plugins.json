@@ -1,5 +1,4 @@
 [
-  "obsidian42-brat",
   "i18n",
   "obsidian-callout-editor",
   "multi-column-markdown",
@@ -14,6 +13,8 @@
   "obsidian-latex-suite",
   "obsidian-export-image",
   "obsidian-pandoc",
-  "obsidian-tikzjax",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian42-brat",
+  "obsidian-textgenerator-plugin",
+  "obsidian-tikzjax"
 ]
