@@ -86,7 +86,7 @@
     "mcdExportPath": "Tikz/J-MCG-to-SVG",
     "enableCache": true
   },
-  "settingsTab": "license",
+  "settingsTab": "note-manager",
   "simpleTexToken": "",
   "simpleTexSecretName": "",
   "noteManager": {
