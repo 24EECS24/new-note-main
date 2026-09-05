@@ -1,0 +1,111 @@
+{
+  "license": {
+    "key": "MC-eyJpZCI6Ik1DNDQ5IiwicGxhbiI6ImxpZmV0aW1lIiwiaWF0IjoiMjAyNi0wNS0xOCJ9.r_eZ6O9PUiNSJ_7z7H_LyXZ2_Uf8IDDQv4ah7ey87aWaTrHfpZ9IlI_fv55whcoht0JlOrGyFAZhcswNolSFBw",
+    "secretName": ""
+  },
+  "theoremTypes": [
+    "theorem",
+    "lemma",
+    "corollary",
+    "proposition",
+    "definition",
+    "axiom",
+    "example",
+    "exercise",
+    "remark",
+    "note"
+  ],
+  "theoremNumberingMode": "separate",
+  "theoremHeadingMode": "h2",
+  "theoremStyle": "card",
+  "theoremStyleEnabled": {
+    "theorem": true,
+    "lemma": true,
+    "corollary": true,
+    "proposition": true,
+    "definition": true,
+    "axiom": true,
+    "example": true,
+    "exercise": true,
+    "remark": true,
+    "note": true
+  },
+  "remarkNoteSpecial": false,
+  "questionStyleEnabled": true,
+  "theoremColors": {
+    "theorem": "#0010eb",
+    "lemma": "#4da9ff",
+    "corollary": "#0098b3",
+    "proposition": "#05ad9a",
+    "definition": "#00a321",
+    "axiom": "#ffae00",
+    "example": "#d632ec",
+    "exercise": "#ffdd00",
+    "remark": "#800000",
+    "note": "#ffa97a"
+  },
+  "language": "zh-CN",
+  "pdfPreventBreakInside": true,
+  "equationMarkerMode": "all",
+  "equationNumberingMode": "sequential",
+  "equationHeadingMode": "h2",
+  "mathLinks": {
+    "templates": [],
+    "excludedPaths": [],
+    "blockPrefix": "^",
+    "enableFileNameBlockLinks": true,
+    "enableInSourceMode": false,
+    "renderOutline": true,
+    "language": "zh-CN",
+    "theoremExternalMode": "default",
+    "theoremRenderModes": {
+      "theorem": "number-only",
+      "lemma": "number-only",
+      "corollary": "number-only",
+      "proposition": "number-only",
+      "definition": "number-only",
+      "axiom": "number-only",
+      "example": "number-only",
+      "exercise": "number-only",
+      "remark": "number-only",
+      "note": "number-only"
+    },
+    "equationExternalMode": "default",
+    "equationRenderMode": "number-only",
+    "enableDynamicRendering": true
+  },
+  "headingNumbering": {
+    "level": "h2",
+    "skipKeywords": []
+  },
+  "tikz": {
+    "exportPath": "Tikz/SVG",
+    "mcgFolderPath": "Tikz/MCG",
+    "mcgExportPath": "Tikz/MCG-to-SVG",
+    "mcdFolderPath": "Tikz/J-MCG",
+    "mcdExportPath": "Tikz/J-MCG-to-SVG",
+    "enableCache": true
+  },
+  "settingsTab": "license",
+  "simpleTexToken": "",
+  "simpleTexSecretName": "",
+  "noteManager": {
+    "propertyNames": {
+      "chapter": "chapter",
+      "section": "section",
+      "cluster": "cluster",
+      "orbit": "orbit"
+    },
+    "subjectFolders": [],
+    "exportEnabled": false,
+    "gitPublishEnabled": false,
+    "exportPaths": {},
+    "clusterOrders": {},
+    "lastSubjectPath": "",
+    "lastNotebookPath": "",
+    "openInNewTab": false,
+    "showFolderBasename": true,
+    "autoOpenNewNote": true,
+    "batchFreezeEnabled": false
+  }
+}

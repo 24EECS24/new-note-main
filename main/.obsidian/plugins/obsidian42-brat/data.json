@@ -1,9 +1,14 @@
 {
   "pluginList": [
+    "AlbusGuo/obsidian-mathcraft",
     "wnhllh/obsidian-callout-editor",
     "0011000000110010/obsidian-i18n"
   ],
   "pluginSubListFrozenVersion": [
+    {
+      "repo": "AlbusGuo/obsidian-mathcraft",
+      "version": "latest"
+    },
     {
       "repo": "wnhllh/obsidian-callout-editor",
       "version": ""
