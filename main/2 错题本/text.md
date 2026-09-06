@@ -116,8 +116,6 @@ Column B
 \end{document}
 ```
 
-
-
 ```tikz
 \begin{document}
 \begin{tikzpicture}[>=stealth,line cap=round,line join=round,
@@ -149,3 +147,133 @@ Column B
 \end{document}
 ```
 
+
+
+
+
+```tikz
+\begin{document}
+\definecolor{gridgreen}{rgb}{0,0.39,0}
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,scale=1.5,
+    x={(0.8cm,-0.32cm)}, y={(0.55cm,0.62cm)}, z={(0cm,1cm)}]
+    % bounding box [-1,1]^2 x [-1,1], hidden edges dashed
+    \draw[gray!25,line width=0.3pt,dashed] (-1,-1,-1) -- (1,-1,-1) -- (1,1,-1) -- (-1,1,-1) -- cycle;
+    \draw[gray!35,line width=0.3pt] (-1,-1,1) -- (1,-1,1) -- (1,1,1) -- (-1,1,1) -- cycle;
+    \draw[gray!35,line width=0.3pt] (1,-1,-1) -- (1,-1,1);
+    \draw[gray!35,line width=0.3pt] (1,1,-1) -- (1,1,1);
+    \draw[gray!35,line width=0.3pt] (-1,-1,-1) -- (-1,-1,1);
+    \draw[gray!25,line width=0.3pt,dashed] (-1,1,-1) -- (-1,1,1);
+    % domain D on z=0
+    \draw[gray!55,dashed,line width=0.4pt] (-1,-1,0) -- (1,-1,0) -- (1,1,0) -- (-1,1,0) -- cycle;
+    % surface z = 0.5*x*(2-y^2), sweep x with y fixed
+    \foreach \y in {-1,-0.75,...,1} {
+        \draw[gridgreen,line width=0.5pt,smooth,samples=15,domain=-1:1] plot (\x,\y,{0.5*\x*(2-\y*\y)});
+    }
+    % sweep y with x fixed -> variable=\y is mandatory
+    \foreach \x in {-1,-0.75,...,1} {
+        \draw[gridgreen,line width=0.5pt,smooth,samples=15,variable=\y,domain=-1:1] plot (\x,\y,{0.5*\x*(2-\y*\y)});
+    }
+    % surface outline edges
+    \draw[gridgreen,line width=1pt,smooth,samples=30,domain=-1:1] plot (\x,-1,{0.5*\x});
+    \draw[gridgreen,line width=1pt,smooth,samples=30,domain=-1:1] plot (\x,1,{0.5*\x});
+    \draw[gridgreen,line width=1pt,smooth,samples=30,variable=\y,domain=-1:1] plot (1,\y,{1-0.5*\y*\y});
+    \draw[gridgreen,line width=1pt,smooth,samples=30,variable=\y,domain=-1:1] plot (-1,\y,{-1+0.5*\y*\y});
+    % zero line x=0
+    \draw[line width=1pt,gray!80] (0,-1,0) -- (0,1,0);
+    % axes
+    \draw[->,black,line width=0.7pt] (0,0,0) -- (1.6,0,0) node[below right,font=\small] {$x$};
+    \draw[->,black,line width=0.7pt] (0,-1.4,0) -- (0,1.65,0) node[above right,font=\small] {$y$};
+    \draw[->,black,line width=0.7pt] (0,0,-1.3) -- (0,0,1.65) node[above,font=\small] {$z$};
+    % labels
+    \node[gridgreen,font=\small,fill=white,inner sep=1pt] at (1.12,-0.1,0.9) {$z>0$};
+    \node[gridgreen,font=\small,fill=white,inner sep=1pt] at (-1.12,0.1,-0.9) {$z<0$};
+    \node[font=\small] at (0,-1.35,2.0) {$f(x,y)=-f(-x,y)$};
+\end{tikzpicture}
+\end{document}
+```
+
+
+
+
+```tikz
+\begin{document}
+\definecolor{gridgreen}{rgb}{0,0.39,0}
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,scale=0.7]
+% 左上 z=1-x^2-y^2
+\begin{scope}[shift={(0,0)}, x={(-0.6cm,-0.3cm)}, y={(1cm,-0.2cm)}, z={(0cm,1cm)}]
+    \draw[->] (0,0,0) -- (1.4,0,0) node[right,font=\small] {$x$};
+    \draw[->] (0,0,0) -- (0,1.4,0) node[right,font=\small] {$y$};
+    \draw[->] (0,0,0) -- (0,0,1.3) node[above,font=\small] {$z$};
+    \foreach \y in {-1,-0.5,...,1} {
+        \def\xmax{sqrt(1 - \y*\y)}
+        \draw[gridgreen,smooth,samples=10,domain=-\xmax:\xmax]
+            plot (\x, \y, {1 - \x*\x - \y*\y});
+    }
+    \foreach \x in {-1,-0.5,...,1} {
+        \def\ymax{sqrt(1 - \x*\x)}
+        \draw[gridgreen,smooth,samples=10,variable=\y,domain=-\ymax:\ymax]
+            plot (\x, \y, {1 - \x*\x - \y*\y});
+    }
+    \node[below,font=\small] at (0,-1.6,0) {$f(x,y)=f(-x,y)$};
+\end{scope}
+
+% 右上
+\begin{scope}[shift={(5,0)}, x={(-0.6cm,-0.3cm)}, y={(1cm,-0.2cm)}, z={(0cm,1cm)}]
+    \draw[->] (0,0,0) -- (1.4,0,0) node[right,font=\small] {$x$};
+    \draw[->] (0,0,0) -- (0,1.4,0) node[right,font=\small] {$y$};
+    \draw[->] (0,0,0) -- (0,0,1.3) node[above,font=\small] {$z$};
+    \foreach \y in {-1,-0.5,...,1} {
+        \def\xmax{sqrt(1 - \y*\y)}
+        \draw[gridgreen,smooth,samples=10,domain=-\xmax:\xmax]
+            plot (\x, \y, {1 - \x*\x - \y*\y});
+    }
+    \foreach \x in {-1,-0.5,...,1} {
+        \def\ymax{sqrt(1 - \x*\x)}
+        \draw[gridgreen,smooth,samples=10,variable=\y,domain=-\ymax:\ymax]
+            plot (\x, \y, {1 - \x*\x - \y*\y});
+    }
+    \node[below,font=\small] at (0,-1.6,0) {$f(x,y)=f(x,-y)$};
+\end{scope}
+
+% 左下 z=0.5x(2-y^2)
+\begin{scope}[shift={(0,-5)}, x={(-0.6cm,-0.3cm)}, y={(1cm,-0.2cm)}, z={(0cm,1cm)}]
+    \draw[->] (0,0,0) -- (1.4,0,0) node[right,font=\small] {$x$};
+    \draw[->] (0,0,0) -- (0,1.4,0) node[right,font=\small] {$y$};
+    \draw[->] (0,0,0) -- (0,0,1.3) node[above,font=\small] {$z$};
+    \draw[->] (0,0,0) -- (0,0,-1.3);
+    \draw[gridgreen] (-1,-1,0) -- (1,-1,0) -- (1,1,0) -- (-1,1,0) -- cycle;
+    \draw[gridgreen] (-1,-1,-0.5) -- (-1,-1,0) -- (1,-1,0) -- (1,-1,0.5);
+    \draw[gridgreen] (-1,1,-0.5) -- (-1,1,0) -- (1,1,0) -- (1,1,0.5);
+    \foreach \y in {-1,-0.5,...,1} {
+        \draw[gridgreen,smooth,samples=10,domain=-1:1]
+            plot (\x, \y, {0.5*\x*(2 - \y*\y)});
+    }
+    \foreach \x in {-1,-0.5,...,1} {
+        \draw[gridgreen,smooth,samples=10,variable=\y,domain=-1:1]
+            plot (\x, \y, {0.5*\x*(2 - \y*\y)});
+    }
+    \node[below,font=\small] at (0,-1.6,0) {$f(x,y)=-f(-x,y)$};
+\end{scope}
+
+% 右下 z=0.5y(2-x^2)
+\begin{scope}[shift={(5,-5)}, x={(-0.6cm,-0.3cm)}, y={(1cm,-0.2cm)}, z={(0cm,1cm)}]
+    \draw[->] (0,0,0) -- (1.4,0,0) node[right,font=\small] {$x$};
+    \draw[->] (0,0,0) -- (0,1.4,0) node[right,font=\small] {$y$};
+    \draw[->] (0,0,0) -- (0,0,1.3) node[above,font=\small] {$z$};
+    \draw[->] (0,0,0) -- (0,0,-1.3);
+    \draw[gridgreen] (-1,-1,0) -- (1,-1,0) -- (1,1,0) -- (-1,1,0) -- cycle;
+    \draw[gridgreen] (-1,-1,-0.5) -- (-1,-1,0) -- (-1,1,0) -- (-1,1,0.5);
+    \draw[gridgreen] (1,-1,-0.5) -- (1,-1,0) -- (1,1,0) -- (1,1,0.5);
+    \foreach \y in {-1,-0.5,...,1} {
+        \draw[gridgreen,smooth,samples=10,domain=-1:1]
+            plot (\x, \y, {0.5*\y*(2 - \x*\x)});
+    }
+    \foreach \x in {-1,-0.5,...,1} {
+        \draw[gridgreen,smooth,samples=10,variable=\y,domain=-1:1]
+            plot (\x, \y, {0.5*\y*(2 - \x*\x)});
+    }
+    \node[below,font=\small] at (0,-1.6,0) {$f(x,y)=-f(x,-y)$};
+\end{scope}
+\end{tikzpicture}
+\end{document}
+```

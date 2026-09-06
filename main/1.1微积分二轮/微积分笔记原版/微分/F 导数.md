@@ -1,8 +1,5 @@
----
-excalidraw-plugin: parsed
-tags:
-  - excalidraw
----
+# F 导数_第1页.png
+
 ## 一元函数微分学的概念
 ## 导数引例
 （函数示意图：函数$x=f(t)$的整体图像，横轴为$t$，纵轴为$x$；图像从原点（对应$t=t_0=0$）出发单调上升至$t=t_1$处，随后水平延伸至$t=t_2$处，再单调下降至$t=t_3$处回到横轴。）
@@ -647,28 +644,3 @@ $\implies$
 $\implies f(x)$在$x_0$处取极大值
 
 (2) 与(1)同理
-
-==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
-
-
-# Excalidraw Data
-
-## Text Elements
-%%
-## Drawing
-```compressed-json
-N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGAA5tHho6IIR9BA4oZm4AbXAwUDBSiBJuCB4AZgAJbEkABVM00shYREqoLChWssxuZ2rqgAZtAHZJgBZqgFZRnnHqqan+
-
-MphBgDZZ2e0ATln4mtnNvZ4Rg8S1yAoSdW4roshJBEJlaW4eWeuIa2Vg7gjH7MKCkNgAawQAGE2Pg2KRKgBieIIFEovqQTS4bDg5RgoQcYgwuEIiSg6zMOC4QI5DEQABmhHw+AAyrAARJBB46SCwZCAOp3SSfYGgiEINkwDnoLkVH7494ccJ5NDxH5sKnYNQbVUjIFPCB44RwACSxBVqHyAF0fvTyFkzdwOEJmT9CISsJVcCM6fjCUrmBbna6DWE
-
-EMRuPEDnsRjxNos+AbGCx2Fw0NUfsnWJwAHKcMTcHYjTaJL6bN3MAAiGW6EbQoKECB+mmEhIAosEsjkgy78D8hHBiLha5HxolEpsRkceIkY4m2hAiBxwU7ez84Tjw9x6QQwj9uphehJfZQACo9Sp0+mcKAswhGcS8fUL685ABiuH0TJ1qG+BoPUAAIJEMoaboME9K9JmTBQOYBDAW8YHQBqdJ6DkuDukwjpoMGfYGvCbzugQ56HpePy4EIUBsAAS
-
-uE96Pg2TYGkuCC1K87xHqg8QpLMRQAL7gDadC4HAcBssOj4lO0LxZJUIEfGsDCEAgFAAELYrifpErC8JIvS+kGX0EDYCINJQCa3T6GyfLQjppLoMiqJOUZJmkGZFmZOpOJGgS2kkl05AcJS1LZFBRTGaZoUefob5Mqy7KPhAsoRoprnuZZ1nioKxD3Gg86QGlUUZWKkKStKSWwnK4WFTk0XUcIirKpGqWRbVlkAPKatqkZ6i1blFZkb43h+X74D+
-
-f5lDV5mWUNOR3g+nzPgVrXTZkJFASBSEQWFk0rdF4mkEBblsBQLy4HWqC4X16WZG2hKAcdp0hBdvyPS5e2WQ9YIUKe8CJVp739W1g32gg9XSld4XMNgYLMgAGtwMzJOMsbnHsUzjHGJxfIp0Ow/gACaDzVJs+zjFMPBTLM6OTrGilGGwBjcFJkD0AQjaRvx10Dfo9W+QGFoQADil4iQ82PucIukGL3RwIWUskAAsmwxAIHduCaMEF07vge7haLfm
-
-6WgLMQKpsIvaQyhYgAFDw8TjNQvD247dsO6gYyzAAlHStHKC61KVJbNs1ECvCjC74fu9oXsQFz1UrZlkKdbBnA9iGZR2p+YPZKr0scMozMGtkGta9wjE/NgRBy/WpCNj8HBZ2XtdMQuwhQCxTd1wa+jUpCpA5o3NddwuPekH36ua1uQ8IHHZR2AAVgg2C5CyDdwMrqsT6XaA63rZTYrBjCnoz+CFwuHSJWEwTL6mqFCCCBi/Z0OFrsxbCbtru4tx
-
-nYJWRkN+cG3F/dcoQgI3yPifVczJZ6QEcMwEutkcg9EVtkIQQDdYzzAHxfgDImThGZgJPiQA
-```
-%%
