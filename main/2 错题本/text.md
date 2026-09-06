@@ -116,11 +116,10 @@ Column B
 \end{document}
 ```
 
+
+
 ```tikz
 \begin{document}
-\definecolor{qqwuqq}{rgb}{0,0.39,0}
-
-% 保留你要的scale=0.3（大小和目标代码完全一致）
 \begin{tikzpicture}[>=stealth,line cap=round,line join=round,
  x={(-0.88cm,-0.18cm)},y={(0.88cm,-0.18cm)},z={(0cm,1cm)},scale=1.0]
 % 积分区域 x∈[-2,2], y∈[0,3], z∈[0,2]，无盖网格盒
@@ -147,6 +146,7 @@ Column B
 \draw[->,thick] (0,-0.8,0)--(0,3.8,0) node[right]{$y$};
 \draw[->,thick] (0,0,0)--(0,0,2.7) node[above]{$z$};
 \end{tikzpicture}
-
 \end{document}
 ```
+
+
