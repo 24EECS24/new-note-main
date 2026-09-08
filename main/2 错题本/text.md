@@ -261,7 +261,7 @@ Column B
 
 ```tikz
 \begin{document}
-\begin{tikzpicture}[x={(-0.866cm,-0.5cm)},y={(0.866cm,-0.5cm)},z={(0cm,1cm)},>=stealth,line cap=round,line join=round,scale=3]
+\begin{tikzpicture}[x={(-0.866cm,-0.5cm)},y={(0.866cm,-0.5cm)},z={(0cm,1cm)},>=stealth,line cap=round,line join=round,scale=2]
 \foreach \yy in {-1,-0.75,-0.5,-0.25,0,0.25,0.5,0.75,1}{\draw[gray!50] plot[samples=22,domain=-1:1] (\x,\yy,{(1.05)*(\x*\x*\x*\yy*\yy*\yy)});}
 \foreach \xx in {-1,-0.75,-0.5,-0.25,0,0.25,0.5,0.75,1}{\draw plot[samples=22,domain=-1:1,variable=\y] (\xx,\y,{(1.05)*(\xx*\xx*\xx*\y*\y*\y)});}
 \draw[->](-1.32,0,0)--(1.32,0,0)node[right]{$x$};
@@ -270,3 +270,22 @@ Column B
 \end{tikzpicture}
 \end{document}
 ```
+
+```tikz
+\begin{document}
+\begin{tikzpicture}[x={(-0.866cm,-0.5cm)},y={(0.866cm,-0.5cm)},z={(0cm,1cm)},>=stealth,line cap=round,line join=round,scale=1]
+\draw[->](-1.32,0,0)--(1.32,0,0)node[right]{$x$};
+\draw[->](0,-1.32,0)--(0,1.32,0)node[right]{$y$};
+\draw[->](0,0,0)--(0,0,3.415)node[above]{$z$};
+% 固定 y，沿 x 扫描
+\foreach \yy in {-1,-0.75,-0.5,-0.25,0,0.25,0.5,0.75,1}{
+  \draw[gray!50] plot[samples=22,domain=-1:1] (\x,\yy,{(1.142)*(5*(\x*\x+\yy*\yy)*exp(-(\x*\x+\yy*\yy)))});
+}
+% 固定 x，沿 y 扫描
+\foreach \xx in {-1,-0.75,-0.5,-0.25,0,0.25,0.5,0.75,1}{
+  \draw plot[samples=22,domain=-1:1,variable=\y] (\xx,\y,{(1.142)*(5*(\xx*\xx+\y*\y)*exp(-(\xx*\xx+\y*\y)))});
+}
+\end{tikzpicture}
+\end{document}
+```
+
