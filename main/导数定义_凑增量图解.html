@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>导数定义：凑增量，一张图讲透</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 28px 16px;
+    background: #f6f4ef;
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: #22303c; line-height: 1.65;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 23px; margin: 0 0 6px; color: #1c3744; letter-spacing: .5px; }
+  .sub { color: #5f7180; font-size: 14px; margin-bottom: 22px; }
+  .card {
+    background: #fff; border: 1px solid #e4e0d8; border-radius: 14px;
+    padding: 20px 22px; margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(40,50,60,.05);
+  }
+  .card h2 {
+    font-size: 16px; margin: 0 0 12px; display: flex; align-items: center; gap: 9px;
+    color: #1c3744;
+  }
+  .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 26px; height: 26px; padding: 0 8px; border-radius: 8px;
+    background: #1c3744; color: #fff; font-size: 13px; font-weight: 700;
+  }
+  .badge.orange { background: #d96c2c; }
+  .badge.green { background: #2e8b57; }
+  .badge.gray { background: #6b7a86; }
+
+  /* 公式 */
+  .formula { font-size: 17px; text-align: center; margin: 10px 0; font-family: "Cambria Math", Georgia, serif; }
+  .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 3px; }
+  .frac .n { border-bottom: 2px solid #22303c; padding: 0 8px 2px; }
+  .frac .d { padding: 2px 8px 0; }
+  .lim { display: inline-block; vertical-align: sub; font-size: 12px; font-style: italic; margin-right: 2px; color:#445; }
+  .inc { color: #d96c2c; font-weight: 700; }
+  .dim { color: #6b7a86; }
+  .big { font-size: 20px; }
+
+  .template {
+    background: #fbf3ea; border: 1.5px dashed #e0a97e; border-radius: 10px;
+    padding: 14px 10px; font-size: 18px;
+  }
+  .note { font-size: 14px; color: #4a5a66; }
+  .hl { background: linear-gradient(transparent 62%, #ffe3b8 62%); font-weight: 600; }
+
+  /* 步骤 */
+  .step { display: flex; gap: 12px; margin: 12px 0; align-items: flex-start; }
+  .step .tag {
+    flex: 0 0 auto; background: #eef4f6; color: #1c3744; border-radius: 8px;
+    padding: 3px 10px; font-size: 13px; font-weight: 700; margin-top: 2px;
+  }
+  .step .body { flex: 1; font-size: 15px; }
+  .arrow { text-align: center; color: #9aa7b0; font-size: 18px; margin: -4px 0; }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 14.5px; }
+  th, td { border: 1px solid #e4e0d8; padding: 8px 10px; text-align: center; }
+  th { background: #f1efe9; color: #3a4a56; font-weight: 600; }
+  td.code { font-family: Georgia, serif; font-style: italic; }
+  .ok { color: #2e8b57; font-weight: 700; }
+
+  .answer {
+    background: #eef7f1; border-left: 4px solid #2e8b57; border-radius: 8px;
+    padding: 12px 16px; font-size: 15px; margin-top: 10px;
+  }
+  .warn {
+    background: #f5f0ea; border-left: 4px solid #b08968; border-radius: 8px;
+    padding: 12px 16px; font-size: 14.5px; color: #4a4034; margin-top: 10px;
+  }
+  .final {
+    background: #1c3744; color: #f4f1ea; border-radius: 12px; padding: 16px 20px;
+    font-size: 15.5px; text-align: center; line-height: 1.9;
+  }
+  .final b { color: #ffc59a; }
+  .row2 { display:flex; gap:14px; flex-wrap: wrap; }
+  .row2 > div { flex:1; min-width: 260px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>导数定义题：别被绕晕，只有一个动作——「凑增量」</h1>
+  <div class="sub">把“换元 / 改条件 / 单向 / 双向”全部忘掉，做题只需要下面这一条主线。</div>
+
+  <!-- 模板 -->
+  <div class="card">
+    <h2><span class="badge">钥匙</span>导数定义的唯一模板</h2>
+    <div class="template formula big">
+      f ′(x₀) =
+      <span class="lim">增量→0</span>
+      <span class="frac">
+        <span class="n">f(x₀ + <span class="inc">增量</span>) − f(x₀)</span>
+        <span class="d"><span class="inc">增量</span></span>
+      </span>
+    </div>
+    <div class="note" style="text-align:center;margin-top:6px;">
+      唯一要求：<span class="hl">分子里 x₀ 旁边加的东西，和分母，必须是同一个「增量」，并且这个增量 → 0</span>。
+    </div>
+  </div>
+
+  <!-- 原题三步 -->
+  <div class="card">
+    <h2><span class="badge orange">原题</span>三步走，机械操作</h2>
+    <div class="formula dim">
+      <span class="lim">Δx→0</span>
+      <span class="frac">
+        <span class="n">f(x₀ − 2Δx) − f(x₀)</span>
+        <span class="d">Δx</span>
+      </span>
+    </div>
+
+    <div class="step">
+      <span class="tag">第1步</span>
+      <div class="body"><b>找增量</b>：看分子 x₀ 旁边是谁 —— 是 <span class="inc">−2Δx</span>，它才是真正的增量 h。</div>
+    </div>
+    <div class="step">
+      <span class="tag">第2步</span>
+      <div class="body"><b>凑分母</b>：分母现在是 Δx，把它也变成 −2Δx，外面乘 <b>−2</b> 配平：
+        <div class="formula" style="margin-top:6px;">
+          = −2 ·
+          <span class="lim">Δx→0</span>
+          <span class="frac">
+            <span class="n">f(x₀ <span class="inc">− 2Δx</span>) − f(x₀)</span>
+            <span class="d"><span class="inc">− 2Δx</span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <span class="tag">第3步</span>
+      <div class="body"><b>套模板</b>：Δx→0 时，增量 −2Δx 确实 → 0 ✓，所以这个分式就是 f ′(x₀)：
+        <div class="formula" style="margin-top:6px;">= −2 · f ′(x₀)</div>
+      </div>
+    </div>
+
+    <div class="answer">
+      <b>你问「为什么 lim 下面写 Δx→0，而不是 −2Δx→0？」</b><br>
+      因为 Δx 是题目原本的变量，−2Δx 只是它的一个表达式。你愿意换元令 h = −2Δx、把下面写成 h→0 也完全对——
+      Δx→0 和 −2Δx→0 是<b>同一个趋近过程</b>，写哪个都不算错，纯粹是写法习惯。
+    </div>
+  </div>
+
+  <!-- 单向就够 -->
+  <div class="card">
+    <h2><span class="badge green">结论</span>「只要增量能 → 0 就行」——你是对的</h2>
+    <div class="note">已知 f ′(x₀) 存在时，增量 h 想写成什么都可以，只要 Δx→0 时它跟着 →0：</div>
+    <table>
+      <tr><th>增量 h 写成</th><th>Δx→0 时 h 是否 →0</th><th>能否套模板</th></tr>
+      <tr><td class="code">h = −2Δx</td><td>是</td><td class="ok">✓</td></tr>
+      <tr><td class="code">h = Δx²</td><td>是</td><td class="ok">✓</td></tr>
+      <tr><td class="code">h = Δx³</td><td class="code">是</td><td class="ok">✓</td></tr>
+      <tr><td class="code">h = sinΔx</td><td>是</td><td class="ok">✓</td></tr>
+    </table>
+    <div class="answer" style="margin-top:14px;">
+      <b>为什么单向就够？</b>「f ′(x₀) 存在」本身的含义就是：
+      增量 h <b>无论从左边、右边、以什么速度、走哪条路径</b>趋于 0，这个商全部收敛到<b>同一个数</b> f ′(x₀)。
+      既然条条大路都到同一个值，你随便挑一条会 →0 的路（−2Δx、Δx²……）当然都得到它——<b>不需要可逆，不需要双向</b>。
+    </div>
+  </div>
+
+  <!-- 反例澄清 -->
+  <div class="card">
+    <h2><span class="badge gray">澄清</span>之前那个 |h|/h 反例，为什么跟本题无关</h2>
+    <div class="row2">
+      <div class="warn">
+        <b>反例的前提</b>：|h|/h 的双侧极限<b>本来就不存在</b>（左边 −1、右边 +1，对不上）。
+        极限都不存在，换个趋近条件，值当然可能变——它说明的是“极限不存在时别乱换条件”。
+      </div>
+      <div class="warn" style="border-left-color:#2e8b57;background:#eef7f1;color:#2c4038;">
+        <b>做题的前提</b>：题目里 f ′(x₀) <b>存在且唯一</b>，左右早已相等。
+        前提根本不同，反例打不到这道题。可以直接忘掉它，不必再纠结 h→0⁺。
+      </div>
+    </div>
+  </div>
+
+  <!-- 一句话 -->
+  <div class="final">
+    做题口诀：<b>找增量 → 分母凑成同一个增量 → 乘系数配平 → 增量趋于 0 就套 f ′(x₀)</b><br>
+    增量怎么写都行，只要它 →0；单向足够，双向 / 可逆都不是你需要操心的事。
+  </div>
+
+</div>
+</body>
+</html>
+<!-- （注：内容由AI生成） -->
