@@ -40,34 +40,32 @@ $$\lim_{x \to 0} \frac{1-\cos x}{x^2} \neq \lim_{x \to 0} \frac{\frac{1}{2}x^2}{
 $$= \lim_{x \to 0} \frac{\frac{1}{2}x^2}{x^2} \cdot \lim_{x \to 0} \frac{1-\cos x}{\frac{1}{2}x^2}$$
 
 ## Caution
-只有$g(x), f(x)$的极限都存在（$\lim g(x)$与$\lim f(x)$是实数），
-$$\lim [g(x)\pm f(x)] = \lim g(x) \pm \lim f(x)$$
-才有意义，这相当于实数的四则运算。
+>只有$g(x), f(x)$的极限都存在（$\lim g(x)$与$\lim f(x)$是实数），
+>$\displaystyle \lim [g(x)\pm f(x)] = \lim g(x) \pm \lim f(x)$ 
+>才有意义，这相当于实数的四则运算。
 
-如果
-$g(x)$的极限存在，$f(x)$的极限不存在，$\lim [g(x)\pm f(x)]$一定不存在。
-此时$\lim g(x) \pm \lim f(x)$无意义，
-可直接得出$\lim [g(x)\pm f(x)]$不存在的结论。
+>如果
+>$g(x)$的极限存在，$f(x)$的极限不存在，$\lim [g(x)\pm f(x)]$一定不存在。
+>此时$\lim g(x) \pm \lim f(x)$无意义，
+>可直接得出$\lim [g(x)\pm f(x)]$不存在的结论。
 
-如果
-$g(x), f(x)$的极限都不存在，
-即$\lim\limits_{x \to 0}f(x)$不存在，$\lim\limits_{x \to 0}g(x)$不存在，
-但$[f(x)\pm g(x)]=3$，$\lim\limits_{x \to 0}3=3$存在。
+>如果
+>$g(x), f(x)$的极限都不存在，
+>即$\lim\limits_{x \to 0}f(x)$不存在，$\lim\limits_{x \to 0}g(x)$不存在，
+>但$[f(x)\pm g(x)]=3$，$\lim\limits_{x \to 0}3=3$存在。
+>则
+>$\displaystyle \lim\limits_{x \to 0}[f(x)\pm g(x)]=3$要直接写出结论，仅指$\lim\limits_{x \to 0}3=3$，
+>不能写成
+>$\displaystyle \lim_{x \to 0}f(x) \pm \lim_{x \to 0}g(x) = 3$ ，该式无意义。
 
-则
-$\lim\limits_{x \to 0}[f(x)\pm g(x)]=3$要直接写出结论，仅指$\lim\limits_{x \to 0}3=3$，
-不能写成
-$$\lim_{x \to 0}f(x) \pm \lim_{x \to 0}g(x) = 3$$
-该式无意义。
+>若$\lim f(x)=A$，且$\lim g(x)$存在，则
+>$\displaystyle \lim [f(x)g(x)] = A \lim g(x)$ 
 
-若$\lim f(x)=A$，且$\lim g(x)$存在，则
-$$\lim [f(x)g(x)] = A \lim g(x)$$
+>同理，
+>当$\lim f(x)=0$且$g(x)$在对应极限过程下局部有界时，
+>$\displaystyle \lim f(x)g(x)=0$ 
 
-同理，
-当$\lim f(x)=0$且$g(x)$在对应极限过程下局部有界时，
-$$\lim f(x)g(x)=0$$
 
----
 
 # A 函数极限的计算方法_第3页.png
 

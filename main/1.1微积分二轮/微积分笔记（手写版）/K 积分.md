@@ -1,7 +1,7 @@
-# K 积分_第1页.png
-
 # 不定积分
-关系示意：$\int f(x)dx \leftarrow f(x) \rightarrow f'(x)$，附求导与不定积分互逆运算示意图，展示求导算子$\frac{d(\ )}{dx}$与不定积分算子$\int (\ )dx$的互逆性。
+关系示意：$\int f(x)dx \leftarrow f(x) \rightarrow f'(x)$，
+
+
 
 ## 原函数与不定积分
 如果一个函数$f(x)$在区间$I$上有定义，
@@ -18,24 +18,6 @@ $$\left[F(x)+C\right]' = f(x)$$
 则$\int f(x)dx$为$f(x)$的不定积分，
 $\int f(x)dx$表示$f(x)$的全体原函数$F(x)+C$。
 
-## 例8.1
-设$0<x<1$，且$\int (1-x^2)f(x^2)dx = \arcsin x + C$，则$f(x)=$\underline{\qquad}
-
-解：
-由不定积分定义，对等式两边同时求导得：
-$$\left[\arcsin x\right]' = (1-x^2)f(x^2)$$
-计算左侧导数：
-$$\frac{1}{\sqrt{1-x^2}} = (1-x^2)f(x^2)$$
-整理得：
-$$\Rightarrow f(x^2) = \frac{1}{(1-x^2)^{\frac{3}{2}}}$$
-令$x^2 = t$，由$0<x<1$得$t\geq0$，代入得：
-$$f(t) = \frac{1}{(1-t)^{\frac{3}{2}}},\quad t\geq0$$
-将变量替换回$x$，得：
-$$\Rightarrow f(x) = \frac{1}{(1-x)^{\frac{3}{2}}} = (1-x)^{-\frac{3}{2}}$$
-
----
-
-# K 积分_第2页.png
 
 ## 原函数（不定积分）的存在定理
 前面说，如果$\exists F'(x)=f(x),\ x\in I$成立，我们称$F(x)$是$f(x)$的原函数。
@@ -55,9 +37,6 @@ $$\Rightarrow f(x) = \frac{1}{(1-x)^{\frac{3}{2}}} = (1-x)^{-\frac{3}{2}}$$
 - $\implies$ $f'(x)$没有第一类间断点（可去、跳跃），没有无穷间断点
 - $\implies$ $f'(x)$可能有振荡间断点
 
----
-
-# K 积分_第3页.png
 
 ## 定积分
 **前言**

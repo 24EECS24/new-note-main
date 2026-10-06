@@ -15,5 +15,6 @@
   "obsidian-pandoc",
   "obsidian42-brat",
   "obsidian-textgenerator-plugin",
-  "obsidian-tikzjax"
+  "obsidian-tikzjax",
+  "obsidian-git"
 ]

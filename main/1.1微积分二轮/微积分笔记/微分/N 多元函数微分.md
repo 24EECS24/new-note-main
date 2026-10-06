@@ -1,233 +1,3 @@
-# N 多元函数微分_第1页.png
-
-## 多元函数的偏导数
-## 邻域“相邻的区域”
-设$P_0(x_0,y_0)$是$xOy$平面上的一个点，$\delta>0$，与点$P_0(x_0,y_0)$的距离小于$\delta$的点$P(x,y)$的全体称为点$P_0$的$\delta$邻域，记为$U(P_0,\delta)$：
-$$
-U(P_0,\delta) = \left\{ P \mid |PP_0| < \delta \right\}
-$$
-用坐标形式可表示为：
-$$
-U(P_0,\delta) = \left\{ (x,y) \mid \sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta \right\}
-$$
-（示意图：平面直角坐标系下两点间距离示意图，标注了点$P_0(x_0,y_0)$、$P(x,y)$，坐标差$x-x_0$、$y-y_0$，以及两点间距离$\sqrt{(x-x_0)^2+(y-y_0)^2}$）
-
-## 去心$\delta$邻域
-点$P_0$的去心$\delta$邻域记为：
-$$
-\mathring{U}(P_0,\delta) = \left\{ P \mid 0 < |PP_0| < \delta \right\}
-$$
-特别地，若无需强调邻域半径$\delta$，可用$U(P_0)$表示$P_0$的某个邻域，去心邻域可记为$\mathring{U}(P_0)$。
-
-## 邻域概念对比
-- 一元函数中$x=x_0$的邻域：是数轴上以$x_0$为中心、向两边延伸$\delta$长度的开区域。
-（示意图：数轴上的一元函数邻域示意图，标注了点$x_0-\delta$、$x_0$、$x_0+\delta$）
-一元函数的去心邻域为邻域内抠去中心点$x_0$后的区域。
-
----
-
-# N 多元函数微分_第2页.png
-
-## 二元函数中点$P_0(x_0,y_0)$的邻域
-为平面上的，以$P_0(x_0,y_0)$为圆心，
-以$\delta$为半径所画圆的区域。
-去心邻域为邻域内抠去点$P_0$后的区域。
-
-## 二、极限
-设函数$f(x,y)$在区域$D$上有定义，
-$P_0\in D$或为区域$D$边界上的一点。
-如果对于任意给定的$\varepsilon>0$，总有$\delta>0$，
-当点$P(x,y)\in D$
-且$0<|PP_0|=\sqrt{(x-x_0)^2+(y-y_0)^2}<\delta$时，
-恒有$|f(x,y)-A|<\varepsilon$，
-则称常数$A$为$(x,y)\to(x_0,y_0)$时
-$f(x,y)$的极限。
-
-记作：
-$$\lim_{(x,y)\to(x_0,y_0)} f(x,y) = A$$
-或
-$$\lim_{\substack{x\to x_0\\y\to y_0}} f(x,y) = A$$
-
-☆ compare
-## 对比：一元函数极限
-$$\lim_{x\to x_0} f(x) = A \quad \begin{cases}
-f(x) = A + \alpha \\
-当x\to x_0时 \\
-\alpha 为无穷小量
-\end{cases}$$
-$$\exists\ \delta>0,\ 0<|x-x_0|<\delta \quad \vdots \quad x\to x_0$$
-$$\forall\ \varepsilon>0,\ |f(x)-A|<\varepsilon \quad \vdots \quad f(x)\to A$$
-$x\to x_0$的路径为两种：$\begin{cases} x\to x_0^+ \\ x\to x_0^- \end{cases}$
-
----
-
-# N 多元函数微分_第3页.png
-
-若$\lim\limits_{x \to x_0^+} f(x) \neq \lim\limits_{x \to x_0^-} f(x)$
-则$\lim\limits_{x \to x_0} f(x)$不存在
-
-## 二元函数极限，又名“二重极限”
-$$\lim_{(x,y) \to (x_0,y_0)} f(x,y) = A \iff
-\begin{cases}
-f(x,y) = A + \alpha \\
-\text{当}(x,y) \to (x_0,y_0)\text{时} \\
-\alpha\text{为无穷小量}
-\end{cases}$$
-
-$\forall \varepsilon>0,\ \exists \delta>0$，当$0<|PP_0|=\sqrt{(x-x_0)^2+(y-y_0)^2} < \delta$时，有$|f(x,y)-A| < \varepsilon$
-
-$(x,y)\to(x_0,y_0)$的路径有无穷种
-例：
-（平面直角坐标系示意图：展示沿多条不同曲线趋近于点$(x_0,y_0)$的路径）
-
-当有2种及以上$(x,y)\to(x_0,y_0)$的路径，使$\lim\limits_{(x,y)\to(x_0,y_0)} f(x,y)$的值不相等，则$\lim\limits_{(x,y)\to(x_0,y_0)} f(x,y)$不存在。
-
-## $(x,y)\to(x_0,y_0)$的路径
-（平面直角坐标系示意图：绘制过点$(x_0,y_0)$的曲线$y=f(x)$，标注坐标轴、原点与点$(x_0,y_0)$）
-
-不同的路径
-指$y=f(x)$的不同关系式
-$x=g(y)$的不同关系式
-
-例：$(x,y)\to(0,0)$时
-$y=x^3,\ x=2y$都过$(0,0)$点
-$\therefore$
-$x\to0,\ f(x)=x^3\to0$
-$y\to0,\ g(y)=2y\to0$
-为$(x,y)\to(0,0)$的两个不同路径
-
----
-
-# N 多元函数微分_第4页.png
-
-若
-$$\lim_{\substack{x\to 0\\y=x^3}} f(x,x^3) \neq \lim_{\substack{y\to 0\\x=2y}} f(2y,y)$$
-则
-$$\lim_{\substack{x\to 0\\y\to 0}} f(x,y) \text{不存在}$$
-
-## 注
-除洛必达法则与单调有界准则外，可照搬一元函数求极限的方法来求二重极限。
-e.g. 唯一性，局部有界性，局部保号性，脱帽法，运算规则，夹逼准则，等价替换等。
-e.g. 当$(x,y)\to(0,0)$时，
-$$e^{x^2+y^2}-1 \sim x^2+y^2$$
-
-## 例13.1
-判断
-$$I_1 = \lim_{\substack{x\to 0\\y\to 0}} \frac{|xy|}{\sqrt{x^2+y^2}}, \quad I_2 = \lim_{\substack{x\to 0\\y\to 0}} \frac{x|y|}{x^2+y^2}$$
-的存在与否。
-
-### 分析
-看到$|xy| \leq x^2+y^2$想到基本不等式
-$$|ab| \leq \frac{a^2+b^2}{2}$$
-看到可用不等式，可想到夹逼准则。
-
-### 解 「先看$I_1$」
-$$\because |ab| \leq \frac{a^2+b^2}{2}$$
-$$\therefore |xy| \leq \frac{x^2+y^2}{2}$$
-
----
-
-# N 多元函数微分_第5页.png
-
-## 利用夹逼准则判断二元函数极限存在
-$$\frac{|xy|}{\sqrt{x^2+y^2}} \leqslant \frac{\frac{x^2+y^2}{2}}{\sqrt{x^2+y^2}} = \frac{\sqrt{x^2+y^2}}{2}$$
-$\because (x,y)\to(0,0)$时，
-$$\frac{\sqrt{x^2+y^2}}{2} \to 0$$
-且 $0\leqslant \frac{|xy|}{\sqrt{x^2+y^2}}$，考虑用夹逼准则。
-$\therefore$ 当$(x,y)\to(0,0)$时：
-$$0 \leqslant \frac{|xy|}{\sqrt{x^2+y^2}} \leqslant \frac{\frac{x^2+y^2}{2}}{\sqrt{x^2+y^2}} = \frac{\sqrt{x^2+y^2}}{2}$$
-不等式两端在$(x,y)\to(0,0)$时极限均为$0$，由夹逼准则可得：
-$\Rightarrow I_1$是存在的，且趋向于$0$。
-
-## 利用路径法判断二元函数极限不存在
-这类题，我们做题做多了，其是否存在，我们能感觉出来。
-$I_2$上面为一次，下面为二次，大概率不存在，我们可以找不同的路径来找出其不存在的证据。
-可以找$x\to0^+,x\to0^-$，$y=x$这两条路径。
-（对应示意图：平面直角坐标系，标注原点$(0,0)$、$x$轴、$y$轴，绘制过原点的直线路径$y=x$）
-则
-$$I_2 = \lim\limits_{\substack{x\to0 \\ y=x}} \frac{x|x|}{2x^2} = \lim\limits_{\substack{x\to0 \\ y=x}} \frac{|x|}{2x}$$
-发现有尖点。
-$$\lim\limits_{\substack{x\to0^+ \\ y=x}} \frac{|x|}{2x} = \frac{1}{2} \neq \lim\limits_{\substack{x\to0^- \\ y=x}} \frac{|x|}{2x} = -\frac{1}{2}$$
-$\Rightarrow I_2$不存在。
-
----
-
-# N 多元函数微分_第6页.png
-
-## 三、连续
-点$x_1$与点$x_2$连续：$|x_1-x_2|\to0$。
-
-若
-$$\lim_{\substack{x\to x_0\\y\to y_0}} f(x,y) = f(x_0,y_0)$$
-则称函数$f(x,y)$在点$(x_0,y_0)$处连续。
-
-如果$f(x,y)$在区域$D$上每一点处都连续，则称$f(x,y)$在区域$D$上连续。
-
-☆ compare
-### 一元函数的连续
-一元函数在点$x_0$处连续的充要条件为：
-$$\lim_{x\to x_0} f(x) = f(x_0) = \lim_{x\to x_0^+} f(x) = \lim_{x\to x_0^-} f(x)$$
-- 自变量角度直观：$x_0$点处连续，即$x_0$与其两边的$x_0^+$、$x_0^-$充分靠近，配自变量数轴示意图，数轴上标注$x_0^-$、$x_0$、$x_0^+$，箭头沿轴向右。
-- 函数值角度直观：$f(x_0)$点处连续，即$f(x_0)$与其两边的$f(x_0^-)$、$f(x_0^+)$充分靠近，配函数值数轴示意图，数轴上标注$f(x_0^-)$、$f(x_0)$、$f(x_0^+)$，箭头沿轴向右。
-
-若满足以下任意一条，则$x_0$为间断点：
-① $\lim\limits_{x\to x_0^+} f(x) \neq f(x_0)$
-② $\lim\limits_{x\to x_0^-} f(x) \neq f(x_0)$
-③ $\lim\limits_{x\to x_0^+} f(x) \neq \lim\limits_{x\to x_0^-} f(x)$
-④ $\lim\limits_{x\to x_0} f(x)$不存在
-
-### 二元函数连续
-二元函数在点$P_0(x_0,y_0)$处连续的定义为：
-$$\lim_{(x,y)\to(x_0,y_0)} f(x,y) = f(x_0,y_0)$$
-$P_0(x_0,y_0)$点处连续，即$P_0$与其周围的点$P(x,y)$充分靠近，配平面直角坐标系趋近示意图，标注原点$O$、$x$轴、$y$轴，展示平面上点趋近于$P_0(x_0,y_0)$。
-
----
-
-# N 多元函数微分_第7页.png
-
-（二元函数$z=f(x,y)$在点$(x_0,y_0)$处连续的曲面示意图，标注坐标轴$x,y,f(x,y)$与点$(x_0,y_0,f(x_0,y_0))$，展示连续点处曲面的形态）
-
-$f(x_0,y_0)$这一点处连续，即$f(x_0,y_0)$与其周围的$f(x,y)$充分靠近。
-
-若存在任意一种$(x,y)\to(x_0,y_0)$的路径，使
-$$\lim_{\substack{x\to x_0\\y\to y_0}} f(x,y) \neq f(x_0,y_0) \text{ 或极限不存在}$$
-则为间断点。
-
-注：考纲中未要求讨论间断点。
-
-## 例13.2
-设
-$$
-f(x,y)=
-\begin{cases}
-\dfrac{\sqrt[3]{1-(x^2+y^2)} - 1}{e^{x^2+y^2} - 1}, & x^2+y^2 \neq 0 \\
-a, & x^2+y^2 = 0
-\end{cases}
-$$
-为连续函数，则$a=\underline{\qquad}$。
-
-## 分析
-$\because f(x,y)$为连续函数
-$\therefore f(x,y)$在$(0,0)$处连续
-$\because$ 当$x=0,y=0$时，
-$$x^2+y^2=0$$
-$\therefore$ 当$\substack{x\to0\\y\to0}$时，$f(x,y)\to a$
-
-## 解
-利用等价无穷小：当$x\to0$时，$e^x -1 \sim x$，$(1+x)^\alpha -1 \sim \alpha x$。
-$$
-\begin{align*}
-\lim_{\substack{x\to0\\y\to0}} \frac{\sqrt[3]{1-(x^2+y^2)} - 1}{e^{x^2+y^2} - 1}
-&= \lim_{\substack{x\to0\\y\to0}} \frac{\dfrac{1}{3}\left[-(x^2+y^2)\right]}{x^2+y^2} \\
-&= -\frac{1}{3}
-\end{align*}
-$$
-故$a=-\dfrac{1}{3}$。
-
----
-
-# N 多元函数微分_第8页.png
-
 ## 四、偏导数
 $\partial$ 读法：“偏”，“round”
 ☆ Compare.
@@ -243,10 +13,6 @@ $$\lim_{\Delta x \to 0} \frac{f(x_0+\Delta x,y_0) - f(x_0,y_0)}{\Delta x}$$
 称为函数$f(x,y)$在点$(x_0,y_0)$处对$x$轴方向的变化率。
 记为$f_x'(x_0,y_0)$，$\left.\frac{\partial f}{\partial x}\right|_{\substack{x=x_0\\y=y_0}}$，$\frac{\partial f(x_0,y_0)}{\partial x}$。
 若设$f(x,y)=z$，则可记为：$\left.\frac{\partial z}{\partial x}\right|_{\substack{x=x_0\\y=y_0}}$，$\left.z_x'\right|_{\substack{x=x_0\\y=y_0}}$。
-
----
-
-# N 多元函数微分_第9页.png
 
 （二元函数$z=f(x,y)$偏导数几何意义示意图）
 从中截一个与y轴平行方向的面，则可求出y轴方向上的变化率。
@@ -264,12 +30,6 @@ $$\lim_{\Delta y \to 0} \frac{f(x_0,y_0+\Delta y)-f(x_0,y_0)}{\Delta y}$$
 - 若$z=f(x,y)$在区域$D$上的每一点$(x,y)$处都有偏导数，则称函数$f(x,y)$在区域$D$上存在偏导函数。
 
 偏导函数记作：$\frac{\partial z}{\partial x}$，$\frac{\partial z}{\partial y}$，$\frac{\partial f}{\partial x}$，$\frac{\partial f}{\partial y}$，$f_x'(x,y)$，$f_y'(x,y)$等。
-
-无论是在x轴方向求导，还是在y轴方向上求导，都可以按对应规则计算，具体求导方法见例题页。
-
----
-
-# N 多元函数微分_第10页.png
 
 ## 高阶偏导数
 若函数$f(x,y)$的偏导数$f_x'(x,y)$和$f_y'(x,y)$仍存在偏导数，则
@@ -302,9 +62,6 @@ $$
 \end{aligned}
 $$
 
----
-
-# N 多元函数微分_第11页.png
 
 $\Rightarrow \left.\frac{\partial f}{\partial x}\right|_{(0,1)}$ 不存在
 
@@ -337,9 +94,6 @@ $$
 $$
 其中$f(x)=x$，$\displaystyle g(x)=\int_{0}^{x-y} f(t)\,\mathrm{d}t$。
 
----
-
-# N 多元函数微分_第12页.png
 
 ## 二元变限积分的偏导数计算
 函数$\int_0^{x-y} f(t)dt$求导规则依旧为：

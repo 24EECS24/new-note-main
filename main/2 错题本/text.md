@@ -198,12 +198,45 @@ Column B
 
 ```tikz
 \begin{document}
-\begin{tikzpicture}[x={(-0.6cm,-0.3cm)},y={(1cm,-0.2cm)},z={(0cm,1cm)},>=stealth,line cap=round,line join=round,scale=1]
-\foreach \yy in {-1,-0.75,-0.5,-0.25,0,0.25,0.5,0.75,1}{\draw[gray!50] plot[samples=22,domain=-1:1] (\x,\yy,{(1.05)*(\x^2 - \yy^2)});}
-\foreach \xx in {-1,-0.75,-0.5,-0.25,0,0.25,0.5,0.75,1}{\draw plot[samples=22,domain=-1:1,variable=\y] (\xx,\y,{(1.05)*(\xx^2 - \y^2)});}
-\draw[->](-1.32,0,0)--(1.32,0,0)node[right]{$x$};
-\draw[->](0,-1.32,0)--(0,1.32,0)node[right]{$y$};
-\draw[->](0,0,-1.176)--(0,0,1.208)node[above]{$z$};
+\definecolor{curveblue}{rgb}{0.2,0.3,0.8}
+\definecolor{tangentred}{rgb}{0.8,0.2,0.2}
+\begin{tikzpicture}[x=1.5cm,y=1.5cm,>=stealth,scale=1.2]
+    % 坐标轴
+    \draw[->] (-0.2,0) -- (3.2,0) node[right,font=\small] {$x$};
+    \draw[->] (0,-0.2) -- (0,2.7) node[above,font=\small] {$y$};
+    \node[below left,font=\small] at (0,0) {$O$};
+    
+    % 函数曲线 y=0.5x^2
+    \draw[line width=0.8pt,curveblue,smooth,samples=100,domain=0.5:2.5]
+        plot(\x,{0.5*\x*\x}) node[above,font=\small] at (2.5,{0.5*2.5*2.5}) {$y=f(x)$};
+    
+    % 切线 y = x - 0.5 (在x=1处与曲线相切，斜率为1)
+    \draw[line width=0.8pt,tangentred,domain=0.5:2.5]
+        plot(\x,{\x - 0.5}) node[below right,font=\small] at (2,1.5) {tangent};
+    
+    % 辅助虚线
+    \draw[dashed,gray] (1,0) -- (1,0.5);
+    \draw[dashed,gray] (2,0) -- (2,2);
+    \draw[dashed,gray] (0,0.5) -- (1,0.5);
+    \draw[dashed,gray] (0,2) -- (2,2);
+    \draw[dashed,gray] (1,0.5) -- (2,0.5);
+    \draw[dashed,gray] (2,0.5) -- (2,1.5);
+    
+    % 刻度与增量标签
+    \node[below,font=\small] at (1,0) {$x_0$};
+    \node[below,font=\small] at (2,0) {$x_0+\Delta x$};
+    \node[left,font=\small] at (0,0.5) {$y_0$};
+    \node[left,font=\small] at (0,2) {$y_0+\Delta y$};
+    \node[below,font=\small] at (1.51,0.52) {$\Delta x$};
+    \node[left,font=\small] at (2.01,0.98) {$\Delta y=$};
+    \node[right,font=\small] at (2,1) {$A\cdot\Delta x$};
+    \node[right,font=\small] at (2,1.75) {$b$};
+    
+    % 标记关键点
+    \fill (1,0.5) circle (1pt);
+    \fill (2,2) circle (1pt);
+    \fill (2,1.5) circle (1pt);
+    \fill (2,0.5) circle (1pt);
 \end{tikzpicture}
 \end{document}
 ```
