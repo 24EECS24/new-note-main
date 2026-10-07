@@ -209,3 +209,6 @@ $$\Delta z = f(x_0+\Delta x, y_0+\Delta y) - f(x_0,y_0)$$
 $$\lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{\Delta z - (A\Delta x+B\Delta y)}{\sqrt{(\Delta x)^2+(\Delta y)^2}}$$
 若极限等于$0$，则$z=f(x,y)$在点$(x_0,y_0)$处可微；否则，不可微。
 
+
+
+
