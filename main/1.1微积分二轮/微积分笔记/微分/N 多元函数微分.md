@@ -177,9 +177,6 @@ $f_x'(x,y) \exists$且连续，$f_y'(x,y) \exists$且连续 $\implies$ $\Delta z
 验证$\lim\limits_{(x,y)\to(x_0,y_0)} f_x'(x,y) = f_x'(x_0,y_0)$与$\lim\limits_{(x,y)\to(x_0,y_0)} f_y'(x,y) = f_y'(x_0,y_0)$是否成立。
 若成立，则$z=f(x,y)$在点$(x_0,y_0)$处的偏导数是连续的。
 
----
-
-# N 多元函数微分_第22页.png
 
 ## 概念对比（Compare）
 ### 一元函数
@@ -214,9 +211,6 @@ $$\lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{\Delta z - (A\Delta x
 $\because u(x,y)$可全微分，
 $$\therefore \mathrm{d}u = \frac{\partial u}{\partial x}\mathrm{d}x + \frac{\partial u}{\partial y}\mathrm{d}y.$$
 
----
-
-# N 多元函数微分_第23页.png
 
 $$
 \begin{cases}
@@ -261,9 +255,6 @@ z_2 =
 $$
 则判断$z_1,z_2$在点$(0,0)$处是否可微。
 
----
-
-# N 多元函数微分_第24页.png
 
 ## 分析
 只要$\Delta z = dz + o(\rho)$成立，则函数在该点可微；若该式不成立，则函数在该点不可微。
@@ -309,9 +300,6 @@ $$
 
 则$z_1$在$(0,0)$点可微。
 
----
-
-# N 多元函数微分_第25页.png
 
 ## 二元函数$Z_2$在$(0,0)$点的可微性判定
 $$\Delta Z_2 = \frac{\Delta x |\Delta y|}{\sqrt{(\Delta x)^2 + (\Delta y)^2}}$$
