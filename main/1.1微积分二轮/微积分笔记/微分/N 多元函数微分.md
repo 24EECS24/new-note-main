@@ -76,9 +76,6 @@ $$\Delta z = A\Delta x + B\Delta y + o(\rho)$$
 - $A\Delta x+B\Delta y$是线性主部
 - $o(\rho)$是高阶无穷小量
 
----
-
-# N 多元函数微分_第20页.png
 
 二元函数增量示意图：标注点$(x_0,y_0)$、$(x_0+\Delta x,y_0)$、$(x_0,y_0+\Delta y)$、$(x_0+\Delta x,y_0+\Delta y)$，标记增量$\Delta x$、$\Delta y$，两点间距离$\rho=\sqrt{(\Delta x)^2+(\Delta y)^2}$。
 
