@@ -87,9 +87,7 @@ $$\Delta z = A\Delta x + B\Delta y + o(\rho)$$
     \draw[->] (0,-2.7) -- (0,2.7) node[above,font=\small] {$y$};
     \node[below left,font=\small] at (0,0) {$P_0(x_0,y_0)$};
     \fill (0,0) circle (1.2pt);
-    % Circle of neighborhood
-    \draw[line width=0.8pt,curveblue] (0,0) circle (\radius);
-    % Point on circle: (1.2,1.6), distance to origin is exactly 2
+    % Point: (1.2,1.6)
     \def\px{1.2}
     \def\py{1.6}
     \fill (\px,\py) circle (1.2pt);
@@ -109,12 +107,8 @@ $$\Delta z = A\Delta x + B\Delta y + o(\rho)$$
     \node[above, font=\small] at (2.8,2.2) {$\sqrt{(\Delta x)^2+(\Delta y)^2}=\rho$};
 \end{tikzpicture}
 \end{document}
+
 ```
-
-
-
-
-标注点$(x_0,y_0)$、$(x_0+\Delta x,y_0)$、$(x_0,y_0+\Delta y)$、$(x_0+\Delta x,y_0+\Delta y)$，标记增量$\Delta x$、$\Delta y$，两点间距离$\rho=\sqrt{(\Delta x)^2+(\Delta y)^2}$。
 
 ## 全微分与偏导的关系
 ### x轴方向偏导推导
@@ -146,9 +140,6 @@ $$\text{可全微分} \implies \text{可偏导，逆命题不成立}$$
 - 偏导数反映了函数在某一坐标轴方向上的变化速度
 - 全微分反映了函数在所有方向上，由微小增量$dx$与$dy$所引起的具体变化量$dz$
 
----
-
-# N 多元函数微分_第21页.png
 
 ## 几何意义
 附曲面$\Sigma$在点$M$处的切平面、法向量$\vec{n}$与切向量$\vec{T}$的空间直角坐标系示意图。
