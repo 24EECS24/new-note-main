@@ -1,6 +1,6 @@
 
-### 回顾：一元函数微分
-#### 定义
+## 回顾：一元函数微分
+### 定义
 对于一个一元函数$y=f(x)$在点$x_0$处可微，是指，函数增量$\Delta y = f(x_0+\Delta x) - f(x_0)$可以表示为：
 $$\Delta y = A\Delta x + o(\Delta x)$$
 $A\Delta x$为$y=f(x)$在点$x_0$处的微分，记作：
@@ -13,7 +13,7 @@ $$
 其中$A = f'(x)$，则微分可表达为：
 $$dy = f'(x)dx$$
 
-## 核心思想
+### 核心思想
 用简单的线性函数（直线），来逼近复杂的非线性函数（曲线）。
 
 复杂增量 $\Delta y = f(x_0+\Delta x) - f(x_0)$ 
@@ -28,7 +28,7 @@ $$\Delta y = A\Delta x + o(\Delta x)$$
 - $A\cdot\Delta x$ 是线性主部
 - $o(\Delta x)$是高阶无穷小量
 
-## 微分与导数的关系
+### 微分与导数的关系
 $$\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0} \frac{A\Delta x + o(\Delta x)}{\Delta x} = A$$
 
 由可导，可推出可微，也可反推：
@@ -37,7 +37,7 @@ $$\text{可微} \iff \text{可导}$$
 导数反映了函数变化的速度；
 微分反映了由一个微小增量$dx$所引起的具体变化量$dy$。
 
-## 几何意义
+### 几何意义
 
 $$\begin{align*}
 &\lim\limits_{\Delta x \to 0} \frac{\Delta y - dy}{\Delta x}\\[4pt]
@@ -209,111 +209,3 @@ $$\Delta z = f(x_0+\Delta x, y_0+\Delta y) - f(x_0,y_0)$$
 $$\lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{\Delta z - (A\Delta x+B\Delta y)}{\sqrt{(\Delta x)^2+(\Delta y)^2}}$$
 若极限等于$0$，则$z=f(x,y)$在点$(x_0,y_0)$处可微；否则，不可微。
 
-## 例13.7
-已知$(axy^3 - y^2\cos x)\mathrm{d}x + (1+by\sin x + 3x^2y^2)\mathrm{d}y$为某一函数$u(x,y)$的全微分，求$(a,b)$。
-### 分析
-$\because u(x,y)$可全微分，
-$$\therefore \mathrm{d}u = \frac{\partial u}{\partial x}\mathrm{d}x + \frac{\partial u}{\partial y}\mathrm{d}y.$$
-
-
-$$
-\begin{cases}
-\dfrac{\partial u}{\partial x} = axy^3 - y^2\cos x \\
-\dfrac{\partial u}{\partial y} = 1 + by\sin x + 3x^2y^2
-\end{cases}
-$$
-$\because$ 函数$axy^3 - y^2\cos x$与$1+by\sin x+3x^2y^2$是连续的
-$\therefore \dfrac{\partial^2 u}{\partial x\partial y} = \dfrac{\partial^2 u}{\partial y\partial x}$，可解出$a$与$b$。
-解：
-$\because u(x,y)$可全微分
-$$
-\therefore du = \frac{\partial u}{\partial x}dx + \frac{\partial u}{\partial y}dy
-$$
-$$
-\therefore \begin{cases}
-\dfrac{\partial u}{\partial x} = axy^3 - y^2\cos x \\
-\dfrac{\partial u}{\partial y} = 1 + by\sin x + 3x^2y^2
-\end{cases}
-$$
-$$
-\therefore \frac{\partial^2 u}{\partial x\partial y} = \frac{\partial}{\partial y}\left( \frac{\partial u}{\partial x} \right) = 3axy^2 - 2y\cos x
-$$
-$$
-\frac{\partial^2 u}{\partial y\partial x} = \frac{\partial}{\partial x}\left( \frac{\partial u}{\partial y} \right) = by\cos x + 6xy^2
-$$
-$\because \dfrac{\partial^2 u}{\partial x\partial y} = \dfrac{\partial^2 u}{\partial y\partial x}$
-$$
-\therefore \begin{cases}
-a=2 \\
-b=-2
-\end{cases}, \text{即}(a,b)=(2,-2)
-$$
-## 例13.8
-设$z_1 = |xy|$，
-$$
-z_2 =
-\begin{cases}
-\dfrac{xy}{\sqrt{x^2+y^2}}, & (x,y)\neq(0,0) \\
-0, & (x,y)=(0,0)
-\end{cases}
-$$
-则判断$z_1,z_2$在点$(0,0)$处是否可微。
-
-
-## 分析
-只要$\Delta z = dz + o(\rho)$成立，则函数在该点可微；若该式不成立，则函数在该点不可微。
-
-## 解
-计算函数在$(0,0)$处的全增量：
-$$\Delta z_1 = z_1(0+\Delta x,0+\Delta y) - z_1(0,0) = |\Delta x \Delta y|$$
-
-写出全微分的定义形式：
-$$dz_1 = z_{1x}'(0,0)\Delta x + z_{1y}'(0,0)\Delta y$$
-
-计算$(0,0)$处对$x$的偏导数：
-$$z_{1x}'(0,0) = \lim_{\Delta x \to 0} \frac{z_1(0+\Delta x,0) - z_1(0,0)}{\Delta x} = 0$$
-
-计算$(0,0)$处对$y$的偏导数：
-$$z_{1y}'(0,0) = \lim_{\Delta y \to 0} \frac{z_1(0,0+\Delta y) - z_1(0,0)}{\Delta y} = 0$$
-
-因此$(0,0)$处的全微分为：
-$$\Rightarrow dz_1 = 0$$
-
-验证可微定义的极限条件：
-$$
-\lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{\Delta z_1 - dz_1}{\sqrt{(\Delta x)^2 + (\Delta y)^2}}
-= \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{|\Delta x \Delta y|}{\sqrt{(\Delta x)^2 + (\Delta y)^2}}
-$$
-放缩所用不等式：$|ab| \leq \frac{1}{2}(a^2+b^2)$，对分子做放缩：
-$$
-\lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{|\Delta x \Delta y|}{\sqrt{(\Delta x)^2 + (\Delta y)^2}}
-\leq \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{\frac{1}{2}\left[(\Delta x)^2 + (\Delta y)^2\right]}{\sqrt{(\Delta x)^2 + (\Delta y)^2}}
-= \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{1}{2}\sqrt{(\Delta x)^2 + (\Delta y)^2}
-= 0
-$$
-
-由夹逼准则：
-$$
-0 \leq \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{|\Delta x \Delta y|}{\sqrt{(\Delta x)^2 + (\Delta y)^2}}
-\leq \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{1}{2}\sqrt{(\Delta x)^2 + (\Delta y)^2}
-$$
-不等式两端极限均为0，因此：
-$$
-\Rightarrow \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{\Delta z_1 - dz_1}{\sqrt{(\Delta x)^2 + (\Delta y)^2}} = 0
-$$
-
-则$z_1$在$(0,0)$点可微。
-
-
-## 二元函数$Z_2$在$(0,0)$点的可微性判定
-$$\Delta Z_2 = \frac{\Delta x |\Delta y|}{\sqrt{(\Delta x)^2 + (\Delta y)^2}}$$
-$$\mathrm{d}Z_2 = Z'_{2x}(0,0)\Delta x + Z'_{2y}(0,0)\Delta y$$
-$$Z'_{2x}(0,0) = \lim_{\Delta x \to 0} \frac{Z_2(0+\Delta x,0) - Z_2(0,0)}{\Delta x} = 0$$
-$$Z'_{2y}(0,0) = \lim_{\Delta y \to 0} \frac{Z_2(0,0+\Delta y) - Z_2(0,0)}{\Delta y} = 0$$
-$$\Rightarrow \mathrm{d}Z_2 = 0$$
-$$\lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{\Delta Z_2 - \mathrm{d}Z_2}{\sqrt{(\Delta x)^2 + (\Delta y)^2}}$$
-$$= \lim_{\substack{\Delta x \to 0 \\ \Delta y \to 0}} \frac{\Delta x |\Delta y|}{(\Delta x)^2 + (\Delta y)^2}$$
-在例13.1有说过，此极限不存在。
-不存在
-$$\Rightarrow \mathrm{d}Z_2 \text{不存在}$$
-即$Z_2$在$(0,0)$点不可微。
