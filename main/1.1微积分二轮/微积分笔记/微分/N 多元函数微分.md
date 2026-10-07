@@ -64,9 +64,8 @@ $B = f'_y(x,y)$
 $$\mathrm{d}z = \frac{\partial z}{\partial x}\mathrm{d}x + \frac{\partial z}{\partial y}\mathrm{d}y$$
 
 **核心思想**
-用简单的线性函数（切平面），来逼近复杂的非线性函数（曲面）。
 
-复杂全增量$\Delta z = f(x_0+\Delta x,y_0+\Delta y) - f(x_0,y_0)$可被分解为两个部分：
+全增量$\Delta z = f(x_0+\Delta x,y_0+\Delta y) - f(x_0,y_0)$可被分解为两个部分：
 - 一个关于$\Delta x$和$\Delta y$的线性部分
 - 一个当$\rho \to 0$时，比$\rho$消失更快的部分
 
