@@ -1,4 +1,4 @@
-## 多元函数的全微分
+
 ### 回顾：一元函数微分
 #### 定义
 对于一个一元函数$y=f(x)$在点$x_0$处可微，是指，函数增量$\Delta y = f(x_0+\Delta x) - f(x_0)$可以表示为：
@@ -38,9 +38,13 @@ $$\text{可微} \iff \text{可导}$$
 微分反映了由一个微小增量$dx$所引起的具体变化量$dy$。
 
 ## 几何意义
-在点$x_0$处，$x$轴方向上满足 $|\Delta y - dy| = o(\Delta x)$，为曲线增量$\Delta y$与切线增量$dy$之间的差距。
-即，$dy$与真实变化量$\Delta y$之间差了一个无穷小量。
 
+$$\begin{align*}
+&\lim\limits_{\Delta x \to 0} \frac{\Delta y - dy}{\Delta x}\\[4pt]
+&=\lim\limits_{\Delta x \to 0} \frac{\left [ A\cdot \Delta x+o(\Delta x) \right ]  - \left [ A\cdot \Delta x \right ] }{\Delta x}\\[4pt]
+&=\lim\limits_{\Delta x \to 0} \frac{o(\Delta x)}{\Delta x}\\[4pt]
+&=0\\[4pt]
+\end{align*}$$
 
 ## 二元函数的全微分
 **定义**
