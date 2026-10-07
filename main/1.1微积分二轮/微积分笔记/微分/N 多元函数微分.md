@@ -94,20 +94,20 @@ $$\Delta z = A\Delta x + B\Delta y + o(\rho)$$
     \def\px{1.2}
     \def\py{1.6}
     \fill (\px,\py) circle (1.2pt);
-    \node[above right,font=\small] at (\px,\py) {$(x,y)$};
+    \node[above right,font=\small] at (\px,\py) {$(x_0+\Delta x,y_0+\Delta y)$};
     % Radius line
     \draw[thick] (0,0) -- (\px,\py);
     % Projection dashed lines
     \draw[dashed,auxgray] (\px,0) -- (\px,\py);
     \draw[dashed,auxgray] (0,\py) -- (\px,\py);
-    \fill (\px,0) circle (1pt) node[below,font=\small] {$(x,y_0)$};
-    \fill (0,\py) circle (1pt) node[left,font=\small] {$(x_0,y)$};
+    \fill (\px,0) circle (1pt) node[below,font=\small] {$(x_0+\Delta x,y_0)$};
+    \fill (0,\py) circle (1pt) node[left,font=\small] {$(x_0,y_0+\Delta y)$};
     % Coordinate difference labels
-    \node[below,font=\small] at (0.6,0.4) {$x-x_0$};
-    \node[right,font=\small] (node1) at (1,0.7) {$y-y_0$};
+    \node[below,font=\small] at (0.6,0.4) {$\Delta x$};
+    \node[right,font=\small] (node1) at (1,0.7) {$\Delta y$};
     % Radius formula label and arrow
     \draw[->,thick] (1,2.27) to[out=214, in=132] (0.61,0.9);
-    \node[above, font=\small] at (2.8,2.2) {$\sqrt{(x-x_0)^2+(y-y_0)^2}=\delta$};
+    \node[above, font=\small] at (2.8,2.2) {$\sqrt{(\Delta x)^2+(\Delta y)^2}=\rho$};
 \end{tikzpicture}
 \end{document}
 ```
