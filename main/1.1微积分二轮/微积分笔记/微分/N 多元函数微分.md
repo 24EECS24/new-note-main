@@ -77,22 +77,6 @@ $$\Delta z = A\Delta x + B\Delta y + o(\rho)$$
 - $o(\rho)$是高阶无穷小量
 
 
-`````col
-````col-md
-flexGrow=1
-===
-
-二元函数中点$P_0(x_0,y_0)$的邻域
-为平面上的，以$P_0(x_0,y_0)$为圆心，
-以$\delta$为半径所画圆的区域。
-去心邻域为邻域内抠去点$P_0$后的区域。
-
-````
-
-````col-md
-flexGrow=1.3
-===
-
 ```tikz
 \begin{document}
 \definecolor{curveblue}{rgb}{0.2,0.3,0.8}
@@ -128,10 +112,6 @@ flexGrow=1.3
 \end{document}
 ```
 
-
-
-````
-`````
 
 
 
