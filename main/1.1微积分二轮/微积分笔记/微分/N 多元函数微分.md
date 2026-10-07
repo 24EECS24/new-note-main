@@ -77,7 +77,65 @@ $$\Delta z = A\Delta x + B\Delta y + o(\rho)$$
 - $o(\rho)$是高阶无穷小量
 
 
-二元函数增量示意图：标注点$(x_0,y_0)$、$(x_0+\Delta x,y_0)$、$(x_0,y_0+\Delta y)$、$(x_0+\Delta x,y_0+\Delta y)$，标记增量$\Delta x$、$\Delta y$，两点间距离$\rho=\sqrt{(\Delta x)^2+(\Delta y)^2}$。
+`````col
+````col-md
+flexGrow=1
+===
+
+二元函数中点$P_0(x_0,y_0)$的邻域
+为平面上的，以$P_0(x_0,y_0)$为圆心，
+以$\delta$为半径所画圆的区域。
+去心邻域为邻域内抠去点$P_0$后的区域。
+
+````
+
+````col-md
+flexGrow=1.3
+===
+
+```tikz
+\begin{document}
+\definecolor{curveblue}{rgb}{0.2,0.3,0.8}
+\definecolor{auxgray}{rgb}{0.5,0.5,0.5}
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,scale=1.1]
+    \def\radius{2}
+    % Coordinate axes
+    \draw[->] (-2.7,0) -- (2.7,0) node[right,font=\small] {$x$};
+    \draw[->] (0,-2.7) -- (0,2.7) node[above,font=\small] {$y$};
+    \node[below left,font=\small] at (0,0) {$P_0(x_0,y_0)$};
+    \fill (0,0) circle (1.2pt);
+    % Circle of neighborhood
+    \draw[line width=0.8pt,curveblue] (0,0) circle (\radius);
+    % Point on circle: (1.2,1.6), distance to origin is exactly 2
+    \def\px{1.2}
+    \def\py{1.6}
+    \fill (\px,\py) circle (1.2pt);
+    \node[above right,font=\small] at (\px,\py) {$(x,y)$};
+    % Radius line
+    \draw[thick] (0,0) -- (\px,\py);
+    % Projection dashed lines
+    \draw[dashed,auxgray] (\px,0) -- (\px,\py);
+    \draw[dashed,auxgray] (0,\py) -- (\px,\py);
+    \fill (\px,0) circle (1pt) node[below,font=\small] {$(x,y_0)$};
+    \fill (0,\py) circle (1pt) node[left,font=\small] {$(x_0,y)$};
+    % Coordinate difference labels
+    \node[below,font=\small] at (0.6,0.4) {$x-x_0$};
+    \node[right,font=\small] (node1) at (1,0.7) {$y-y_0$};
+    % Radius formula label and arrow
+    \draw[->,thick] (1,2.27) to[out=214, in=132] (0.61,0.9);
+    \node[above, font=\small] at (2.8,2.2) {$\sqrt{(x-x_0)^2+(y-y_0)^2}=\delta$};
+\end{tikzpicture}
+\end{document}
+```
+
+
+
+````
+`````
+
+
+
+标注点$(x_0,y_0)$、$(x_0+\Delta x,y_0)$、$(x_0,y_0+\Delta y)$、$(x_0+\Delta x,y_0+\Delta y)$，标记增量$\Delta x$、$\Delta y$，两点间距离$\rho=\sqrt{(\Delta x)^2+(\Delta y)^2}$。
 
 ## 全微分与偏导的关系
 ### x轴方向偏导推导
