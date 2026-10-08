@@ -1,0 +1,1276 @@
+---
+
+# O1.png
+
+## 多元函数微分法则
+### 链式求导规则
+难点是对标号的判别与理解。
+设 $z = f(u,v)$，$u = \varphi(x,y)$，$v = w(x,y)$，
+则 $z = f\left[\varphi(x,y), w(x,y)\right]$，
+且
+$$
+\frac{\partial z}{\partial x} = \frac{\partial z}{\partial u} \cdot \frac{\partial u}{\partial x} + \frac{\partial z}{\partial v} \cdot \frac{\partial v}{\partial x}
+$$
+$$
+\frac{\partial z}{\partial y} = \frac{\partial z}{\partial u} \cdot \frac{\partial u}{\partial y} + \frac{\partial z}{\partial v} \cdot \frac{\partial v}{\partial y}
+$$
+注：
+1.  设 $f(u,v)=z$，$u=\varphi(t)$，$v=w(t)$，
+    则 $z = f\left[\varphi(t), w(t)\right]$，
+    且
+    $$
+    \frac{\mathrm{d} z}{\mathrm{d} t} = \frac{\partial z}{\partial u} \cdot \frac{\mathrm{d} u}{\mathrm{d} t} + \frac{\partial z}{\partial v} \cdot \frac{\mathrm{d} v}{\mathrm{d} t}
+    $$
+2.  无论$z$对哪个变量求导，无论$z$已经求了几阶导，求导后的新函数，仍然具有与原函数完全相同的复合结构。
+---
+### 一元复合函数求导对比（compare）
+设 $y = f(u)$，$u = \varphi(x)$，
+$y$对$x$求导的复合路径：$y \to u \to x$，
+求导法则：
+$$
+\frac{\mathrm{d} y}{\mathrm{d} x} = \frac{\mathrm{d} y}{\mathrm{d} u} \cdot \frac{\mathrm{d} u}{\mathrm{d} x}
+$$
+自检结果：
+1.  本页无函数、几何类示意图，未输出TikZ代码，符合“无图不出图”要求。
+2.  所有手写文字已修正连笔、形近字，语义通顺，符合高等数学多元函数微分学的知识逻辑，无识别矛盾。
+3.  数学公式全部转换为标准LaTeX格式，偏导符号$\partial$、全导正体符号$\mathrm{d}$使用规范，括号层级、运算符号、函数符号$\varphi$均准确无误，未使用禁用命令。
+4.  阅读顺序符合版面排版逻辑：先主标题，再链式求导规则的定义、二元自变量情形的偏导公式，再两条注释（一元中间变量的全导数情形、复合结构不变性），最后是一元复合求导的类比内容，顺序正确无颠倒。
+
+---
+
+# O10.png
+
+$$dz = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy$$
+$$dy = \frac{dy}{dx}dx$$
+$$dx = \frac{dx}{dx}dx$$
+
+## 例13.12
+若函数$z=z(x,y)$由方程
+$$e^{x+2y+3z} + xyz = 1$$
+确定，求$\left.dz\right|_{(0,0)}$。
+
+### 分析
+用全微分形式不变性去解。
+
+解：
+$$
+\because \left\{
+\begin{array}{l}
+x=0 \\
+y=0 \\
+e^{x+2y+3z} + xyz -1 = 0
+\end{array}
+\right.
+$$
+$\implies z=0$
+$$\therefore \left.z=z(x,y)\right|_{(0,0)} = 0$$
+
+对式子微分，得出$dz$：
+令 $u = u(x,y,z) = x+2y+3z$
+$v = v(x,y,z) = xyz$
+$$F = F(u,v) = e^u + v -1 = 0$$
+
+$$
+\begin{align*}
+\because dF &= \frac{\partial F}{\partial u}du + \frac{\partial F}{\partial v}dv \\[4pt]
+\therefore dF &= \frac{\partial (e^u)}{\partial u}du + \frac{\partial v}{\partial v}dv \\[4pt]
+&= e^u du + dv = 0
+\end{align*}
+$$
+
+### 自检结果
+1. 本页无TikZ绘图，无节点/注释，不存在中文/unicode违规问题。
+2. 本页无TikZ绘图，正文公式未使用TikZ内核不支持的命令；方程组采用array环境实现，符合规范。
+3. 本页无TikZ绘图，无自定义`\def`宏，不存在坐标表达式相关问题。
+4. 本页无TikZ绘图，无自定义宏，不存在宏名占用内置命令问题。
+5. 本页无3D绘图内容，无相关违规问题。
+6. 本页无TikZ绘图，正文LaTeX公式使用标准写法，无三角函数/角度换算相关违规问题。
+7. 本页无TikZ代码块，Markdown公式环境均已正确闭合，无环境未闭合问题。
+8. 本页无函数图像，不存在samples/domain/标签重叠问题；笔记内容识别完整，手写连笔已修正，逻辑符合高等数学隐函数全微分求解的知识体系，无识别矛盾。
+
+---
+
+# O11.png
+
+$\because du = \frac{\partial u}{\partial x}dx + \frac{\partial u}{\partial y}dy + \frac{\partial u}{\partial z}dz$
+$dv = \frac{\partial v}{\partial x}dx + \frac{\partial v}{\partial y}dy + \frac{\partial v}{\partial z}dz$
+其中$u=x+2y+3z$，$v=xyz$，因此：
+$\therefore du = dx + 2dy + 3dz$
+$dv = yzdx + xzdy + xydz$
+对隐函数方程$e^{x+2y+3z} + xyz = 0$两边求全微分，由微分形式不变性得：
+$$e^{(x+2y+3z)}\cdot(dx + 2dy + 3dz) + yzdx + xzdy + xydz = 0$$
+代入点$x=0, y=0, z=0$：
+$$dx + 2dy + 3dz = 0$$
+整理得该点处的全微分：
+$$dz = -\frac{1}{3}dx - \frac{2}{3}dy$$
+
+## 隐函数存在定理
+### 定理1
+对于由方程$F(x,y)=0$在点$(x_0,y_0)$处所确定的隐函数$y=f(x)$，当$F_y'(x,y)\neq0$时，有
+$$\frac{dy}{dx} = -\frac{F_x'(x,y)}{F_y'(x,y)}$$
+
+#### 理解：
+由隐函数存在定理可知：
+若$F(x,y)=0$在点$(x_0,y_0)$处可以确定隐函数$y=y(x)$，则有$\frac{dy}{dx} = -\frac{F_x'}{F_y'}$。
+若在点$(x_0,y_0)$处$F_y'=0$且$F_x'\neq0$，则在该点处$\frac{dy}{dx} = \infty$。
+此时在$x=x_0$的邻域内会出现一个$x$值对应多个$y$值的情况，不符合函数定义，因此在点$(x_0,y_0)$处无法确定唯一的隐函数$y=y(x)$。
+
+图1：平面直角坐标系中递增曲线在$x=x_0$处具有竖直切线，展示该点导数为无穷大、无法确定隐函数$y=y(x)$的几何意义。
+```tikz
+\begin{document}
+\definecolor{curveblue}{rgb}{0.2,0.3,0.8}
+\begin{tikzpicture}[x=1.5cm,y=1.5cm,>=stealth,scale=1.2]
+    % Coordinate axes
+    \draw[->] (-0.2,0) -- (1.5,0) node[right,font=\small] {$x$};
+    \draw[->] (0,-0.2) -- (0,1.5) node[above,font=\small] {$y$};
+    \node[below left,font=\small] at (0,0) {$O$};
+    % Tick and label for x0
+    \fill (1,0) circle (0.8pt);
+    \node[below,font=\small] at (1,0) {$x_0$};
+    % Vertical tangent dashed line
+    \draw[dashed,gray] (1,0) -- (1,1.2);
+    % Curve with vertical tangent at x=1, slope tends to +infty as x approaches 1 from left
+    \draw[line width=0.8pt,curveblue,smooth,samples=100,domain=0:0.99]
+        plot(\x, {1 - sqrt(1 - \x)});
+\end{tikzpicture}
+\end{document}
+```
+
+### 自检结果
+1.  节点无中文、注释无unicode字符，所有标签均为英文或数学符号，符合要求。
+2.  未使用\dfrac、\leqslant、cases、align等TikZJax未加载的命令，无分段函数需求，符合要求。
+3.  未使用\def定义宏，坐标分量中的运算表达式均用花括号包裹，无裸表达式，符合要求。
+4.  无自定义宏，不存在占用内置希腊字母命令名的问题，符合要求。
+5.  本图为2D图形，无3D绘图相关的variable=\y需求，无角弧绘制，符合要求。
+6.  未使用三角函数、反三角函数，仅使用pgfmath内置合法函数sqrt，无角度换算错误，符合要求。
+7.  document、tikzpicture环境均正确闭合，代码块语言标记为tikz，符合要求。
+8.  samples设置为100，domain为0:0.99，避开了x=1处的导数奇点；标签位置合理无重叠，图形完全位于坐标轴范围内，符合要求。
+
+---
+
+# O12.png
+
+## 隐函数存在性的偏导判定
+若在点$(x_0,y_0)$处，$F_y' \neq 0$，$F_x' = 0$，
+则在点$(x_0,y_0)$处$\frac{dy}{dx}$为实数，是有斜率的，
+在点$(x_0,y_0)$处能确定一个函数$y=y(x)$。
+
+若在点$(x_0,y_0)$处，按极限来看，当$\substack{x \to x_0 \\ y \to y_0}$时
+$$F_y' \to 0,\quad F_x' \to 0$$
+则$\frac{dy}{dx}$有三种可能的结果：$\infty$、实数、$0$，
+此时在点$(x_0,y_0)$处，
+可能确定一个函数$y=y(x)$，
+也可能不能确定一个函数。
+
+例：$F(x,y)=(y-x)^2=0$
+在点$(0,0)$处，
+确定一函数$y=x$。
+
+但$F_y'=2(y-x)$
+$$\left.F_y'\right|_{(0,0)} = 0$$
+因为$F_x'=-2(y-x)$
+$$\left.F_x'\right|_{(0,0)} = 0$$
+由隐函数求导公式：
+$$\frac{dy}{dx} = -\frac{F_x'}{F_y'} = \frac{2(y-x)}{2(y-x)}$$
+$$\lim_{\substack{x \to 0 \\ y \to 0}} \frac{2(y-x)}{2(y-x)} = 1 = \left.\frac{dy}{dx}\right|_{(0,0)}$$
+则在$\left.F_y'\right|_{(0,0)}=0$时，
+在$(0,0)$点处，也可确定一函数$y=x$。
+
+例：$F(x,y)=x^3-xy=0$
+在点$(0,0)$处，
+确定一函数$y=x^2$。
+
+---
+### 自检结果
+1. 版面识别：本页为左右分栏排版，无任何函数/几何示意图，阅读顺序为先左栏从上至下，再右栏从上至下，右栏内容承接左栏第一个例子的推导，故未输出TikZ代码。
+2. 文字修正：手写形近字“石角定”全部修正为“确定”，“余斜率”修正为“斜率”，连笔字迹均已准确辨认，无错字漏字。
+3. 命令规范：所有数学公式未使用`\dfrac`、`\leqslant`、`cases`、`align`等未加载的LaTeX命令，语法合规。
+4. 公式校验：偏导符号、极限下标、分式、上下标均核对无误；隐函数求导公式应用正确，偏导计算、极限推导符合高等数学知识逻辑，两个例子的结论符合“隐函数定理中$F_y'\neq0$是充分非必要条件”的知识点，内容通顺无矛盾。
+5. 格式规范：无TikZ绘图相关内容，所有LaTeX公式环境、Markdown格式均正确闭合，知识点标题使用`##`标记，推导步骤按阅读顺序排列，符合输出要求。
+6. 本页无自定义宏、3D绘图、坐标运算等内容，不存在对应类别的违规问题。
+
+---
+
+# O13.png
+
+### 版面说明
+本页笔记阅读顺序为从左到右、从上到下：左侧为隐函数存在性反例的推导过程，右侧上方为一元隐函数求导定理（定理1）的证明，右侧下方为二元隐函数求导定理（定理2）的陈述；共包含1张示意图，为一元隐函数复合求导的链式法则关系图，用于展示$F(x,y)=0$中$y=f(x)$时的变量依赖与求导路径。
+
+但 $F_y'=-x$
+$$\left.F_y'\right|_{(0,0)}=0$$
+
+## 证明：
+$$F_x'=3x^2-y$$
+$$\left.F_x'\right|_{(0,0)}=0$$
+$$\frac{dy}{dx}=-\frac{F_x'}{F_y'}=\frac{3x^2-y}{x}$$
+
+$\because y=x^2$
+$$
+\begin{align*}
+\therefore \lim_{\substack{x\to0\\y\to0}} \frac{dy}{dx} &= \lim_{\substack{x\to0\\y\to0}} \frac{3x^2-y}{x} \quad \text{代入}y=x^2\\[6pt]
+&= \lim_{x\to0} \frac{2x^2}{x}=0
+\end{align*}
+$$
+
+则在点$(0,0)$处可确定 $y=x^2$
+
+---
+
+## 定理1的证明：
+$\because y=f(x)$
+$\therefore F(x,y)=F(x,f(x))=0$
+
+$F(x,y)=0$，两边同时对$x$求导
+$\Rightarrow$
+$$F_1'\cdot 1 + F_2'\cdot \frac{dy}{dx}=0$$
+$$\frac{dy}{dx}=-\frac{F_1'}{F_2'} \quad \text{且}F_2'\neq0$$
+
+图1：一元隐函数复合求导链式法则关系图，展示变量依赖路径：$F$以$x$（第1个自变量位置）和$y$（第2个自变量位置）为中间变量，$y$是$x$的函数，最终复合为关于$x$的一元函数，对应隐函数求导的链式法则逻辑。
+```tikz
+\begin{document}
+\definecolor{linegray}{rgb}{0.2,0.2,0.2}
+\begin{tikzpicture}[>=stealth,font=\small,scale=1.2]
+    % Nodes
+    \node[left] (F) at (0,0) {$F$};
+    \node[draw,rectangle,minimum size=0.7cm] (xnode) at (1.5,0.8) {$x$};
+    \node[draw,rectangle,minimum size=0.7cm] (ynode) at (1.5,-0.8) {$y$};
+    \node[right] (finalx) at (3,0) {$x$};
+    % Position labels
+    \node[above left,font=\small] at (xnode.north west) {$1$};
+    \node[below left,font=\small] at (ynode.south west) {$2$};
+    % Arrows
+    \draw[->,linegray] (F) -- (xnode.west);
+    \draw[->,linegray] (F) -- (ynode.west);
+    \draw[->,linegray] (xnode.east) -- (finalx.west);
+    \draw[->,linegray] (ynode.east) -- (finalx.west);
+\end{tikzpicture}
+\end{document}
+```
+
+## 定理2
+对于由方程$F(x,y,z)=0$，在点$(x_0,y_0,z_0)$处确定的隐函数$z=z(x,y)$，当$F_z'\neq0$时，有
+$$\frac{\partial z}{\partial x}=-\frac{F_x'}{F_z'},\quad \frac{\partial z}{\partial y}=-\frac{F_y'}{F_z'}$$
+
+---
+
+### 自检结果
+1.  所有节点文字为数学符号与阿拉伯数字，无中文、unicode特殊字符，无中文注释。
+2.  未使用`\dfrac`、`\leqslant`、`cases`、`align`等TikZJax内核不支持的命令，公式与绘图命令均符合内核要求。
+3.  绘图代码未使用`\def`定义宏，所有坐标为直接数值，无未加花括号的裸表达式。
+4.  无自定义宏，不存在占用`\xi`、`\pi`等LaTeX内置命令名的问题。
+5.  本图为2D关系示意图，无3D绘图内容，不存在3D绘图相关的`variable=\y`缺失问题。
+6.  未使用三角函数、反三角函数、指数函数等，不存在角度单位错误、未定义函数调用问题。
+7.  `document`、`tikzpicture`环境均正确闭合，无未配对的环境与命令，代码块语言标记为`tikz`。
+8.  无`plot`绘图命令，不存在samples、domain设置问题；节点布局合理，标签无重叠，图形在画布范围内，无渲染风险。
+
+---
+
+# O14.png
+
+## 定理2的证明
+设隐函数满足方程$F(x,y,z)=0$。
+两边同时对$x$求偏导，将$y$看作常数，$z$视为$x,y$的函数：
+$$
+\begin{align*}
+&F_1'\cdot 1 + F_3'\cdot \frac{\partial z}{\partial x} = 0\\[4pt]
+\Rightarrow\quad &\frac{\partial z}{\partial x} = -\frac{F_1'}{F_3'}, \quad \text{且 } F_3'\neq 0
+\end{align*}
+$$
+仍设$F(x,y,z)=0$，两边同时对$y$求偏导，将$x$看作常数，$z$视为$x,y$的函数：
+$$
+\begin{align*}
+&F_2'\cdot 1 + F_3'\cdot \frac{\partial z}{\partial y} = 0\\[4pt]
+\Rightarrow\quad &\frac{\partial z}{\partial y} = -\frac{F_2'}{F_3'}, \quad \text{且 } F_3'\neq 0
+\end{align*}
+$$
+注：笔记中配有复合函数求导的变量依赖箭头图，用于说明链式求导逻辑，不属于函数/几何示意图，无需重绘。
+
+## 例13.13
+设有三元方程$xy - z\ln y + e^{xz} = 1$，根据隐函数存在定理，分析在点$(0,1,1)$的一个邻域内，该方程能确定的隐函数。
+### 分析
+由隐函数存在定理可知：
+若要由方程$F(x,y,z)=0$确定隐函数$z=z(x,y)$，则偏导满足
+$$\frac{\partial z}{\partial x} = -\frac{F_x'}{F_z'}, \quad \frac{\partial z}{\partial y} = -\frac{F_y'}{F_z'}$$
+在点$(x_0,y_0,z_0)$处能确定该隐函数的条件是$F_z'(x_0,y_0,z_0)\neq 0$。
+若在点$(x_0,y_0,z_0)$处$F_z'=0$，则无法确定$z=z(x,y)$形式的隐函数。
+∴ 判断隐函数是否存在，只需验证对应因变量的偏导数是否不为0即可。
+
+自检结果：
+1. 本页无函数/几何示意图，仅含复合求导逻辑箭头图，不属于TikZ重绘范畴，未输出tikz代码。
+2. 所有数学公式已转换为标准LaTeX格式，偏导符号、下标、分式、指数均核对正确，正文公式符合Markdown LaTeX渲染规范。
+3. 手写连笔与口语化表述已修正，语义通顺，符合隐函数存在定理与隐函数求导的高等数学逻辑，无知识矛盾。
+4. 阅读顺序正确：先呈现左栏隐函数求导公式推导，再呈现右栏例题与存在条件分析，与原笔记版面顺序一致。
+
+---
+
+# O15.png
+
+本页为左右分栏排版，左栏为三元方程隐函数存在性判定的计算例题，右栏为二元隐函数存在定理的条件辨析题；页面仅包含手写公式、推导文字与逻辑标注，无函数/几何示意图，无需绘制TikZ图形。
+
+解：令 $F(x,y,z)=xy - z\ln y + e^{xz} - 1 = 0$
+
+对于方程$F(x,y,z)=0$，可讨论将哪个变量确定为其余两个变量的隐函数，即可否确定：
+$$
+\begin{align*}
+x&=x(y,z)\\
+y&=y(x,z)\\
+z&=z(x,y)
+\end{align*}
+$$
+
+计算各一阶偏导数在点$(0,1,1)$处的取值：
+$$
+\begin{align*}
+F_x' &= y + z e^{xz} \implies \left.F_x'\right|_{(0,1,1)} = 2 \neq 0\\[6pt]
+F_y' &= x - \frac{z}{y} \implies \left.F_y'\right|_{(0,1,1)} = -1 \neq 0\\[6pt]
+F_z' &= -\ln y + x e^{xz} \implies \left.F_z'\right|_{(0,1,1)} = 0
+\end{align*}
+$$
+
+因此在点$(0,1,1)$处，可以确定隐函数：
+$$
+\begin{align*}
+x&=x(y,z)\\
+y&=y(x,z)
+\end{align*}
+$$
+
+## 例13.14
+全面且真正的隐函数存在定理的描述
+
+设$F(x,y)$在点$(x_0,y_0)$处的某邻域内有连续的偏导数，且$F(x_0,y_0)=0$。
+
+问：$F_y'(x_0,y_0)\neq0$是$F(x,y)=0$在$(x_0,y_0)$处的某邻域内能确定一个连续函数$y=y(x)$、满足$y_0=y(x_0)$且具有连续导数的______条件。
+
+**分析** 根据隐函数存在定理：
+1.  正向推导成立：若$F_y'(x_0,y_0)\neq0$，则一定可以确定满足要求的隐函数$y=y(x)$，因此该条件是充分条件；
+2.  反向推导不成立：即使$F_y'(x_0,y_0)=0$，也有可能确定满足要求的隐函数$y=y(x)$。
+
+即：若$y=y(x)$可确定，$F_y'(x_0,y_0)$可以等于0，也可以不等于0。
+
+记命题$A$：$F_y'(x_0,y_0)\neq0$；命题$B$：$F(x,y)=0$在$(x_0,y_0)$的邻域内可确定满足条件的隐函数$y=y(x)$。逻辑关系为$A\implies B$但$A\nLeftarrow B$，因此该条件是**充分非必要条件**。
+
+---
+
+### 自检结果
+1.  整页无函数/几何示意图，未输出TikZ代码，符合“无图不出图”要求；
+2.  修正了手写连笔导致的形近字错误：将$F_x'$表达式中形似数字3的变量$z$修正，符合多元函数偏导数求导法则，代入点$(0,1,1)$的计算结果与手写标注一致；
+3.  所有数学公式转换为标准LaTeX格式，独立公式使用`$$`包裹，多步推导使用`align*`环境，符号、上下标、分式均核对无误；
+4.  内容符合高等数学隐函数存在定理的相关知识：三元方程隐函数存在性判定规则正确，二元隐函数存在定理条件的充分必要性辨析逻辑正确，结论无误；
+5.  阅读顺序符合左右分栏的排版逻辑，知识点标题使用`##`标记，格式符合标准Markdown要求；
+6.  因无TikZ代码块，不存在违反TikZJax渲染约束的内容。
+
+---
+
+# O16.png
+
+## 隐函数存在条件说明
+$\therefore \Rightarrow$
+$y=y(x)$确定 $\not\Rightarrow F_y'\neq0$
+$y=y(x)$确定 $\Leftarrow F_y'\neq0$
+解：$F_y'\neq0$是$y=y(x)$确定的充分不必要条件
+
+## 例13.15
+若函数$z=z(x,y)$由方程$e^{x+2y+3z}+xyz=1$确定，求$\left.\mathrm{d}z\right|_{(0,0)}$
+
+### 分析
+图1：多元隐函数变量依赖关系图，展示$F(x,y,z)$的变量依赖路径：$x,y$为最终自变量，$z$为$x,y$的函数，用于辅助理解链式法则与隐函数求导公式。
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    % Nodes
+    \node at (0,0) {$F$};
+    \node[draw,rectangle,minimum size=0.6cm] (mx) at (1.5,1) {$x$};
+    \node[draw,rectangle,minimum size=0.6cm] (my) at (1.5,0) {$y$};
+    \node[draw,rectangle,minimum size=0.6cm] (mz) at (1.5,-1) {$z$};
+    \node (ex) at (3,0.8) {$x$};
+    \node (ey) at (3,-0.8) {$y$};
+    % Arrows from F to middle variables
+    \draw[->] (0,0) -- (mx);
+    \draw[->] (0,0) -- (my);
+    \draw[->] (0,0) -- (mz);
+    % Arrows from middle variables to end variables
+    \draw[->] (mx) -- (ex);
+    \draw[->] (my) -- (ey);
+    \draw[->] (mz) -- (ex);
+    \draw[->] (mz) -- (ey);
+\end{tikzpicture}
+\end{document}
+```
+用公式法：
+$$
+\mathrm{d}z = \frac{\partial z}{\partial x}\mathrm{d}x + \frac{\partial z}{\partial y}\mathrm{d}y
+$$
+$$
+\frac{\partial z}{\partial x} = -\frac{F_x'}{F_z'}
+$$
+$$
+\frac{\partial z}{\partial y} = -\frac{F_y'}{F_z'}
+$$
+
+## 隐函数求偏导注意事项
+注意：
+- 需要先求出$F_x',F_y',F_z'$
+- $F$对$z$求导时，将$x,y$视为常数
+- $F$对$x$求导时，将$y,z$视为常数
+
+### 解答
+令$F(x,y,z)=e^{x+2y+3z}+xyz-1=0$，则：
+$$
+\begin{align*}
+\frac{\partial z}{\partial y} &= -\frac{F_y'}{F_z'} \\
+&= -\frac{2e^{x+2y+3z} + xz}{3e^{x+2y+3z} + xy}
+\end{align*}
+$$
+$$
+\begin{align*}
+\frac{\partial z}{\partial x} &= -\frac{F_x'}{F_z'} \\
+&= -\frac{e^{x+2y+3z} + yz}{3e^{x+2y+3z} + xy}
+\end{align*}
+$$
+
+---
+
+### 自检结果
+1.  TikZ节点无中文、无unicode字符，所有标签为英文/数学符号，无中文注释。
+2.  TikZ代码内未使用`\dfrac`、`cases`、`align`等禁用命令，无分段函数场景。
+3.  TikZ代码未使用`\def`定义宏，所有坐标分量为纯数字，无裸表达式。
+4.  无自定义宏，不存在占用LaTeX内置希腊字母命令名的问题。
+5.  本次为2D示意图，无3D绘图内容，不涉及沿y扫描的variable设置问题。
+6.  无三角函数、反三角函数、指数函数绘图场景，不存在函数/角度语法错误。
+7.  `document`与`tikzpicture`环境均成对闭合，代码块语言标记正确为`tikz`。
+8.  示意图无plot采样，节点位置合理无重叠，箭头关系清晰，符合手绘的变量依赖逻辑。
+9.  数学公式符合隐函数求导法则，偏导计算、符号逻辑与高等数学知识点一致，修正了手写中易被忽略的负号，语义通顺。
+
+---
+
+# O17.png
+
+由隐函数方程组
+$$
+\begin{cases}
+x=0\\
+y=0\\
+e^{x+2y+3z} + xyz -1 = 0
+\end{cases}
+$$
+代入$x=0,y=0$得$e^{3z}=1$，解得$z=0$，因此
+$$
+\left.z(x,y)\right|_{(0,0)} = 0
+$$
+将$x=0,y=0,z=0$代入偏导数$\frac{\partial z}{\partial x}$与$\frac{\partial z}{\partial y}$的表达式，计算得：
+$$
+\frac{\partial z(0,0)}{\partial x} = -\frac{1}{3},\quad \frac{\partial z(0,0)}{\partial y} = -\frac{2}{3}
+$$
+由全微分定义：
+$$
+dz = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy
+$$
+因此$(0,0)$处的全微分为：
+$$
+\left.dz\right|_{(0,0)} = -\frac{1}{3}dx - \frac{2}{3}dy
+$$
+
+## 例13.16
+设函数$z=z(x,y)$由方程
+$$F\left(x+\frac{z}{y},\ y+\frac{z}{x}\right)=0$$
+所确定，其中$F$具有连续偏导数，且$xF_1'+yF_2'\neq0$，求$x\frac{\partial z}{\partial x} + y\frac{\partial z}{\partial y}$。
+
+## 分析
+例13.15为两层复合函数：
+- 第一层：$F=F(x,y,z)$
+- 第二层：$z=z(x,y)$
+
+图1：两层复合函数变量依赖关系图，展示F对x,y,z的直接依赖，以及隐函数z对x,y的依赖。
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node at (-1.5,0) {$F$};
+    \node[draw,rectangle,minimum size=0.6cm] (mx) at (0,0.8) {$x$};
+    \node[draw,rectangle,minimum size=0.6cm] (my) at (0,0) {$y$};
+    \node[draw,rectangle,minimum size=0.6cm] (mz) at (0,-0.8) {$z$};
+    \node (rx) at (1.5,0.8) {$x$};
+    \node (ry) at (1.5,-0.8) {$y$};
+    \draw (-1.5,0) -- (mx);
+    \draw (-1.5,0) -- (my);
+    \draw (-1.5,0) -- (mz);
+    \draw (mx) -- (rx);
+    \draw (my) -- (ry);
+    \draw (mz) -- (rx);
+    \draw (mz) -- (ry);
+\end{tikzpicture}
+\end{document}
+```
+
+本题复合结构多一层，为三层复合函数：
+- 第一层：$F=F(u,v)$
+- 第二层：$u=x+\frac{z}{y},\ v=y+\frac{z}{x}$
+- 第三层：$z=z(x,y)$
+
+图2：三层复合函数变量依赖关系图，展示F对中间变量u、v的依赖，u、v对x,y,z的依赖，以及隐函数z对x,y的依赖。
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node at (-2.5,0) {$F$};
+    \node[draw,rectangle,minimum size=0.7cm] (u) at (-0.5,0.8) {$x+\frac{z}{y}$};
+    \node[draw,rectangle,minimum size=0.7cm] (v) at (-0.5,-0.8) {$y+\frac{z}{x}$};
+    \node at (-0.9,0.8) {$1$};
+    \node at (-0.9,-0.8) {$2$};
+    \node[draw,rectangle,minimum size=0.6cm] (mx) at (1,0.8) {$x$};
+    \node[draw,rectangle,minimum size=0.6cm] (my) at (1,0) {$y$};
+    \node[draw,rectangle,minimum size=0.6cm] (mz) at (1,-0.8) {$z$};
+    \node (rx) at (2.5,0.8) {$x$};
+    \node (ry) at (2.5,-0.8) {$y$};
+    \draw (-2.5,0) -- (u);
+    \draw (-2.5,0) -- (v);
+    \draw (u) -- (mx);
+    \draw (u) -- (my);
+    \draw (u) -- (mz);
+    \draw (v) -- (mx);
+    \draw (v) -- (my);
+    \draw (v) -- (mz);
+    \draw (mx) -- (rx);
+    \draw (my) -- (ry);
+    \draw (mz) -- (rx);
+    \draw (mz) -- (ry);
+\end{tikzpicture}
+\end{document}
+```
+
+---
+### 自检结果
+1. 所有tikz节点无中文、无unicode字符，标签均为英文与数学公式，符合要求。
+2. tikz代码内未使用\dfrac、\leqslant、cases、align等禁用命令，仅使用允许的\frac命令，无分段函数需求，符合要求。
+3. tikz代码内未使用\def定义宏，所有坐标分量均为纯数值，无裸表达式，符合要求。
+4. tikz代码内未自定义宏，不存在占用LaTeX内置命令名的问题，符合要求。
+5. 本次绘图为2D节点关系图，无3D绘图内容，符合要求。
+6. tikz代码内未使用三角函数、反三角函数、指数等特殊函数，不存在角度、函数调用错误，符合要求。
+7. 所有tikzpicture、document环境均成对闭合，代码块语言标记正确为tikz，符合要求。
+8. 无plot采样内容，节点位置设置合理，标签无重叠，图形完整还原数学关系，符合要求。
+9. 正文内容已校验：修正了手写笔误（全微分公式左端误写为dy、题目中z形近误写为2、例题编号漏写1、连笔导致的语句识别错误），所有公式符合多元函数隐函数求导的数学逻辑，语义通顺。
+
+---
+
+# O18.png
+
+与例13.15一样，我们令$G(x,y,z) = F\left(x+zy^{-1}, y+zx^{-1}\right)$。
+解：令
+$$G(x,y,z) = F\left(x+\frac{z}{y},\ y+\frac{z}{x}\right)$$
+图1：求$\frac{\partial z}{\partial x}$对应的复合函数依赖结构：求导时将$y$视为常数，$F$的两个中间变量（位置1、2）均依赖$x,z$，交叉连线表示复合关系。
+```tikz
+\begin{document}
+\definecolor{lineblue}{rgb}{0.2,0.3,0.8}
+\begin{tikzpicture}[>=stealth,scale=1.1,font=\small]
+    \node (F) at (-1,0) {$F$};
+    \node (u) at (0,1) {$1$};
+    \node (v) at (0,-1) {$2$};
+    \node (x) at (2,1) {$x$};
+    \node (z) at (2,-1) {$z$};
+    \draw[lineblue,thick] (F) -- (u);
+    \draw[lineblue,thick] (F) -- (v);
+    \draw[lineblue,thick] (u) -- (x);
+    \draw[lineblue,thick] (u) -- (z);
+    \draw[lineblue,thick] (v) -- (x);
+    \draw[lineblue,thick] (v) -- (z);
+\end{tikzpicture}
+\end{document}
+```
+根据隐函数求导公式$\frac{\partial z}{\partial x} = -\frac{G_x'}{G_z'}$，其中$G_x'$是将$y,z$视为常数时$G$对$x$的偏导，$G_z'$是将$x,y$视为常数时$G$对$z$的偏导：
+$$
+\begin{align*}
+G_x' &= F_1'\cdot 1 + F_2'\cdot\left(-\frac{z}{x^2}\right) \\[6pt]
+G_z' &= F_1'\cdot \frac{1}{y} + F_2'\cdot \frac{1}{x} \\[6pt]
+\frac{\partial z}{\partial x} &= -\frac{F_1' - \frac{z}{x^2}F_2'}{\frac{1}{y}F_1' + \frac{1}{x}F_2'}
+\end{align*}
+$$
+说明：对$x$位置求偏导时$y,z$视为常数，对$z$位置求偏导同理。
+图2：求$\frac{\partial z}{\partial y}$对应的复合函数依赖结构：求导时将$x$视为常数，$F$的两个中间变量（位置1、2）均依赖$y,z$，交叉连线表示复合关系。
+```tikz
+\begin{document}
+\definecolor{lineblue}{rgb}{0.2,0.3,0.8}
+\begin{tikzpicture}[>=stealth,scale=1.1,font=\small]
+    \node (F) at (-1,0) {$F$};
+    \node (u) at (0,1) {$1$};
+    \node (v) at (0,-1) {$2$};
+    \node (y) at (2,1) {$y$};
+    \node (z) at (2,-1) {$z$};
+    \draw[lineblue,thick] (F) -- (u);
+    \draw[lineblue,thick] (F) -- (v);
+    \draw[lineblue,thick] (u) -- (y);
+    \draw[lineblue,thick] (u) -- (z);
+    \draw[lineblue,thick] (v) -- (y);
+    \draw[lineblue,thick] (v) -- (z);
+\end{tikzpicture}
+\end{document}
+```
+根据隐函数求导公式$\frac{\partial z}{\partial y} = -\frac{G_y'}{G_z'}$，其中$G_y'$是将$x,z$视为常数时$G$对$y$的偏导：
+$$
+\begin{align*}
+G_y' &= F_1'\cdot\left(-\frac{z}{y^2}\right) + F_2'\cdot 1 \\[6pt]
+\frac{\partial z}{\partial y} &= -\frac{-\frac{z}{y^2}F_1' + F_2'}{\frac{1}{y}F_1' + \frac{1}{x}F_2'}
+\end{align*}
+$$
+说明：对$y$位置求偏导时$x,z$视为常数，对$z$位置求偏导同理。
+接下来计算$x\frac{\partial z}{\partial x} + y\frac{\partial z}{\partial y}$：
+$$
+\begin{align*}
+x\frac{\partial z}{\partial x} + y\frac{\partial z}{\partial y}
+&= -\frac{x F_1' - \frac{z}{x}F_2'}{\frac{1}{y}F_1' + \frac{1}{x}F_2'} - \frac{-\frac{z}{y}F_1' + y F_2'}{\frac{1}{y}F_1' + \frac{1}{x}F_2'} \\[6pt]
+&= \frac{\left(\frac{z}{y} - x\right)F_1' + \left(\frac{z}{x} - y\right)F_2'}{\frac{1}{y}F_1' + \frac{1}{x}F_2'} \quad \text{（上下同乘 }xy\text{）} \\[6pt]
+&= \frac{(xz - x^2 y)F_1' + (yz - x y^2)F_2'}{x F_1' + y F_2'} \\[6pt]
+&= \frac{x(z - xy)F_1' + y(z - xy)F_2'}{x F_1' + y F_2'} \\[6pt]
+&= \frac{(z - xy)\left(x F_1' + y F_2'\right)}{x F_1' + y F_2'} \\[6pt]
+&= z - xy
+\end{align*}
+$$
+### 自检结果
+1.  所有TikZ节点无中文、无Unicode字符，标签均为英文与数学公式，符合要求。
+2.  TikZ中未使用`\dfrac`、`cases`、`align`等未加载命令，符合要求。
+3.  TikZ中未使用`\def`定义宏，所有坐标为纯数值，无裸表达式，符合要求。
+4.  TikZ中无自定义宏，不存在占用LaTeX内置命令名的问题，符合要求。
+5.  本次绘图为2D示意图，无3D绘图内容，无相关违规问题，符合要求。
+6.  TikZ中未使用三角函数、指数等需要特殊处理的函数，符合要求。
+7.  所有TikZ环境（`document`、`tikzpicture`）均成对闭合，代码块语言标记正确，符合要求。
+8.  图形坐标范围合理，标签无重叠，无函数采样相关问题，符合要求。
+9.  数学公式经校验符合隐函数求导法则与代数运算规则，推导逻辑通顺，结果正确。
+
+---
+
+# O2.png
+
+## 二元复合函数的链式求导法则
+复合函数基础结构：$z = f(u,v)$，其中$u = \varphi(x,y)$，$v = w(x,y)$。
+### z对x的偏导数
+图1：z对x求偏导的变量依赖关系，求导路径为$z \to u \to x$、$z \to v \to x$，y为求偏导时固定的另一自变量
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node at (0,0) {$z$};
+    \node at (1,0.5) {$u$};
+    \node at (1,-0.5) {$v$};
+    \node at (2,0.5) {$x$};
+    \node at (2,-0.8) {$y$};
+    \draw[->] (0.2,0.1) -- (0.8,0.4);
+    \draw[->] (0.2,-0.1) -- (0.8,-0.4);
+    \draw[->] (1.2,0.5) -- (1.8,0.5);
+    \draw[->] (1.2,-0.4) -- (1.8,0.4);
+\end{tikzpicture}
+\end{document}
+```
+偏导计算公式：
+$$
+\frac{\partial z}{\partial x} = \frac{\partial z}{\partial u} \cdot \frac{\partial u}{\partial x} + \frac{\partial z}{\partial v} \cdot \frac{\partial v}{\partial x}
+$$
+### z对y的偏导数
+图2：z对y求偏导的变量依赖关系，求导路径为$z \to u \to y$、$z \to v \to y$，x为求偏导时固定的另一自变量
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node at (0,0) {$z$};
+    \node at (1,0.5) {$u$};
+    \node at (1,-0.5) {$v$};
+    \node at (2,-0.5) {$y$};
+    \node at (2,0.8) {$x$};
+    \draw[->] (0.2,0.1) -- (0.8,0.4);
+    \draw[->] (0.2,-0.1) -- (0.8,-0.4);
+    \draw[->] (1.2,0.4) -- (1.8,-0.4);
+    \draw[->] (1.2,-0.5) -- (1.8,-0.5);
+\end{tikzpicture}
+\end{document}
+```
+偏导计算公式：
+$$
+\frac{\partial z}{\partial y} = \frac{\partial z}{\partial u} \cdot \frac{\partial u}{\partial y} + \frac{\partial z}{\partial v} \cdot \frac{\partial v}{\partial y}
+$$
+---
+### 注(1)：全导数情形
+复合函数结构：$z = f(u,v)$，其中$u = \varphi(t)$，$v = w(t)$，即u、v均为关于t的一元函数，z为关于t的一元复合函数。
+z对t求全导：
+图3：z对t求全导的变量依赖关系，求导路径为$z \to u \to t$、$z \to v \to t$
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node at (0,0) {$z$};
+    \node at (1,0.5) {$u$};
+    \node at (1,-0.5) {$v$};
+    \node at (2,0) {$t$};
+    \draw[->] (0.2,0.1) -- (0.8,0.4);
+    \draw[->] (0.2,-0.1) -- (0.8,-0.4);
+    \draw[->] (1.2,0.4) -- (1.8,0.1);
+    \draw[->] (1.2,-0.4) -- (1.8,-0.1);
+\end{tikzpicture}
+\end{document}
+```
+全导数计算公式：
+$$
+\frac{dz}{dt} = \frac{\partial z}{\partial u} \cdot \frac{du}{dt} + \frac{\partial z}{\partial v} \cdot \frac{dv}{dt}
+$$
+#### 偏导与全导的区分规则
+- 当求导变量有多个，且仅对其中一个变量求导时，属于部分求导，即求偏导，例：$\frac{\partial z}{\partial u}$
+- 当求导变量只有一个时，对该变量求导属于全部求导，即求全导，例：$\frac{dz}{dt}$，$\frac{du}{dt}$
+---
+### 自检结果
+1.  所有TikZ节点无中文/unicode字符，标签均为英文与数学符号，符合要求。
+2.  未使用`\dfrac`、`\leqslant`、`cases`、`align`等未加载命令，公式符号均为内核支持的标准命令，符合要求。
+3.  TikZ代码中无`\def`定义的宏，所有坐标均为直接数值，无裸表达式，符合要求。
+4.  无自定义宏，不存在占用内置希腊字母命令名的问题，符合要求。
+5.  本次绘图均为2D节点箭头示意图，无3D绘图内容，不涉及沿y扫描的plot或3D角弧，符合要求。
+6.  本次绘图无三角函数、指数等函数调用，不存在角度/函数调用错误，符合要求。
+7.  所有`document`、`tikzpicture`环境均成对闭合，代码块语言标记正确为`tikz`，符合要求。
+8.  示意图为简单关系图，无采样/定义域设置，节点位置合理无重叠，图形在坐标范围内，符合要求。
+9.  所有链式法则公式、偏导/全导概念符合高等数学多元函数微分学的规范，语义逻辑通顺。
+
+---
+
+# O3.png
+
+## 多元复合函数求导：中间变量偏导的性质
+(2) 因为对于
+复合结构说明：函数$f$分为两个分支，分支1指向方框内的$x^2 y$，再指向$x$；分支2指向方框内的$xy^2$，再指向$x$，表示两个中间变量最终都依赖于自变量$x$。
+$$\frac{df}{dx} = \frac{\partial f}{\partial \text{田}} \cdot \frac{d\text{田}}{dx} + \frac{\partial f}{\partial \text{回}} \cdot \frac{d\text{回}}{dx}$$
+式中的$\frac{\partial f}{\partial \text{田}}$：
+田在$\frac{\partial f}{\partial \text{田}}$中是一个自变量，
+是对田这个整体求偏导，
+求导时体现不出$\text{田}=x^2 y$的具体形式，
+无论田为多么复杂的式子，
+都不影响该偏导的形式。
+若田与回的式子改变：
+$$\text{田} = x^2 y + \sin x$$
+$$\text{回} = y^2 x + \ln x \cos x$$
+则$\frac{\partial f}{\partial \text{田}}$与$\frac{\partial f}{\partial \text{回}}$的式子不变，
+改变的只是$\frac{d\text{田}}{dx}$与$\frac{d\text{回}}{dx}$。
+只有在$\frac{d\text{田}}{dx}$中才可体现出$\text{田}=x^2 y+\sin x$的具体形式，
+$\therefore$我们直接将$\frac{\partial f}{\partial (x^2 y)}$标记为$f_1'$。
+甚至可以用位置标记法：
+复合结构说明：函数$f$分为两个分支，标$x$的分支指向方框内的$x^2 y$，再指向$x$；标$y$的分支指向方框内的$y^2 x$，再指向$x$，表示两个中间变量最终都依赖于自变量$x$。
+将$\frac{\partial f}{\partial (x^2 y)}$记为$f_x'$，
+将$\frac{\partial f}{\partial (y^2 x)}$记为$f_y'$。
+自己要心里清楚：
+$f_x'$为$f$对标$x$的中间变量位置求偏导，并非对自变量$x$求偏导。
+
+### 自检结果
+1. 本页无函数/几何示意图，未输出TikZ代码，不存在节点含中文、注释含非ASCII字符的问题；所有公式标签均为标准数学符号。
+2. 所有数学公式均使用标准LaTeX命令，未使用`\dfrac`、`\leqslant`、`cases`、`align`等TikZJax禁用命令，无分段函数需要使用array环境。
+3. 无`\def`自定义宏，不存在坐标分量裸写表达式的问题。
+4. 无自定义宏，不存在占用`\xi`、`\pi`等LaTeX内置命令名的问题。
+5. 无3D绘图内容，不存在沿y走线缺失`variable=\y`、角弧平面错误的问题。
+6. 无TikZ绘制的三角函数、反三角函数、指数函数调用，不存在角度单位错误、禁用函数使用的问题。
+7. 无TikZ代码块，不存在环境不闭合的问题；所有Markdown格式、公式环境均正确闭合。
+8. 无TikZ绘图，不存在samples、domain设置问题；笔记内容符合多元复合函数求导的知识点逻辑，公式识别准确，手写文字已修正连笔、形近字，语义通顺无矛盾。
+
+---
+
+# O4.png
+
+若 $z = f(u,v)$，$u = \varphi(x,y)$，$v = w(x,y)$
+图1：复合函数变量依赖关系图，展示$z$通过中间变量$u,v$依赖自变量$x,y$的链式结构，标注$u$为第1个中间变量、$v$为第2个中间变量。
+```tikz
+\begin{document}
+\definecolor{curveblue}{rgb}{0.2,0.3,0.8}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    % Nodes for variables
+    \node (z) at (0,0) {$z$};
+    \node[draw,rectangle,minimum size=0.5cm] (u) at (1.5,0.8) {$u$};
+    \node[draw,rectangle,minimum size=0.5cm] (v) at (1.5,-0.8) {$v$};
+    \node (x) at (3,1.2) {$x$};
+    \node (y) at (3,-1.2) {$y$};
+    % Index labels for intermediate variables
+    \node at (1.0,1.1) {$1$};
+    \node at (1.0,-1.1) {$2$};
+    % Arrows for dependency
+    \draw[->,curveblue] (z) -- (u);
+    \draw[->,curveblue] (z) -- (v);
+    \draw[->,curveblue] (u) -- (x);
+    \draw[->,curveblue] (u) -- (y);
+    \draw[->,curveblue] (v) -- (x);
+    \draw[->,curveblue] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+我们一般称：
+- $u$为1类（第1个中间变量）
+- $v$为2类（第2个中间变量）
+
+偏导数记号约定：
+$$
+\begin{align*}
+z_u' &= f_u'(u,v) = f_1'(u,v) = f_1' = z_1' \\
+z_v' &= f_v'(u,v) = f_2'(u,v) = f_2' = z_2'
+\end{align*}
+$$
+
+一阶偏导链式法则：
+$$
+\begin{align*}
+z_x' &= z_u' \cdot u_x' + z_v' \cdot v_x' \\
+&= f_1' \cdot u_x' + f_2' \cdot v_x' \\[6pt]
+z_y' &= z_u' \cdot u_y' + z_v' \cdot v_y' \\
+&= f_1' \cdot u_y' + f_2' \cdot v_y'
+\end{align*}
+$$
+
+二阶偏导记号：
+$$
+z_{uu}'' = f_{11}'',\quad z_{uv}'' = f_{12}''
+$$
+
+---
+
+(3) 复合结构一致性
+若
+图2：原函数$z$的变量依赖关系图，展示$z$到$x,y$的链式复合结构。
+```tikz
+\begin{document}
+\definecolor{curveblue}{rgb}{0.2,0.3,0.8}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node (z) at (0,0) {$z$};
+    \node (u) at (1.5,0.8) {$u$};
+    \node (v) at (1.5,-0.8) {$v$};
+    \node (x) at (3,1.2) {$x$};
+    \node (y) at (3,-1.2) {$y$};
+    \draw[->,curveblue] (z) -- (u);
+    \draw[->,curveblue] (z) -- (v);
+    \draw[->,curveblue] (u) -- (x);
+    \draw[->,curveblue] (u) -- (y);
+    \draw[->,curveblue] (v) -- (x);
+    \draw[->,curveblue] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+则 $z_u' = f_1'$
+图3：一阶偏导$f_1'$的变量依赖关系图，说明偏导函数与原函数保持相同的复合结构。
+```tikz
+\begin{document}
+\definecolor{curveblue}{rgb}{0.2,0.3,0.8}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node (f1) at (0,0) {$f_1'$};
+    \node (u) at (1.5,0.8) {$u$};
+    \node (v) at (1.5,-0.8) {$v$};
+    \node (x) at (3,1.2) {$x$};
+    \node (y) at (3,-1.2) {$y$};
+    \draw[->,curveblue] (f1) -- (u);
+    \draw[->,curveblue] (f1) -- (v);
+    \draw[->,curveblue] (u) -- (x);
+    \draw[->,curveblue] (u) -- (y);
+    \draw[->,curveblue] (v) -- (x);
+    \draw[->,curveblue] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+$z,\ f_1',\ f_2',\ f_3',\ z_x',\ z_x''$ 等等，都为相同的复合结构。
+
+## 例13.9
+设 $z = f(e^x \sin y, x^2+y^2)$，其中$f$具有二阶连续偏导数，$f_1'(0,0)=1$，$f_2'(0,0)=-1$，求 $\dfrac{\partial^2 z}{\partial x \partial y}$。
+
+---
+
+### 自检结果
+1. 所有tikz节点无中文、无unicode字符，标签均为英文/数学符号，代码内无中文或非ASCII注释。
+2. tikz代码内未使用\dfrac、\leqslant、cases、align等未加载命令，无分段函数或对齐环境调用。
+3. 代码内未使用\def定义宏，所有坐标分量均为纯数值，无裸表达式，符合TikZ坐标语法。
+4. 未自定义任何宏，不存在占用\xi、\pi等LaTeX内置命令名的问题。
+5. 本次绘图均为2D变量关系图，无3D绘图内容，无需处理variable=\y指定与角弧平面问题。
+6. 代码内未使用三角函数、指数、反三角函数等数学函数，不存在角度单位、函数名调用错误。
+7. 所有document、tikzpicture环境均成对闭合，代码块语言标记正确为`tikz`，无未闭合环境。
+8. 本次绘图无plot命令，无需设置samples与domain；图形坐标范围设置合理，节点标签无重叠，无内容超出绘图范围。
+
+---
+
+# O5.png
+
+## 分析
+混合偏导$\frac{\partial^2 z}{\partial x \partial y}$的求解顺序：先对$x$求偏导，再对$y$求偏导，即
+$$\frac{\partial^2 z}{\partial x \partial y} = \frac{\partial}{\partial y}\left( \frac{\partial z}{\partial x} \right)$$
+以复合函数$z=f\left(e^x \sin y, x^2+y^2\right)$为例：
+图1：复合函数$z$的变量依赖关系：$z$以$u=e^x \sin y$（第1个中间变量）、$v=x^2+y^2$（第2个中间变量）为中间变量，$u,v$均为自变量$x,y$的二元函数；对$x$求偏导时将$y$视为常数。
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,node distance=1.5cm, font=\small]
+    \node (z) at (0,0) {$z$};
+    \node[draw, rectangle] (u) at (-1.5,-1.5) {$e^x \sin y$};
+    \node[draw, rectangle] (v) at (1.5,-1.5) {$x^2+y^2$};
+    \node (x) at (-2,-3) {$x$};
+    \node (y) at (2,-3) {$y$};
+    \node at (-1.8,-0.8) {$1$};
+    \node at (1.8,-0.8) {$2$};
+    \draw[->] (z) -- (u);
+    \draw[->] (z) -- (v);
+    \draw[->] (u) -- (x);
+    \draw[->] (u) -- (y);
+    \draw[->] (v) -- (x);
+    \draw[->] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+第一步：对$x$求一阶偏导（$y$视为常数），由链式法则得：
+$$\frac{\partial z}{\partial x} = f_1' \cdot e^x \sin y + f_2' \cdot 2x$$
+第二步：对$y$求偏导（此时$x$视为常数），先拆分求导项：
+$$
+\begin{align*}
+\frac{\partial}{\partial y}\left( \frac{\partial z}{\partial x} \right) &= \frac{\partial}{\partial y}\left[ f_1' \cdot e^x \sin y + f_2' \cdot 2x \right] \\[4pt]
+&= \frac{\partial \left(f_1' \cdot e^x \sin y\right)}{\partial y} + \frac{\partial \left(f_2' \cdot 2x\right)}{\partial y}
+\end{align*}
+$$
+## 二阶偏导求解难点
+求解的核心难点在于计算$\frac{\partial (f_1')}{\partial y}$与$\frac{\partial (f_2')}{\partial y}$。
+由复合函数求导的性质：$\frac{\partial (f_1')}{\partial y} = \frac{\partial (z_u')}{\partial y}$，其中一阶偏导$f_1'$（即$z_u'$）与原函数$z$具有完全相同的复合结构；同理$f_2'$（即$z_v'$）也与$z$具有相同的复合结构，仍以$u,v$为中间变量、$x,y$为自变量。
+图2：一阶偏导$f_1'$的变量依赖关系，与$z$的复合结构一致。
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,node distance=1.5cm, font=\small]
+    \node (f1) at (0,0) {$f_1'$};
+    \node (u) at (-1.2,-1.2) {$u$};
+    \node (v) at (1.2,-1.2) {$v$};
+    \node (x) at (-1.8,-2.4) {$x$};
+    \node (y) at (1.8,-2.4) {$y$};
+    \draw[->] (f1) -- (u);
+    \draw[->] (f1) -- (v);
+    \draw[->] (u) -- (x);
+    \draw[->] (u) -- (y);
+    \draw[->] (v) -- (x);
+    \draw[->] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+图3：一阶偏导$f_2'$的变量依赖关系，与$z$的复合结构一致。
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,node distance=1.5cm, font=\small]
+    \node (f2) at (0,0) {$f_2'$};
+    \node (u) at (-1.2,-1.2) {$u$};
+    \node (v) at (1.2,-1.2) {$v$};
+    \node (x) at (-1.8,-2.4) {$x$};
+    \node (y) at (1.8,-2.4) {$y$};
+    \node at (-1.5,-0.6) {$1$};
+    \node at (1.5,-0.6) {$2$};
+    \draw[->] (f2) -- (u);
+    \draw[->] (f2) -- (v);
+    \draw[->] (u) -- (x);
+    \draw[->] (u) -- (y);
+    \draw[->] (v) -- (x);
+    \draw[->] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+二阶偏导记号约定：$z_{vu}'' = f_{21}'' = (z_v')_u'$，表示先对第2个中间变量$v$求偏导，再对第1个中间变量$u$求偏导。
+根据链式法则，$f_2'$对$y$的偏导为：
+$$\frac{\partial (f_2')}{\partial y} = f_{21}'' \cdot \frac{\partial u}{\partial y} + f_{22}'' \cdot \frac{\partial v}{\partial y}$$
+### 示例
+求$\frac{\partial (f_1')}{\partial x}$时，$f_1'$仍保持与$z$相同的复合结构：
+图4：示例中$f_1'$的变量依赖关系，与$z$的复合结构一致。
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,node distance=1.5cm, font=\small]
+    \node (f1) at (0,0) {$f_1'$};
+    \node (u) at (-1.2,-1.2) {$u$};
+    \node (v) at (1.2,-1.2) {$v$};
+    \node (x) at (-1.8,-2.4) {$x$};
+    \node (y) at (1.8,-2.4) {$y$};
+    \node at (-1.5,-0.6) {$1$};
+    \node at (1.5,-0.6) {$2$};
+    \draw[->] (f1) -- (u);
+    \draw[->] (f1) -- (v);
+    \draw[->] (u) -- (x);
+    \draw[->] (u) -- (y);
+    \draw[->] (v) -- (x);
+    \draw[->] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+---
+### 自检结果
+1.  所有tikz代码的节点无中文、无unicode字符，全部标签为英文或数学公式，符合要求。
+2.  tikz代码中未使用\dfrac、\leqslant、cases、align等未加载命令，无分段函数内容，符合要求。
+3.  tikz代码中未使用\def自定义宏，所有坐标为纯数值，无裸表达式，符合要求。
+4.  无自定义宏，不存在宏名占用内置希腊字母命令的问题，符合要求。
+5.  本次所有图形均为2D关系示意图，无3D绘图内容，符合要求。
+6.  tikz代码中未使用三角函数、反三角函数、指数等需要特殊处理的数学函数，无角度换算问题，符合要求。
+7.  所有tikz代码块中document、tikzpicture环境均成对闭合，无scope/foreach环境，代码块语言标记为```tikz，符合要求。
+8.  所有图形无plot绘图，无samples与domain设置，不存在奇点问题；节点标签位置合理无重叠，图形范围适中，符合要求。
+9.  数学内容校验：复合函数链式法则应用正确，二阶偏导的复合结构说明符合多元函数微分学知识点，公式推导与笔记内容完全一致，逻辑通顺。
+
+---
+
+# O6.png
+
+$$
+\begin{align*}
+&= f_{11}''\cdot \frac{\partial u}{\partial x} + f_{12}''\cdot \frac{\partial v}{\partial x}\\[4pt]
+&= f_{11}''\cdot e^x \sin y + f_{12}''\cdot 2x
+\end{align*}
+$$
+
+解：
+$$
+\frac{\partial z}{\partial x} = f_1'\cdot e^x \sin y + f_2'\cdot 2x
+$$
+
+$$
+\begin{align*}
+\frac{\partial^2 z}{\partial x \partial y} = \frac{\partial \left( \frac{\partial z}{\partial x} \right)}{\partial y} &= \frac{\partial \left( f_1' e^x \sin y \right)}{\partial y} + \frac{\partial \left( f_2' \cdot 2x \right)}{\partial y}\\[4pt]
+&= \frac{\partial (f_1')}{\partial y}\cdot e^x \sin y + f_1'\cdot e^x \cos y + 2x\cdot \frac{\partial (f_2')}{\partial y}\\[4pt]
+&= \left( f_{11}''\cdot e^x \cos y + f_{12}''\cdot 2y \right)e^x \sin y + f_1'\cdot e^x \cos y \\[4pt]
+&\quad + 2x\cdot \left( f_{21}''\cdot e^x \cos y + f_{22}''\cdot 2y \right)
+\end{align*}
+$$
+
+∵ 将$(0,0)$点代入偏导表达式：
+$$
+e^x \sin y = 0,\quad 2x=0,\quad e^x \cos y = 1
+$$
+$$
+f_1'(0,0)=1,\quad f_2'(0,0)=-1
+$$
+$$
+\therefore 原式 = f_1'(0,0) = 1
+$$
+
+## 例13.10
+设函数$f(x,e^x) = x + e^x$，且$\left. f_x'(x,y) \right|_{y=e^x} = 1 + 2e^x$，求$\left. f_y'(x,y) \right|_{y=e^x}$。
+
+[分析] 通常为方便标记复合关系：$f$以$x$、$e^x$为中间变量，二者均为$x$的一元函数，由链式法则计算全导数：
+$$
+\begin{align*}
+\frac{df}{dx} &= f_1'\cdot \frac{dx}{dx} + f_2'\cdot \frac{d(e^x)}{dx}\\[4pt]
+&= f_1'\cdot 1 + f_2'\cdot e^x
+\end{align*}
+$$
+
+---
+
+### 自检结果
+1.  版面识别：本页无左右分栏，阅读顺序为「左侧复合函数二阶偏导计算 → 右上角代入点求值 → 右下角例13.10题目与分析」；整页无函数曲线、曲面、几何关系类示意图，未输出TikZ代码，符合“无图不出图”要求。
+2.  公式转换：所有数学公式转换为标准LaTeX格式，独立公式用`$$`包裹，行内公式用`$`包裹；偏导符号、二阶偏导下标、指数、三角函数、括号层级均核对无误，符合高等数学复合函数求导的书写规范。
+3.  文字修正：手写连笔、形近字已修正，语义通顺，无识别错误。
+4.  知识校验：复合函数链式求导步骤正确，代入点求值逻辑通顺，例题的全导数推导符合多元函数全导数的链式法则，无知识性错误。
+5.  无TikZ相关违规内容，正文公式使用标准align环境，符合Markdown与LaTeX渲染要求。
+
+---
+
+# O7.png
+
+图1：二元复合函数$f(x,e^x)$的变量依赖关系图，展示链式求导的变量传递路径：因变量$f$的两个中间变量为$x$与$y=e^x$，二者均最终依赖于自变量$x$。
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,font=\small,scale=1.2]
+    % Nodes
+    \node (f) at (0,0) {$f$};
+    \node[draw,rectangle,inner sep=2pt] (xmid) at (1.6,0.6) {$x$};
+    \node[draw,rectangle,inner sep=2pt] (ymid) at (1.6,-0.6) {$e^x$};
+    \node (finalx) at (3.2,0) {$x$};
+    \node at (0.7,-0.5) {$y$};
+    % Arrows
+    \draw[->] (f.east) -- (xmid.west);
+    \draw[->] (f.east) -- (ymid.west);
+    \draw[->] (xmid.east) -- (finalx.west);
+    \draw[->] (ymid.east) -- (finalx.west);
+\end{tikzpicture}
+\end{document}
+```
+
+## 多元复合函数全导数（$f(x,e^x)$型）法则与记号说明
+此类题标记的方式略有不同。
+
+由链式求导法则，全导数满足：
+$$
+\begin{align*}
+\frac{df}{dx} &= f_x'\cdot \frac{dx}{dx} + f_y'\cdot \frac{d(e^x)}{dx}\\[4pt]
+&= f_x'\cdot 1 + f_y'\cdot e^x
+\end{align*}
+$$
+
+则，题目中的
+$$\left.f_x'(x,y)\right|_{y=e^x} = f_x'(x,e^x) = f_x'$$
+是指$f$对标为$x$的位置求偏导，与$f_1'$是一样的。
+
+让你求的$\left.f_y'(x,y)\right|_{y=e^x}$
+$$= f_y'(x,e^x) = f_y'$$
+与$f_2'$是一样的。
+
+## 例题解答
+解：
+$\because f(x,e^x) = x + e^x$
+$\therefore \dfrac{df}{dx} = 1 + e^x$
+
+由链式求导法则：
+$$
+\begin{align*}
+\frac{df}{dx} &= f_x'\cdot \frac{dx}{dx} + f_y'\cdot \frac{d(e^x)}{dx}\\[4pt]
+&= f_x'\cdot 1 + f_y'\cdot e^x = 1 + e^x
+\end{align*}
+$$
+
+且$f_x' = 1 + 2e^x$，代入得：
+$$1 + 2e^x + f_y'\cdot e^x = 1 + e^x$$
+
+整理得：
+$$\Rightarrow f_y' = -1$$
+
+---
+### 自检结果
+1.  节点无中文、注释无unicode：TikZ图中所有节点为数学符号，无中文与特殊unicode字符，标签均为公式符号，符合要求。
+2.  禁用命令检查：TikZ代码中未使用`\dfrac`、`cases`、`align`等TikZJax未加载的命令，无分段函数内容，符合要求。
+3.  坐标与宏检查：TikZ中未使用`\def`定义宏，所有坐标为纯数值，无裸表达式，符合要求。
+4.  宏名合规检查：未自定义宏，不存在占用`\xi`、`\pi`等内置命令名的问题，符合要求。
+5.  3D绘图检查：本图为2D变量关系示意图，无3D绘图内容，符合要求。
+6.  数学函数检查：TikZ中未使用三角函数、反三角函数、指数函数等需要特殊处理的函数，符合要求。
+7.  环境闭合检查：`document`与`tikzpicture`环境均成对闭合，代码块语言标记为```tikz，符合要求。
+8.  绘图参数检查：本图无`plot`绘图，无采样与定义域设置；节点标签位置合理，无重叠，图形布局清晰，符合要求。
+9.  内容语义校验：正文链式求导公式符合多元复合函数全导数法则，偏导记号说明符合多元函数偏导的标记规则，例题推导逻辑通顺、计算结果正确，符合高等数学知识。
+
+---
+
+# O8.png
+
+## 全微分形式不变性
+设 $z = f(u,v)$，$u = u(x,y)$，$v = v(x,y)$。
+如果 $f(u,v)$，$u(x,y)$，$v(x,y)$ 分别有连续偏导数，
+则复合函数 $z = f(u,v)$ 在 $(x,y)$ 处的全微分可表示为
+$$\mathrm{d}z = \frac{\partial z}{\partial u}\mathrm{d}u + \frac{\partial z}{\partial v}\mathrm{d}v$$
+无论 $u,v$ 是自变量还是中间变量，上式都成立。
+
+### compare
+#### 一元函数微分形式不变性的证明
+设 $y = y(u)$，$u = u(x)$，
+则 $\mathrm{d}y = \frac{\mathrm{d}y}{\mathrm{d}x}\cdot \mathrm{d}x$，$\because y \to u \to x$
+$$
+\begin{align*}
+\therefore \frac{\mathrm{d}y}{\mathrm{d}x} &= \frac{\mathrm{d}y}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x} \\[6pt]
+\therefore \mathrm{d}y &= \left( \frac{\mathrm{d}y}{\mathrm{d}u} \cdot \frac{\mathrm{d}u}{\mathrm{d}x} \right)\mathrm{d}x \\[6pt]
+&= \frac{\mathrm{d}y}{\mathrm{d}u} \cdot \mathrm{d}u \\[6pt]
+\Rightarrow \mathrm{d}y &= \frac{\mathrm{d}y}{\mathrm{d}u}\mathrm{d}u
+\end{align*}
+$$
+
+#### 二元函数微分形式不变性的证明
+设 $z = z(u,v)$，$u = u(x,y)$，$v = v(x,y)$，
+则 $\mathrm{d}z = \frac{\partial z}{\partial x}\mathrm{d}x + \frac{\partial z}{\partial y}\mathrm{d}y$。
+$\because$ 变量依赖关系如下图：
+
+图1：二元复合函数变量依赖关系图，展示$z$为因变量，$u,v$为中间变量，$x,y$为自变量的复合依赖结构
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    % Nodes for variables
+    \node at (0,0) (z) {$z$};
+    \node at (1.5,0.6) (u) {$u$};
+    \node at (1.5,-0.6) (v) {$v$};
+    \node at (3,0.8) (x) {$x$};
+    \node at (3,-0.8) (y) {$y$};
+    % Draw dependency arrows
+    \draw[->] (z) -- (u);
+    \draw[->] (z) -- (v);
+    \draw[->] (u) -- (x);
+    \draw[->] (u) -- (y);
+    \draw[->] (v) -- (x);
+    \draw[->] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+
+## 自检结果
+1.  tikz节点无中文、无unicode字符，所有标签为数学符号，注释为纯ASCII英文。
+2.  tikz内未使用\dfrac、\leqslant、cases、align等未加载命令，无违规语法。
+3.  未使用\def定义宏，所有坐标为纯数值，无裸表达式，符合坐标语法要求。
+4.  无自定义宏，不存在占用LaTeX内置希腊字母命令名的问题。
+5.  本图为2D关系示意图，无3D绘图内容，不涉及沿y扫描绘图或空间角弧问题。
+6.  本图无三角函数、指数、反三角函数等运算，不涉及角度换算或特殊函数调用问题。
+7.  document、tikzpicture环境均正确闭合，代码块语言标记为tikz。
+8.  本图无plot绘图，无需设置samples；节点位置分布合理，无标签重叠，图形清晰展示变量依赖关系。
+
+---
+
+# O9.png
+
+## 一阶全微分形式不变性
+对于$z=z(u,v)$，$u=u(x,y)$，$v=v(x,y)$，由复合函数求导法则：
+$$
+\begin{align*}
+\therefore \frac{\partial z}{\partial x} &= \frac{\partial z}{\partial u}\cdot\frac{\partial u}{\partial x} + \frac{\partial z}{\partial v}\cdot\frac{\partial v}{\partial x}\\[6pt]
+\frac{\partial z}{\partial y} &= \frac{\partial z}{\partial u}\cdot\frac{\partial u}{\partial y} + \frac{\partial z}{\partial v}\cdot\frac{\partial v}{\partial y}
+\end{align*}
+$$
+
+因此全微分为：
+$$
+\begin{align*}
+\mathrm{d}z &= \left( \frac{\partial z}{\partial u}\frac{\partial u}{\partial x} + \frac{\partial z}{\partial v}\frac{\partial v}{\partial x} \right)\mathrm{d}x + \left( \frac{\partial z}{\partial u}\frac{\partial u}{\partial y} + \frac{\partial z}{\partial v}\frac{\partial v}{\partial y} \right)\mathrm{d}y\\[6pt]
+&= \frac{\partial z}{\partial u}\left( \frac{\partial u}{\partial x}\mathrm{d}x + \frac{\partial u}{\partial y}\mathrm{d}y \right) + \frac{\partial z}{\partial v}\left( \frac{\partial v}{\partial x}\mathrm{d}x + \frac{\partial v}{\partial y}\mathrm{d}y \right)
+\end{align*}
+$$
+
+由二元函数全微分定义，当$u,v$为$x,y$的函数时：
+$$
+\begin{align*}
+\because u=u(x,y),\quad \mathrm{d}u &= \frac{\partial u}{\partial x}\mathrm{d}x + \frac{\partial u}{\partial y}\mathrm{d}y\\[6pt]
+v=v(x,y),\quad \mathrm{d}v &= \frac{\partial v}{\partial x}\mathrm{d}x + \frac{\partial v}{\partial y}\mathrm{d}y
+\end{align*}
+$$
+
+代入后可得：
+$$
+\mathrm{d}z = \frac{\partial z}{\partial u}\mathrm{d}u + \frac{\partial z}{\partial v}\mathrm{d}v
+$$
+
+### 意义
+计算一阶全微分时，可以像对待自变量一样对待中间变量，无需区分变量是自变量还是中间变量，全微分形式保持一致，极大简化复合函数微分的计算复杂度。
+
+### 应用举例：多层多元复合函数求微分
+给定复合函数$F=F(u,v)$，变量依赖关系为：
+$$
+\begin{align*}
+u&=u(x,y,z),\quad z=z(x,y)\\
+v&=v(x,y,z),\quad y=y(x)
+\end{align*}
+$$
+
+图1：多层复合函数变量链式依赖关系图，展示$F$经多层中间变量到最终自变量$x$的依赖路径，体现复合结构的复杂性
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    % Nodes arranged by dependency level (left to right: dependent to independent)
+    \node at (0,0) (F) {$F$};
+    \node at (2,1) (u) {$u$};
+    \node at (2,-1) (v) {$v$};
+    \node at (4,1.5) (x3) {$x$};
+    \node at (4,0) (y3) {$y$};
+    \node at (4,-1.5) (z3) {$z$};
+    \node at (6,1) (x2) {$x$};
+    \node at (6,-1) (y2) {$y$};
+    \node at (8,0) (x1) {$x$};
+    
+    % Draw dependency edges
+    \draw (F) -- (u);
+    \draw (F) -- (v);
+    \draw (u) -- (x3);
+    \draw (u) -- (y3);
+    \draw (u) -- (z3);
+    \draw (v) -- (x3);
+    \draw (v) -- (y3);
+    \draw (v) -- (z3);
+    \draw (z3) -- (x2);
+    \draw (z3) -- (y2);
+    \draw (y2) -- (x1);
+\end{tikzpicture}
+\end{document}
+```
+
+该复合结构为多层链式依赖，直接通过链式法则求偏导需要梳理所有依赖路径，计算繁琐；利用一阶全微分形式不变性，可无需提前梳理路径，直接逐层写出微分：
+$$
+\begin{align*}
+\mathrm{d}F &= \frac{\partial F}{\partial u}\mathrm{d}u + \frac{\partial F}{\partial v}\mathrm{d}v\\[6pt]
+\mathrm{d}u &= \frac{\partial u}{\partial x}\mathrm{d}x + \frac{\partial u}{\partial y}\mathrm{d}y + \frac{\partial u}{\partial z}\mathrm{d}z\\[6pt]
+\mathrm{d}v &= \frac{\partial v}{\partial x}\mathrm{d}x + \frac{\partial v}{\partial y}\mathrm{d}y + \frac{\partial v}{\partial z}\mathrm{d}z
+\end{align*}
+$$
+后续只需代入$\mathrm{d}z$、$\mathrm{d}y$的微分表达式，整理即可得到最终结果。
+
+### 自检结果
+1.  TikZ节点无中文、代码内无unicode字符，所有标签为英文/数学符号，符合要求。
+2.  TikZ代码内未使用`\dfrac`、`\leqslant`、`cases`、`align`等未加载命令，无违规语法，符合要求。
+3.  TikZ代码内未使用`\def`自定义宏，所有坐标为纯数值，无裸表达式，符合要求。
+4.  无自定义宏，不存在占用`\xi`、`\pi`等LaTeX内置命令名的问题，符合要求。
+5.  本图为2D关系示意图，无3D绘图内容，无相关违规项，符合要求。
+6.  代码内无三角函数、反三角函数、指数函数调用，无角度/弧度换算错误，符合要求。
+7.  `document`、`tikzpicture`环境均成对闭合，代码块语言标记为`tikz`，符合要求。
+8.  本图无`plot`采样，无跨奇点domain问题，节点标签无重叠，图形在画布范围内，符合要求。
