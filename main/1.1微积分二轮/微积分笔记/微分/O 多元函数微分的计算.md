@@ -314,9 +314,6 @@ dF &= \frac{\partial(e^u)}{\partial u}du + \frac{\partial v}{\partial v}dv \\
 \end{aligned}
 $$
 
----
-
-# O 多元函数微分的计算_第11页.png
 
 $\because du = \frac{\partial u}{\partial x}dx + \frac{\partial u}{\partial y}dy + \frac{\partial u}{\partial z}dz$
 $dv = \frac{\partial v}{\partial x}dx + \frac{\partial v}{\partial y}dy + \frac{\partial v}{\partial z}dz$
@@ -343,9 +340,6 @@ $$\frac{dy}{dx} = -\frac{F_x'}{F_y'}$$
 
 发现，出现了一个$x=x_0$值对应多个$y$值的情况，就不符合函数定义了，在点$(x_0,y_0)$处，就确定不了$y=y(x)$。
 
----
-
-# O 多元函数微分的计算_第12页.png
 
 ## 隐函数存在的特殊情形（$F_y'=0$的情况）
 若在点$(x_0,y_0)$处，$F_y'\neq0$，$F_x'=0$，
@@ -379,9 +373,6 @@ $$\lim_{\substack{x\to0 \\ y\to0}} \frac{2(y-x)}{2(y-x)}=1 = \left.\frac{dy}{dx}
 在点$(0,0)$处，
 确定一函数$y=x^2$。
 
----
-
-# O 多元函数微分的计算_第13页.png
 
 但 $F_y'=-x$
 $$\left.F_y'\right|_{(0,0)}=0$$
@@ -411,9 +402,6 @@ $$\frac{dy}{dx}=-\frac{F_1'}{F_2'} \quad \text{且} \ F_2'\neq0$$
 对于由方程$F(x,y,z)=0$，在点$(x_0,y_0,z_0)$处确定的隐函数$z=z(x,y)$，当$F_z'\neq0$时，有
 $$\frac{\partial z}{\partial x}=-\frac{F_x'}{F_z'}, \quad \frac{\partial z}{\partial y}=-\frac{F_y'}{F_z'}$$
 
----
-
-# O 多元函数微分的计算_第14页.png
 
 ## 定理2的证明
 $F(x,y,z)=0$
