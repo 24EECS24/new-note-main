@@ -88,9 +88,6 @@ $z$，$f_1'$，$f_2'$，$f_3'$，$z_x'$，$z_x''$ 等等都为相同的复合结
 ## 例13.9
 设 $z=f(e^x \sin y, x^2+y^2)$，其中$f$具有二阶连续偏导数，$f_1'(0,0)=1$，$f_2'(0,0)=-1$，求 $\dfrac{\partial^2 z}{\partial x \partial y}$。
 
----
-
-# O 多元函数微分的计算_第5页.png
 
 ## 分析
 $$\frac{\partial^2 z}{\partial x \partial y} = \frac{\partial}{\partial y}\left( \frac{\partial z}{\partial x} \right)$$
@@ -124,9 +121,6 @@ $$\frac{\partial(f_2')}{\partial y} = f_{21}'' \cdot \frac{\partial u}{\partial 
 求$\frac{\partial(f_1')}{\partial x}$
 （对应复合结构示意图：该例中$f_1'$的复合结构与$z$一致，两个中间变量均依赖自变量$x,y$）
 
----
-
-# O 多元函数微分的计算_第6页.png
 
 $$
 = f_{11}''\cdot \frac{\partial u}{\partial x} + f_{12}''\cdot \frac{\partial v}{\partial x}
