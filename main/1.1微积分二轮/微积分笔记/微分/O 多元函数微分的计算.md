@@ -172,9 +172,6 @@ $$
 \end{aligned}
 $$
 
----
-
-# O 多元函数微分的计算_第7页.png
 
 ## 复合函数偏导记号说明
 此题标记的方式略有不同：
@@ -211,9 +208,6 @@ $\therefore$
 $$1+2e^x + f_y'\cdot e^x = 1+e^x$$
 $$\Rightarrow f_y' = -1$$
 
----
-
-# O 多元函数微分的计算_第8页.png
 
 ## 全微分形式不变性
 设 $z = f(u,v)$，$u = u(x,y)$，$v = v(x,y)$。
@@ -242,9 +236,6 @@ $$\Rightarrow dy = \frac{dy}{du}du$$
 $$dz = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy.$$
 $\because$ 复合函数变量依赖关系示意图：$z$ 依赖中间变量 $u,v$，$u,v$ 均同时依赖自变量 $x,y$。
 
----
-
-# O 多元函数微分的计算_第9页.png
 
 ## 一阶全微分形式不变性推导
 对复合函数$z=f(u,v)$，其中$u=u(x,y), v=v(x,y)$，由多元复合函数偏导链式法则：
@@ -287,9 +278,6 @@ $$\mathrm{d}F = \frac{\partial F}{\partial u}\mathrm{d}u + \frac{\partial F}{\pa
 $$\mathrm{d}u = \frac{\partial u}{\partial x}\mathrm{d}x + \frac{\partial u}{\partial y}\mathrm{d}y + \frac{\partial u}{\partial z}\mathrm{d}z$$
 $$\mathrm{d}v = \frac{\partial v}{\partial x}\mathrm{d}x + \frac{\partial v}{\partial y}\mathrm{d}y + \frac{\partial v}{\partial z}\mathrm{d}z$$
 
----
-
-# O 多元函数微分的计算_第10页.png
 
 $$dz = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy$$
 $$dy = \frac{dy}{dx}dx$$
