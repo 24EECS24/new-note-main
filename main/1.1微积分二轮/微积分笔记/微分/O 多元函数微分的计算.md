@@ -19,9 +19,6 @@ $$\frac{\partial z}{\partial y} = \frac{\partial z}{\partial u} \cdot \frac{\par
 一元情形：设$y = f(u)$，$u = \varphi(x)$，$y$对$x$求导的复合路径为$y \to u \to x$，求导公式为：
 $$\frac{\mathrm{d} y}{\mathrm{d} x} = \frac{\mathrm{d} y}{\mathrm{d} u} \cdot \frac{\mathrm{d} u}{\mathrm{d} x}$$
 
----
-
-# O 多元函数微分的计算_第2页.png
 
 ## 二元
 $z = f(u,v),\ u = \varphi(x,y),\ v = w(x,y)$
@@ -36,9 +33,6 @@ $$\frac{dz}{dt} = \frac{\partial z}{\partial u} \cdot \frac{du}{dt} + \frac{\par
 当求导变量有多个，且只对其中一个求导时，是部分求导，是求偏导，例：$\frac{\partial z}{\partial u}$
 当求导变量只有一个时，对其求导时，是全部求导，是求全导，例：$\frac{dz}{dt},\ \frac{du}{dt}$
 
----
-
-# O 多元函数微分的计算_第3页.png
 
 ## (2) 复合函数偏导的记号含义
 （复合函数结构示意：函数$f$包含两个中间变量，编号1的中间变量为$x^2 y$，编号2的中间变量为$xy^2$，两个中间变量均为自变量$x$的函数）
@@ -62,9 +56,6 @@ $\therefore$可以直接将$\frac{\partial f}{\partial (x^2 y)}$标记为$f_1'$�
 将$\frac{\partial f}{\partial (x^2 y)}$记为$f_x'$，将$\frac{\partial f}{\partial (x y^2)}$记为$f_y'$。
 需要明确：$f_x'$表示$f$对标记为$x$的中间变量位置求偏导。
 
----
-
-# O 多元函数微分的计算_第4页.png
 
 若 $z=f(u,v)$，$u=\varphi(x,y)$，$v=w(x,y)$，对应复合函数变量依赖关系示意图：$z$ 是 $u,v$ 的函数，$u,v$ 均为 $x,y$ 的函数。
 我们一般表示：$u$ 为1或$x$，$v$ 为2或$y$。
