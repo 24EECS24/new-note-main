@@ -432,9 +432,6 @@ $z=z(x,y)$这个隐函数存在，
 则就不能确定$z=z(x,y)$。
 ∴ 你就看导数是否为0就行。
 
----
-
-# O 多元函数微分的计算_第15页.png
 
 解：令 $F(x,y,z)=xy - z\ln y + e^{xz} -1 = 0$
 至于 $x=x(y,z)$，$y=y(x,z)$，$z=z(x,y)$，哪个可以确定？
@@ -463,9 +460,6 @@ $\because$
 $A\Rightarrow B$，其中$A$为$F_y'\neq0$，$B$为$y=y(x)$确定；
 $A\nLeftarrow B$。
 
----
-
-# O 多元函数微分的计算_第16页.png
 
 $\therefore \Rightarrow$
 $y=y(x)$确定 $\not\Rightarrow F_y'\neq0$
@@ -505,10 +499,6 @@ $$
 \end{align*}
 $$
 
----
-
-# O 多元函数微分的计算_第17页.png
-
 $$
 \begin{cases}
 x=0\\
@@ -543,9 +533,6 @@ $$F\left(x+\frac{z}{y},\, y+\frac{z}{x}\right)=0$$
 - 第三层：$z=z(x,y)$
 （三层复合函数变量依赖关系示意图）
 
----
-
-# O 多元函数微分的计算_第18页.png
 
 ## 隐函数偏导计算例题
 与例13.15同类型。
