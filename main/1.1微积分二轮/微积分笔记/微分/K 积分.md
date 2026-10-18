@@ -226,7 +226,7 @@ $$\int_a^b f(t)\mathrm{d}t - \int_a^a f(t)\mathrm{d}t = F'(ξ)(b-a)$$
 $$\Rightarrow \int_a^b f(x)\mathrm{d}x = f(ξ)(b-a)$$
 $$ξ\in(a,b) \subset [a,b]$$
 
----
+
 
 # K 积分_第10页.png
 
