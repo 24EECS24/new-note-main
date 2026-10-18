@@ -14,5 +14,6 @@
   "obsidian-export-image",
   "obsidian-pandoc",
   "obsidian-tikzjax",
-  "obsidian-git"
+  "obsidian-git",
+  "embed-html"
 ]
