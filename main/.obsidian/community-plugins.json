@@ -15,5 +15,6 @@
   "obsidian-pandoc",
   "obsidian-tikzjax",
   "obsidian-git",
-  "embed-html"
+  "embed-html",
+  "flashcard-studio"
 ]
