@@ -29,8 +29,10 @@ Capital of Japan:::Tokyo
 ## Cloze cards
 
 Highlight text to hide it: the ==forgetting curve== shows how memory fades without review.
+<!--SR:!fsrs,2026-11-01T08:40:34.819Z,0,2.3065,2.11810397,1,1,0,1,2026-11-01T08:30:34.819Z,id=w9zya2-->
 
 Each highlight becomes its own card: Flashcard Studio keeps a ==review history== so you can ==undo== an answer.
+<!--SR:!fsrs,-,0,0,0,0,0,0,0,-!fsrs,2026-11-01T08:39:49.344Z,0,2.3065,2.11810397,1,1,0,1,2026-11-01T08:29:49.344Z,id=piptqq-->
 
 ## Formulas and code
 
