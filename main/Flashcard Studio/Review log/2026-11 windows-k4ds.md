@@ -19,3 +19,18 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1793523277095,"c":"q3oze5","r":3,"k":0,"ivl":1,"li":0,"s":1.38,"d":5.09,"ms":1193,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
 {"t":1793523278383,"c":"b65xlm","r":3,"k":0,"ivl":1,"li":0,"s":1.38,"d":5.09,"ms":1192,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
 {"t":1793523279425,"c":"rwi2k2","r":3,"k":0,"ivl":1,"li":0,"s":1.38,"d":7.8,"ms":945,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636042472,"c":"emljr5","r":4,"k":0,"ivl":10,"li":0,"s":11.69,"d":1,"ms":2504,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636043901,"c":"b65xlm","r":4,"k":1,"ivl":6,"li":1,"s":7.52,"d":3.44,"ms":1374,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636045052,"c":"q3oze5","r":4,"k":1,"ivl":7,"li":1,"s":7.52,"d":3.44,"ms":1106,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636046157,"c":"pchd0y","r":4,"k":0,"ivl":12,"li":0,"s":11.69,"d":1,"ms":1057,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636047258,"c":"rwi2k2","r":4,"k":1,"ivl":6,"li":1,"s":4.71,"d":7.05,"ms":1055,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636048234,"c":"c7mfey","r":4,"k":0,"ivl":12,"li":0,"s":11.69,"d":1,"ms":930,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636060206,"c":"pgeh80","r":1,"k":0,"n":1,"ivl":0.0007,"li":0,"s":0.21,"d":6.41,"ms":11940,"dk":"flashcards/getting-started","f":"0/中值定理复习/111.md"}
+{"t":1793636109589,"c":"emljr5","r":4,"k":3,"ivl":9.9992,"li":10,"ms":4667,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636110733,"c":"b65xlm","r":4,"k":3,"ivl":5.9992,"li":6,"ms":1098,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636111565,"c":"q3oze5","r":4,"k":3,"ivl":6.9992,"li":7,"ms":799,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636112357,"c":"pchd0y","r":4,"k":3,"ivl":11.9992,"li":12,"ms":769,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636113553,"c":"rwi2k2","r":4,"k":3,"ivl":5.9992,"li":6,"ms":1163,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636114664,"c":"w9zya2","r":4,"k":3,"ivl":0.6939,"li":2,"ms":1077,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636116099,"c":"c7mfey","r":4,"k":3,"ivl":11.9992,"li":12,"ms":1411,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
+{"t":1793636117897,"c":"piptqq","r":4,"k":3,"ivl":0.6939,"li":2,"ms":1766,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
