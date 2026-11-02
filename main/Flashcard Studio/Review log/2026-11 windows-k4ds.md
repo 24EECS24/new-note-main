@@ -35,3 +35,6 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1793636116099,"c":"c7mfey","r":4,"k":3,"ivl":11.9992,"li":12,"ms":1411,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
 {"t":1793636117897,"c":"piptqq","r":4,"k":3,"ivl":0.6939,"li":2,"ms":1766,"dk":"flashcards/getting-started","f":"0/Flashcard Studio/Flashcard Studio 入门（中文版）.md"}
 {"t":1793636377060,"c":"ln682k","r":1,"k":0,"n":1,"ivl":0.0007,"li":0,"s":0.21,"d":6.41,"ms":19982,"dk":"flashcards/getting-started","f":"0/中值定理复习/111.md"}
+{"t":1793637213565,"c":"ca042m","r":1,"k":0,"n":1,"ivl":0.0007,"li":0,"s":0.21,"d":6.41,"ms":24606,"dk":"flashcards/证明题/中值定理","f":"0/中值定理复习/1证明题错题本.md"}
+{"t":1793637223119,"c":"b7qd5p","r":1,"k":0,"n":1,"ivl":0.0007,"li":0,"s":0.21,"d":6.41,"ms":9329,"dk":"flashcards/证明题/中值定理","f":"0/中值定理复习/1证明题错题本.md"}
+{"t":1793637236048,"c":"qzgjze","r":1,"k":0,"n":1,"ivl":0.0007,"li":0,"s":0.21,"d":6.41,"ms":12736,"dk":"flashcards/证明题/中值定理","f":"0/中值定理复习/1证明题错题本.md"}
