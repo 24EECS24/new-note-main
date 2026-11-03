@@ -78,9 +78,9 @@
     "maximumInterval": 36525,
     "maxLinkFactor": 1,
     "maxNDaysNotesReviewQueue": 365,
-    "multilineCardEndMarker": "",
+    "multilineCardEndMarker": "zzzz",
     "multilineCardSeparator": "?",
-    "multilineCardStartMarker": "",
+    "multilineCardStartMarker": "xxxx",
     "multilineReversedCardSeparator": "??",
     "newCardsPerDay": 20,
     "noteFoldersToIgnore": [
