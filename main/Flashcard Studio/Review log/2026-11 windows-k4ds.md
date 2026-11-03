@@ -52,3 +52,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1793639410196,"c":"qzgjze","r":1,"k":0,"ivl":0.0007,"li":0,"s":0.08,"d":8.81,"ms":3384,"dk":"flashcards/证明题/中值定理","f":"0/中值定理复习/1证明题错题本.md"}
 {"t":1793688645977,"c":"9u7b81","r":1,"k":0,"ivl":0.0007,"li":0,"s":0.05,"d":9.59,"ms":60000,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
 {"t":1793688829653,"c":"1xxcpe","r":4,"k":0,"ivl":1,"li":0,"s":1.08,"d":8.39,"ms":60000,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
+{"t":1793689158941,"c":"9u7b81","r":4,"k":0,"ivl":1,"li":0,"s":0.1,"d":9.44,"ms":60000,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
