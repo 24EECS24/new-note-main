@@ -1,0 +1,185 @@
+# 导数
+
+## 导数的基本形式
+ - [*] **【题目】** 
+$$
+\begin{align*}  % *号表示不自动加公式编号，更简洁
+&设函数f(x)可导，且满足条件\lim_{x \to 0}\frac{f(1)-f(1-x)}{2x}=1，则求 f'(1) \\[4pt]
+解析：&\\[4pt]
+\end{align*}
+$$ 
+`````col
+````col-md
+flexGrow=1
+===
+
+$$
+\begin{align*}
+&解法一:\\[6pt]
+&根据导数的定义，\\[6pt]
+&f'(x_0) = \lim\limits_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}\\[6pt]
+&=\lim\limits_{x \to x_0}\frac{f(x)-f(x_0)}{x - x_0}\\[6pt]
+&令 x_0=1，则f'(1) = \lim\limits_{\Delta x \to 0}\frac{f(1+\Delta x)-f(1)}{\Delta x}\\[6pt]
+&即，\Delta x \to 0时，\frac{f(1+\Delta x)-f(1)}{\Delta x} \to f'(1) \\[6pt]
+&原式=\lim_{x \to 0}\frac{f(1-x)-f(1)}{-2x}=1  \\[6pt]
+&\!\! \qquad =\frac{1}{2} \lim_{x \to 0}\frac{f(1-x)-f(1)}{-x}=1 \\[6pt]
+&\!\! \qquad \therefore \ x \to 0时，\frac{f(1-x)-f(1)}{-x} \to 2\\[6pt]
+&\!\! \qquad \because \ \lim_{x \to 0}\frac{x}{-x}=常数，\\[6pt]
+&\!\! \qquad 即，x \to 0时，x与-x同阶无穷小 \\[6pt]
+&\!\! \qquad \therefore \ -x \to 0时，\frac{f(1-x)-f(1)}{-x} \to 2\\[6pt]
+& \!\! \qquad =\frac{1}{2} \lim_{-x \to 0}\frac{f(1-x)-f(1)}{-x}=1  \\[6pt]
+& \Rightarrow \ \lim_{-x \to 0}\frac{f(1-x)-f(1)}{-x}=f'(1)=2 \\[6pt]
+\end{align*}
+$$
+
+````
+
+````col-md
+flexGrow=1
+===
+
+$$
+\begin{aligned}
+&解法二:\\[6pt]
+\because f'(1) &= \lim_{h \to 0} \frac{f(1+h)-f(1)}{h} \\[4pt]
+& = \lim_{h \to 1} \frac{f(h)-f(1)}{h-1} \\[4pt]
+&= \lim_{x \to 0} \frac{f(1-x)-f(1)}{-x} \\[4pt]
+\therefore 原式 &= \lim_{x \to 0} \frac{-\left[f(1-x)-f(1)\right]}{2x} \\[4pt]
+& = \lim_{x \to 0} \frac{f(1-x)-f(1)}{-2x} \\[4pt]
+\Rightarrow f'(1) &= \lim_{x \to 0} \frac{f(1-x)-f(1)}{-x} \\[4pt]
+& = 2 \lim_{x \to 0} \frac{f(1-x)-f(1)}{-2x} \\[4pt]
+& = 2 \times 1 \\[4pt]
+& = 2 \\[4pt]
+\end{aligned}
+$$
+
+
+
+````
+`````
+ 
+ - [*] **【题目】** 
+
+设 $f'(x_0)=A$,则 $\lim\limits_{\Delta x \to 0}\dfrac{f(x_0+2\Delta x)-f(x_0-3\Delta x)}{\Delta x}=\underline{\quad\quad}$。
+
+**【解析】**
+
+【答案】$5A$
+【解】
+$$
+\begin{aligned}
+&\lim_{\Delta x \to 0} \frac{f(x_0 + 2\Delta x) - f(x_0 - 3\Delta x)}{\Delta x} \\[4pt]
+&= \lim_{\Delta x \to 0} \frac{f(x_0 + 2\Delta x) - f(x_0) + f(x_0) - f(x_0 - 3\Delta x)}{\Delta x} \\[4pt]
+&= \lim_{\Delta x \to 0} \frac{f(x_0 + 2\Delta x) - f(x_0)}{\Delta x} - \lim_{\Delta x \to 0} \frac{f(x_0 - 3\Delta x) - f(x_0)}{\Delta x} \\[4pt]
+&= 2\lim_{\Delta x \to 0} \frac{f(x_0 + 2\Delta x) - f(x_0)}{2\Delta x} + 3\lim_{\Delta x \to 0} \frac{f(x_0 - 3\Delta x) - f(x_0)}{-3\Delta x} \\[4pt]
+&= 2f'(x_0) + 3f'(x_0) \\[4pt]
+ &= 5A.
+\end{aligned}
+$$
+
+
+ - [*] **【题目】** 
+
+已知$f'(1)=2$,则$\lim\limits_{x \to 0}\frac{x}{f(1-x)-f(1+3x)}=\underline{\qquad\qquad}$。
+
+**【解析】**
+
+【答案】$-\dfrac{1}{8}$
+【解】
+
+$$
+\begin{aligned}
+\because &f'(1) = \lim_{x \to 0} \frac{f(1+x)-f(1)}{x} \\[4pt]
+\therefore &\lim_{x \to 0} \frac{f(1-x)-f(1+3x)}{x} \\[4pt]
+&= \lim_{x \to 0} \frac{f(1-x)-f(1)}{x} + \lim_{x \to 0} \frac{f(1)-f(1+3x)}{x} \\[4pt]
+&= -\lim_{x \to 0} \frac{f(1-x)-f(1)}{-x} + (-3)\cdot\lim_{x \to 0} \frac{f(1+3x)-f(1)}{3x} \\[4pt]
+&= -f'(1) -3f'(1) \\[4pt]
+&= -4f'(1) \\[4pt]
+&= -8.\\[4pt]
+\therefore &\lim_{x \to 0} \frac{x}{f(1-x)-f(1+3x)} \\[4pt]
+&= -\frac{1}{8}.
+\end{aligned}
+$$
+
+## 导数的广义化形式
+ - [*] **【题目】** 
+当 $x \to 0$ 时，$f(x)-1$ 是比 $\sin x$ 高阶的无穷小，且 $f(0)=1$，则下列选项正确的是（==C==）
+
+- A. $f'(0)=1$
+- B. $\lim\limits_{x \to 0}f(x)=0$
+- C. $f'(0)=0$
+- D. $\lim\limits_{x \to 0}\sin f(x)=0$
+
+$$
+\begin{align*}
+
+f'(0) &= \lim_{x \to x_0} \frac{f(x)-f(x_0)}{x-x_0} \\[4pt]
+&= \lim_{x \to 0} \frac{f(x)-f(0)}{x-0} \\[4pt]
+&= \lim_{x \to 0} \frac{f(x)-1}{x} \\[4pt]
+&= \lim_{x \to 0} \frac{f(x)-1}{\sin x} \\[4pt]
+&\because f(x)-1是\sin x的高阶无穷小\\[4pt]
+&\therefore f'(0) = \lim_{x \to 0} \frac{f(x)-1}{\sin x} = 0
+\end{align*}
+$$
+ - [*] **【题目】** 
+
+设 $f(0)=0$,$f'(0)=-1$,则 $\lim\limits_{x \to 0}\dfrac{f(3x)}{x}=\underline{\quad\quad}$。
+
+**【解析】**
+
+【答案】$-3$
+【解】
+`````col
+````col-md
+flexGrow=1
+===
+
+$$
+\begin{aligned}
+解法一：&\\[4pt]
+&\lim_{x \to 0} \frac{f(3x)}{x} \\[4pt]
+&= 3\lim_{x \to 0} \frac{f(3x)}{3x} \\[4pt]
+&= 3\lim_{x \to 0} \frac{f(3x) - f(0)}{3x - 0} \\[4pt]
+&= 3f'(0) \\[4pt]
+&= -3.\\[4pt]
+\end{aligned}
+$$
+
+````
+
+````col-md
+flexGrow=1
+===
+
+$$
+\begin{align*}
+解法二：&\\[4pt]
+\because f'(0) &= \lim_{x \to 0} \frac{f(x) - f(0)}{x - 0} \\[4pt]
+&= \lim_{x \to 0} \frac{f(3x) - f(0)}{3x - 0} \\[4pt]
+&= \lim_{x \to 0} \frac{f(3x)}{3x} = -1\\[4pt]
+\therefore& \lim_{x \to 0} \frac{f(3x)}{x} \\[4pt]
+&= 3\lim_{x \to 0} \frac{f(3x)}{3x} \\[4pt]
+&= -3
+\end{align*}
+$$
+
+
+
+````
+`````
+
+## 导数的几何意义
+
+
+ - [*] **【题目】** 
+
+$y=a(x-1)^2+x\cos x$ 在 $(0,a)$ 处的切线斜率为 $-4$，则常数 $a=$ $\underline{\qquad\qquad}$。
+
+**答案**：$\dfrac{5}{2}$
+
+**解析**
+
+> $y'=2a(x-1)+\cos x-x\sin x$，$k_{\text{切}}=y'|_{x=0}=-2a+1=-4$，解得 $a=\frac{5}{2}$。
+
+**考点**：导数的几何意义（切线斜率）
+
