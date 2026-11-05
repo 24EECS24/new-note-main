@@ -23,7 +23,7 @@ zzzz
 
 
 xxxx
- - [*] **题目** 
+ - [*] **题目**
 
 已知 $f'(-3)=2$，则 $\lim\limits_{x \to -3}\dfrac{f(x)-f(-3)}{\sin(3+x)}=$（　　）
 
@@ -36,11 +36,12 @@ xxxx
 
 **易忘的点**：
 
-$\displaystyle \lim_{x\to-3}\frac{f(x)-f(-3)}{\sin(x+3)}=\lim_{x\to-3}\frac{f(x)-f(-3)}{x+3}=\lim_{x\to-3}\frac{f(x)-f(-3)}{x-(-3)}=f'(-3)=2$ 
+$\displaystyle \lim_{x\to-3}\frac{f(x)-f(-3)}{\sin(x+3)}=\lim_{x\to-3}\frac{f(x)-f(-3)}{x+3}=\lim_{x\to-3}\frac{f(x)-f(-3)}{x-(-3)}=f'(-3)=2$
 
 这一题如果看不出$\displaystyle x+3=x-(-3)$的话，就容易想复杂
 
 **考点**：导数定义
+<!--SR:!fsrs,2026-11-11T07:38:00.712Z,6,8.2956,1,2,1,0,0,2026-11-05T07:38:00.712Z,id=ncovz7-->
 zzzz
 
 ## 导数的基本形式
