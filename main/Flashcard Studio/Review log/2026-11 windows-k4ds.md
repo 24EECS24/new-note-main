@@ -77,3 +77,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1793859911915,"c":"qzgjze","r":3,"k":1,"ivl":3,"li":1,"s":2.75,"d":8.38,"ms":60000,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
 {"t":1793860029430,"c":"6gp5gp","r":4,"k":0,"n":1,"ivl":8,"li":0,"s":8.3,"d":1,"ms":60000,"dk":"flashcards/证明题/微分等式与不等式","f":"0/证明题/微分等式与不等式.md"}
 {"t":1793863033069,"c":"of28uh","r":4,"k":0,"n":1,"ivl":9,"li":0,"s":8.3,"d":1,"ms":10215,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
+{"t":1793863297524,"c":"b7qd5p","r":3,"k":1,"ivl":3,"li":1,"s":2.75,"d":8.38,"ms":60000,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
