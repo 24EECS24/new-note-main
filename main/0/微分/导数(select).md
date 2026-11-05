@@ -22,6 +22,7 @@ xxxx
 zzzz
 
 
+xxxx
  - [*] **题目** 
 
 已知 $f'(-3)=2$，则 $\lim\limits_{x \to -3}\dfrac{f(x)-f(-3)}{\sin(3+x)}=$（　　）
