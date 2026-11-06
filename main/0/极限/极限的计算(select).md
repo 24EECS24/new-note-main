@@ -143,14 +143,14 @@ C是极限不存在
 
 zzzz
 
-
+xxxx
 - [*] **题目**：若 $\lim\limits_{x \to x_0}f(x)$、$\lim\limits_{x \to x_0}g(x)$ 都存在，则下列极限一定存在的是（　　）
 
 - A. $\lim\limits_{x \to x_0}[f(x)]^{g(x)}$
 - B. $\lim\limits_{x \to x_0}\frac{f(x)}{g(x)}$
 - C. $\lim\limits_{x \to x_0}f[g(x)]$
 - D. $\lim\limits_{x \to x_0}f(x)\cdot g(x)$
-
+?
 **答案**：D
 
 **详细解析**：由极限四则运算法则，两极限都存在时，其乘积的极限一定存在（等于两极限之积）。
@@ -163,14 +163,16 @@ zzzz
 
 **考点**：极限四则运算法则、复合函数极限存在条件。
 
+zzzz
 
+xxxx
 - [*] **题目**：下列极限存在的是（　　）
 
 - A. $\lim\limits_{x \to 0}\dfrac{x}{1-\sqrt{x^{2}+1}}$
 - B. $\lim\limits_{x \to \infty}\arctan(x+3)$
 - C. $\lim\limits_{x \to \infty}\dfrac{x^{4}+2x^{2}+1}{(x^{2}-2)(2x+1)}$
 - D. $\lim\limits_{x \to 0}x\cos\dfrac{5}{x^{5}}$
-
+?
 **答案**：D（严格说 B 亦存在，详见订正）
 
 **详细解析**：
@@ -187,7 +189,7 @@ zzzz
 
 **考点**：夹逼准则（无穷小×有界量）、$\arctan$ 的单侧极限。
 
-
+zzzz
 ## 抓小头
 
 
