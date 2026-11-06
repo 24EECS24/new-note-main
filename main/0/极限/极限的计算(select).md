@@ -48,8 +48,9 @@ $$
 **考点**：无穷小阶的比较。**此题易选A**
 zzzz
 
-
+xxxx
 - [*] **求极限**$\displaystyle \lim_{x \to 1} \frac{\sqrt{7x-6} - \sqrt{x}}{x-1}$ 
+
 $$
 \begin{align*}
 \text{原式}={}&\lim_{x \to 1} \frac{\left(\sqrt{7x-6}-\sqrt{x}\right)\left(\sqrt{7x-6}+\sqrt{x}\right)}{(x-1)\left(\sqrt{7x-6}+\sqrt{x}\right)}\\[4pt]
@@ -64,7 +65,7 @@ $$
 ={}&\lim_{x \to 1} \frac{6}{2}\\[4pt]
 ={}&3
 \end{align*}
-$$ 
+$$ zzzz
 
 - [*] 已知$\lim_{x \to 0} \left(a + 2x\sin\frac{1}{x}\right) = 1$，求$a$。
 
