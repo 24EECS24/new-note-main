@@ -302,7 +302,7 @@ zzzz
 
 
 
-- [*] **题目**：极限 $\lim\limits_{x \to +\infty}(1+x)^{\frac{4}{x+1}}=$（　　）(在yi'kan'cuo)
+- [*] **题目**：极限 $\lim\limits_{x \to +\infty}(1+x)^{\frac{4}{x+1}}=$（　　）(在易看错的题目那里写过了)
 
 - A. $0$
 - B. $1$
@@ -322,6 +322,9 @@ $\ln(1+x)$ 是对数阶，$x+1$ 是幂阶，故 $\frac{\ln(1+x)}{x+1}\to0$，指
 
 **考点**：$\infty^0$ 型；对数阶远慢于幂阶。
 ## 局部有界性结论
+
+
+
 >$当A=0时$ 
 >$\displaystyle \lim_{x \to x_0} f(x)=A  \iff \lim_{x \to x_0} |f(x)|=|A|$ 
 
