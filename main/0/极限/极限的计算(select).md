@@ -378,7 +378,7 @@ xxxx
 zzzz
 ## 无穷小 X 有界
 
-xx
+xxxx
 
 - [*] **题目：**
 230 极限$\lim\limits_{x \to \infty} \frac{\arctan x}{x} = (\ \ )$
@@ -386,15 +386,17 @@ A. $1$
 B. $0$
 C. $2$
 D. 不存在
-
+?
 **解析与答案：**
 【答案】B
 【解】
 $$\lim_{x \to \infty} \frac{\arctan x}{x} = \lim_{x \to \infty} \frac{1}{x} \cdot \arctan x = 0.$$
 注:$\arctan x$是有界函数:$|\arctan x| \leqslant \frac{\pi}{2}$.
+
+zzzz
 ## 洛必达
 
-
+xxxx
 - [*] **题目：**
 25. $\lim\limits_{x \to 2}\frac{x^3-3x^2+4}{x^2-4x+4} = \underline{\qquad\quad}.$
 
