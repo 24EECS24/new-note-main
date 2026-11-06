@@ -50,7 +50,7 @@ zzzz
 
 xxxx
 - [*] **求极限**$\displaystyle \lim_{x \to 1} \frac{\sqrt{7x-6} - \sqrt{x}}{x-1}$ 
-
+?
 $$
 \begin{align*}
 \text{原式}={}&\lim_{x \to 1} \frac{\left(\sqrt{7x-6}-\sqrt{x}\right)\left(\sqrt{7x-6}+\sqrt{x}\right)}{(x-1)\left(\sqrt{7x-6}+\sqrt{x}\right)}\\[4pt]
