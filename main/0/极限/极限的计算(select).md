@@ -285,9 +285,11 @@ $$
 zzzz
 ## 无穷大增速比较常用结论
 
+xxxx
+- [*] 数列极限 $\lim\limits_{n \to \infty}\dfrac{\ln n+(-1)^n}{n^2}=$ 
+?
 
-- [*] 数列极限 $\lim\limits_{n \to \infty}\dfrac{\ln n+(-1)^n}{n^2}=$ ==$0$==。
-
+$\lim\limits_{n \to \infty}\dfrac{\ln n+(-1)^n}{n^2}=0$ 
 > [!note]- 解析
 > 分子有界增长，分母为 $n^2$ 阶无穷大，极限为0。
 > 
@@ -296,7 +298,11 @@ zzzz
 >$\displaystyle \ln^\alpha x \ll x^\beta \ll a^x \ll x! \ll x^x \quad (\alpha,\beta>0,\ a>1)$
 >与积分处的*反对幂指三*有异曲同工之妙
 
-- [*] **题目**：极限 $\lim\limits_{x \to +\infty}(1+x)^{\frac{4}{x+1}}=$（　　）
+zzzz
+
+
+
+- [*] **题目**：极限 $\lim\limits_{x \to +\infty}(1+x)^{\frac{4}{x+1}}=$（　　）(在yi'kan'cuo)
 
 - A. $0$
 - B. $1$
