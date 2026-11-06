@@ -47,11 +47,18 @@ $$
 比值为非零常数且不等于 1，故是同阶无穷小但非等价。选 C。
 
 **考点**：无穷小阶的比较。**此题易选A**
+
 zzzz
 
 xxxx
 - [*] **求极限**$\displaystyle \lim_{x \to 1} \frac{\sqrt{7x-6} - \sqrt{x}}{x-1}$ 
 ?
+`````col
+````col-md
+flexGrow=10
+===
+
+
 $$
 \begin{align*}
 \text{原式}={}&\lim_{x \to 1} \frac{\left(\sqrt{7x-6}-\sqrt{x}\right)\left(\sqrt{7x-6}+\sqrt{x}\right)}{(x-1)\left(\sqrt{7x-6}+\sqrt{x}\right)}\\[4pt]
@@ -66,10 +73,27 @@ $$
 ={}&\lim_{x \to 1} \frac{6}{2}\\[4pt]
 ={}&3
 \end{align*}
-$$ zzzz
+$$
+ 
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
 
 
+
+````
+`````
+
+ zzzz
+
+xxxx
 - [*] 已知$\lim_{x \to 0} \left(a + 2x\sin\frac{1}{x}\right) = 1$，求$a$。
+?
 
 解：利用极限的四则运算法则拆分极限：
 $$
@@ -88,18 +112,20 @@ $$
 \Rightarrow a = 1
 $$
 
+zzzz
+
 
 
 ## 极限的存在的判断(很阴)
 
-
+xxxx
 - [*] **题目**：下列极限中，极限值为 0 的是（　　）
 
 - A. $\lim\limits_{x \to \infty}\frac{2x^2-x+4}{x^3-x^2-3}$
 - B. $\lim\limits_{x \to \infty}\frac{\sqrt{x^2+1}}{x+1}$
 - C. $\lim\limits_{x \to 0}\frac{1}{1-e^{\frac{1}{x}}}$
 - D. $\lim\limits_{x \to 0}\frac{\ln(1+x^3)}{x^3}$
-
+?
 **答案**：A
 
 **详细解析**：
@@ -114,6 +140,8 @@ $$
 C是极限不存在
 
 **考点**：有理函数极限、$\infty/\infty$ 型、单侧极限。
+
+zzzz
 
 
 - [*] **题目**：若 $\lim\limits_{x \to x_0}f(x)$、$\lim\limits_{x \to x_0}g(x)$ 都存在，则下列极限一定存在的是（　　）
