@@ -399,16 +399,18 @@ zzzz
 xxxx
 - [*] **题目：**
 25. $\lim\limits_{x \to 2}\frac{x^3-3x^2+4}{x^2-4x+4} = \underline{\qquad\quad}.$
-
+?
 **解析与答案：**
 【答案】$3$
 【解】
 $$\lim_{x \to 2} \frac{x^3 - 3x^2 + 4}{x^2 - 4x + 4} = \lim_{x \to 2} \frac{3x^2 - 6x}{2x - 4} = \lim_{x \to 2} \frac{6x - 6}{2} = 3.$$
-
+zzzz
 
 ## 七种未定式总览
 
+
 ### 0 比 0
+
 
 - [*] **题目**：求极限 $\displaystyle\lim_{x \to +\infty}\frac{x\ln\left(1+\frac{1}{x}\right)-x\sin\frac{1}{x}}{\sqrt{x^2-1}-x}$。
 
