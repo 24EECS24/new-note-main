@@ -248,14 +248,18 @@ zzzz
 
 
 ## 无穷小的比阶
+
+xxxx
 - [*] **题目：**
 30. 若极限$\lim\limits_{x \to 0}\frac{a+\mathrm{e}^x-2}{x-x^2}$存在,则$a=\underline{\qquad\quad}.$
-
+?
 **解析与答案：**
 【答案】$1$
 【解】由于极限$\lim_{x \to 0} \frac{a + e^x - 2}{x - x^2}$存在且$\lim_{x \to 0} (x - x^2) = 0$,知$\lim_{x \to 0} (a + e^x - 2) = 0$,
 
 因此$\lim_{x \to 0} (a + e^x - 2) = a + 1 - 2 = 0$,解得$a=1$。
+
+zzzz
 
 
 
