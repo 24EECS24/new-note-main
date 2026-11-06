@@ -507,7 +507,10 @@ $$
 
 - [*] 例1.25:求极限 $\displaystyle I = \lim_{x \to \infty} \frac{a_n x^n + a_{n-1}x^{n-1} + \dots + a_1 x + a_0}{b_m x^m + b_{m-1}x^{m-1} + \dots + b_1 x + b_0}$($a_n,b_m\neq0$为常数)
 
-
+`````col
+````col-md
+flexGrow=10
+===
 
 ==分析:==
 $$
@@ -542,6 +545,21 @@ $$
 0, & n<m
 \end{cases}
 $$
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
 
 
 **题目：**
