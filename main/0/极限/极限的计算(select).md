@@ -323,7 +323,7 @@ $\ln(1+x)$ 是对数阶，$x+1$ 是幂阶，故 $\frac{\ln(1+x)}{x+1}\to0$，指
 **考点**：$\infty^0$ 型；对数阶远慢于幂阶。
 ## 局部有界性结论
 
-
+xxxx
 
 >$当A=0时$ 
 >$\displaystyle \lim_{x \to x_0} f(x)=A  \iff \lim_{x \to x_0} |f(x)|=|A|$ 
@@ -335,6 +335,7 @@ $\ln(1+x)$ 是对数阶，$x+1$ 是幂阶，故 $\frac{\ln(1+x)}{x+1}\to0$，指
 - C. $\lim\limits_{x \to 0}\dfrac{f(x)}{x(1-\cos x)}=0$
 - D. $\lim\limits_{x \to 0}\dfrac{f(x)}{x^2}=0$
 
+?
 **答案**：A
 
 **我写的详细解析**：由 $\left|\frac{f(x)}{\sin x}\right|\to0$ 知$\frac{f(x)}{\sin x}\to0$，
@@ -350,6 +351,7 @@ $\ln(1+x)$ 是对数阶，$x+1$ 是幂阶，故 $\frac{\ln(1+x)}{x+1}\to0$，指
 
 **考点**：无穷小阶的比较、高阶无穷小的含义。
 
+zzzz
 ## 等价无穷小
 
 - [*] **题目**：当 $x\to2$ 时，与 $x-2$ 是等价无穷小的是（　　）
