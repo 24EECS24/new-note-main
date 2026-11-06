@@ -1,6 +1,7 @@
 #flashcards/极限/极限的计算
 
 ## 易看错的题目
+
 xxxx
 - [*] **题目**：极限 $\lim\limits_{x \to +\infty}(1+x)^{\frac{4}{x+1}}=$（　　）
 
@@ -66,6 +67,7 @@ $$
 ={}&3
 \end{align*}
 $$ zzzz
+
 
 - [*] 已知$\lim_{x \to 0} \left(a + 2x\sin\frac{1}{x}\right) = 1$，求$a$。
 
@@ -506,6 +508,7 @@ $$
 - [*] 例1.25:求极限 $\displaystyle I = \lim_{x \to \infty} \frac{a_n x^n + a_{n-1}x^{n-1} + \dots + a_1 x + a_0}{b_m x^m + b_{m-1}x^{m-1} + \dots + b_1 x + b_0}$($a_n,b_m\neq0$为常数)
 
 
+
 ==分析:==
 $$
 \begin{align*}
@@ -529,6 +532,7 @@ $$
 \end{align*}
 $$
 **结论**
+
 $$
 \lim_{x \to \infty} \frac{a_n x^n + \dots + a_0}{b_m x^m + \dots + b_0}
 =
@@ -538,6 +542,7 @@ $$
 0, & n<m
 \end{cases}
 $$
+
 
 **题目：**
 - [*]  $\displaystyle \lim\limits_{x \to +\infty}\frac{\pi^x}{\pi^x - e^x}=\underline{\qquad\qquad}$。
