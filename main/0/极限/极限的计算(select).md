@@ -479,7 +479,7 @@ Column B
 `````
 
 zzzz
-
+另一解法，
 $$
 \begin{align*}
 \text{原式} &= \lim_{x \to +\infty} \frac{x\left[\ln\left(1+\frac{1}{x}\right) - \sin\frac{1}{x}\right]}{\sqrt{x^2-1} - x}\\[4pt]
