@@ -437,7 +437,35 @@ xxxx
 flexGrow=10
 ===
 
-Column A
+**答案**：$1$
+
+**详细解析**：作倒代换 $t=\dfrac1x$，则 $x\to+\infty$ 时 $t\to0^+$：
+
+$$
+\text{原式}=\lim_{t\to0^+}\frac{\frac1t\ln(1+t)-\frac1t\sin t}{\sqrt{\frac1{t^2}-1}-\frac1t}
+=\lim_{t\to0^+}\frac{\ln(1+t)-\sin t}{\sqrt{1-t^2}-1}.
+$$
+
+分母用等价无穷小 $\sqrt{1-t^2}-1\sim-\dfrac12t^2$，得
+
+$$
+=\lim_{t\to0^+}\frac{\ln(1+t)-\sin t}{-\frac12t^2}.
+$$
+
+这是 $\dfrac00$ 型，用洛必达法则：
+
+$$
+=\lim_{t\to0^+}\frac{\frac{1}{1+t}-\cos t}{-t}.
+$$
+
+仍为 $\dfrac00$ 型，再用一次洛必达：
+
+$$
+=\lim_{t\to0^+}\frac{-\frac{1}{(1+t)^2}+\sin t}{-1}
+=\frac{-1+0}{-1}=1.
+$$
+
+**考点**：倒代换 + 等价无穷小 + 洛必达法则（两次）。
 
 ````
 
