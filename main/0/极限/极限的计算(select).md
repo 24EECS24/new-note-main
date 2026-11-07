@@ -430,6 +430,29 @@ zzzz
 xxxx
 - [*] **题目**：求极限 $\displaystyle\lim_{x \to +\infty}\frac{x\ln\left(1+\frac{1}{x}\right)-x\sin\frac{1}{x}}{\sqrt{x^2-1}-x}$。
 ?
+
+
+`````col
+````col-md
+flexGrow=10
+===
+
+Column A
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+
 **答案**：$1$
 
 **详细解析**：作倒代换 $t=\dfrac1x$，则 $x\to+\infty$ 时 $t\to0^+$：
