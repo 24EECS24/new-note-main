@@ -465,6 +465,20 @@ $$
 
 **考点**：倒代换 + 等价无穷小 + 洛必达法则（两次）。
 
+**另一解法**
+$$
+\begin{align*}
+\text{原式} &= \lim_{x \to +\infty} \frac{x\left[\ln\left(1+\frac{1}{x}\right) - \sin\frac{1}{x}\right]}{\sqrt{x^2-1} - x}\\[4pt]
+&= \lim_{x \to +\infty} \frac{\ln\left(1+\frac{1}{x}\right) - \sin\frac{1}{x}}{\sqrt{1-\frac{1}{x^2}} - 1}\\[4pt]
+&= \lim_{x \to +\infty} \frac{\frac{1}{x} - \frac{1}{2x^2} + o\left(\frac{1}{x^2}\right) - \frac{1}{x} + \frac{1}{6x^3} + o\left(\frac{1}{x^3}\right)}{-\frac{1}{2x^2}}\\[4pt]
+&= \lim_{x \to +\infty} \frac{-\frac{1}{2x^2} + o\left(\frac{1}{x^2}\right) + \frac{1}{6x^3} + o\left(\frac{1}{x^3}\right)}{-\frac{1}{2x^2}}\\[4pt]
+&\quad \frac{1}{x^2}\text{更高阶的无穷小直接忽略}\\[4pt]
+&= \lim_{x \to +\infty} \frac{-\frac{1}{2x^2}}{-\frac{1}{2x^2}}\\[4pt]
+&= 1
+\end{align*}
+$$
+
+
 ````
 
 ````col-md
