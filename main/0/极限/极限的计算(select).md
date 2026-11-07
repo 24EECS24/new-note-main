@@ -415,27 +415,6 @@ xxxx
 - [*] **题目：**
 25. $\lim\limits_{x \to 2}\frac{x^3-3x^2+4}{x^2-4x+4} = \underline{\qquad\quad}.$
 ?
-
-`````col
-````col-md
-flexGrow=10
-===
-
-Column A
-
-````
-
-````col-md
-flexGrow=1
-===
-
-Column B
-
-
-
-````
-`````
-
 **解析与答案：**
 【答案】$3$
 【解】
