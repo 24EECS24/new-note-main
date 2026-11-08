@@ -813,6 +813,11 @@ $$
 
 xxxx
 - [*] 例1.27:已知$\displaystyle \lim_{x \to 0} \frac{\tan2x + x f(x)}{\sin x^3} = 0$,求$\displaystyle \lim_{x \to 0} \frac{2+f(x)}{x^2}$ 
+?
+`````col
+````col-md
+flexGrow=10
+===
 
 ==分析:==
 $$
@@ -835,6 +840,21 @@ $$
 \end{align*}
 $$
 
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+zzzz
 
 ### 0 X 无穷
 
