@@ -2195,23 +2195,8 @@ xxxx
 ?
 `````col
 ````col-md
-flexGrow=1
+flexGrow=10
 ===
-
-Column A
-
-````
-
-````col-md
-flexGrow=1
-===
-
-Column B
-
-
-
-````
-`````
 
 **答案**：$1$
 
@@ -2252,6 +2237,19 @@ $$
 \end{align*}
 $$
 
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
 
 zzzz
 
