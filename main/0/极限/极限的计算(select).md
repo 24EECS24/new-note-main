@@ -1272,7 +1272,24 @@ xxxx
 flexGrow=10
 ===
 
-Column A
+==分析:==
+$$
+\begin{align*}
+&x\to+\infty时,底数x+\sqrt{1+x^2}\to+\infty,指数\frac{1}{x}\to0,\\[4pt]
+&为\infty^0型未定式,通过指数对数恒等式转化为指数上的\frac{\infty}{\infty}型计算\\[8pt]
+\end{align*}
+$$
+
+==解:==
+$$
+\begin{align*}
+&原式 = \lim_{x \to +\infty} e^{\frac{1}{x}\ln\left(x+\sqrt{1+x^2}\right)} = e^{\lim\limits_{x \to +\infty} \frac{\ln\left(x+\sqrt{1+x^2}\right)}{x}}\\[8pt]
+&指数部分应用洛必达法则,结合\left[\ln\left(x+\sqrt{1+x^2}\right)\right]' = \frac{1}{\sqrt{1+x^2}}:\\[4pt]
+&\lim_{x \to +\infty} \frac{\ln\left(x+\sqrt{1+x^2}\right)}{x} = \lim_{x \to +\infty} \frac{\frac{1}{\sqrt{1+x^2}}}{1} = 0\\[8pt]
+&故原式 = e^0 = 1\\[8pt]
+\end{align*}
+$$
+
 
 ````
 
@@ -1288,7 +1305,7 @@ Column B
 `````
 
 
-
+zzzz
 
 ### 1的无穷次
 
