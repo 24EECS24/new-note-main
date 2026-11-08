@@ -1239,6 +1239,26 @@ $$
 \end{align*}
 $$
 **另一解法** 
+$$
+\begin{align*}
+&\lim_{x \to 1} \left( \frac{x}{x-1} - \frac{1}{\ln x} \right)\\[4pt]
+&\text{通分合并为分式：}\\[4pt]
+&= \lim_{x \to 1} \frac{x\ln x - (x-1)}{(x-1)\ln x}\\[4pt]
+&\text{换元：设} \ t = x-1, \ \text{则} \ x = t+1, \ x\to1 \ \text{时} \ t\to0, \ \text{代入得：}\\[4pt]
+&= \lim_{t \to 0} \frac{(t+1)\ln(t+1) - t}{t\ln(t+1)}\\[4pt]
+&\text{分母为} \ t\cdot\ln(1+t), \ t\to0 \ \text{时} \ \ln(1+t)\sim t, \ \text{因此分母是} \ t^2 \ \text{阶无穷小；}\\[4pt]
+&\text{分子需展开到} \ t^2 \ \text{阶，由泰勒公式：} \ln(1+t) = t - \frac{t^2}{2} + o(t^2)\\[4pt]
+&\text{分母做等价无穷小替换：} \ t\ln(1+t) \sim t^2 \quad (t\to0)\\[4pt]
+&\text{展开分子：}\\[4pt]
+&(t+1)\ln(1+t) = (t+1)\left(t - \frac{t^2}{2} + o(t^2)\right)\\[4pt]
+&= t^2 - \frac{t^3}{2} + t - \frac{t^2}{2} + o(t^2)\\[4pt]
+&= t + \frac{t^2}{2} + o(t^2)\\[4pt]
+&\text{分子化简：}\\[4pt]
+&(t+1)\ln(1+t) - t = \frac{t^2}{2} + o(t^2)\\[4pt]
+&\text{代入极限计算：}\\[4pt]
+&原式= \lim_{t \to 0} \frac{\frac{t^2}{2} + o(t^2)}{t^2} = \frac{1}{2}
+\end{align*}
+$$
 
 
 
