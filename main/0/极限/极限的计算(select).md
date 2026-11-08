@@ -923,9 +923,14 @@ Column B
 
 zzzz
 
+xxxx
 
-
-- [*] 例1.28:求极限 $\displaystyle \lim_{x \to 1^-} \ln x \ln(1-x)$
+- [*] 例1.28:求极限 $\displaystyle \lim_{x \to 1^-} \ln x \ln(1-x)$ 
+?
+`````col
+````col-md
+flexGrow=10
+===
 
 ==分析:==
 $$
@@ -946,6 +951,21 @@ $$
 \end{align*}
 $$
 
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+zzzz
 
 - [*] 例1.9:求极限$\displaystyle I = \lim_{x \to 0} x\left[\frac{10}{x}\right]$,其中$[\cdot]$为向下取整函数
 
