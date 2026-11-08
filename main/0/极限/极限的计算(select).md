@@ -2190,9 +2190,9 @@ $$
 zzzz
 ## 夹逼准则
 
-
+xxxx
 - [*] **题目**：极限 $\lim\limits_{n\to\infty}\left(\dfrac{1}{\sqrt{1+n^2}}+\dfrac{1}{\sqrt{2+n^2}}+\cdots+\dfrac{1}{\sqrt{n+n^2}}\right)=$ $\underline{\qquad\qquad}$。
-
+?
 **答案**：$1$
 
 **详细解析**：共 $n$ 项，第 $k$ 项为 $\frac{1}{\sqrt{k+n^2}}$（$k=1,\dots,n$）。由夹逼：
@@ -2231,6 +2231,9 @@ $$
 &\therefore \lim_{n \to \infty} \left( \frac{1}{\sqrt{1+n^2}} + \frac{1}{\sqrt{2+n^2}} + \dots + \frac{1}{\sqrt{n+n^2}} \right) = 1
 \end{align*}
 $$
+
+
+
 
 
 - [*] **题目**
