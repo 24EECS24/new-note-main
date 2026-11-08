@@ -1493,28 +1493,28 @@ Column B
 
 zzzz
 
-
+xxxx
 - [*] **题目**：求极限$\displaystyle \lim_{x \to 0} \frac{1 - (\cos 2x)^{2023x}}{2x^3}$ 
+?
+`````col
+````col-md
+flexGrow=10
+===
+
+Column A
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
 
 
-**解析**：
-$$
-\begin{align*}
 
-&利用幂指函数恒等式u^v = e^{v\ln u}，转化为指数形式\\[4pt]
-原式&=\lim_{x \to 0} \frac{1 - e^{2023x \cdot \ln(\cos 2x)}}{2x^3}\\[6pt]
-&当x\to0时，\cos2x\to1，故\ln(\cos2x)=\ln\bigl(1+(\cos2x-1)\bigr)\sim\cos2x-1\\[4pt]
-&=\lim_{x \to 0} \frac{1 - e^{2023x \cdot (\cos 2x - 1)}}{2x^3}\\[6pt]
-&\because 1-\cos x \sim \frac{1}{2}x^2 \quad (x\to0)\\[4pt]
-&\therefore \cos2x - 1 = -(1-\cos2x) \sim -\frac{1}{2}(2x)^2 = -2x^2\\[6pt]
-&代入指数部分：2023x\cdot(\cos2x-1)\sim2023x\cdot(-2x^2)=-2\cdot2023\,x^3\\[4pt]
-原式&=\lim_{x \to 0} \frac{1 - e^{-2\cdot2023\,x^3}}{2x^3}\\[6pt]
-&\because e^x -1 \sim x \quad (x\to0)，推广得1-e^u \sim -u \quad (u\to0)\\[4pt]
-&\therefore 1-e^{-2\cdot2023\,x^3} \sim -\left(-2\cdot2023\,x^3\right)=2\cdot2023\,x^3\\[6pt]
-原式&=\lim_{x \to 0} \frac{2\cdot2023\,x^3}{2x^3}\\[6pt]
-&=2023
-\end{align*}
-$$
+````
+`````
 
 
 - [*] **5.** $\lim\limits_{x \to \infty}\left(1-\dfrac{2}{x}\right)^{2-x}=$（==D==）
