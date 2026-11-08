@@ -1357,7 +1357,21 @@ xxxx
 flexGrow=10
 ===
 
-Column A
+**答案**：$e^{2}$ 
+
+**详细解析**：
+$\because \lim_{x \to \infty} \frac{3+x}{2+x}=1$，$\lim_{x \to \infty} 2x=\infty$ 
+$\therefore$ 为$1^\infty$型
+$$
+\begin{align*}
+\text{原式} &= \lim_{x \to \infty} e^{2x \cdot \ln\left( \frac{3+x}{2+x} \right)} \\[6pt]
+&= \lim_{x \to \infty} e^{2x \cdot \left( \frac{3+x}{2+x} - 1 \right)} \\[6pt]
+&= \lim_{x \to \infty} e^{\frac{2x}{2+x}} \\[6pt]
+&= e^2
+\end{align*}
+$$
+
+**考点**：$1^\infty$ 型。
 
 ````
 
@@ -1372,9 +1386,9 @@ Column B
 ````
 `````
 
-
-
 zzzz
+
+
 
 - [*] **题目**
 $$\lim_{x \to 0} \left( 1-bx \right)^\frac{1}{x} = 2{\quad}，求b$$
