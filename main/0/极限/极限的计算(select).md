@@ -967,6 +967,8 @@ Column B
 
 zzzz
 
+
+
 - [*] 例1.9:求极限$\displaystyle I = \lim_{x \to 0} x\left[\frac{10}{x}\right]$,其中$[\cdot]$为向下取整函数
 
 ==分析:==
@@ -1005,6 +1007,8 @@ $$
 &\ \ \ 或做倒代换t=\frac{1}{x}构造分母后再通分转化\\[8pt]
 \end{align*}
 $$
+
+
 
 - [*] 题目：
 $$\lim_{x \to \infty}\left( \frac{x^2+3}{x-1} - ax + b \right)=0,\quad 求a,b$$
