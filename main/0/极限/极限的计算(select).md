@@ -875,8 +875,28 @@ $$
 \end{align*}
 $$
 
-- [*] 基础例题:求 $\displaystyle \lim_{x \to 0^+} x\ln x$ 
+xxxx
+- [*] 求 $\displaystyle \lim_{x \to 0^+} x\ln x$ 
+?
+`````col
+````col-md
+flexGrow=1
+===
 
+Column A
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
 ==分析:==
 $$
 \begin{align*}
