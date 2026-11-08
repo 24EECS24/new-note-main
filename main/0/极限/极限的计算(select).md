@@ -629,9 +629,17 @@ $$
 ````
 **另一写法** 
 
-
-
-
+$$
+\begin{align*}
+原式&=\lim_{x \to 0^+} \frac{e^{\frac{1}{x}\cdot\ln(1+x)} - e}{x}\\[4pt]
+&= e\lim_{x \to 0^+} \frac{\frac{e^{\frac{\ln(1+x)}{x}}}{e} - 1}{x}\\[4pt]
+&= e\lim_{x \to 0^+} \frac{e^{\frac{\ln(1+x)}{x} - 1} - 1}{x}\\[4pt]
+&= e\lim_{x \to 0^+} \frac{\frac{\ln(1+x)}{x} - 1}{x}\\[4pt]
+&= e\lim_{x \to 0^+} \frac{\ln(1+x) - x}{x^2}\\[4pt]
+&= e\lim_{x \to 0^+} \frac{x - \frac{1}{2}x^2 + o(x^2) - x}{x^2}\\[4pt]
+&= -\frac{1}{2}e
+\end{align*}
+$$
 
 
 ### 无穷 比 无穷
