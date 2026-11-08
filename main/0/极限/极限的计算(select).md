@@ -660,9 +660,9 @@ zzzz
 
 ### 无穷 比 无穷
 
-
+xxxx
 - [*] **27.** $\lim\limits_{x \to \infty}\dfrac{\cos x-x}{2x+\sin x}=$ 
-
+?
 答案：==$-\dfrac{1}{2}$==
 
 
@@ -670,6 +670,8 @@ zzzz
 > $x\to\infty$ 时,$x\gg\cos x$ ，$2x\gg\sin x$ 
 > 原式=$\lim\limits_{x \to \infty}\dfrac{-x}{2x}=-\dfrac{1}{2}$ 
 
+
+zzzz
 
 
 - [*] 例1.25:求极限 $\displaystyle I = \lim_{x \to \infty} \frac{a_n x^n + a_{n-1}x^{n-1} + \dots + a_1 x + a_0}{b_m x^m + b_{m-1}x^{m-1} + \dots + b_1 x + b_0}$($a_n,b_m\neq0$为常数)
