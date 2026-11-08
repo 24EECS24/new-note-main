@@ -2000,7 +2000,7 @@ $$
 &即，只要到4次方的部分，其余用o(x^4)省略\\[4pt]
 &\sin x=x-\dfrac{x^3}{6}+o(x^3)\\[4pt]
 &\sin^2 x=\left(x-\frac{x^3}{6}+o(x^3)\right)^2\\[4pt]
-&(a+b+c)=a^2+b^2+c^2+ab+ac+bc\\[4pt]
+&(a+b+c)=a^2+b^2+c^2+2ab+2ac+2bc\\[4pt]
 &= x^2 + \left(-\frac{x^3}{6}\right)^2 + \big(o(x^3)\big)^2 \\[4pt]
 &\quad + 2\cdot x\cdot\left(-\frac{x^3}{6}\right) + 2\cdot x\cdot o(x^3) + 2\cdot\left(-\frac{x^3}{6}\right)\cdot o(x^3)\\[4pt]
 &比o(x^4)低阶的只有x^2与2\cdot x\cdot\left(-\frac{x^3}{6}\right)\\[4pt]
