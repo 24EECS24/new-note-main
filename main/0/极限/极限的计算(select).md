@@ -1156,9 +1156,14 @@ Column B
 
 zzzz
 
-
+xxxx
 
 - [*] 例1.31:求极限 $\displaystyle \lim_{x \to +\infty}\left[x^2\left(e^{\frac{1}{x}}-1\right)-x\right]$ 
+?
+`````col
+````col-md
+flexGrow=10
+===
 
 ==分析:==
 $$
@@ -1196,6 +1201,20 @@ $$
 &= \frac{1}{2}
 \end{align*}
 $$
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
 
 zzzz
 
