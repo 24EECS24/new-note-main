@@ -1855,7 +1855,7 @@ $\ln(1+t)-\sin t=-\frac{t^2}{2}+o(t^2).$
 
 
 
-- [*] **题目**：求极限 $\lim\limits_{x \to 0}\left[\dfrac{2}{\ln(1+x)}-\dfrac{2}{x}\right]$。
+- [*] **题目**：求极限 $\lim\limits_{x \to 0}\left[\dfrac{2}{\ln(1+x)}-\dfrac{2}{x}\right]$。无穷-无穷那里有类似的
 
 **答案**：$1$
 
