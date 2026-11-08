@@ -733,8 +733,11 @@ Column B
 zzzz
 
 **题目：**
-- [*]  $\displaystyle \lim\limits_{x \to +\infty}\frac{\pi^x}{\pi^x - e^x}=\underline{\qquad\qquad}$。
 
+xxxx
+
+- [*]  $\displaystyle \lim\limits_{x \to +\infty}\frac{\pi^x}{\pi^x - e^x}=\underline{\qquad\qquad}$。
+?
 **解析与答案：**
 【答案】$1$
 【解】
@@ -775,7 +778,7 @@ $$
 
 ````
 `````
-
+zzzz
 
 - [*] 例1.26:设函数$\displaystyle f(x)=\lim\limits_{n \to \infty} \frac{x^2 + n x(1-x)\sin^2 \pi x}{1 + n \sin^2 \pi x}$,求$f(x)$的表达式
 
