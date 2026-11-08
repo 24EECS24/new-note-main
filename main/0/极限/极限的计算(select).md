@@ -2148,10 +2148,10 @@ $$
 zzzz
 
 
-
+xxxx
 - [*] **题目：**
 29. $\lim\limits_{x \to 0}\left(x^{-2}-\frac{\sin x}{x^3}\right) = \underline{\qquad\quad}.$
-
+?
 **解析与答案：**
 【答案】$\dfrac{1}{6}$
 【解】
@@ -2187,7 +2187,7 @@ $$
 
 ````
 `````
-
+zzzz
 ## 夹逼准则
 
 
