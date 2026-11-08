@@ -1260,6 +1260,9 @@ $$
 $$
 
 ### 无穷的0次
+
+
+
 - [*] 例32:求极限 $\displaystyle \lim_{x \to +\infty} \left(x+\sqrt{1+x^2}\right)^{\frac{1}{x}}$($\infty^0$型)
 
 ==分析:==
