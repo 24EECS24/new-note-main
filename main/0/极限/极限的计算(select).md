@@ -1015,7 +1015,7 @@ $$\lim_{x \to \infty}\left( \frac{x^2+3}{x-1} - ax + b \right)=0,\quad 求a,b$$
 ?
 `````col
 ````col-md
-flexGrow=1
+flexGrow=10
 ===
 
 
