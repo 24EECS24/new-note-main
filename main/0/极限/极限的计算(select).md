@@ -1628,27 +1628,13 @@ zzzz
 
 
 xxxx
-- [*] 例1.16:计算极限 $\displaystyle \lim_{x \to 0} \frac{(1+x)^x - 1}{1-\cos x}$(非未定式)
+
+- [*] 例1.16:计算极限 $\displaystyle \lim_{x \to 0} \frac{(1+x)^x - 1}{1-\cos x}$(非未定式)**易错题** 
 ?
 `````col
 ````col-md
 flexGrow=10
 ===
-
-Column A
-
-````
-
-````col-md
-flexGrow=1
-===
-
-
-
-
-
-````
-`````
 
 ==分析:==
 $$
@@ -1667,6 +1653,22 @@ $$
 &= \lim_{x \to 0} \frac{x \cdot x}{\frac{1}{2}x^2} = 2\\[8pt]
 \end{align*}
 $$
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
+
+zzzz
 
 ## 换元（等价无穷小的广义）
 
