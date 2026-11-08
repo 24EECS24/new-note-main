@@ -1218,8 +1218,13 @@ Column B
 
 zzzz
 
-
-- [*] 例1.15:计算极限 $\displaystyle \lim_{x \to 1} \left( \frac{x}{x-1} - \frac{1}{\ln x} \right)$
+xxxx
+- [*] 例1.15:计算极限 $\displaystyle \lim_{x \to 1} \left( \frac{x}{x-1} - \frac{1}{\ln x} \right)$ 
+?
+`````col
+````col-md
+flexGrow=10
+===
 
 ==分析:==
 $$
@@ -1260,6 +1265,21 @@ $$
 \end{align*}
 $$
 
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+zzzz
 
 
 ### 0的无穷次
