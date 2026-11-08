@@ -1685,20 +1685,6 @@ xxxx
 flexGrow=10
 ===
 
-Column A
-
-````
-
-````col-md
-flexGrow=1
-===
-
-Column B
-
-
-
-````
-`````
 $$
 \begin{align*}
 &\text{当} \ x \to 1 \ \text{时，} \sqrt{x}-1 \to 0, \text{由等价无穷小} \sin u \sim u \ (u \to 0)\\[4pt]
@@ -1710,8 +1696,33 @@ $$
 &= 4
 \end{align*}
 $$
+**另一解法** 
+$$
+\begin{align*}
+\text{原式} &= \lim_{x \to 1} \frac{x^2 - 1}{\sqrt{x} - 1} \\[4pt]
+&\text{应用洛必达法则} \\[4pt]
+&= \lim_{x \to 1} \frac{2x}{\frac{1}{2\sqrt{x}}} \\[4pt]
+&= \lim_{x \to 1} 4x\sqrt{x} \\[4pt]
+&= 4
+\end{align*}
+$$
 
 
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
+
+
+zzzz
 
 
 - [*] **题目**：设 $f(x)=x^{\frac{1}{x-1}}$，则 $x=1$ 是 $f(x)$ 的（　　）
