@@ -1008,10 +1008,16 @@ $$
 \end{align*}
 $$
 
-
+xxxx
 
 - [*] 题目：
 $$\lim_{x \to \infty}\left( \frac{x^2+3}{x-1} - ax + b \right)=0,\quad 求a,b$$
+?
+`````col
+````col-md
+flexGrow=1
+===
+
 
 $$
 \begin{align*}
@@ -1050,7 +1056,21 @@ $$
 
 **考点**：有理函数的渐近行为、待定系数法。
 
+````
 
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+
+zzzz
 
 
 - [*] 例1.30:计算极限 $\displaystyle \lim_{x \to 0} \left( \frac{1}{\ln(1+x)} - \frac{1}{x} \right)$
