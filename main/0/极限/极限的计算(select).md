@@ -880,23 +880,9 @@ xxxx
 ?
 `````col
 ````col-md
-flexGrow=1
+flexGrow=10
 ===
 
-Column A
-
-````
-
-````col-md
-flexGrow=1
-===
-
-Column B
-
-
-
-````
-`````
 ==分析:==
 $$
 \begin{align*}
@@ -920,6 +906,22 @@ $$
 &本质:幂函数趋向0的速度远快于任意次幂对数函数趋向无穷的速度\\[8pt]
 \end{align*}
 $$
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+zzzz
 
 
 - [*] 例1.28:求极限 $\displaystyle \lim_{x \to 1^-} \ln x \ln(1-x)$
