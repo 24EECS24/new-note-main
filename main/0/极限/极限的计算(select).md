@@ -567,8 +567,13 @@ Column B
 
 zzzz
 
-
+xxxx
 - [*] 例1.24:求极限 $\displaystyle \lim_{x \to 0^+} \frac{(1+x)^{\frac{1}{x}} - e}{x}$
+?
+`````col
+````col-md
+flexGrow=10
+===
 
 ==分析:==
 $$
@@ -600,7 +605,7 @@ $$
 
 ````col
 ```col-md
-flexGrow=1.7
+flexGrow=1
 ===
 **常用结论**
 $$
@@ -640,6 +645,21 @@ $$
 &= -\frac{1}{2}e
 \end{align*}
 $$
+
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
 
 
 ### 无穷 比 无穷
