@@ -1782,8 +1782,28 @@ $\ln(1+t)-\sin t=-\frac{t^2}{2}+o(t^2).$
 得结果为1
 
 
-
+xxxx
 - [*] **题目**：求极限 $\displaystyle\lim_{x\to1}\frac{\sqrt[3]{x-1}+x-1}{x-1}$。
+?
+`````col
+````col-md
+flexGrow=10
+===
+
+Column A
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
 **详细解析**：$将x-1看成一个$ 
 
 $\displaystyle \frac{t^{\frac{1}{3}}}{t}=t^{-\frac{2}{3}}=\frac{1}{(t^{2})^{-\frac{1}{3}}}$ 
@@ -1793,8 +1813,9 @@ $$
 =\lim_{x\to1}\left[\frac{\sqrt[3]{x-1}}{x-1}+1\right]
 =\lim_{x\to1}\left[\frac{1}{\sqrt[3]{(x-1)^2}}+1\right]=\infty,
 $$
+另一解法
 
-
+zzzz
 ## 泰勒公式
 
 - [*] **题目**：求极限 $\displaystyle\lim_{x \to +\infty}\frac{x\ln\left(1+\frac{1}{x}\right)-x\sin\frac{1}{x}}{\sqrt{x^2-1}-x}$。
