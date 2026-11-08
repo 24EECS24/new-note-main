@@ -1490,6 +1490,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-14T07:58:47.328Z,6,8.2956,1,2,1,0,0,2026-11-08T07:58:47.328Z,id=lu051s-->
 
 zzzz
 
@@ -1538,6 +1539,7 @@ zzzz
 
 
 xxxx
+
 - [*] **5.** $\lim\limits_{x \to \infty}\left(1-\dfrac{2}{x}\right)^{2-x}=$ 
 
 - A. $e^4$
@@ -1586,6 +1588,7 @@ Column B
 zzzz
 
 xxxx
+
 - [*] 例33:求极限 $\displaystyle \lim_{x \to 0} \left( \frac{e^x + e^{2x} + e^{3x}}{3} \right)^{\frac{e}{x}}$($1^\infty$型)
 ?
 `````col
@@ -1629,7 +1632,7 @@ zzzz
 
 xxxx
 
-- [*] 例1.16:计算极限 $\displaystyle \lim_{x \to 0} \frac{(1+x)^x - 1}{1-\cos x}$(非未定式)**易错题** 
+- [*] 例1.16:计算极限 $\displaystyle \lim_{x \to 0} \frac{(1+x)^x - 1}{1-\cos x}$(非未定式)**易错题**
 ?
 `````col
 ````col-md
@@ -1667,6 +1670,7 @@ flexGrow=1
 
 ````
 `````
+<!--SR:!fsrs,2026-11-18T07:58:40.452Z,10,8.2956,1,2,1,0,0,2026-11-08T07:58:40.452Z,id=9joelu-->
 
 zzzz
 
