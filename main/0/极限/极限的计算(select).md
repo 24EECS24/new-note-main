@@ -564,6 +564,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-16T06:55:12.513Z,8,8.2956,1,2,1,0,0,2026-11-08T06:55:12.513Z,id=mghses-->
 
 zzzz
 
@@ -656,19 +657,21 @@ $$
 
 ````
 `````
+<!--SR:!fsrs,2026-11-17T06:55:31.849Z,9,8.2956,1,2,1,0,0,2026-11-08T06:55:31.849Z,id=mnt6py-->
 zzzz
 
 ### 无穷 比 无穷
 
 xxxx
-- [*] **27.** $\lim\limits_{x \to \infty}\dfrac{\cos x-x}{2x+\sin x}=$ 
+- [*] **27.** $\lim\limits_{x \to \infty}\dfrac{\cos x-x}{2x+\sin x}=$
 ?
 答案：==$-\dfrac{1}{2}$==
 
 
 > $x\to\infty$ 时 $\cos x$、$\sin x$ 均为有界量，
-> $x\to\infty$ 时,$x\gg\cos x$ ，$2x\gg\sin x$ 
-> 原式=$\lim\limits_{x \to \infty}\dfrac{-x}{2x}=-\dfrac{1}{2}$ 
+> $x\to\infty$ 时,$x\gg\cos x$ ，$2x\gg\sin x$
+> 原式=$\lim\limits_{x \to \infty}\dfrac{-x}{2x}=-\dfrac{1}{2}$
+<!--SR:!fsrs,2026-11-15T06:55:47.417Z,7,8.2956,1,2,1,0,0,2026-11-08T06:55:47.417Z,id=s17aea-->
 
 
 zzzz
@@ -729,6 +732,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-14T06:55:20.246Z,6,8.2956,1,2,1,0,0,2026-11-08T06:55:20.246Z,id=wt2znw-->
 
 zzzz
 
@@ -812,7 +816,7 @@ x(1-x), & x不为整数
 $$
 
 xxxx
-- [*] 例1.27:已知$\displaystyle \lim_{x \to 0} \frac{\tan2x + x f(x)}{\sin x^3} = 0$,求$\displaystyle \lim_{x \to 0} \frac{2+f(x)}{x^2}$ 
+- [*] 例1.27:已知$\displaystyle \lim_{x \to 0} \frac{\tan2x + x f(x)}{\sin x^3} = 0$,求$\displaystyle \lim_{x \to 0} \frac{2+f(x)}{x^2}$
 ?
 `````col
 ````col-md
@@ -853,6 +857,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-18T06:54:35.947Z,10,8.2956,1,2,1,0,0,2026-11-08T06:54:35.947Z,id=9ya1mh-->
 
 zzzz
 
@@ -876,7 +881,7 @@ $$
 $$
 
 xxxx
-- [*] 求 $\displaystyle \lim_{x \to 0^+} x\ln x$ 
+- [*] 求 $\displaystyle \lim_{x \to 0^+} x\ln x$
 ?
 `````col
 ````col-md
@@ -920,12 +925,13 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-17T06:54:42.184Z,9,8.2956,1,2,1,0,0,2026-11-08T06:54:42.184Z,id=0co3a8-->
 
 zzzz
 
 xxxx
 
-- [*] 例1.28:求极限 $\displaystyle \lim_{x \to 1^-} \ln x \ln(1-x)$ 
+- [*] 例1.28:求极限 $\displaystyle \lim_{x \to 1^-} \ln x \ln(1-x)$
 ?
 `````col
 ````col-md
@@ -964,6 +970,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-18T06:55:40.730Z,10,8.2956,1,2,1,0,0,2026-11-08T06:55:40.730Z,id=qcdtqz-->
 
 zzzz
 
@@ -1068,6 +1075,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-16T06:54:47.628Z,8,8.2956,1,2,1,0,0,2026-11-08T06:54:47.628Z,id=5p066z-->
 
 
 zzzz
@@ -1116,7 +1124,7 @@ Column B
 zzzz
 
 xxxx
-- [*] 例1.13:计算极限 $\displaystyle \lim_{x \to 0} \left( \frac{1}{x} - \frac{1}{\sin x} \right)$ 
+- [*] 例1.13:计算极限 $\displaystyle \lim_{x \to 0} \left( \frac{1}{x} - \frac{1}{\sin x} \right)$
 ?
 `````col
 ````col-md
@@ -1153,6 +1161,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-15T06:54:30.179Z,7,8.2956,1,2,1,0,0,2026-11-08T06:54:30.179Z,id=j3c1ih-->
 
 zzzz
 
@@ -1219,7 +1228,7 @@ Column B
 zzzz
 
 xxxx
-- [*] 例1.15:计算极限 $\displaystyle \lim_{x \to 1} \left( \frac{x}{x-1} - \frac{1}{\ln x} \right)$ 
+- [*] 例1.15:计算极限 $\displaystyle \lim_{x \to 1} \left( \frac{x}{x-1} - \frac{1}{\ln x} \right)$
 ?
 `````col
 ````col-md
@@ -1278,6 +1287,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-18T06:54:58.121Z,10,8.2956,1,2,1,0,0,2026-11-08T06:54:58.121Z,id=comyo6-->
 
 zzzz
 
@@ -1343,6 +1353,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-17T06:54:53.261Z,9,8.2956,1,2,1,0,0,2026-11-08T06:54:53.261Z,id=lsa6ks-->
 
 
 zzzz
@@ -1385,6 +1396,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-16T06:55:16.302Z,8,8.2956,1,2,1,0,0,2026-11-08T06:55:16.302Z,id=y72pfe-->
 
 zzzz
 
