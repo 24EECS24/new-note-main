@@ -1179,8 +1179,25 @@ $$
 \end{align*}
 $$
 **另一写法** 
+当$x \to 0$时，指数函数的麦克劳林展开式为：
+$$
+e^x - 1 = x + \frac{1}{2}x^2 + o(x^2)
+$$
+$$
+e^{\frac{1}{x}} - 1 = \frac{1}{x} + \frac{1}{2x^2} + o\left( \frac{1}{x^2} \right)
+$$
+计算极限：
+$$
+\begin{align*}
+&\lim_{x \to +\infty} \left[ x^2\left(e^{\frac{1}{x}} - 1\right) - x \right]\\[4pt]
+&= \lim_{x \to +\infty} \left[ x^2\left( \frac{1}{x} + \frac{1}{2x^2} + o\left(\frac{1}{x^2}\right) \right) - x \right]\\[4pt]
+&= \lim_{x \to +\infty} \left( x + \frac{1}{2} + o(1) - x \right)\\[4pt]
+&= \lim_{x \to +\infty} \left( \frac{1}{2} + o(1) \right)\\[4pt]
+&= \frac{1}{2}
+\end{align*}
+$$
 
-
+zzzz
 
 
 - [*] 例1.15:计算极限 $\displaystyle \lim_{x \to 1} \left( \frac{x}{x-1} - \frac{1}{\ln x} \right)$
