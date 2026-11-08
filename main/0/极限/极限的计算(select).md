@@ -661,7 +661,9 @@ zzzz
 ### 无穷 比 无穷
 
 
-- [*] **27.** $\lim\limits_{x \to \infty}\dfrac{\cos x-x}{2x+\sin x}=$ ==$-\dfrac{1}{2}$==。
+- [*] **27.** $\lim\limits_{x \to \infty}\dfrac{\cos x-x}{2x+\sin x}=$ 
+
+答案：==$-\dfrac{1}{2}$==
 
 
 > $x\to\infty$ 时 $\cos x$、$\sin x$ 均为有界量，
