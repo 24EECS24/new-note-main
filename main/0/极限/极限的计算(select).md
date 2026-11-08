@@ -512,6 +512,12 @@ zzzz
 xxxx
 - [*] 例1.21:设 $\displaystyle \lim_{x \to 0} \frac{\sin x}{e^x - a} (\cos x - b) = 5$，求 $b$
 ?
+
+`````col
+````col-md
+flexGrow=10
+===
+
 ==分析:==
 $$
 \begin{align*}
@@ -544,6 +550,22 @@ $$
 &(即f与g同为无穷小且同阶,二者"同生共灭")\\[8pt]
 \end{align*}
 $$
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+zzzz
 
 
 - [*] 例1.24:求极限 $\displaystyle \lim_{x \to 0^+} \frac{(1+x)^{\frac{1}{x}} - e}{x}$
