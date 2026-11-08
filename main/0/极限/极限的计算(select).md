@@ -811,7 +811,7 @@ x(1-x), & x不为整数
 \end{align*}
 $$
 
-
+xxxx
 - [*] 例1.27:已知$\displaystyle \lim_{x \to 0} \frac{\tan2x + x f(x)}{\sin x^3} = 0$,求$\displaystyle \lim_{x \to 0} \frac{2+f(x)}{x^2}$ 
 
 ==分析:==
