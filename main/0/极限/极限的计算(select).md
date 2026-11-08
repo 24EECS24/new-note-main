@@ -2253,9 +2253,10 @@ flexGrow=1
 
 zzzz
 
-
+xxxx
 - [*] **题目**
 设$f(x)=\frac{1}{n^2}$，其中$\frac{1}{n^2+1} < x \leq \frac{1}{n^2},\ n=1,2,3,\cdots$，且$f(0)=0$，则$f'_+(0)=\underline{\qquad}$。
+?
 **解：**
 根据右导数定义：
 $$f'_+(0) = \lim_{x \to 0^+} \frac{f(x)-f(0)}{x-0} = \lim_{x \to 0^+} \frac{f(x)}{x}$$
