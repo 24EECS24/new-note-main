@@ -509,9 +509,9 @@ $$\lim_{x \to 0} \frac{\sin x - x}{x^2 \ln(1-x)} = \lim_{x \to 0} \frac{-\frac{1
 
 zzzz
 
-
+xxxx
 - [*] 例1.21:设 $\displaystyle \lim_{x \to 0} \frac{\sin x}{e^x - a} (\cos x - b) = 5$，求 $b$
-
+?
 ==分析:==
 $$
 \begin{align*}
