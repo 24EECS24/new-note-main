@@ -1072,8 +1072,10 @@ Column B
 
 zzzz
 
-
+xxxx
 - [*] 例1.30:计算极限 $\displaystyle \lim_{x \to 0} \left( \frac{1}{\ln(1+x)} - \frac{1}{x} \right)$
+?
+
 
 ==分析:==
 $$
@@ -1091,6 +1093,8 @@ $$
 &原式 = \lim_{x \to 0} \frac{x - \left( x - \frac{x^2}{2} + o(x^2) \right)}{x^2} = \lim_{x \to 0} \frac{\frac{1}{2}x^2 + o(x^2)}{x^2} = \frac{1}{2}\\[8pt]
 \end{align*}
 $$
+
+zzzz
 
 
 - [*] 例1.13:计算极限 $\displaystyle \lim_{x \to 0} \left( \frac{1}{x} - \frac{1}{\sin x} \right)$ 
