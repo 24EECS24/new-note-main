@@ -1452,9 +1452,15 @@ Column B
 zzzz
 
 
-
+xxxx
 - [*] **题目**
 $$\lim_{x \to \infty} \left( \frac{2x+1}{2x-1} \right)^x = \underline{\quad}$$
+?
+`````col
+````col-md
+flexGrow=10
+===
+
 **解析**：
 首先判断极限类型：
 $\displaystyle \because \lim_{x \to \infty} \frac{2x+1}{2x-1} = 1，\lim_{x \to \infty} x = \infty$
@@ -1472,6 +1478,20 @@ $$
 $$
 
 
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+zzzz
 
 - [*] **题目**：求极限$\displaystyle \lim_{x \to 0} \frac{1 - (\cos 2x)^{2023x}}{2x^3}$ 
 
