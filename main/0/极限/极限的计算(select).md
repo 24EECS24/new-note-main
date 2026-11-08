@@ -1537,13 +1537,20 @@ Column B
 zzzz
 
 
-
+xxxx
 - [*] **5.** $\lim\limits_{x \to \infty}\left(1-\dfrac{2}{x}\right)^{2-x}=$ 
 
 - A. $e^4$
 - B. $e^{-4}$
 - C. $e^{-1}$
 - D. $e^2$
+?
+`````col
+````col-md
+flexGrow=10
+===
+
+
 ==D==
 $$
 \begin{align*}
@@ -1561,6 +1568,22 @@ $$
 &=e^2
 \end{align*}
 $$ 
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+zzzz
 
 
 - [*] 例33:求极限 $\displaystyle \lim_{x \to 0} \left( \frac{e^x + e^{2x} + e^{3x}}{3} \right)^{\frac{e}{x}}$($1^\infty$型)
