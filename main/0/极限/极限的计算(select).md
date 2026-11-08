@@ -1349,26 +1349,32 @@ zzzz
 
 ### 1的无穷次
 
-
+xxxx
 - [*] **题目**：极限 $\lim\limits_{x\to\infty}\left(\dfrac{3+x}{2+x}\right)^{2x}=$ $\underline{\qquad\qquad}$。
+?
+`````col
+````col-md
+flexGrow=10
+===
 
-**答案**：$e^{2}$ 
+Column A
 
-**详细解析**：
-$\because \lim_{x \to \infty} \frac{3+x}{2+x}=1$，$\lim_{x \to \infty} 2x=\infty$ 
-$\therefore$ 为$1^\infty$型
-$$
-\begin{align*}
-\text{原式} &= \lim_{x \to \infty} e^{2x \cdot \ln\left( \frac{3+x}{2+x} \right)} \\[6pt]
-&= \lim_{x \to \infty} e^{2x \cdot \left( \frac{3+x}{2+x} - 1 \right)} \\[6pt]
-&= \lim_{x \to \infty} e^{\frac{2x}{2+x}} \\[6pt]
-&= e^2
-\end{align*}
-$$
+````
 
-**考点**：$1^\infty$ 型。
+````col-md
+flexGrow=1
+===
+
+Column B
 
 
+
+````
+`````
+
+
+
+zzzz
 
 - [*] **题目**
 $$\lim_{x \to 0} \left( 1-bx \right)^\frac{1}{x} = 2{\quad}，求b$$
