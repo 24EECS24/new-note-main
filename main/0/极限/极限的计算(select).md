@@ -2016,6 +2016,8 @@ $$
 `````
 zzzz
 
+z
+
 - [*] **题目：**
 求极限
 $$\lim_{x\to+\infty}\left[x-x^2\ln\left(1+\frac{1}{x}\right)\right].$$
