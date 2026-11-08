@@ -1790,20 +1790,6 @@ xxxx
 flexGrow=10
 ===
 
-Column A
-
-````
-
-````col-md
-flexGrow=1
-===
-
-
-
-
-
-````
-`````
 **详细解析**：$将x-1看成一个$ 
 
 $\displaystyle \frac{t^{\frac{1}{3}}}{t}=t^{-\frac{2}{3}}=\frac{1}{(t^{2})^{-\frac{1}{3}}}$ 
@@ -1825,6 +1811,20 @@ $$
 &=\infty
 \end{align*}
 $$
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
 
 zzzz
 ## 泰勒公式
