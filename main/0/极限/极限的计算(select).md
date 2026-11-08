@@ -497,14 +497,17 @@ zzzz
 
 
 
-
+xxxx
 - [*] **题目：** 
 18. $\lim\limits_{x \to 0} \dfrac{\sin x - x}{x^2 \ln(1-x)} = \underline{\qquad\qquad}$ .
-
+?
 **解析与答案：**
 【答案】$\dfrac{1}{6}$
 【解】
 $$\lim_{x \to 0} \frac{\sin x - x}{x^2 \ln(1-x)} = \lim_{x \to 0} \frac{-\frac{1}{6}x^3}{x^2 \cdot (-x)} = \frac{1}{6}.$$ 
+
+
+zzzz
 
 
 - [*] 例1.21:设 $\displaystyle \lim_{x \to 0} \frac{\sin x}{e^x - a} (\cos x - b) = 5$，求 $b$
