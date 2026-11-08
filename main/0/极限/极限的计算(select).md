@@ -1493,6 +1493,7 @@ Column B
 
 zzzz
 
+
 - [*] **题目**：求极限$\displaystyle \lim_{x \to 0} \frac{1 - (\cos 2x)^{2023x}}{2x^3}$ 
 
 
