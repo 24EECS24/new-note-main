@@ -1178,6 +1178,8 @@ $$
 &故原式 = \lim_{t \to 0^+} \frac{\frac{1}{2}t^2 + o(t^2)}{t^2} = \frac{1}{2}\\[8pt]
 \end{align*}
 $$
+**另一写法** 
+
 
 
 - [*] 例1.15:计算极限 $\displaystyle \lim_{x \to 1} \left( \frac{x}{x-1} - \frac{1}{\ln x} \right)$
