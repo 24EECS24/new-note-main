@@ -1676,9 +1676,29 @@ zzzz
 
 ## 换元（等价无穷小的广义）
 
+xxxx
 
 - [*] **题目**：求极限$\displaystyle \lim_{x \to 1} \frac{x^2 - 1}{\sin\left(\sqrt{x} - 1\right)}$ 
+?
+`````col
+````col-md
+flexGrow=10
+===
 
+Column A
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
 $$
 \begin{align*}
 &\text{当} \ x \to 1 \ \text{时，} \sqrt{x}-1 \to 0, \text{由等价无穷小} \sin u \sim u \ (u \to 0)\\[4pt]
