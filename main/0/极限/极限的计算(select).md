@@ -1627,8 +1627,28 @@ flexGrow=1
 zzzz
 
 
-
+xxxx
 - [*] 例1.16:计算极限 $\displaystyle \lim_{x \to 0} \frac{(1+x)^x - 1}{1-\cos x}$(非未定式)
+?
+`````col
+````col-md
+flexGrow=10
+===
+
+Column A
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
 
 ==分析:==
 $$
