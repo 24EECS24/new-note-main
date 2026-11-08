@@ -1115,8 +1115,13 @@ Column B
 
 zzzz
 
-
+xxxx
 - [*] 例1.13:计算极限 $\displaystyle \lim_{x \to 0} \left( \frac{1}{x} - \frac{1}{\sin x} \right)$ 
+?
+`````col
+````col-md
+flexGrow=10
+===
 
 ==分析:==
 $$
@@ -1134,6 +1139,23 @@ $$
 &原式 = \lim_{x \to 0} \frac{-\frac{1}{6}x^3 + o(x^3)}{x^2} = 0\\[8pt]
 \end{align*}
 $$
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+zzzz
+
 
 
 - [*] 例1.31:求极限 $\displaystyle \lim_{x \to +\infty}\left[x^2\left(e^{\frac{1}{x}}-1\right)-x\right]$ 
