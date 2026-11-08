@@ -1182,6 +1182,7 @@ $$
 
 
 
+
 - [*] 例1.15:计算极限 $\displaystyle \lim_{x \to 1} \left( \frac{x}{x-1} - \frac{1}{\ln x} \right)$
 
 ==分析:==
