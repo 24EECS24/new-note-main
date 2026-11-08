@@ -498,13 +498,14 @@ zzzz
 
 
 xxxx
-- [*] **题目：** 
+- [*] **题目：**
 18. $\lim\limits_{x \to 0} \dfrac{\sin x - x}{x^2 \ln(1-x)} = \underline{\qquad\qquad}$ .
 ?
 **解析与答案：**
 【答案】$\dfrac{1}{6}$
 【解】
-$$\lim_{x \to 0} \frac{\sin x - x}{x^2 \ln(1-x)} = \lim_{x \to 0} \frac{-\frac{1}{6}x^3}{x^2 \cdot (-x)} = \frac{1}{6}.$$ 
+$$\lim_{x \to 0} \frac{\sin x - x}{x^2 \ln(1-x)} = \lim_{x \to 0} \frac{-\frac{1}{6}x^3}{x^2 \cdot (-x)} = \frac{1}{6}.$$
+<!--SR:!fsrs,2026-11-15T06:56:02.841Z,7,8.2956,1,2,1,0,0,2026-11-08T06:56:02.841Z,id=v14pyp-->
 
 
 zzzz
@@ -782,6 +783,7 @@ $$
 
 ````
 `````
+<!--SR:!fsrs,2026-11-18T06:56:15.298Z,10,8.2956,1,2,1,0,0,2026-11-08T06:56:15.298Z,id=lvy9kf-->
 zzzz
 
 
@@ -1119,6 +1121,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-14T06:56:11.667Z,6,8.2956,1,2,1,0,0,2026-11-08T06:56:11.667Z,id=5lf9ig-->
 
 
 zzzz
@@ -1167,7 +1170,7 @@ zzzz
 
 xxxx
 
-- [*] 例1.31:求极限 $\displaystyle \lim_{x \to +\infty}\left[x^2\left(e^{\frac{1}{x}}-1\right)-x\right]$ 
+- [*] 例1.31:求极限 $\displaystyle \lim_{x \to +\infty}\left[x^2\left(e^{\frac{1}{x}}-1\right)-x\right]$
 ?
 `````col
 ````col-md
@@ -1224,6 +1227,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-16T06:55:55.678Z,8,8.2956,1,2,1,0,0,2026-11-08T06:55:55.678Z,id=qwf1o1-->
 
 zzzz
 
@@ -1442,9 +1446,11 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-16T06:56:07.257Z,8,8.2956,1,2,1,0,0,2026-11-08T06:56:07.257Z,id=2clfor-->
 
 
 zzzz
+
 
 
 - [*] **题目**
