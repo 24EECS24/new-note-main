@@ -1388,10 +1388,16 @@ Column B
 
 zzzz
 
-
+xxxx
 
 - [*] **题目**
 $$\lim_{x \to 0} \left( 1-bx \right)^\frac{1}{x} = 2{\quad}，求b$$
+?
+`````col
+````col-md
+flexGrow=10
+===
+
 **解析** 
 
 $$
@@ -1412,6 +1418,21 @@ $$
 $$
 
 
+````
+
+````col-md
+flexGrow=1
+===
+
+Column B
+
+
+
+````
+`````
+
+
+zzzz
 
 
 - [*] **题目**
