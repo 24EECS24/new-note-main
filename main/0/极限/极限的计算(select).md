@@ -1829,7 +1829,7 @@ flexGrow=1
 zzzz
 ## 泰勒公式
 
-- [*] **题目**：求极限 $\displaystyle\lim_{x \to +\infty}\frac{x\ln\left(1+\frac{1}{x}\right)-x\sin\frac{1}{x}}{\sqrt{x^2-1}-x}$。
+- [*] **题目**：求极限 $\displaystyle\lim_{x \to +\infty}\frac{x\ln\left(1+\frac{1}{x}\right)-x\sin\frac{1}{x}}{\sqrt{x^2-1}-x}$。0比0那里有了
 
 **答案**：$1$
 
