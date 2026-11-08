@@ -1813,7 +1813,18 @@ $$
 =\lim_{x\to1}\left[\frac{\sqrt[3]{x-1}}{x-1}+1\right]
 =\lim_{x\to1}\left[\frac{1}{\sqrt[3]{(x-1)^2}}+1\right]=\infty,
 $$
-另一解法
+**另一解法** 
+$$
+\lim_{x \to 1} \frac{\sqrt[3]{x-1} + x - 1}{x - 1}
+$$
+用洛必达法则求解：
+$$
+\begin{align*}
+&=\lim_{x \to 1} \left( \frac{1}{3}\cdot (x-1)^{-\frac{2}{3}} + 1 \right)\\[4pt]
+&=\lim_{x \to 1} \left( \frac{1}{3(x-1)^{\frac{2}{3}}} + 1 \right)\\[4pt]
+&=\infty
+\end{align*}
+$$
 
 zzzz
 ## 泰勒公式
