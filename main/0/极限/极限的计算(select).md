@@ -2275,14 +2275,14 @@ zzzz
 ## 二重极限的计算
 
 
-
+xxxx
 - [*] **题目**：极限 $\lim\limits_{\substack{x \to 6\\y \to 0}}\dfrac{3y}{\sqrt{x^{3}y+9}-3}=$（　　）
 
 - A. $-\dfrac{1}{12}$
 - B. $0$
 - C. $\dfrac{1}{12}$
 - D. 不存在
-
+?
 **答案**：C
 
 **详细解析**：直接代入 $y=0$ 得 $\frac00$ 型，分母有理化：
@@ -2301,7 +2301,9 @@ $$
 
 **考点**：多元极限 + 分子/分母有理化消去不定式。
 
+zzzz
 
+xxxx
 
 - [*] **题目**：极限 $\lim\limits_{(x,y)\to(0,0)}\dfrac{y(\cos x-1)}{x\arcsin(xy)}=$（　　）
 
@@ -2309,7 +2311,7 @@ $$
 - B. $-1$
 - C. $-\dfrac{1}{2}$
 - D. $\dfrac{1}{2}$
-
+?
 **答案**：C
 
 **详细解析**：利用一元等价无穷小在多元下的代换（$u\to0$ 时 $\cos u-1\sim-\frac{u^2}{2}$，$\arcsin u\sim u$）：
@@ -2324,8 +2326,11 @@ $$
 
 **考点**：多元函数极限 + 等价无穷小代换。
 
+zzzz
 
+xxxx
 - [*] **题目**：求极限 $\lim\limits_{(x,y)\to(0,0)}(x+1)\arctan\dfrac{1}{x^2+4y^2}=$ $\underline{\qquad\qquad}$。
+?
 
 **答案**：$\dfrac{\pi}{2}$
 
@@ -2338,11 +2343,12 @@ $$
 
 **考点**：多元函数极限 + 反三角函数极限。
 
+zzzz
 
-
+xxxx
 
 - [*] **题目**：$\lim\limits_{\substack{x \to 0\\y \to 1}}\dfrac{\ln(y+\mathrm{e}^{x})}{\sqrt{x^{2}+y^{2}}}=$ $\underline{\qquad\qquad}$。
-
+?
 **答案**：$\ln 2$
 
 **详细解析**：函数在 $(0,1)$ 处连续（分母 $\sqrt{0+1}=1\neq0$，分子 $\ln(1+e^0)=\ln2$），直接代入：
@@ -2354,13 +2360,16 @@ $$
 
 **考点**：多元函数极限的直接代入（连续点）。
 
-
+zzzz
 ## 数列极限
+
+xxxx
+
 **可以用海涅定理按函数极限求，也可以用无穷级数的知识求解** 
 
 
 - [*] **题目**：求极限 $\lim\limits_{n\to\infty}\left[\dfrac{1}{1\times 2}+\dfrac{1}{2\times 3}+\cdots+\dfrac{1}{n(n+1)}\right]^{3n-2}$ 
-
+?
 **答案**：$e^{-3}$
 
 **详细解析**：先算括号内级数的部分和（裂项相消）：
@@ -2380,11 +2389,13 @@ $$
 
 **考点**：裂项相消 + 第二重要极限。
 
-
+zzzz
 ## 创新题
 
-- [*] **题目**：设 $f(x)=x^{3}+3x\lim\limits_{x\to 2}f(x)$，且 $\lim\limits_{x\to 2}f(x)$ 存在，则 $f'(x)=$ $\underline{\qquad\qquad}$。
+xxxx
 
+- [*] **题目**：设 $f(x)=x^{3}+3x\lim\limits_{x\to 2}f(x)$，且 $\lim\limits_{x\to 2}f(x)$ 存在，则 $f'(x)=$ $\underline{\qquad\qquad}$。
+?
 **答案**：$3x^{2}-\dfrac{24}{5}$
 
 **详细解析**：设 $L=\lim_{x\to2}f(x)$，对 $f(x)=x^3+3xL$ 两边取 $x\to2$ 的极限：
@@ -2401,3 +2412,4 @@ $$
 
 **考点**：把极限值当作待定常数解方程 + 求导。
 
+zzzz
