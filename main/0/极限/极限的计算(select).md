@@ -1540,7 +1540,7 @@ zzzz
 
 xxxx
 
-- [*] **5.** $\lim\limits_{x \to \infty}\left(1-\dfrac{2}{x}\right)^{2-x}=$ 
+- [*] **5.** $\lim\limits_{x \to \infty}\left(1-\dfrac{2}{x}\right)^{2-x}=$
 
 - A. $e^4$
 - B. $e^{-4}$
@@ -1584,6 +1584,7 @@ Column B
 
 ````
 `````
+<!--SR:!fsrs,2026-11-18T04:22:05.477Z,8,8.2956,1,2,1,0,0,2026-11-10T04:22:05.477Z,id=0zen13-->
 
 zzzz
 
