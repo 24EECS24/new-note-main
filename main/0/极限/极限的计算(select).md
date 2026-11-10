@@ -2289,6 +2289,7 @@ $$1 \leq \frac{f(x)}{x} \leq \frac{n^2+1}{n^2}$$
 当$x \to 0^+$时对应$n \to \infty$，此时$\lim\limits_{n \to \infty}\frac{n^2+1}{n^2}=1$，由夹逼准则可得：
 $$\lim_{x \to 0^+} \frac{f(x)}{x} = 1$$
 即$f'_+(0)=1$。
+<!--SR:!fsrs,2026-11-19T04:29:28.547Z,9,8.2956,1,2,1,0,0,2026-11-10T04:29:28.547Z,id=bsakck-->
 
 zzzz
 
