@@ -2391,6 +2391,26 @@ xxxx
 
 - [*] **题目**：求极限 $\lim\limits_{n\to\infty}\left[\dfrac{1}{1\times 2}+\dfrac{1}{2\times 3}+\cdots+\dfrac{1}{n(n+1)}\right]^{3n-2}$ 
 ?
+`````col
+````col-md
+flexGrow=10
+===
+
+Column A
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
+
 **答案**：$e^{-3}$
 
 **详细解析**：先算括号内级数的部分和（裂项相消）：
