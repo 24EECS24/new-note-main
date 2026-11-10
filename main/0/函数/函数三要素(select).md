@@ -410,7 +410,62 @@ flexGrow=1
 
 zzzz
 
+xxxx
 
+**题目**
+
+已知 $f(1+x)=\arctan x$，$f[\varphi(x)]=x-2$，则 $\varphi(x+2)=$（　　）
+?
+`````col
+````col-md
+flexGrow=20
+===
+
+**答案**：$1+\tan x$
+
+**解析**
+
+> $f(u)=\arctan(u-1)$。$\arctan(\varphi(x)-1)=x-2$，故 $\varphi(x)-1=\tan(x-2)$，$\varphi(x)=1+\tan(x-2)$，$\varphi(x+2)=1+\tan x$。
+
+**另一解法**：
+
+求解路径：$f(x) \to \varphi(x) \to \varphi(x+2)$
+
+换元推导$f(x)$解析式：
+令$1+x = t$，则$x = t-1$，代入得：
+$$f(t) = \arctan(t-1)$$
+将变量替换为$x$，得到：
+$$f(x) = \arctan(x-1)$$
+
+结合复合函数关系求解$\varphi(x)$：
+$$
+\begin{align*}
+f\left[\varphi(x)\right] &= \arctan\left[\varphi(x)-1\right] = x-2 \\
+\varphi(x) - 1 &= \tan(x-2) \\
+\varphi(x) &= \tan(x-2) + 1
+\end{align*}
+$$
+
+做变量替换$x \mapsto x+2$，得到目标式：
+$$\varphi(x+2) = \tan x + 1$$
+
+
+**考点**：复合函数对应关系反求内层函数（对应法则）
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
+
+zzzz
 
 
 
