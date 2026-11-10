@@ -315,4 +315,31 @@ xxxx
 
 zzzz
 
+xxxx
 
+**题目**
+
+函数 $y=1+2\tan 5x\,\left(|x|<\dfrac{\pi}{10}\right)$ 的反函数是（　　）
+?
+
+**答案**：$y=\dfrac{1}{5}\arctan\dfrac{x-1}{2}$
+
+**解析**
+
+> 由 $2\tan5x=y-1$ 得 $\tan5x=\dfrac{y-1}{2}$，$x=\dfrac{1}{5}\arctan\dfrac{y-1}{2}$，交换变量得反函数。
+
+**另一解法**：
+
+$$
+\begin{align*}
+&x = 1 + 2\tan(5y) \\[4pt]
+&x - 1 = 2\tan(5y) \\[4pt]
+&\frac{x-1}{2} = \tan(5y) \\[4pt]
+&\arctan\left( \frac{x-1}{2} \right) = 5y \\[4pt]
+&y = \frac{1}{5}\arctan\left( \frac{x-1}{2} \right)
+\end{align*}
+$$
+
+**考点**：求反函数（对应法则的逆，定义域与值域互换）
+
+zzzz
