@@ -2457,6 +2457,11 @@ xxxx
 
 - [*] **题目**：设 $f(x)=x^{3}+3x\lim\limits_{x\to 2}f(x)$，且 $\lim\limits_{x\to 2}f(x)$ 存在，则 $f'(x)=$ $\underline{\qquad\qquad}$。
 ?
+`````col
+````col-md
+flexGrow=10
+===
+
 **答案**：$3x^{2}-\dfrac{24}{5}$
 
 **详细解析**：设 $L=\lim_{x\to2}f(x)$，对 $f(x)=x^3+3xL$ 两边取 $x\to2$ 的极限：
@@ -2472,5 +2477,18 @@ f'(x)=3x^2-\frac{24}{5}.
 $$
 
 **考点**：把极限值当作待定常数解方程 + 求导。
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
 
 zzzz
