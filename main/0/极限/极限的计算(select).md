@@ -2145,6 +2145,49 @@ $$
 $$
 ````
 `````
+
+
+`````col
+````col-md
+flexGrow=10
+===
+
+**另一解法**：
+直接展开计算：
+当$x \to 0$时，对数函数的麦克劳林展开式为：
+$$
+\ln(1+x) = x - \frac{1}{2}x^2 + o(x^2)
+$$
+做变量替换，令$t=\frac{1}{x}$，当$x \to +\infty$时$t \to 0$，代入得：
+$$
+\ln\left(1+\frac{1}{x}\right) = \frac{1}{x} - \frac{1}{2x^2} + o\left(\frac{1}{x^2}\right)
+$$
+代入原式：
+$$
+\begin{align*}
+原式&=\lim_{x \to +\infty} \left[ x - x^2 \left( \frac{1}{x} - \frac{1}{2x^2} + o\left(\frac{1}{x^2}\right) \right) \right]\\[4pt]
+&=\lim_{x \to +\infty} \left[ x - x + \frac{1}{2} + x^2 \cdot o\left(\frac{1}{x^2}\right) \right]\\[4pt]
+&=\frac{1}{2} + o(1)\\[4pt]
+&=\frac{1}{2}
+\end{align*}
+$$
+
+
+
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
+
 zzzz
 
 
