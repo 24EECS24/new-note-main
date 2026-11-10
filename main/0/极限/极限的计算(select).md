@@ -1787,6 +1787,22 @@ $$
 \end{align*}
 $$
 
+**另一解法**:
+因为式子中有很多$x-1$的项，采用换元法简化计算：
+则设 $x-1 = t$，
+则 $x = t+1$（$x \to 1$时$t \to 0$）。
+$$
+原式=\lim_{t \to 0} \frac{\sqrt[3]{t} + t}{t}
+$$
+使用洛必达法则计算：
+$$
+\begin{align*}
+&=\lim_{t \to 0} \frac{\frac{1}{3}t^{-\frac{2}{3}} + 1}{1}\\[4pt]
+&=\lim_{t \to 0} \left( \frac{1}{3t^{\frac{2}{3}}} + 1 \right)\\[4pt]
+&=\infty
+\end{align*}
+$$
+
 
 ````
 
