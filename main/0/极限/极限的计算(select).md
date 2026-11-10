@@ -2386,10 +2386,10 @@ zzzz
 
 xxxx
 
-**可以用海涅定理按函数极限求，也可以用无穷级数的知识求解** 
+**可以用海涅定理按函数极限求，也可以用无穷级数的知识求解**
 
 
-- [*] **题目**：求极限 $\lim\limits_{n\to\infty}\left[\dfrac{1}{1\times 2}+\dfrac{1}{2\times 3}+\cdots+\dfrac{1}{n(n+1)}\right]^{3n-2}$ 
+- [*] **题目**：求极限 $\lim\limits_{n\to\infty}\left[\dfrac{1}{1\times 2}+\dfrac{1}{2\times 3}+\cdots+\dfrac{1}{n(n+1)}\right]^{3n-2}$
 ?
 `````col
 ````col-md
@@ -2427,6 +2427,7 @@ flexGrow=1
 
 ````
 `````
+<!--SR:!fsrs,2026-11-20T04:26:12.735Z,10,8.2956,1,2,1,0,0,2026-11-10T04:26:12.735Z,id=u047z0-->
 
 zzzz
 ## 创新题
