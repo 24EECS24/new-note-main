@@ -2404,6 +2404,18 @@ flexGrow=1
 ````
 `````
 
+
+
+
+$$
+\begin{align*}
+\text{原式} &= \lim_{(x,y) \to (0,0)} \frac{y \cdot \left(-\frac{1}{2}x^2\right)}{x \arcsin(xy)} \\[4pt]
+&= \lim_{(x,y) \to (0,0)} \frac{-\frac{1}{2}xy}{\arcsin(xy)} \\[4pt]
+&= \lim_{(x,y) \to (0,0)} \frac{-\frac{1}{2}xy}{xy} \\[4pt]
+&= -\frac{1}{2}
+\end{align*}
+$$
+
 zzzz
 
 xxxx
