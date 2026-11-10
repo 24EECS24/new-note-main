@@ -1681,7 +1681,7 @@ zzzz
 
 xxxx
 
-- [*] **题目**：求极限$\displaystyle \lim_{x \to 1} \frac{x^2 - 1}{\sin\left(\sqrt{x} - 1\right)}$ 
+- [*] **题目**：求极限$\displaystyle \lim_{x \to 1} \frac{x^2 - 1}{\sin\left(\sqrt{x} - 1\right)}$
 ?
 `````col
 ````col-md
@@ -1723,6 +1723,7 @@ flexGrow=1
 
 ````
 `````
+<!--SR:!fsrs,2026-11-19T05:07:28.635Z,9,8.2956,1,2,1,0,0,2026-11-10T05:07:28.635Z,id=hr7rva-->
 
 
 zzzz
