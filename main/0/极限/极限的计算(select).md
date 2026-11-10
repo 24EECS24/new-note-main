@@ -2024,7 +2024,7 @@ $$\lim_{x\to+\infty}\left[x-x^2\ln\left(1+\frac{1}{x}\right)\right].$$
 
 ?
 
-**解
+**解**
 
 `````col
 ````col-md
