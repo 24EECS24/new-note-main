@@ -2389,7 +2389,22 @@ $$
 
 故选 C。
 
+**另一解法**:
+
+$$
+\begin{align*}
+\text{原式} &= \lim_{(x,y) \to (0,0)} \frac{y \cdot \left(-\frac{1}{2}x^2\right)}{x \arcsin(xy)} \\[4pt]
+&= \lim_{(x,y) \to (0,0)} \frac{-\frac{1}{2}xy}{\arcsin(xy)} \\[4pt]
+&= \lim_{(x,y) \to (0,0)} \frac{-\frac{1}{2}xy}{xy} \\[4pt]
+&= -\frac{1}{2}
+\end{align*}
+$$
+
+
+
 **考点**：多元函数极限 + 等价无穷小代换。
+
+
 
 ````
 
@@ -2403,18 +2418,7 @@ flexGrow=1
 
 ````
 `````
-
-
-
-
-$$
-\begin{align*}
-\text{原式} &= \lim_{(x,y) \to (0,0)} \frac{y \cdot \left(-\frac{1}{2}x^2\right)}{x \arcsin(xy)} \\[4pt]
-&= \lim_{(x,y) \to (0,0)} \frac{-\frac{1}{2}xy}{\arcsin(xy)} \\[4pt]
-&= \lim_{(x,y) \to (0,0)} \frac{-\frac{1}{2}xy}{xy} \\[4pt]
-&= -\frac{1}{2}
-\end{align*}
-$$
+<!--SR:!fsrs,2026-11-19T05:32:12.462Z,9,8.2956,1,2,1,0,0,2026-11-10T05:32:12.462Z,id=3xot7m-->
 
 zzzz
 
