@@ -11,7 +11,7 @@
   },
   "historyDeck": null,
   "buryList": [],
-  "buryDate": "2026-11-08",
+  "buryDate": "2026-11-10",
   "settings": {
     "aiBaseUrl": "",
     "aiKeySecret": "",
@@ -82,7 +82,7 @@
     "multilineCardSeparator": "?",
     "multilineCardStartMarker": "xxxx",
     "multilineReversedCardSeparator": "??",
-    "newCardsPerDay": 20,
+    "newCardsPerDay": 60,
     "noteFoldersToIgnore": [
       "**/*.excalidraw.md"
     ],
