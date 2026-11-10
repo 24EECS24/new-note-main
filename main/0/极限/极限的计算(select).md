@@ -1941,10 +1941,10 @@ $$
 $$
 xxxx
 
-- [*] 
+- [*]
 **题目：**
 求极限
-$\displaystyle \lim_{x\to0}\left(\frac{\sin^2 x}{x^4}-\frac{1}{x^2}\right).$ 
+$\displaystyle \lim_{x\to0}\left(\frac{\sin^2 x}{x^4}-\frac{1}{x^2}\right).$
 ?
 
 `````col
@@ -2014,6 +2014,7 @@ $$
 
 ````
 `````
+<!--SR:!fsrs,2026-11-16T04:05:04.302Z,6,8.2956,1,2,1,0,0,2026-11-10T04:05:04.302Z,id=6wcwls-->
 zzzz
 
 xxxx
