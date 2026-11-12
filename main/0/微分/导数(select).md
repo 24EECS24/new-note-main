@@ -250,13 +250,19 @@ zzzz
 
 xxxx
  - [*] **【题目】** 
-当 $x \to 0$ 时，$f(x)-1$ 是比 $\sin x$ 高阶的无穷小，且 $f(0)=1$，则下列选项正确的是（==C==）
+当 $x \to 0$ 时，$f(x)-1$ 是比 $\sin x$ 高阶的无穷小，且 $f(0)=1$，则下列选项正确的是（）
 
 - A. $f'(0)=1$
 - B. $\lim\limits_{x \to 0}f(x)=0$
 - C. $f'(0)=0$
-- D. $\lim\limits_{x \to 0}\sin f(x)=0$
+- D. $\lim\limits_{x \to 0}\sin f(x)=0$ 
+?
+````````col
+```````col-md
+flexGrow=20
+===
 
+==C==
 $$
 \begin{align*}
 
@@ -268,6 +274,24 @@ f'(0) &= \lim_{x \to x_0} \frac{f(x)-f(x_0)}{x-x_0} \\[4pt]
 &\therefore f'(0) = \lim_{x \to 0} \frac{f(x)-1}{\sin x} = 0
 \end{align*}
 $$
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+
+
  - [*] **【题目】** 
 
 设 $f(0)=0$,$f'(0)=-1$,则 $\lim\limits_{x \to 0}\dfrac{f(3x)}{x}=\underline{\quad\quad}$。
