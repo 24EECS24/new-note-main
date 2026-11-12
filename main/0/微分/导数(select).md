@@ -53,25 +53,11 @@ $$
 解析：&\\[4pt]
 \end{align*}
 $$ ?
-`````col
-````col-md
+``````col
+`````col-md
 flexGrow=20
 ===
 
-Column A
-
-````
-
-````col-md
-flexGrow=1
-===
-
-
-
-
-
-````
-`````
 `````col
 ````col-md
 flexGrow=1
@@ -150,6 +136,20 @@ $$
 $$\lim_{x \to 0} \frac{f(1)-f(1-x)}{2x} = \frac{1}{2}f'(1)$$
 
 
+
+
+`````
+
+`````col-md
+flexGrow=1
+===
+
+
+
+
+
+`````
+``````
 
 zzzz
 
