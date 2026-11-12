@@ -329,14 +329,27 @@ xxxx
 **题目**
 
 已知 $f'(0)=-2$，则极限 $\lim\limits_{x \to 0}\dfrac{f(-x)-f(0)}{\ln(1+3x)}=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
 
-**答案**：$\dfrac{2}{3}$
+Column A
 
-**解析**
+```````
 
-> $$\lim\limits_{x \to 0}\frac{f(-x)-f(0)}{\ln(1+3x)}=\lim\limits_{x \to 0}\frac{-f'(-x)}{3}=\frac{-f'(0)}{3}=\frac{2}{3}$$
+```````col-md
+flexGrow=1
+===
 
-**考点**：导数定义（广义化形式）
+
+
+
+
+```````
+````````
+
 
 
 
