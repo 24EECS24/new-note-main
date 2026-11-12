@@ -102,7 +102,39 @@ $$
 
 ````
 `````
- 
+**另一个思路** 
+用导数的广义形式写
+$$
+f'(1) = \lim_{x \to 1} \frac{f(x)-f(1)}{x-1}
+$$
+**只要当$\lim 下面的 x \to a$时，式子里的$w(x) \to x_0$ 则，极限值就不变** 
+通过换元来靠
+
+思路1：看到分子很像，往上转化
+要往 $\lim_{x \to 0} \frac{f(1)-f(1-x)}{2x}$ 上靠
+则，让 $x换为w(x)=1-x$ 
+且 $w(x) \to 1$ 
+则 $x \to 0$ 
+
+思路2：看到$\lim 下面是 x \to 0$ 
+且 $w(x) \to 1$ 
+看到分子很像，往上转化
+则，让 $x换为w(x)=1-x$ 
+
+$$
+\begin{align*}
+f'(1) &= \lim_{x \to 1} \frac{f(x)-f(1)}{x-1}= \lim_{x \to 0} \frac{f(1-x)-f(1)}{(1-x)-1} \\[6pt]
+&= \lim_{x \to 0} \frac{f(1)-f(1-x)}{x}
+\end{align*}
+$$
+即
+$$\lim_{x \to 0} \frac{f(1)-f(1-x)}{2x} = \frac{1}{2}f'(1)$$
+
+
+
+
+
+
  - [*] **【题目】** 
 
 设 $f'(x_0)=A$,则 $\lim\limits_{\Delta x \to 0}\dfrac{f(x_0+2\Delta x)-f(x_0-3\Delta x)}{\Delta x}=\underline{\quad\quad}$。
