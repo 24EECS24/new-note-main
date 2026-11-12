@@ -45,6 +45,68 @@ $\displaystyle \lim_{x\to-3}\frac{f(x)-f(-3)}{\sin(x+3)}=\lim_{x\to-3}\frac{f(x)
 <!--SR:!fsrs,2026-11-19T05:01:18.667Z,9,10.56215632,3.58131923,2,3,0,0,2026-11-10T05:01:18.667Z,id=laje7g-->
 zzzz
 
+## 判别的总结
+
+>$可微\Leftrightarrow 可导 \Rightarrow 连续 \Rightarrow 极限存在$ 
+>
+>$不可微\Leftrightarrow 不可导 \Leftarrow  不连续 \Leftarrow  极限不存在$ 
+>
+>即$A \to B \;\Longleftrightarrow\; (\neg) A \gets  (\neg) B$ (逆否命题)
+
+
+>极限存在
+>若，$\lim\limits_{x \to x_0^+} f(x) =\lim\limits_{x \to x_0^-} f(x)=A，(A为一确定的实数)$ 
+>则，此极限存在
+
+>连续
+>若，$\displaystyle \lim_{x \to x_0^+} f(x) = \lim_{x \to x_0^-} f(x) = f(x_0)=A，(A为一确定的实数)$ 
+>则称函数$f(x)$在点$x_0$处连续。
+
+>可导
+>若，$f'_-(x_0)$存在，$f'_+(x_0)$存在，且$f'_-(x_0)=f'_+(x_0)$ 
+>则称函数$f(x)$在点$x_0$处可导。
+
+>可微
+>若，$\displaystyle \lim\limits_{\Delta x \to 0} \frac{\Delta y - f'(x_0)\cdot\Delta x}{\Delta x}=0，\Delta y = f(x_0+\Delta x) - f(x_0)$  
+>即，$\displaystyle \Delta y - dy=o(\Delta x)$  
+>则称函数$f(x)$在点$x_0$处可微。
+
+
+xxxx
+
+**题目**
+
+设函数 $f(x)=\begin{cases}3x+2, & x \geq 1 \\ 2x^2-x+4, & x<1\end{cases}$，则在 $x=1$ 处（　　）
+
+- A. 连续，可导
+- B. 不连续，不可导
+- C. 不连续，可导
+- D. 连续，不可导
+?
+
+**答案**：A
+
+**解析**
+
+> $\lim\limits_{x\to1^-}f(x)=\lim\limits_{x\to1^-}(2x^2-x+4)=5$，$\lim\limits_{x\to1^+}f(x)=\lim\limits_{x\to1^+}(3x+2)=5$，$\lim\limits_{x\to1}f(x)=f(1)=5$，故 $f(x)$ 在 $x=1$ 处连续。
+>
+> $f'_-(1)=\lim\limits_{x\to1^-}\frac{2x^2-x+4-5}{x-1}=\lim\limits_{x\to1^-}\frac{(2x+1)(x-1)}{x-1}=3$，
+>
+> $f'_+(1)=\lim\limits_{x\to1^+}\frac{3x+2-5}{x-1}=3$，
+>
+> 左右导数相等，故可导。选 A。
+
+**考点**：分段函数在分段点的连续性与左右导数（可导充要条件）
+
+
+
+
+zzzz
+
+
+
+
+
 ## 导数的基本形式
 
 xxxx
