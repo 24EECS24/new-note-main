@@ -449,6 +449,45 @@ zzzz
 xxxx
 **题目**
 
+函数 $f(x)$ 在 $x=a$ 处可导，则 $\lim\limits_{x\to 0}\dfrac{f(a+x)-f(a-x)}{x}=$（　　）
+
+- A. $2f'(a)$
+- B. $0$
+- C. $f'(a)$
+- D. $\dfrac{1}{2}f'(a)$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：A
+
+**解析**
+
+> $$\text{原式}=\lim\limits_{x\to 0}\dfrac{f(a+x)-f(a)}{x}+\lim\limits_{x\to 0}\dfrac{f(a-x)-f(a)}{-x}=f'(a)+f'(a)=2f'(a)$$
+
+**考点**：导数定义（广义化形式）
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+zzzz
+
+
+xxxx
+**题目**
+
 设 $f(x)$ 在 $x=a$ 的某个邻域内有定义，若 $\lim\limits_{x\to a}\dfrac{f(x)-f(a)}{(x-a)^{3}}=6$，则在 $x=a$ 处（　　）
 
 - A. $f(x)$ 导数存在且 $f'(a)\neq 0$
