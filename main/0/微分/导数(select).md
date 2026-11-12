@@ -737,6 +737,44 @@ flexGrow=1
 
 zzzz
 
+xxxx
+**题目**
+
+曲线 $y=\dfrac{x}{2\ln x}+1$ 在点 $\left(\mathrm{e}^{2},\dfrac{\mathrm{e}^{2}}{4}+1\right)$ 处的切线斜率为（　　）
+
+- A. $-8$
+- B. $-\dfrac{1}{8}$
+- C. $\dfrac{1}{8}$
+- D. $8$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：C
+
+**解析**
+
+> $$y'=\dfrac{2\ln x-2}{(2\ln x)^2}=\dfrac{\ln x-1}{2(\ln x)^2}$$
+>
+> 在 $x=\mathrm{e}^2$ 处，$k=\dfrac{2-1}{2\cdot4}=\dfrac{1}{8}$。
+
+**考点**：导数的几何意义（切线斜率）
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
 ## 二元函数求导
 
 
