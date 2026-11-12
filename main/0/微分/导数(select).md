@@ -437,6 +437,36 @@ flexGrow=1
 ````````
 <!--SR:!fsrs,2026-11-18T06:14:27.411Z,6,8.2956,1,2,1,0,0,2026-11-12T06:14:27.411Z,id=kk4wzm-->
 zzzz
+
+## 函数在一点可导的充要条件
+
+xxxx
+
+**题目**
+
+已知 $f(x)=\begin{cases}\sin ax+2a-1, & x \geq 0 \\ \ln(1+bx)+3b, & x<0\end{cases}$ 在 $x=0$ 处可导，求参数 $a,b$ 的值。
+?
+
+**答案**：$a=-1,\ b=-1$
+
+**解析**
+
+> 可导必连续。$f(0)=2a-1$，$\lim\limits_{x\to0^+}f(x)=\lim\limits_{x\to0^+}[\ln(1+bx)+3b]=3b$，故 $2a-1=3b$。
+>
+> 右导数：$f'_+(0)=\lim\limits_{x\to0^+}\frac{\sin ax+2a-1-(2a-1)}{x}=\lim\limits_{x\to0^+}\frac{\sin ax}{x}=a$。
+>
+> 左导数：$f'_-(0)=\lim\limits_{x\to0^-}\frac{\ln(1+bx)+3b-(2a-1)}{x}=\lim\limits_{x\to0^-}\frac{\ln(1+bx)}{x}=b$。
+>
+> 可导要求 $a=b$。联立 $\begin{cases}2a-1=3b \\ a=b\end{cases}$，解得 $2a-1=3a$，$a=-1$，$b=-1$。
+
+**考点**：分段函数在分段点的连续性与左右导数（可导充要条件）
+
+
+
+
+
+
+
 ## 导数的几何意义
 
 xxxx
