@@ -53,7 +53,25 @@ $$
 解析：&\\[4pt]
 \end{align*}
 $$ ?
+`````col
+````col-md
+flexGrow=20
+===
 
+Column A
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+
+
+
+````
+`````
 `````col
 ````col-md
 flexGrow=1
