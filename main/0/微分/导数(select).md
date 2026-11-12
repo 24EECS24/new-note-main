@@ -52,7 +52,8 @@ $$
 &设函数f(x)可导，且满足条件\lim_{x \to 0}\frac{f(1)-f(1-x)}{2x}=1，则求 f'(1) \\[4pt]
 解析：&\\[4pt]
 \end{align*}
-$$ 
+$$ ?
+
 `````col
 ````col-md
 flexGrow=1
