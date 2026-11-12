@@ -456,7 +456,17 @@ xxxx
 flexGrow=20
 ===
 
-Column A
+**答案**：A
+
+**解析**
+
+> $f(1)=\sqrt[3]{0}+1=1$，$\lim\limits_{x \to 1}f(x)=1=f(1)$，故连续；
+>
+> $$f'(1)=\lim\limits_{x \to 1}\frac{\sqrt[3]{x-1}+x-1}{x-1}=\lim\limits_{x \to 1}\frac{1}{\sqrt[3]{(x-1)^2}}+1=\infty$$
+>
+> 故不可导。
+
+**考点**：一点可导性判断（连续但不可导）
 
 ```````
 
@@ -470,17 +480,9 @@ flexGrow=1
 
 ```````
 ````````
-**答案**：A
 
-**解析**
+zzzz
 
-> $f(1)=\sqrt[3]{0}+1=1$，$\lim\limits_{x \to 1}f(x)=1=f(1)$，故连续；
->
-> $$f'(1)=\lim\limits_{x \to 1}\frac{\sqrt[3]{x-1}+x-1}{x-1}=\lim\limits_{x \to 1}\frac{1}{\sqrt[3]{(x-1)^2}}+1=\infty$$
->
-> 故不可导。
-
-**考点**：一点可导性判断（连续但不可导）
 
 
 xxxx
