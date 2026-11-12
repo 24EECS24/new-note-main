@@ -53,16 +53,94 @@ $$
 解析：&\\[4pt]
 \end{align*}
 $$ ?
-```````col
-`````col-md
+````````col
+```````col-md
 flexGrow=20
 ===
 
-Column A
+`````col
+````col-md
+flexGrow=1
+===
 
+$$
+\begin{align*}
+&解法一:\\[6pt]
+&根据导数的定义，\\[6pt]
+&f'(x_0) = \lim\limits_{\Delta x \to 0}\frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}\\[6pt]
+&=\lim\limits_{x \to x_0}\frac{f(x)-f(x_0)}{x - x_0}\\[6pt]
+&令 x_0=1，则f'(1) = \lim\limits_{\Delta x \to 0}\frac{f(1+\Delta x)-f(1)}{\Delta x}\\[6pt]
+&即，\Delta x \to 0时，\frac{f(1+\Delta x)-f(1)}{\Delta x} \to f'(1) \\[6pt]
+&原式=\lim_{x \to 0}\frac{f(1-x)-f(1)}{-2x}=1  \\[6pt]
+&\!\! \qquad =\frac{1}{2} \lim_{x \to 0}\frac{f(1-x)-f(1)}{-x}=1 \\[6pt]
+&\!\! \qquad \therefore \ x \to 0时，\frac{f(1-x)-f(1)}{-x} \to 2\\[6pt]
+&\!\! \qquad \because \ \lim_{x \to 0}\frac{x}{-x}=常数，\\[6pt]
+&\!\! \qquad 即，x \to 0时，x与-x同阶无穷小 \\[6pt]
+&\!\! \qquad \therefore \ -x \to 0时，\frac{f(1-x)-f(1)}{-x} \to 2\\[6pt]
+& \!\! \qquad =\frac{1}{2} \lim_{-x \to 0}\frac{f(1-x)-f(1)}{-x}=1  \\[6pt]
+& \Rightarrow \ \lim_{-x \to 0}\frac{f(1-x)-f(1)}{-x}=f'(1)=2 \\[6pt]
+\end{align*}
+$$
+
+````
+
+````col-md
+flexGrow=1
+===
+
+$$
+\begin{aligned}
+&解法二:\\[6pt]
+\because f'(1) &= \lim_{h \to 0} \frac{f(1+h)-f(1)}{h} \\[4pt]
+& = \lim_{h \to 1} \frac{f(h)-f(1)}{h-1} \\[4pt]
+&= \lim_{x \to 0} \frac{f(1-x)-f(1)}{-x} \\[4pt]
+\therefore 原式 &= \lim_{x \to 0} \frac{-\left[f(1-x)-f(1)\right]}{2x} \\[4pt]
+& = \lim_{x \to 0} \frac{f(1-x)-f(1)}{-2x} \\[4pt]
+\Rightarrow f'(1) &= \lim_{x \to 0} \frac{f(1-x)-f(1)}{-x} \\[4pt]
+& = 2 \lim_{x \to 0} \frac{f(1-x)-f(1)}{-2x} \\[4pt]
+& = 2 \times 1 \\[4pt]
+& = 2 \\[4pt]
+\end{aligned}
+$$
+
+
+
+````
 `````
+**另一个思路** 
+用导数的广义形式写
+$$
+f'(1) = \lim_{x \to 1} \frac{f(x)-f(1)}{x-1}
+$$
+**只要当$\lim 下面的 x \to a$时，式子里的$w(x) \to x_0$ 则，极限值就不变** 
+通过换元来靠
 
-`````col-md
+思路1：看到分子很像，往上转化
+要往 $\lim_{x \to 0} \frac{f(1)-f(1-x)}{2x}$ 上靠
+则，让 $x换为w(x)=1-x$ 
+且 $w(x) \to 1$ 
+则 $x \to 0$ 
+
+思路2：看到$\lim 下面是 x \to 0$ 
+且 $w(x) \to 1$ 
+看到分子很像，往上转化
+则，让 $x换为w(x)=1-x$ 
+
+$$
+\begin{align*}
+f'(1) &= \lim_{x \to 1} \frac{f(x)-f(1)}{x-1}= \lim_{x \to 0} \frac{f(1-x)-f(1)}{(1-x)-1} \\[6pt]
+&= \lim_{x \to 0} \frac{f(1)-f(1-x)}{x}
+\end{align*}
+$$
+即
+$$\lim_{x \to 0} \frac{f(1)-f(1-x)}{2x} = \frac{1}{2}f'(1)$$
+
+
+
+
+```````
+
+```````col-md
 flexGrow=1
 ===
 
@@ -70,8 +148,8 @@ flexGrow=1
 
 
 
-`````
-``````
+```````
+````````
 
 zzzz
 
