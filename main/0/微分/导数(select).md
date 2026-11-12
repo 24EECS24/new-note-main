@@ -335,7 +335,13 @@ xxxx
 flexGrow=20
 ===
 
-Column A
+**答案**：$\dfrac{2}{3}$
+
+**解析**
+
+> $$\lim\limits_{x \to 0}\frac{f(-x)-f(0)}{\ln(1+3x)}=\lim\limits_{x \to 0}\frac{-f'(-x)}{3}=\frac{-f'(0)}{3}=\frac{2}{3}$$
+
+**考点**：导数定义（广义化形式）
 
 ```````
 
@@ -349,6 +355,8 @@ flexGrow=1
 
 ```````
 ````````
+
+zzzz
 
 
 
