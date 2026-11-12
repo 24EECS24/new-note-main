@@ -45,7 +45,7 @@ $\displaystyle \lim_{x\to-3}\frac{f(x)-f(-3)}{\sin(x+3)}=\lim_{x\to-3}\frac{f(x)
 zzzz
 
 ## 导数的基本形式
-
+xxxx
  - [*] **【题目】** 
 $$
 \begin{align*}  % *号表示不自动加公式编号，更简洁
@@ -132,7 +132,7 @@ $$\lim_{x \to 0} \frac{f(1)-f(1-x)}{2x} = \frac{1}{2}f'(1)$$
 
 
 
-
+zzzz
 
 
  - [*] **【题目】** 
