@@ -363,10 +363,11 @@ flexGrow=1
 zzzz
 ## 导数的几何意义
 
-
+xxxx
  - [*] **【题目】** 
 
 $y=a(x-1)^2+x\cos x$ 在 $(0,a)$ 处的切线斜率为 $-4$，则常数 $a=$ $\underline{\qquad\qquad}$。
+?
 
 **答案**：$\dfrac{5}{2}$
 
