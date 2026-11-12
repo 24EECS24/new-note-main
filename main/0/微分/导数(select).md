@@ -158,9 +158,14 @@ zzzz
 
 xxxx
 
- - [*] **【题目】** 
+ - [*] **【题目】**
 
 设 $f'(x_0)=A$,则 $\lim\limits_{\Delta x \to 0}\dfrac{f(x_0+2\Delta x)-f(x_0-3\Delta x)}{\Delta x}=\underline{\quad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
 
 **【解析】**
 
@@ -177,6 +182,22 @@ $$
 \end{aligned}
 $$
 
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+<!--SR:!fsrs,2026-11-20T05:53:50.607Z,8,8.2956,1,2,1,0,0,2026-11-12T05:53:50.607Z,id=elo88x-->
+
+zzzz
 
  - [*] **【题目】** 
 
