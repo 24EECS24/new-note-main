@@ -200,3 +200,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794553905068,"c":"8cirql","r":2,"k":1,"ivl":26,"li":6,"s":24.99,"d":4.01,"ms":50043,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
 {"t":1794554742415,"c":"k7h09e","r":2,"k":1,"ivl":24,"li":6,"s":24.99,"d":4.01,"ms":60000,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
 {"t":1794555003099,"c":"g8kl3c","r":2,"k":1,"ivl":28,"li":7,"s":28.31,"d":4.01,"ms":60000,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
+{"t":1794555050401,"c":"zafmuz","r":2,"k":1,"ivl":27,"li":9,"s":28.31,"d":4.01,"ms":47126,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
