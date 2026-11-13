@@ -12,6 +12,48 @@ $\lim\limits_{x \to x_0^+} f(x)$ 与 $\lim\limits_{x \to x_0^-} f(x)$ 的存在�
 xxxx
 **题目**
 
+设函数 $f(x)=\begin{cases}ax^{2}+2x-1,&x<1\\b,&x=1\\\dfrac{x^{2}-1}{\sin(\sqrt{x}-1)},&x>1\end{cases}$ 在 $x=1$ 处连续，求 $a$ 和 $b$ 的值。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$a=3$，$b=4$
+
+**解析**
+
+> $f(1)=b$。
+>
+> 左极限：$\lim\limits_{x\to1^-}f(x)=a+2-1=a+1$。
+>
+> 右极限：令 $t=\sqrt{x}-1$，当 $x\to1^+$ 时 $t\to0^+$。
+>
+> $$\lim_{x\to1^+}\frac{x^2-1}{\sin(\sqrt{x}-1)}=\lim_{t\to0^+}\frac{[(1+t)^2-1][(1+t)^2+1]}{\sin t}=\lim_{t\to0^+}\frac{(2t+t^2)(2+2t+t^2)}{\sin t}=4.$$
+>
+> 由连续性：$a+1=b=4$，故 $a=3$，$b=4$。
+
+**考点**：分段函数连续性，等价无穷小代换
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+zzzz
+
+
+xxxx
+**题目**
+
 已知函数 $f(x)=\begin{cases}\dfrac{2\tan ax}{x}, & x<0 \\ a+1, & x=0 \\ (1-bx)^{\frac{1}{x}}, & x>0\end{cases}$ 在 $x=0$ 处连续，则 $a,b$ 的值为（　　）
 
 - A. $a=1,b=\ln 2$
