@@ -24,7 +24,17 @@ xxxx
 flexGrow=20
 ===
 
-Column A
+**答案**：B
+
+**解析**
+
+> 由连续条件 $\lim\limits_{x\to0^-}f(x)=\lim\limits_{x\to0^+}f(x)=f(0)$，$f(0)=a+1$。
+>
+> $\lim\limits_{x\to0^-}\frac{2\tan ax}{x}=2a$，$\lim\limits_{x\to0^+}(1-bx)^{1/x}=e^{-b}$，
+>
+> 故 $2a=e^{-b}=a+1$，解得 $a=1$，$e^{-b}=2$ 即 $b=-\ln 2$。选 B。
+
+**考点**：利用分段函数在分段点连续求参数（连续定义、重要极限）
 
 ```````
 
@@ -38,17 +48,7 @@ flexGrow=1
 
 ```````
 ````````
-**答案**：B
 
-**解析**
-
-> 由连续条件 $\lim\limits_{x\to0^-}f(x)=\lim\limits_{x\to0^+}f(x)=f(0)$，$f(0)=a+1$。
->
-> $\lim\limits_{x\to0^-}\frac{2\tan ax}{x}=2a$，$\lim\limits_{x\to0^+}(1-bx)^{1/x}=e^{-b}$，
->
-> 故 $2a=e^{-b}=a+1$，解得 $a=1$，$e^{-b}=2$ 即 $b=-\ln 2$。选 B。
-
-**考点**：利用分段函数在分段点连续求参数（连续定义、重要极限）
 
 
 
