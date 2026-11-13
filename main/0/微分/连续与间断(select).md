@@ -15,34 +15,15 @@ $\lim\limits_{x \to x_0^+} f(x)$ 与 $\lim\limits_{x \to x_0^-} f(x)$ 的存在�
 
 ## 运算法则
 
+
+
 ## 间断点的定义与分类
 
-### 汇总
-
->**只看三个** 
->$\lim\limits_{x \to x_0^+} f(x)$，$\lim\limits_{x \to x_0^-} f(x)$ ，$f(x_0)$ 
->
->**其中**，$\lim\limits_{x \to x_0} f(x)=A$ 相当于是$\lim\limits_{x \to x_0^+} f(x)=A$，$\lim\limits_{x \to x_0^-} f(x)=A$ 
->
->**可去**：$\lim\limits_{x \to x_0^+} f(x)=\lim\limits_{x \to x_0^-} f(x)=A$ ，$f(x_0)=B$ **或** $\lim\limits_{x \to x_0} f(x)=A$ ，$f(x_0)=B$ 
->
->**跳跃**：$\lim\limits_{x \to x_0^+} f(x) \neq \lim\limits_{x \to x_0^-} f(x)$ 
->
->**无穷**：$\lim\limits_{x \to x_0^+} f(x)$，$\lim\limits_{x \to x_0^-} f(x)$ ，$二个任意一个=\infty$ 
->
->**震荡**：$\lim\limits_{x \to 0}\sin\frac{1}{x}，\lim\limits_{x \to 0}\cos\frac{1}{x}$ 
 
 
-前提：以下设函数$f(x)$在$x_0$的某去心邻域内有定义（讨论范围为$f(x_0)$的附近区域）。
+
 ### 第一类间断点
-- 可去间断点（可补间断点）：
-若$\lim\limits_{x \to x_0} f(x) = A \neq f(x_0)$（$f(x_0)$甚至可以无定义），
-则$x=x_0$为可去间断点/可补间断点。
 
-即$\lim\limits_{x \to x_0^+} f(x)$与$\lim\limits_{x \to x_0^-} f(x)$存在且相等，但不等于$f(x_0)$。
-
-- 跳跃间断点：
-若$\lim\limits_{x \to x_0^-} f(x)$与$\lim\limits_{x \to x_0^+} f(x)$都存在，但$\lim\limits_{x \to x_0^-} f(x) \neq \lim\limits_{x \to x_0^+} f(x)$（与$f(x_0)$是否有定义、取值如何无关），则$x=x_0$为跳跃间断点。
 
 ### 第二类间断点
 
