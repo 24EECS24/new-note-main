@@ -8,6 +8,8 @@ $\lim\limits_{x \to x_0^+} f(x)$ 与 $\lim\limits_{x \to x_0^-} f(x)$ 的存在�
 
 ### 一元函数
 
+
+xxxx
 **题目**
 
 已知函数 $f(x)=\begin{cases}\dfrac{2\tan ax}{x}, & x<0 \\ a+1, & x=0 \\ (1-bx)^{\frac{1}{x}}, & x>0\end{cases}$ 在 $x=0$ 处连续，则 $a,b$ 的值为（　　）
@@ -16,6 +18,7 @@ $\lim\limits_{x \to x_0^+} f(x)$ 与 $\lim\limits_{x \to x_0^-} f(x)$ 的存在�
 - B. $a=1,b=-\ln 2$
 - C. $a=2,b=\ln 2$
 - D. $a=2,b=-\ln 2$
+?
 
 **答案**：B
 
