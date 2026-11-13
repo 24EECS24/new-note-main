@@ -193,3 +193,6 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794553527417,"c":"nwqnyb","r":4,"k":0,"n":1,"ivl":10,"li":0,"s":8.3,"d":1,"ms":52165,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
 {"t":1794553541838,"c":"2kfne9","r":4,"k":0,"n":1,"ivl":7,"li":0,"s":8.3,"d":1,"ms":14190,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
 {"t":1794553746920,"c":"u1grj6","r":3,"k":0,"n":1,"ivl":0.0069,"li":0,"s":2.31,"d":2.12,"ms":60000,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
+{"t":1794553781642,"c":"95n2jw","r":4,"k":0,"ivl":5,"li":0,"s":3.95,"d":1,"ms":34519,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
+{"t":1794553791785,"c":"ehg042","r":4,"k":0,"ivl":4,"li":0,"s":3.95,"d":1,"ms":9902,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
+{"t":1794553797136,"c":"u1grj6","r":4,"k":0,"ivl":3,"li":0,"s":3.95,"d":1,"ms":5159,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
