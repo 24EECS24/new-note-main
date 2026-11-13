@@ -202,3 +202,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794555003099,"c":"g8kl3c","r":2,"k":1,"ivl":28,"li":7,"s":28.31,"d":4.01,"ms":60000,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
 {"t":1794555050401,"c":"zafmuz","r":2,"k":1,"ivl":27,"li":9,"s":28.31,"d":4.01,"ms":47126,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
 {"t":1794555314740,"c":"knol74","r":2,"k":1,"ivl":30,"li":8,"s":28.31,"d":4.01,"ms":60000,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
+{"t":1794556283263,"c":"6gp5gp","r":2,"k":1,"ivl":27,"li":8,"s":26.7,"d":4.01,"ms":60000,"dk":"flashcards/证明题/微分等式与不等式","f":"0/证明题/微分等式与不等式.md"}
