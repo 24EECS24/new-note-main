@@ -10,6 +10,8 @@ $\lim\limits_{x \to x_0^+} f(x)$ 与 $\lim\limits_{x \to x_0^-} f(x)$ 的存在�
 
 
 
+
+
 ### 二元函数
 
 
@@ -22,116 +24,16 @@ $\lim\limits_{x \to x_0^+} f(x)$ 与 $\lim\limits_{x \to x_0^-} f(x)$ 的存在�
 
 
 
+
+
 ### 第一类间断点
+
+
 
 
 ### 第二类间断点
 
-`````col
-````col-md
-flexGrow=2.5
-===
 
-> 无穷间断点：
->若$\lim\limits_{x \to x_0} f(x) = \infty$，或$\lim\limits_{x \to x_0^+} f(x) = \infty$，或$\lim\limits_{x \to x_0^-} f(x) = \infty$，
->则$x=x_0$为无穷间断点。
-
-eg：$y=\frac{1}{x}$的$x=0$点
-````
-
-````col-md
-flexGrow=1
-===
-
-```tikz
-\begin{document}
-\begin{tikzpicture}[>=stealth,line cap=round,line join=round,scale=0.5]
-\draw[->] (-4,0) -- (4,0); %gen
-\draw[->] (0,-5) -- (0,5); %gen
-\draw[thick,domain=-4:-0.2,samples=40] plot(\x,{(1)/(\x)}); %gen
-\draw[thick,domain=0.2:4,samples=40] plot(\x,{(1)/(\x)}); %gen
-\node[below left] at(0,0){$0$};
-\end{tikzpicture}
-\end{document}
-```
-
-
-
-````
-`````
-
->振荡间断点：
->若$\lim\limits_{x \to x_0} f(x)$因振荡不存在，则$x=x_0$为振荡间断点。
->即在该点的去心邻域内，函数呈现振荡的状态。
-
-`````col
-````col-md
-flexGrow=1
-===
-
-例：$y=\sin\frac{1}{x}$在点$x=0$处没有定义；当$x \to 0$时，函数值在$-1$与$1$之间振荡取值，值不唯一，
-极限不存在，故点$x=0$为$y=\sin\frac{1}{x}$的振荡间断点。
-
-````
-
-````col-md
-flexGrow=1
-===
-
-```tikz
-\begin{document}
-
-\begin{tikzpicture}[>=stealth,line cap=round,line join=round,scale=1]
-\path (-4,-1.56) rectangle (4,1.56); %fbbox
-\draw[->] (-3.8,0) -- (3.8,0);
-\draw[->] (0,-1.4) -- (0,1.4);
-\draw[thick,domain=-3.28:-1.12,samples=34] plot(\x,{sin((1/\x) r)});
-\draw[thick,domain=-1.12:-0.43,samples=34] plot(\x,{sin((1/\x) r)});
-\draw[thick,domain=-0.43:-0.17,samples=34] plot(\x,{sin((1/\x) r)});
-\draw[thick,domain=-0.17:-0.06,samples=34] plot(\x,{sin((1/\x) r)});
-\draw[thick,domain=-0.06:-0.02,samples=34] plot(\x,{sin((1/\x) r)});
-\draw[thick,domain=0.02:0.06,samples=34] plot(\x,{sin((1/\x) r)});
-\draw[thick,domain=0.06:0.17,samples=34] plot(\x,{sin((1/\x) r)});
-\draw[thick,domain=0.17:0.43,samples=34] plot(\x,{sin((1/\x) r)});
-\draw[thick,domain=0.43:1.12,samples=34] plot(\x,{sin((1/\x) r)});
-\draw[thick,domain=1.12:3.28,samples=34] plot(\x,{sin((1/\x) r)});
-\end{tikzpicture}
-
-\end{document}
-```
-
-
-
-````
-`````
-
-## 例1.37
-求函数$f(x)=\frac{e^{\frac{1}{x-1}} \ln(1+x)}{(e^x -1)(x-2)}$的第二类间断点的个数为$\underline{\qquad}$。
-首先确定无定义点/间断点：$x=0$（对应因子$e^x-1$）、$x=2$（对应因子$x-2$）、$x=1$（对应因子$e^{\frac{1}{x-1}}$）、$x=-1$（对应因子$\ln(1+x)$），因子与间断点由箭头指示对应关系。
-$\lim\limits_{x\to 1^+} f(x) = \infty$（例1.15已算过）
-$\implies x=1$为第二类间断点。
-当$x\to0$，$|x|$充分小时：
-$\ln|1+x|=\ln(1+x)\sim x$
-$e^x -1 \sim x$
-$x-2 \sim -2$
-$e^{\frac{1}{x-1}} \sim \frac{1}{e}$
-$\implies 原式 = \lim_{x\to 0} \frac{e^{\frac{1}{x-1}} \ln(1+x)}{(e^x -1)(x-2)} = -\frac{1}{2e} \implies \exists$
-$\implies \lim\limits_{x\to 0^+}f(x)$与$\lim\limits_{x\to 0^-}f(x)$存在且相等
-而$f(0)$无定义
-$\implies x=0$是可去间断点。
-$x\to2$时
-$x-2\to0$
-$e^x-1$，$e^{\frac{1}{x-1}}$，$\ln(1+x)$都趋向一常数
-$\frac{1}{x-2}\cdot$常数$\to\infty$
-$\Rightarrow \lim\limits_{x\to2} f(x)=\infty$
-则$x=2$为第二类间断点
-
-$x\to-1$时
-$1+x\to0$
-$\ln|1+x|\to\infty$
-$e^{\frac{1}{x-1}}$，$e^x-1$，$x-2$都趋向一常数
-$\Rightarrow$原式$=\lim\limits_{x\to-1} \ln|1+x|\cdot$常数$=\infty$
-$\Rightarrow x=-1$是第二类间断点
 
 
 
