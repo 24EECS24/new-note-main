@@ -122,7 +122,7 @@ flexGrow=20
 
 > 参数方程求导：
 >
-> $$\frac{dy}{dx}=\frac{dy/dt}{dx/dt}=\frac{e^t+\cos t}{-e^{-t}-\sin t}$$
+> $$\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}=\frac{e^t+\cos t}{-e^{-t}-\sin t}$$
 >
 > 代入 $t=0$：$\dfrac{1+1}{-1-0}=\dfrac{2}{-1}=-2$。选 B。
 
