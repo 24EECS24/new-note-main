@@ -742,7 +742,7 @@ zzzz
 xxxx
 **题目**
 
-已知函数 $f(x)=\begin{cases}2-x,&x\neq 0\\ 1,&x=0\end{cases}$，则点 $x=0$ 是 $f(x)$ 的______间断点。
+已知函数 $f(x)=\begin{cases}2-x,&x\neq 0\\ 1,&x=0\end{cases}$，则点 $x=0$ 是 $f(x)$ 的______
 ?
 ````````col
 ```````col-md

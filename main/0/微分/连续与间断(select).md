@@ -12,6 +12,45 @@ $\lim\limits_{x \to x_0^+} f(x)$ 与 $\lim\limits_{x \to x_0^-} f(x)$ 的存在�
 xxxx
 **题目**
 
+已知函数 $f(x)=\begin{cases}\dfrac{x^2-ax+1}{x-1},&x\neq 1\\ 2,&x=1\end{cases}$，则在点 $x=1$ 处，下列结论正确的是（　　）
+
+- A. $a=2$ 时，$f(x)$ 必连续
+- B. $a=2$ 时，$f(x)$ 不连续
+- C. $a=-1$ 时，$f(x)$ 连续
+- D. $a=1$ 时，$f(x)$ 必连续
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：B
+
+**解析**
+
+> $a=2$ 时，$\lim\limits_{x\to1}\dfrac{x^2-2x+1}{x-1}=\lim\limits_{x\to1}(x-1)=0\neq f(1)=2$，不连续，故选 B。
+
+**考点**：分段函数在分段点连续性的判定（连续定义）
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+zzzz
+
+
+xxxx
+**题目**
+
 "极限 $\lim\limits_{x\to a}f(x)$ 存在"是"函数 $f(x)$ 在点 $a$ 处连续"的（　　）
 
 - A. 充分而非必要条件
