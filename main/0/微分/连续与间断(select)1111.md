@@ -582,7 +582,8 @@ flexGrow=1
 
 zzzz
 
-有两个wu'ding'yi
+有两个无定义点，1与2
+发现，其在x=2处的极限是去
 
 
 xxxx
