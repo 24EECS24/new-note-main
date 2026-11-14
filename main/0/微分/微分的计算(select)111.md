@@ -64,7 +64,7 @@ xxxx
 - B. $2f(\cos x)f'(\cos x)$
 - C. $-2\sin x f(\cos x)f'(\cos x)$
 - D. $2\sin x f(\cos x)f'(\cos x)$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -110,7 +110,7 @@ xxxx
 - B. $-2$
 - C. $1$
 - D. $-1$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -151,7 +151,7 @@ xxxx
 **题目**
 
 设函数 $f(x)=e^{x^2}-2x$，则 $\mathrm{d}f(x)=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -190,7 +190,7 @@ xxxx
 **题目**
 
 设二元函数 $z=e^{x+y}-\ln(x+y)$，则 $\dfrac{\partial^2 z}{\partial x\partial y}\bigg|_{\substack{x=1\\y=0}}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -235,7 +235,7 @@ xxxx
 **题目**
 
 设函数 $y=(\sin x)^x$，求 $\dfrac{dy}{dx}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -282,7 +282,7 @@ xxxx
 **题目**
 
 已知函数 $z=z(x,y)$ 由方程 $\sin x-xy^2+e^z-z=0$ 确定，求 $\mathrm{d}z$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -338,7 +338,7 @@ xxxx
 - B. $f''(e^x)e^{2x}$
 - C. $e^x f'(e^x)+e^{2x}f''(e^x)$
 - D. $e^x f'(e^x)+e^x f''(e^x)$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -386,7 +386,7 @@ xxxx
 - B. $2^{2025}\cos 2x$
 - C. $-2^{2025}\cos 2x$
 - D. $-2^{2025}\sin 2x$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -436,7 +436,7 @@ xxxx
 - B. $\dfrac{y}{x-z}$
 - C. $\dfrac{y}{z-x}$
 - D. $\dfrac{x}{y-z}$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -477,7 +477,7 @@ xxxx
 **题目**
 
 设 $\int f(x)\mathrm{d}x=x^2+\ln(2x)+C$，则 $f(x)=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -516,7 +516,7 @@ xxxx
 **题目**
 
 $f(x,y)=x^2+\tan\dfrac{xy}{x^2+y^2}$，则 $\dfrac{\partial f(x,y)}{\partial x}\bigg|_{(1,0)}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -557,7 +557,7 @@ xxxx
 **题目**
 
 对于函数 $\begin{cases}x=(t+1)^3+1\\ y=\arcsin\sqrt{t}\end{cases}$，求 $\dfrac{dy}{dx}\bigg|_{t=\frac{1}{2}}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -600,7 +600,7 @@ xxxx
 **题目**
 
 设二元函数 $z=(x-y)\sin(xy)$，求 $x\dfrac{\partial z}{\partial x}-y\dfrac{\partial z}{\partial y}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -653,7 +653,7 @@ xxxx
 - B. $(x+2)e^{-x}-\sin x$
 - C. $(x-2)e^{-x}+\sin x$
 - D. $(x-2)e^{-x}-\sin x$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -702,7 +702,7 @@ xxxx
 - B. $-1$
 - C. $2$
 - D. $-2$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -741,7 +741,7 @@ xxxx
 **题目**
 
 设函数 $y=f(x)$ 由方程 $x^2 y-e^y+3=y$ 所确定，则 $\dfrac{dy}{dx}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -782,7 +782,7 @@ xxxx
 **题目**
 
 设 $z=xy e^{x^2+y^2}$，则 $\dfrac{\partial z}{\partial x}\bigg|_{\substack{x=0\\y=1}}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -821,7 +821,7 @@ xxxx
 **题目**
 
 已知函数 $y=e^{\sin 2x}+\arcsin\sqrt{x}$，求 $y'$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -864,7 +864,7 @@ xxxx
 **题目**
 
 已知函数 $z=f(x,y)$ 由方程 $x^2+e^{-y}+z=xyz$ 所确定，求 $\mathrm{d}z$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -919,7 +919,7 @@ xxxx
 - B. $\dfrac{1}{x^3+6}\mathrm{d}x$
 - C. $\dfrac{1}{x+4}\mathrm{d}x$
 - D. $\dfrac{1}{x-4}\mathrm{d}x$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -965,7 +965,7 @@ xxxx
 - B. $a^3+6$
 - C. $a+6$
 - D. $a^2+6$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1004,7 +1004,7 @@ xxxx
 **题目**
 
 设 $f(x)=(7x-6)^{\frac{8}{7}}+9x$，则 $f''(1)=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1045,7 +1045,7 @@ xxxx
 **题目**
 
 设参数方程 $\begin{cases}y=\sqrt{3}t^3+t\\ x=t^2-5\end{cases}$（$t$ 为参数），则 $\dfrac{dy}{dx}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1082,7 +1082,7 @@ xxxx
 **题目**
 
 设函数 $z=2\sin x^2+e^{2y}-3xy^2$，则 $\mathrm{d}z=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1123,7 +1123,7 @@ xxxx
 **题目**
 
 设函数 $y=y(x)$ 是由方程 $\cos y=e^{2x+y}+x^3-y^2+3\pi$ 所确定的隐函数，求 $\dfrac{dy}{dx}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1168,7 +1168,7 @@ xxxx
 **题目**
 
 设 $z=u^2+\cos(xy+u)$，而 $u=x\ln y$，求 $\dfrac{\partial z}{\partial x}$ 和 $\dfrac{\partial z}{\partial y}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1219,7 +1219,7 @@ xxxx
 - B. $\dfrac{1}{\sqrt{2x}}+\sin 3x$
 - C. $-\dfrac{1}{\sqrt{2x}}-\sin 3x$
 - D. $\dfrac{1}{\sqrt{2x}}-\dfrac{1}{3}\sin 3x$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1265,7 +1265,7 @@ xxxx
 - B. $2$
 - C. $3$
 - D. $4$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1309,7 +1309,7 @@ xxxx
 - B. $\dfrac{-3\mathrm{d}x}{\sqrt{1-(3x+1)^2}}$
 - C. $\dfrac{3\mathrm{d}x}{\sqrt{1+(3x+1)^2}}$
 - D. $\dfrac{-3\mathrm{d}x}{\sqrt{1+(3x+1)^2}}$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1350,7 +1350,7 @@ xxxx
 **题目**
 
 已知函数 $f(x)=5^x$，则 $f^{(n)}(x)=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1387,7 +1387,7 @@ xxxx
 **题目**
 
 已知 $u=5+e^{3x-yz}$，则 $\dfrac{\partial^2 u}{\partial x\partial y}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1428,7 +1428,7 @@ xxxx
 **题目**
 
 若 $F(x,y,z)=\sin(x+3y-2z)=x+3y-2z$ 确定隐函数 $z=z(x,y)$，求 $\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1481,7 +1481,7 @@ xxxx
 - B. $n!$
 - C. $0$
 - D. $n!a_n$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1523,7 +1523,7 @@ xxxx
 - B. $1$
 - C. $\dfrac{1}{2}$
 - D. $\dfrac{1}{4}$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1569,7 +1569,7 @@ xxxx
 - B. $2$
 - C. $-2$
 - D. $-1$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1608,7 +1608,7 @@ xxxx
 **题目**
 
 设曲线方程为 $\begin{cases}x=2\cos\theta+\sin 2\theta\\ y=2\sin\theta+\cos 2\theta\end{cases}$（$\theta$ 为参数），则 $\dfrac{dy}{dx}\bigg|_{\theta=0}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1647,7 +1647,7 @@ xxxx
 **题目**
 
 设二元函数 $z=2xy+y^2$，则 $\mathrm{d}z\big|_{(3,1)}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1686,7 +1686,7 @@ xxxx
 **题目**
 
 设函数 $y=\arctan\sqrt{x}$，求 $\dfrac{dy}{dx}$ 及 $\dfrac{dy}{dx}\big|_{x=1}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1725,7 +1725,7 @@ xxxx
 **题目**
 
 设二元函数 $z=\dfrac{x^2}{3y}+\arcsin(xy)$，求 $xy\dfrac{\partial z}{\partial x}-y^2\dfrac{\partial z}{\partial y}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1774,7 +1774,7 @@ xxxx
 - B. $\sqrt{2}$
 - C. $\dfrac{\sqrt{2}}{2}$
 - D. $-\dfrac{\sqrt{2}}{2}$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1822,7 +1822,7 @@ xxxx
 - B. $\dfrac{3y-3x^2}{2y-3x}$
 - C. $\dfrac{2y-3x}{3x^2-3y}$
 - D. $\dfrac{3x-2y}{3x^2-3y}$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1870,7 +1870,7 @@ xxxx
 - B. $2^{n-1}e^{2x}$
 - C. $2^n e^{2x}$
 - D. $2^{n+1}e^{2x}$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1918,7 +1918,7 @@ xxxx
 - B. $-y^4\cos(xy^2)$
 - C. $y^4\sin(xy^2)$
 - D. $-y^4\sin(xy^2)$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -1959,7 +1959,7 @@ xxxx
 **题目**
 
 设 $f(x)=x^3+3x\lim\limits_{x\to 2}f(x)$，且 $\lim\limits_{x\to 2}f(x)$ 存在，则 $f'(x)=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2004,7 +2004,7 @@ xxxx
 **题目**
 
 设 $z=\ln(x^2+y)$，则全微分 $\mathrm{d}z=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2043,7 +2043,7 @@ xxxx
 **题目**
 
 求函数 $y=x^{\ln x}$ 的导数。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2086,7 +2086,7 @@ xxxx
 **题目**
 
 设函数 $z=z(x,y)$ 由方程 $x^2+y^3+3xyz^2+2z=1$ 所确定，求 $\dfrac{\partial z}{\partial x}$，$\dfrac{\partial z}{\partial y}$。（其中 $6xyz+2\neq 0$）
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2139,7 +2139,7 @@ xxxx
 - B. $e^x\mathrm{d}x$
 - C. $(1+x)e^x\mathrm{d}x$
 - D. $(x+e^x)\mathrm{d}x$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2185,7 +2185,7 @@ $z=x\ln(x+y)$，求 $\dfrac{\partial^2 z}{\partial x\partial y}=$（　　）
 - B. $\dfrac{y}{(x+y)^2}$
 - C. $\dfrac{2x+y}{(x+y)^2}$
 - D. $\dfrac{x+2y}{(x+y)^2}$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2236,7 +2236,7 @@ $y=2e^x-x^2+x+1$，$y^{(520)}=$（　　）
 - B. $2e^x$
 - C. $2e^{520x}$
 - D. $0$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2277,7 +2277,7 @@ xxxx
 **题目**
 
 求出 $z=x^2+y^2$ 的全微分 $\mathrm{d}z=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2316,7 +2316,7 @@ xxxx
 **题目**
 
 求参数方程 $\begin{cases}x=\dfrac12\cos^3 t\\ y=\dfrac12\sin^3 t\end{cases}$ 的导数 $\dfrac{dy}{dx}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2353,7 +2353,7 @@ xxxx
 **题目**
 
 $xy+xyz=2x-4y$，$xy\neq 0$，求 $\dfrac{\partial z}{\partial x}$，$\dfrac{\partial z}{\partial y}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2406,7 +2406,7 @@ xxxx
 - B. $\dfrac{1}{x^2}$
 - C. $-\dfrac{1}{x}$
 - D. $-\dfrac{1}{x^2}$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2450,7 +2450,7 @@ xxxx
 - B. $2x(2y+1)^{x-1}$
 - C. $(2y+1)^x\ln(2y+1)$
 - D. $2(2y+1)^x\ln(2y+1)$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2491,7 +2491,7 @@ xxxx
 **题目**
 
 已知函数 $y=x\sin x$，则 $\mathrm{d}y=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2530,7 +2530,7 @@ xxxx
 **题目**
 
 已知 $\begin{cases}x=2(t-\sin t)\\ y=2(1-\cos t)\end{cases}$，$0\leq t\leq 2\pi$，求 $\dfrac{d^2y}{dx^2}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2573,7 +2573,7 @@ xxxx
 **题目**
 
 已知函数 $z=e^{xy}+\cos(x+y)$，求全微分 $\mathrm{d}z$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2622,7 +2622,7 @@ xxxx
 - B. $5\cos 5x+3\sin 3x$
 - C. $\cos 5x-\sin 3x$
 - D. $\cos 5x+\sin 3x$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2668,7 +2668,7 @@ xxxx
 - B. $12x^3y$
 - C. $18x^3y^2$
 - D. $6x^2y^2$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2714,7 +2714,7 @@ xxxx
 - B. $2y$
 - C. $3y^2$
 - D. $3x^2$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2760,7 +2760,7 @@ xxxx
 - B. $f'(x)=\dfrac{1}{x-1}$
 - C. $f'(x)=\dfrac{1}{1-x}$
 - D. 不存在
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2806,7 +2806,7 @@ xxxx
 - B. $1$
 - C. $-\dfrac{\pi}{2}$
 - D. $2\pi$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2847,7 +2847,7 @@ xxxx
 **题目**
 
 已知函数 $y=x\arctan x$，则 $y''=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2886,7 +2886,7 @@ xxxx
 **题目**
 
 设 $y=\sin^3(2x+1)$，$y'=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2925,7 +2925,7 @@ xxxx
 **题目**
 
 设 $y=e^{x\cos x}$，$\mathrm{d}y=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -2964,7 +2964,7 @@ xxxx
 **题目**
 
 求函数 $z=x^2y^2+e^{xy}$ 在点 $(1,1)$ 处的全微分。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -3005,7 +3005,7 @@ xxxx
 **题目**
 
 设函数 $y=y(x)$ 由方程 $\ln(x^2+y)=x^3y+\sin x$ 确定，求 $\dfrac{dy}{dx}\bigg|_{x=0}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -3048,7 +3048,7 @@ xxxx
 **题目**
 
 求曲线 $\begin{cases}x=e^t\cos t\\ y=e^t\sin t\end{cases}$ 在 $t=\dfrac{\pi}{2}$ 处的法线方程。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -3091,7 +3091,7 @@ xxxx
 **题目**
 
 设 $y=x^{\sin x}$（$x>0$），求 $y'$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -3144,7 +3144,7 @@ xxxx
 - B. $\varphi'(1)$
 - C. $\varphi(0)$
 - D. $\varphi(1)$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -3190,7 +3190,7 @@ xxxx
 - B. $3x^2$
 - C. $2y$
 - D. $2x$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -3231,7 +3231,7 @@ xxxx
 **题目**
 
 函数 $f(x)=e^{1-x}$，在点 $x=0.99$ 处的近似值为　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -3270,7 +3270,7 @@ xxxx
 **题目**
 
 函数 $z=xy-x^2-y^2$ 在点 $(0,1)$ 处的全微分 $\mathrm{d}z\big|_{(0,1)}=$　$\underline{\qquad\quad}$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -3311,7 +3311,7 @@ xxxx
 **题目**
 
 求函数 $y=\sqrt{2-\cos x}$ 的导数。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -3350,7 +3350,7 @@ xxxx
 **题目**
 
 已知函数 $z=f(x,y)$ 由方程 $xz-yz-x+y=0$ 所确定，求全微分 $\mathrm{d}z$。
-
+?
 ````````col
 ```````col-md
 flexGrow=20
