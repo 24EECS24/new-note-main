@@ -211,3 +211,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794557603906,"c":"yceegu","r":3,"k":2,"ivl":1,"li":0,"s":1.45,"d":7.02,"ms":21189,"dk":"flashcards/证明题/微分等式与不等式","f":"0/证明题/微分等式与不等式.md"}
 {"t":1794557611444,"c":"1z7ozh","r":3,"k":2,"ivl":1,"li":0,"s":1.43,"d":7.02,"ms":7351,"dk":"flashcards/证明题/微分等式与不等式","f":"0/证明题/微分等式与不等式.md"}
 {"t":1794558463691,"c":"800l27","r":4,"k":0,"n":1,"ivl":8,"li":0,"s":8.3,"d":1,"ms":12416,"dk":"flashcards/微分/连续与间断","f":"0/微分/连续与间断(select).md"}
+{"t":1794630393875,"c":"z80d9r","r":4,"k":0,"n":1,"ivl":7,"li":0,"s":8.3,"d":1,"ms":5004,"dk":"flashcards/函数/三要素","f":"0/函数/函数三要素(select).md"}
