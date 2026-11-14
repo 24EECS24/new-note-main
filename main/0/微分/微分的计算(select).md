@@ -1,0 +1,905 @@
+## 基本求导公式
+
+
+| 类别    | 公式                                                                                                                                                                                                                                                                                                                                                                                                     |
+| :---- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 幂函数   | $\displaystyle (x^\alpha)'=\alpha x^{\alpha-1}$（$\alpha$ 为常数）<br>$\displaystyle  (x^{-1})'=-x^{-2}=-\frac{1}{x^2}$                                                                                                                                                                                                                                                                                     |
+| 指数函数  | $\displaystyle (a^x)'=a^x\ln a\ (a>0,a\neq1)$<br>$\displaystyle (a^x)''=a^x(\ln a)^2$，$(e^x)'=e^x$<br>$\displaystyle (a^x)^{(n)}=a^x(\ln a)^n$，$(e^x)^{(n)}=e^x$                                                                                                                                                                                                                                       |
+| 对数函数  | $\displaystyle (\log_a x)'=\frac{1}{x\ln a}\ (a>0,a\neq1)$<br>$\displaystyle (\ln x)'=\frac{1}{x}$<br>$\displaystyle (\ln(-x))'=\frac{1}{-x}\cdot(-1)=\frac{1}{x}$ <br>$\displaystyle \ln\vert x\vert=\begin{cases}\ln x,&x>0\\\ln(-x),&x<0\end{cases}$，$(\ln\vert x\vert)'=\dfrac{1}{x}\ (x\neq0)$，视绝对值而不见<br>$\displaystyle (\ln\vert u(x)\vert)'=\frac{1}{u(x)}\cdot u'(x) \ (u(x)\neq0)$，依旧视绝对值而不见 |
+| 三角函数  | $\displaystyle (\sin x)'=\cos x$ <br>$\displaystyle (\cos x)'=-\sin x$ <br>$\displaystyle (\tan x)'=\sec^2x=\frac{1}{\cos^2x}=1+\tan^2x$ <br>$\displaystyle (\cot x)'=-\csc^2 x$ <br>$\displaystyle (\sec x)'=\sec x\tan x$ <br>$\displaystyle (\csc x)'=-\csc x\cot x$                                                                                                                                |
+| 反三角函数 | $\displaystyle (\arcsin x)'=\frac{1}{\sqrt{1-x^2}}$<br>$\displaystyle (\arccos x)'=-\frac{1}{\sqrt{1-x^2}}$<br>$\displaystyle (\arctan x)'=\frac{1}{1+x^2}$<br>$\displaystyle (\operatorname{arccot} x)'=-\frac{1}{1+x^2}$                                                                                                                                                                             |
+| 反双曲函数 | $\displaystyle \left[\ln\left(x+\sqrt{x^2+1}\right)\right]'=\frac{1}{\sqrt{x^2+1}}$<br>$\displaystyle \left[\ln\left(x+\sqrt{x^2-1}\right)\right]'=\frac{1}{\sqrt{x^2-1}}$                                                                                                                                                                                                                             |
+
+
+## 四则运算
+
+
+
+| 类别   | 公式                                                                                                                                                                                                                                                                                                 |
+| :--- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 和差求导 | $\displaystyle [u(x)\pm v(x)]'=u'(x)\pm v'(x)$                                                                                                                                                                                                                                                     |
+| 和差微分 | $\displaystyle d[u(x)\pm v(x)]=d[u(x)]\pm d[v(x)]$                                                                                                                                                                                                                                                 |
+| 积的求导 | $\displaystyle [u(x)v(x)]'=u'(x)v(x)+u(x)v'(x)$<br><br><br>$\displaystyle [u(x)v(x)w(x)]'=u'(x)v(x)w(x)+u(x)v'(x)w(x)+u(x)v(x)w'(x)$<br><br><br>超过三个因子一般不要直接求导，另谋蹊径                                                                                                                                |
+| 积的微分 | $\displaystyle d[u(x)v(x)]=u(x)d[v(x)]+d[u(x)]v(x)$                                                                                                                                                                                                                                                |
+| 商的求导 | $\displaystyle \left[\frac{u(x)}{v(x)}\right]'=\frac{u'(x)v(x)-u(x)v'(x)}{[v(x)]^2},\quad v(x)\neq0$<br><br><br>$\displaystyle \left[\frac{u(x)}{v(x)}\right]'$ 可看成 $\displaystyle \left[u(x)\cdot\frac{1}{v(x)}\right]'$，是一个复合函数                                                                  |
+| 商的微分 | $\displaystyle d\left[\frac{u(x)}{v(x)}\right]=\frac{v(x)d[u(x)]-u(x)d[v(x)]}{[v(x)]^2},\quad v(x)\neq0$                                                                                                                                                                                           |
+| 记号说明 | $\displaystyle [u(x)v(x)]'=u'(x)v(x)+u(x)v'(x)$<br><br><br>$\displaystyle \frac{d[u(x)v(x)]}{dx}=\frac{d[u(x)]}{dx}\cdot v(x)+u(x)\cdot\frac{d[v(x)]}{dx}$<br><br><br>$\displaystyle \Rightarrow d[u(x)v(x)]=d[u(x)]\cdot v(x)+u(x)\cdot d[v(x)]$<br><br><br>即把“'”看作“$\dfrac{d}{dx}$”，（等号两边的dx抵消了） |
+
+**注意区分符号：** 
+
+$$
+\begin{align*}
+微分的平方: \quad &[D(\ )]^2 = \left( \frac{d(\ )}{dx} \right)^2 = \frac{d(\ )^2}{dx^2}\\[4pt]
+二阶微分:\quad &\frac{d^2(\ )}{dx^2}=\frac{d\left( \frac{d(\ )}{dx} \right) }{dx}\\[4pt]
+复合导:\quad &d(x^2)=2xdx\\[4pt]
+\end{align*}
+$$
+
+# 一元微分
+
+## 复合函数求导与微分形式不变性
+
+$$
+\begin{align*}
+&设u=g(x)在点处可导(泛指的点)，y=f(u)在点u=g(x)处可导，\\[4pt]
+&则复合函数求导法则为：\\[4pt]
+
+&\begin{array}{@{}c@{\qquad}c@{}}
+
+\begin{aligned}
+&求导顺序：(f\to g\to x)  \\[4pt]
+&\left\{f[g(x)]\right\}' = f'[g(x)]\cdot g'(x) \\[4pt]
+&\left\{f[v(g(x))]\right\}' = f'[v(g(x))] \cdot v'[g(x)] \cdot g'(x)\\[4pt]
+&微分形式的不变性:\\[4pt]
+&df(u) = f'(u)\cdot du\\[4pt]
+\displaystyle d\{f[v(g(x))]\}&=f'[v(g(x))]\cdot d[v(g(x))]\\[4pt]
+\displaystyle &=f'[v(g(x))]\cdot v'[g(x)]\cdot d[g(x)]\\[4pt]
+\displaystyle &=f'[v(g(x))]\cdot v'[g(x)]\cdot g'(x)\,dx\\[4pt]
+\end{aligned}
+&
+\begin{aligned}
+&即把“'”看作“\dfrac{d}{dx}”\\[4pt]
+&推导:\\[4pt]
+&\frac{df[g(x)]}{dx} = \frac{df[g(x)]}{dg(x)} \cdot \frac{dg(x)}{dx}\\[4pt]
+&\frac{df[g(x)]}{dx} = f'[g(x)] \cdot \frac{dg(x)}{dx}\\[4pt]
+&df[g(x)]= f'[g(x)]dg(x)\\[4pt]
+\end{aligned}
+
+\end{array}\\[4pt]
+
+\end{align*}
+
+$$
+
+## 分段函数求导
+设
+$$f(x)=
+\begin{cases}
+f_1(x), & x\geq x_0 \\
+f_2(x), & x<x_0
+\end{cases}
+$$
+其中，$f_1(x),f_2(x)$分别在$x>x_0,x<x_0$时可导，则：
+
+`````col
+````col-md
+flexGrow=1
+===
+
+**①** 在分段点$x_0$处用导数定义求导：(因为断点处，导数可能不存在)
+$$f'_+(x_0)=\lim_{x\to x_0^+}\frac{f_1(x)-f(x_0)}{x-x_0}$$
+$$f'_-(x_0)=\lim_{x\to x_0^-}\frac{f_2(x)-f(x_0)}{x-x_0}$$
+根据$f'_+(x_0)$是否等于$f'_-(x_0)$来判定$f'(x_0)$是否存在。
+
+````
+
+````col-md
+flexGrow=1
+===
+
+**②** 在非分段点，用导数公式求导：
+即
+$x>x_0$时，$f'(x)=f'_1(x)$
+$x<x_0$时，$f'(x)=f'_2(x)$
+
+
+
+
+````
+`````
+
+## 含绝对值求导
+
+**带绝对值的话，通过写成分段函数的形式去掉绝对值。** 
+
+
+eg：函数 $y=|x e^{-x}|$，求 $y''$。
+去绝对值，将函数写为分段形式：
+
+$\displaystyle y=|x e^{-x}|=\begin{cases}x e^{-x}, & x\geq 0 \\-x e^{-x}, & x<0 \end{cases}$ 
+
+`````col
+````col-md
+flexGrow=1
+===
+
+**①** 判断分段点$x=0$处的导数存在性：
+左导数：
+$$y'_-(0)=\lim_{x\to 0^-} \frac{y(x)-y(0)}{x-0}=\lim_{x\to 0^-} \frac{-x e^{-x} - 0}{x-0}=-1$$
+右导数：
+$$y'_+(0)=\lim_{x\to 0^+} \frac{y(x)-y(0)}{x-0}=\lim_{x\to 0^+} \frac{x e^{-x} - 0}{x-0}=1$$
+因为 $y'_-(0)\neq y'_+(0)$，所以$y'(0)$不存在，因此$y''(0)$不存在。
+
+````
+
+````col-md
+flexGrow=1
+===
+
+**②**分别在开区间内计算二阶导数：
+当$x>0$时：
+$$y'=e^{-x} + x e^{-x}\cdot (-1)=(1-x)e^{-x}$$
+$$
+\begin{align*}
+y''&=-e^{-x} + (1-x)(-e^{-x})\\
+&=(x-2)e^{-x}
+\end{align*}
+$$
+当$x<0$时：
+$$y'=-e^{-x} + (-x e^{-x})\cdot (-1)=(x-1)e^{-x}$$
+$$y''=(2-x)e^{-x}$$
+
+
+
+````
+`````
+
+综上，函数的二阶导数为：
+$$y''(x)=
+\begin{cases}
+(x-2)e^{-x}, & x>0 \\
+(2-x)e^{-x}, & x<0
+\end{cases}$$
+
+## 反函数求导
+
+**注**：某区间内严格单调 ⟹ 每个 y 只对应一个 x ⟹ 某区间内有反函数
+
+设$y=f(x)$为单调、可导函数，且$f'(x)\neq0$，
+则存在反函数$x=f^{-1}(y)$，设$f^{-1}(\ )=\varphi(\ )$，即反函数为$x=\varphi(y)$。
+
+$\displaystyle f'(x) = \frac{dy}{dx}, \quad \varphi'(y) = \frac{dx}{dy}$ 
+
+$\displaystyle \because \frac{dx}{dy} = \frac{1}{\frac{dy}{dx}}$ 
+$\displaystyle \therefore \varphi'(y) = \frac{1}{f'(x)}$ 
+### 二阶导
+
+`````col
+````col-md
+flexGrow=1
+===
+
+$$\begin{align*}
+&\varphi''(y) = -\frac{f''(x)}{\left[f'(x)\right]^3}\\[4pt]
+&f''(x) = -\frac{\varphi''(y)}{\left[\varphi'(y)\right]^3}\\[4pt]
+\end{align*}$$
+
+````
+
+````col-md
+flexGrow=1
+===
+
+$$
+\begin{align*}
+\varphi''(y) &= \frac{d\left(\frac{dx}{dy}\right)}{dy} = \frac{d\left(\frac{1}{f'(x)}\right)}{dy} \\[4pt]
+&= \frac{d\left(\frac{1}{f'(x)}\right)}{dx} \cdot \frac{dx}{dy}\\[4pt]
+&= -\frac{1}{\left[f'(x)\right]^2} \cdot f''(x) \cdot \frac{1}{f'(x)}\\[4pt]
+&= -\frac{f''(x)}{\left[f'(x)\right]^3}\\[4pt]
+\end{align*}
+$$
+
+
+
+````
+`````
+
+## 隐函数求导
+
+
+设函数$y=f(x)$是由方程$F(x,y)=0$确定的可导函数，求解步骤如下：
+1.  将方程$F(x,y)=0$看作$F(x,f(x))=0$，即把$y$视为关于$x$的函数，求导时将$f(x)$作为中间变量。
+2.  对方程$F(x,f(x))=0$两边对自变量$x$求导，得到关于$f'(x)$的方程。
+3.  从求导后的方程中解出$f'(x)$。
+
+## 参数方程求导
+
+设函数$y=y(x)$由参数方程$\begin{cases} x = g(t) \\ y = w(t) \end{cases}$确定，其中，$t$是参数，且$g(t),w(t)$均可导，$g'(t)\neq0$，
+
+则：$\displaystyle y'=\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}=\frac{w'(t)}{g'(t)}$ 
+
+### 二阶导
+设函数$y=y(x)$由参数方程$\begin{cases} x = g(t) \\ y = w(t) \end{cases}$确定，其中，$t$是参数，且$g(t),w(t)$均二阶可导，$g'(t)\neq0$，
+
+则：$\displaystyle y''(x)=\frac{d^2 y}{dx^2}=\frac{d\left(\frac{dy}{dx}\right)}{dx}=\frac{d\left( \frac{w'(t)}{g'(t)}\right)}{dx}=\frac{\frac{d\left( \frac{w'(t)}{g'(t)} \right)}{dt}}{\frac{dx}{dt}}=\frac{\frac{d\left( \frac{w'(t)}{g'(t)} \right)}{dt}}{g'(t)}$ 
+$$d\left( \frac{w'(t)}{g'(t)} \right) = \frac{w''(t)g'(t) - w'(t)g''(t)}{\left[g'(t)\right]^2}$$
+
+$\displaystyle y''(x) = \frac{w''(t)g'(t) - w'(t)g''(t)}{\left[g'(t)\right]^3}$ 
+
+
+若设$\frac{w'(t)}{g'(t)}$为$\varphi(t)$，
+则
+$\displaystyle y''(x)=\frac{d^2 y}{dx^2}=\frac{d\left(\frac{dy}{dx}\right)}{dx}=\frac{d\left( \frac{w'(t)}{g'(t)}\right)}{dx}=\frac{\frac{d\left( \frac{w'(t)}{g'(t)} \right)}{dt}}{\frac{dx}{dt}}=\frac{\frac{d\left( \frac{w'(t)}{g'(t)} \right)}{dt}}{g'(t)}= \frac{\frac{d\varphi(t)}{dt}}{g'(t)} = \frac{\varphi'(t)}{g'(t)}$ 
+
+其中$\displaystyle \varphi'(t)=\left( \frac{w'(t)}{g'(t)} \right)'=d\left( \frac{w'(t)}{g'(t)} \right) = \frac{w''(t)g'(t) - w'(t)g''(t)}{\left[g'(t)\right]^2}$ 
+
+## 多项式求导
+### 对数求导法
+对于多项式相乘、相除、乘方的式子（为了求导的方便）：
+一般先对等式两边同时取对数（前提是两边式子都$>0$），再求导。
+
+设$y=f(x)$，$f(x)>0$，则：
+等式两边取对数，即：
+$$\ln y = \ln f(x)$$
+
+对数可以实现以下运算转化：
+$$\begin{cases}
+乘 \to 加 \\
+除 \to 减 \\
+幂次 \to 倍数
+\end{cases}$$
+
+两边对自变量$x$求导：
+注：求导时，将$y$看成关于$x$的函数$f(x)$，会涉及复合函数，即：
+$$[\ln f(x)]' = \frac{1}{f(x)} \cdot f'(x)$$
+
+
+## 幂指函数求导法
+对于幂指函数$f(x)^{g(x)}$（满足$f(x)>0$，且$f(x)\neq1$），利用指数恒等式转换：
+$$f(x)^{g(x)} = e^{g(x)\ln[f(x)]}$$
+
+求导推导如下：
+设$w(x) = g(x)\ln[f(x)]$，则
+$$\begin{align*}
+\left[f(x)^{g(x)}\right]' &= \left[e^{g(x)\ln[f(x)]}\right]' \\[4pt]
+&= \left[e^{w(x)}\right]'\\[4pt]
+&= e^{w(x)} \cdot w'(x)  \\[4pt]
+&= f(x)^{g(x)} \cdot  \left[g(x)\ln[f(x)]\right]'  \\[4pt]
+w'(x) =\left[g(x)\ln[f(x)]\right]'&= g'(x)\cdot \ln[f(x)] + g(x)\cdot \frac{1}{f(x)} \cdot f'(x)
+\end{align*}$$
+
+
+即
+$$\left[f(x)^{g(x)}\right]' = f(x)^{g(x)}\left[g'(x)\ln f(x) + g(x)\cdot\frac{f'(x)}{f(x)}\right]$$
+
+## 求高阶导（求导的阶数≥2，一般为n阶）
+求高阶导数主要有三种方法：
+1.  **归纳法**：逐次求导，探索规律，得出通式。
+
+常用的高阶导数（$n\in \mathbb{N}_+$）：
+$$(e^{ax+b})^{(n)} = a^n e^{ax+b}$$
+$$\left[\sin(ax+b)\right]^{(n)} = a^n \sin\left(ax+b + \frac{n\pi}{2}\right)$$
+$$\left[\cos(ax+b)\right]^{(n)} = a^n \cos\left(ax+b + \frac{n\pi}{2}\right)$$
+$$\left[\ln(ax+b)\right]^{(n)} = (-1)^{n-1}a^n \frac{(n-1)!}{(ax+b)^n}$$
+$$\left(\frac{1}{ax+b}\right)^{(n)} = (-1)^n a^n \frac{n!}{(ax+b)^{n+1}}$$
+
+遇到不常见的，向常见的去转化。
+
+
+### 莱布尼茨公式
+设$u=u(x), v=v(x)$均$n$阶可导，则
+$$(u\pm v)^{(n)} = u^{(n)} \pm v^{(n)}$$
+$$
+\begin{aligned}
+(uv)^{(n)} &= \mathrm{C}_n^0 u^{(n)}v + \mathrm{C}_n^1 u^{(n-1)}v' + \mathrm{C}_n^2 u^{(n-2)}v'' + \dots \\
+&\quad + \mathrm{C}_n^k u^{(n-k)}v^{(k)} + \dots + \mathrm{C}_n^{n-1} u'v^{(n-1)} + \mathrm{C}_n^n u v^{(n)} \\
+&= \sum_{k=0}^n \mathrm{C}_n^k u^{(n-k)} v^{(k)}
+\end{aligned}
+$$
+有时要莱布尼茨公式与归纳法中的通式结合着用。
+
+### 补充：排列数与组合数
+排列数：$\mathrm{A}_n^m = \underbrace{n(n-1)(n-2)\cdots(n-m+1)}_{m项相乘}$，例：$\mathrm{A}_6^3 = 6\times5\times4$
+组合数：$\mathrm{C}_n^m = \frac{\mathrm{A}_n^m}{\mathrm{A}_m^m} = \frac{n(n-1)(n-2)\cdots(n-m+1)}{m!}$，例：$\mathrm{C}_6^3 = \frac{6\times5\times4}{3\times2\times1}$
+规定$\mathrm{C}_n^0=1$：“不选择，也是一种选择”
+性质：$\mathrm{C}_n^m = \mathrm{C}_n^{n-m}$
+10个人送出6个人去比赛等价于10个人送出4个人不去比赛。
+
+## 泰勒展开式
+任何一个任意阶可导的函数都可以写成：
+在$x=x_0$点展开：
+$$y=f(x)=\sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$$
+在$x=0$处展开：
+$$y=f(x)=\sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}x^n$$
+我们的先辈们已经帮我们求出了一些常见的任意阶可导函数在$x=0$处的泰勒展开式，这些公式最好记住：
+$$e^x=\sum_{n=0}^{\infty} \frac{x^n}{n!}=1+x+\frac{x^2}{2!}+\dots+\frac{x^n}{n!}+\dots,\quad -\infty<x<+\infty$$
+$$\frac{1}{1+x}=\sum_{n=0}^{\infty} (-1)^n x^n=1-x+x^2-x^3+\dots+(-1)^n x^n+\dots,\quad -1<x<1$$
+$$\frac{1}{1-x}=\sum_{n=0}^{\infty} x^n=1+x+x^2+x^3+\dots+x^n+\dots,\quad -1<x<1$$
+$$\ln(1+x)=\sum_{n=1}^{\infty} (-1)^{n-1}\frac{x^n}{n}=x-\frac{x^2}{2}+\frac{x^3}{3}-\dots+(-1)^{n-1}\frac{x^n}{n}+\dots,\quad -1<x\leq1$$
+$$
+\begin{align*}
+\sin x&=\sum_{n=0}^{\infty} (-1)^n \frac{x^{2n+1}}{(2n+1)!},\quad -\infty<x<+\infty\\
+&=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\dots+(-1)^n \frac{x^{2n+1}}{(2n+1)!}+\dots
+\end{align*}
+$$
+$$
+\begin{align*}
+\cos x&=\sum_{n=0}^{\infty} (-1)^n \frac{x^{2n}}{(2n)!},\quad -\infty<x<+\infty\\
+&=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\dots+(-1)^n \frac{x^{2n}}{(2n)!}+\dots
+\end{align*}
+$$
+$$(1+x)^\alpha=1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^2+\dots$$
+$\tan x = x+\frac{1}{3}x^3+\dots$，$\arctan x = x-\frac{1}{3}x^3+\dots$
+$\arcsin x = x+\frac{1}{6}x^3+\dots$
+
+### 函数泰勒展开式的唯一性
+无论$f(x)$在哪个点处展开，其泰勒展开式具有唯一性。
+我们可以比较$f(x)$在$x=x_0$处展开和在$x=0$处展开的系数，来获得$f^{(n)}(x_0)$或$f^{(n)}(0)$。
+即：背会展开式，由于展开式中包含了$f^{(n)}(x_0)$，所以可由展开式得出$f^{(n)}(x_0)$。
+
+
+eg：
+将$\ln(1-x)$直接展开为幂级数：
+$$f(x)=x^2\ln(1-x)=x^2\left(-x-\frac{x^2}{2}-\dots-\frac{x^{n-2}}{n-2}-\dots\right)$$
+而$f(x)$的麦克劳林展开式形式为：
+$$f(x)=f(0)+f'(0)x+\frac{f''(0)}{2!}x^2+\dots+\frac{f^{(n)}(0)}{n!}x^n+\dots$$
+根据展开式的唯一性，对比等式两边$x^n$的系数，可得：
+$$-\frac{1}{n-2} = \frac{f^{(n)}(0)}{n!} \implies f^{(n)}(0) = -\frac{n!}{n-2}$$
+
+
+# 二元微分学的计算
+
+## 二元复合函数求导
+
+### 求偏导
+
+设 $z = f(u,v)$，$u = \varphi(x,y)$，$v = w(x,y)$，
+则 $z = f\left[\varphi(x,y), w(x,y)\right]$，
+
+**z对x的偏导数** 
+
+`````col
+````col-md
+flexGrow=1
+===
+
+
+求偏导路径为$z \to u \to x$、$z \to v \to x$，
+y为求偏导时固定的另一自变量
+
+````
+
+````col-md
+flexGrow=1
+===
+
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node at (0,0) {$z$};
+    \node at (1,0.5) {$u$};
+    \node at (1,-0.5) {$v$};
+    \node at (2,0.5) {$x$};
+    \node at (2,-0.8) {$y$};
+    \draw[->] (0.2,0.1) -- (0.8,0.4);
+    \draw[->] (0.2,-0.1) -- (0.8,-0.4);
+    \draw[->] (1.2,0.5) -- (1.8,0.5);
+    \draw[->] (1.2,-0.4) -- (1.8,0.4);
+\end{tikzpicture}
+\end{document}
+```
+
+
+
+````
+`````
+
+偏导计算公式：
+$$
+\frac{\partial z}{\partial x} = \frac{\partial z}{\partial u} \cdot \frac{\partial u}{\partial x} + \frac{\partial z}{\partial v} \cdot \frac{\partial v}{\partial x}
+$$
+
+
+**z对y的偏导数** 
+
+`````col
+````col-md
+flexGrow=1
+===
+
+求导路径为$z \to u \to y$、$z \to v \to y$，
+x为求偏导时固定的另一自变量
+
+````
+
+````col-md
+flexGrow=1
+===
+
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node at (0,0) {$z$};
+    \node at (1,0.5) {$u$};
+    \node at (1,-0.5) {$v$};
+    \node at (2,-0.5) {$y$};
+    \node at (2,0.8) {$x$};
+    \draw[->] (0.2,0.1) -- (0.8,0.4);
+    \draw[->] (0.2,-0.1) -- (0.8,-0.4);
+    \draw[->] (1.2,0.4) -- (1.8,-0.4);
+    \draw[->] (1.2,-0.5) -- (1.8,-0.5);
+\end{tikzpicture}
+\end{document}
+```
+
+
+
+````
+`````
+
+偏导计算公式：
+$$
+\frac{\partial z}{\partial y} = \frac{\partial z}{\partial u} \cdot \frac{\partial u}{\partial y} + \frac{\partial z}{\partial v} \cdot \frac{\partial v}{\partial y}
+$$
+
+### 求全导
+
+- [*] 设 $f(u,v)=z$，$u=\varphi(t)$，$v=w(t)$，
+则 $z = f\left[\varphi(t), w(t)\right]$，
+
+`````col
+````col-md
+flexGrow=1
+===
+
+
+求导路径为$z \to u \to t$、$z \to v \to t$
+
+````
+
+````col-md
+flexGrow=1
+===
+
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node at (0,0) {$z$};
+    \node at (1,0.5) {$u$};
+    \node at (1,-0.5) {$v$};
+    \node at (2,0) {$t$};
+    \draw[->] (0.2,0.1) -- (0.8,0.4);
+    \draw[->] (0.2,-0.1) -- (0.8,-0.4);
+    \draw[->] (1.2,0.4) -- (1.8,0.1);
+    \draw[->] (1.2,-0.4) -- (1.8,-0.1);
+\end{tikzpicture}
+\end{document}
+```
+
+
+
+````
+`````
+
+全导数计算公式：
+$$
+\frac{dz}{dt} = \frac{\partial z}{\partial u} \cdot \frac{du}{dt} + \frac{\partial z}{\partial v} \cdot \frac{dv}{dt}
+$$
+
+
+- [*] 设 $f(y,x)=z$，$y=g(x)$ 
+则 $z = f\left[g(x)， x\right]$，
+
+`````col
+````col-md
+flexGrow=1
+===
+
+$$
+\begin{align*}
+dz 
+&= \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy \\[4pt]
+&= \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y} \frac{dy}{dx}dx \\[4pt]
+\end{align*}
+$$
+
+````
+
+````col-md
+flexGrow=1
+===
+
+
+$$
+\begin{align*}
+&dy = \frac{dy}{dx}dx \\[4pt]
+&dx = \frac{dx}{dx}dx \\[4pt]
+\end{align*}
+$$
+
+
+````
+`````
+
+### 微分形式不变性 
+
+设 $z = f(u,v)$，$u = u(x,y)$，$v = v(x,y)$。
+如果 $f(u,v)$，$u(x,y)$，$v(x,y)$ 分别有连续偏导数，
+则复合函数 $z = f(u,v)$ 在 $(x,y)$ 处的全微分可表示为
+$$\mathrm{d}z = \frac{\partial z}{\partial u}\mathrm{d}u + \frac{\partial z}{\partial v}\mathrm{d}v$$
+无论 $u,v$ 是自变量还是中间变量，上式都成立。
+
+无论$z$对哪个变量求导，无论$z$已经求了几阶导，求导后的新函数，仍然具有与原函数完全相同的复合结构。
+
+
+$$
+\begin{align*}
+&设 z = f(u,v)，u = \varphi(x,y)，v = w(x,y)，y=g(x) \\[4pt]
+&则 z = f\left[\varphi(x,y), w(x,y)\right]=f\left[\varphi(x,g(x)), w(x,g(x))\right]  \\[4pt]
+& \\[4pt]
+
+&dz = \frac{\partial z}{\partial u} du + \frac{\partial z}{\partial v} dv \\[4pt]
+&du = \frac{\partial u}{\partial x} dx + \frac{\partial u}{\partial y} dy \\[4pt]
+&dv = \frac{\partial v}{\partial x} dx + \frac{\partial v}{\partial y} dy \\[4pt]
+&dy = \frac{dy}{dx} dx \\[4pt]
+&dx = \frac{dx}{dx}dx \\[4pt]
+
+扩展&\\[4pt]
+
+&若 F = f(u,v)，其中u = u(x,y,z)，v = v(x,y,z)，z = \varphi(x,y)，y = g(x) \\[4pt]
+&则 \\[4pt]
+
+&dF = \frac{\partial F}{\partial u} du + \frac{\partial F}{\partial v} dv \\[4pt]
+&du = \frac{\partial u}{\partial x} dx + \frac{\partial u}{\partial y} dy + \frac{\partial u}{\partial z} dz \\[4pt]
+&dv = \frac{\partial v}{\partial x} dx + \frac{\partial v}{\partial y} dy + \frac{\partial v}{\partial z} dz \\[4pt]
+&dz = \frac{\partial z}{\partial x} dx + \frac{\partial z}{\partial y} dy \\[4pt]
+&dy = \frac{dy}{dx} dx \\[4pt]
+&dx = \frac{dx}{dx}dx \\[4pt]
+
+
+
+\end{align*}
+$$
+
+该复合结构为多层链式依赖，直接通过链式法则求偏导需要梳理所有依赖路径，计算繁琐；利用一阶全微分形式不变性，可无需提前梳理路径，直接逐层写出微分：
+后续只需代入$\mathrm{d}z$、$\mathrm{d}y$的微分表达式，整理即可得到最终结果。
+
+### 对位置的标记规则
+
+
+
+`````col
+````col-md
+flexGrow=1
+===
+
+若 $z = f(u,v)$，$u = \varphi(x,y)$，$v = w(x,y)$
+
+```tikz
+\begin{document}
+\definecolor{curveblue}{rgb}{0.2,0.3,0.8}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    % Nodes for variables
+    \node (z) at (0,0) {$z$};
+    \node[draw,rectangle,minimum size=0.5cm] (u) at (1.5,0.8) {$u$};
+    \node[draw,rectangle,minimum size=0.5cm] (v) at (1.5,-0.8) {$v$};
+    \node (x) at (3,1.2) {$x$};
+    \node (y) at (3,-1.2) {$y$};
+    % Index labels for intermediate variables
+    \node at (1.0,1.1) {$1$};
+    \node at (1.0,-1.1) {$2$};
+    % Arrows for dependency
+    \draw[->,curveblue] (z) -- (u);
+    \draw[->,curveblue] (z) -- (v);
+    \draw[->,curveblue] (u) -- (x);
+    \draw[->,curveblue] (u) -- (y);
+    \draw[->,curveblue] (v) -- (x);
+    \draw[->,curveblue] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+我们一般称：
+- $u$为1类（第1个中间变量）
+- $v$为2类（第2个中间变量）
+
+偏导数记号约定：
+$$
+\begin{align*}
+z_u' &= f_u'(u,v) = f_1'(u,v) = f_1' = z_1' \\
+z_v' &= f_v'(u,v) = f_2'(u,v) = f_2' = z_2'
+\end{align*}
+$$
+
+一阶偏导链式法则：
+$$
+\begin{align*}
+z_x' &= z_u' \cdot u_x' + z_v' \cdot v_x' \\
+&= f_1' \cdot u_x' + f_2' \cdot v_x' \\[6pt]
+z_y' &= z_u' \cdot u_y' + z_v' \cdot v_y' \\
+&= f_1' \cdot u_y' + f_2' \cdot v_y'
+\end{align*}
+$$
+
+二阶偏导记号：
+$$
+z_{uu}'' = f_{11}'',\quad z_{uv}'' = f_{12}''
+$$
+
+````
+
+````col-md
+flexGrow=1
+===
+
+**注** 
+
+若 $z = f(u,v)$，$u = \varphi(x,y)$，$v = w(x,y)$
+复合函数变量依赖关系图，
+```tikz
+\begin{document}
+\definecolor{curveblue}{rgb}{0.2,0.3,0.8}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    % Nodes for variables
+    \node (z) at (0,0) {$z$};
+    \node[draw,rectangle,minimum size=0.5cm] (u) at (1.5,0.8) {$u$};
+    \node[draw,rectangle,minimum size=0.5cm] (v) at (1.5,-0.8) {$v$};
+    \node (x) at (3,1.2) {$x$};
+    \node (y) at (3,-1.2) {$y$};
+    % Index labels for intermediate variables
+    \node at (1.0,1.1) {$x$};
+    \node at (1.0,-1.1) {$y$};
+    % Arrows for dependency
+    \draw[->,curveblue] (z) -- (u);
+    \draw[->,curveblue] (z) -- (v);
+    \draw[->,curveblue] (u) -- (x);
+    \draw[->,curveblue] (u) -- (y);
+    \draw[->,curveblue] (v) -- (x);
+    \draw[->,curveblue] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+
+偏导数记号约定：
+$$
+\begin{align*}
+z_u' &= f_u'(u,v) = f_x'(u,v) = f_x' = z_x' \\
+z_v' &= f_v'(u,v) = f_y'(u,v) = f_y' = z_y'
+\end{align*}
+$$
+
+$f_x'$为$f$对标$x$的中间变量位置求偏导，并非对自变量$x$求偏导。
+
+
+
+
+````
+`````
+
+### 二元导函数的复合结构 
+
+*二元导函数与其原函数的复合结构相同* 
+
+**eg：** 
+若
+
+```tikz
+\begin{document}
+\definecolor{curveblue}{rgb}{0.2,0.3,0.8}
+\begin{tikzpicture}[>=stealth,scale=1.2,font=\small]
+    \node (z) at (0,0) {$z$};
+    \node (u) at (1.5,0.8) {$u$};
+    \node (v) at (1.5,-0.8) {$v$};
+    \node (x) at (3,1.2) {$x$};
+    \node (y) at (3,-1.2) {$y$};
+    \draw[->,curveblue] (z) -- (u);
+    \draw[->,curveblue] (z) -- (v);
+    \draw[->,curveblue] (u) -- (x);
+    \draw[->,curveblue] (u) -- (y);
+    \draw[->,curveblue] (v) -- (x);
+    \draw[->,curveblue] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+则 $z_u' = f_1'，z_v' = f_2'$ 
+
+一阶偏导$f_1'$（即$z_u'$）与原函数$z$具有完全相同的复合结构；
+同理$f_2'$（即$z_v'$）也与$z$具有相同的复合结构，仍以$u,v$为中间变量、$x,y$为自变量。
+
+`````col
+````col-md
+flexGrow=1
+===
+
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,node distance=1.5cm, font=\small]
+    \node (f1) at (0,0) {$f_1'$};
+    \node (u) at (-1.2,-1.2) {$u$};
+    \node (v) at (1.2,-1.2) {$v$};
+    \node (x) at (-1.8,-2.4) {$x$};
+    \node (y) at (1.8,-2.4) {$y$};
+    \draw[->] (f1) -- (u);
+    \draw[->] (f1) -- (v);
+    \draw[->] (u) -- (x);
+    \draw[->] (u) -- (y);
+    \draw[->] (v) -- (x);
+    \draw[->] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+
+````
+
+````col-md
+flexGrow=1
+===
+
+```tikz
+\begin{document}
+\begin{tikzpicture}[>=stealth,node distance=1.5cm, font=\small]
+    \node (f2) at (0,0) {$f_2'$};
+    \node (u) at (-1.2,-1.2) {$u$};
+    \node (v) at (1.2,-1.2) {$v$};
+    \node (x) at (-1.8,-2.4) {$x$};
+    \node (y) at (1.8,-2.4) {$y$};
+    \node at (-1.5,-0.6) {$1$};
+    \node at (1.5,-0.6) {$2$};
+    \draw[->] (f2) -- (u);
+    \draw[->] (f2) -- (v);
+    \draw[->] (u) -- (x);
+    \draw[->] (u) -- (y);
+    \draw[->] (v) -- (x);
+    \draw[->] (v) -- (y);
+\end{tikzpicture}
+\end{document}
+```
+
+
+
+````
+`````
+
+二阶偏导记号约定：$z_{vu}'' = f_{21}'' = (z_v')_u'$，表示先对第2个中间变量$v$求偏导，再对第1个中间变量$u$求偏导。
+根据链式法则，$f_2'$对$y$的偏导为：
+$$\frac{\partial (f_2')}{\partial y} = f_{21}'' \cdot \frac{\partial u}{\partial y} + f_{22}'' \cdot \frac{\partial v}{\partial y}$$
+$z,\ f_1',\ f_2',\ f_3',\ z_x',\ z_x''$ 等等，都为相同的复合结构。
+
+
+## 二元隐函数求导(推论)
+
+**(隐函数存在定理)** 
+### 定理1
+
+若对于由方程$F(x,y)=0$在点$(x_0,y_0)$处所确定的隐函数$y=f(x)$，
+
+则当$F_y'(x,y)\neq0$时，有$\displaystyle  \frac{dy}{dx} = -\frac{F_x'(x,y)}{F_y'(x,y)}$ 
+
+
+**推导**（链式法则）
+
+$$
+\begin{align*}
+&F= F(x,f(x))=0 两边对 x 求导：\\[4pt]
+&\left. \frac{dF}{dx} \right|_{y=f(x)}=0 \\[4pt]
+&\frac{\frac{\partial F}{\partial x}\mathrm{d}x + \frac{\partial F}{\partial y}\mathrm{d}y}{dx}=0 \\[4pt]
+& \displaystyle F_x' + F_y'\cdot\frac{dy}{dx} = 0   \\[4pt]
+\Longrightarrow\;& \frac{dy}{dx}=-\frac{F_x'}{F_y'}\\[4pt]
+\because \;& 若F_y'=0，则两边就不能除F_y'了，此推导也就无法进行\\[4pt]
+\therefore  \;& 当F_y'=0时，此公式失效 \\[4pt]
+\end{align*}
+$$
+
+
+
+**注意**：
+
+当，$\displaystyle F_y'=0$(此公式失效)时
+
+我们要把隐函数$\displaystyle F= F(x,f(x))=0$显化为$\displaystyle y=f(x)$ 
+进而判断函数$\displaystyle y=f(x)$ 是否存在
+
+`````col
+````col-md
+flexGrow=1
+===
+
+$$
+\begin{align*}
+&合法的函数：\\[4pt]
+&\displaystyle 一个y对应一个或多个x\\[4pt]
+&eg1:y=x\\[4pt]
+&eg2: y=0
+\begin{cases}
+x=任意值时 \\[4pt]
+y只取0 \\[4pt]
+\end{cases}\\[4pt]
+\end{align*}
+$$
+
+
+````
+
+````col-md
+flexGrow=1.5
+===
+
+
+$$
+\begin{align*}
+&不存在的函数：\\[4pt]
+&一个x对应多个y\\[4pt]
+
+&eg1:y=\pm x
+\begin{cases}
+x=1时 \\[4pt]
+有y=+1和y=-1 \\[4pt]
+\end{cases}\\[4pt]
+
+&eg2: x=0
+\begin{cases}
+x=0时 \\[4pt]
+y可以是任意值，有无穷个y \\[4pt]
+\end{cases}\\[4pt]
+
+\end{align*}
+$$
+
+
+
+````
+`````
+
+
+
+### 定理2
+
+若对于由方程$F(x,y,z)=0$，在点$(x_0,y_0,z_0)$处确定的隐函数$z=z(x,y)$，
+
+则当$F_z'\neq0$时，有$\displaystyle  \frac{\partial z}{\partial x}=-\frac{F_x'}{F_z'},\quad \frac{\partial z}{\partial y}=-\frac{F_y'}{F_z'}$ 
+
+
+**推导**（链式法则）
+$$
+\begin{align*}
+
+&\begin{array}{@{}c@{\qquad}c@{}}
+
+\begin{aligned}
+&F=F(x,y,z(x,y))=0 \\[4pt]
+&两边对 x 求偏导(y 看作常数):\\[4pt]
+&\left. \frac{\partial F}{\partial x} \right|_{y=常数,\, z=z(x,y)}=0 \\[4pt]
+&\frac{\frac{\partial F}{\partial x}dx + \frac{\partial F}{\partial y}dy + \frac{\partial F}{\partial z}dz}{dx}=0 \\[4pt]
+&y 看作常数 \Rightarrow dy=0: \\[4pt]
+& \displaystyle F_x' + F_z'\cdot\frac{\partial z}{\partial x} = 0   \\[4pt]
+&\Longrightarrow\; \frac{\partial z}{\partial x}=-\frac{F_x'}{F_z'}\\[8pt]
+\end{aligned}
+&
+\begin{aligned}
+&F=F(x,y,z(x,y))=0 \\[4pt]
+&两边对 y 求偏导(x 看作常数):\\[4pt]
+&\left. \frac{\partial F}{\partial y} \right|_{x=常数,\, z=z(x,y)}=0 \\[4pt]
+&\frac{\frac{\partial F}{\partial x}dx + \frac{\partial F}{\partial y}dy + \frac{\partial F}{\partial z}dz}{dy}=0 \\[4pt]
+&x 看作常数 \Rightarrow dx=0: \\[4pt]
+& \displaystyle F_y' + F_z'\cdot\frac{\partial z}{\partial y} = 0   \\[4pt]
+&\Longrightarrow\; \frac{\partial z}{\partial y}=-\frac{F_y'}{F_z'}\\[8pt]
+\end{aligned}
+
+\end{array}\\[4pt]
+
+\because \;& 若F_z'=0，则两边就不能除F_z'了，此推导也就无法进行\\[4pt]
+\therefore  \;& 当F_z'=0时，此公式失效 \\[4pt]
+
+\end{align*}
+$$
+
+**注意**：
+
+当，$\displaystyle F_z'=0$（此公式失效）时
+
+我们要把隐函数 $\displaystyle F(x,y,z)=0$ 显化为 $\displaystyle z=z(x,y)$
+进而判断函数 $\displaystyle z=z(x,y)$ 是否存在
+
+
+
+
+
