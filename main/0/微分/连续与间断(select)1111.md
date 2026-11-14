@@ -324,6 +324,7 @@ xxxx
 
 函数 $y=\dfrac{1}{\sqrt{9-x^{2}}}+\ln(x+1)$ 的连续区间是______。
 ?
+
 ````````col
 ```````col-md
 flexGrow=20
