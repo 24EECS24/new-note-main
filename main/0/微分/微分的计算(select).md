@@ -272,6 +272,57 @@ $$
 
 ## 参数方程求导
 
+
+xxxx
+
+**题目**
+
+设参数方程 $\begin{cases}x=e^{-t}+\cos t\\ y=e^t+\sin t\end{cases}$，则 $\dfrac{dy}{dx}\bigg|_{t=0}=$（　　）
+
+- A. $2$
+- B. $-2$
+- C. $1$
+- D. $-1$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：B
+
+**解析**
+
+> 参数方程求导：
+>
+> $$\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}=\frac{e^t+\cos t}{-e^{-t}-\sin t}$$
+>
+> 代入 $t=0$：$\dfrac{1+1}{-1-0}=\dfrac{2}{-1}=-2$。选 B。
+
+**考点**：参数方程求导（一点处）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+<!--SR:!fsrs,2026-11-20T06:37:16.210Z,6,8.2956,1,2,1,0,0,2026-11-14T06:37:16.210Z,id=186vyv-->
+
+
+zzzz
+
+
+
+
+
 设函数$y=y(x)$由参数方程$\begin{cases} x = g(t) \\ y = w(t) \end{cases}$确定，其中，$t$是参数，且$g(t),w(t)$均可导，$g'(t)\neq0$，
 
 则：$\displaystyle y'=\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}=\frac{w'(t)}{g'(t)}$ 
