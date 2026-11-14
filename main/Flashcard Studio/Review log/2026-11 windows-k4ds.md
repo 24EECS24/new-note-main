@@ -233,3 +233,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794634299619,"c":"pqiths","r":2,"k":1,"ivl":28,"li":7,"s":26.7,"d":4.01,"ms":23005,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
 {"t":1794634313293,"c":"qxeu5x","r":3,"k":2,"ivl":1,"li":0,"s":1.43,"d":7.02,"ms":13525,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
 {"t":1794634498187,"c":"qxel63","r":2,"k":1,"ivl":28,"li":9,"s":29.83,"d":4.01,"ms":60000,"dk":"flashcards/证明题/微分等式与不等式","f":"0/证明题/微分等式与不等式.md"}
+{"t":1794634537032,"c":"i7an8x","r":2,"k":1,"ivl":27,"li":9,"s":29.83,"d":4.01,"ms":38698,"dk":"flashcards/证明题/微分等式与不等式","f":"0/证明题/微分等式与不等式.md"}
