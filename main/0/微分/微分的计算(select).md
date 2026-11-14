@@ -54,7 +54,7 @@ xxxx
 - B. $2f(\cos x)f'(\cos x)$
 - C. $-2\sin x f(\cos x)f'(\cos x)$
 - D. $2\sin x f(\cos x)f'(\cos x)$
-
+?
 ````````col
 ```````col-md
 flexGrow=20
@@ -85,6 +85,7 @@ flexGrow=1
 
 ```````
 ````````
+<!--SR:!fsrs,2026-11-23T06:31:28.946Z,9,8.2956,1,2,1,0,0,2026-11-14T06:31:28.946Z,id=111n2n-->
 
 
 zzzz
