@@ -2,6 +2,49 @@
 
 
 
+## 易错题
+
+
+xxxx
+
+**题目**
+
+设函数 $f(x)=e^{x^2}-2x$，则 $\mathrm{d}f(x)=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\big(2xe^{x^2}-2\big)\mathrm{d}x$
+
+**解析**
+
+> $$f'(x)=e^{x^2}\cdot 2x-2=2xe^{x^2}-2$$
+>
+> 故 $\mathrm{d}f(x)=\big(2xe^{x^2}-2\big)\mathrm{d}x$。
+
+**考点**：复合函数求导与微分 $\mathrm{d}f=f'(x)\mathrm{d}x$
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+这个容易把其看为2xe^{x^2}-2
+
+zzzz
+
+
+
 ## 基本求导公式
 
 
