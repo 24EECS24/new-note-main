@@ -1685,6 +1685,63 @@ zzzz
 ### 全导
 
 
+xxxx
+
+**题目**
+
+已知函数 $z=f(x,y)$ 由方程 $x^2+e^{-y}+z=xyz$ 所确定，求 $\mathrm{d}z$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\mathrm{d}z=\dfrac{yz-2x}{1-xy}\mathrm{d}x+\dfrac{xz+e^{-y}}{1-xy}\mathrm{d}y$
+
+**解析**
+
+> 方程两边全微分：
+>
+> $$2x\,\mathrm{d}x-e^{-y}\mathrm{d}y+\mathrm{d}z=yz\,\mathrm{d}x+xz\,\mathrm{d}y+xy\,\mathrm{d}z$$
+>
+> 整理得：
+>
+> $$(1-xy)\mathrm{d}z=(yz-2x)\mathrm{d}x+(xz+e^{-y})\mathrm{d}y$$
+>
+> 故 $\mathrm{d}z=\dfrac{yz-2x}{1-xy}\mathrm{d}x+\dfrac{xz+e^{-y}}{1-xy}\mathrm{d}y$。
+
+**另一解法**
+
+$$
+\begin{align*}
+&\displaystyle F = x^2 + e^{-y} + z - xyz = 0\\[6pt]
+&\displaystyle \mathrm{d}F = F_x\,\mathrm{d}x + F_y\,\mathrm{d}y + F_z\,\mathrm{d}z\\[6pt]
+&\displaystyle F_x = 2x - yz,\quad F_y = -e^{-y} - xz,\quad F_z = 1 - xy\\[6pt]
+&\displaystyle \mathrm{d}F = (2x-yz)\,\mathrm{d}x + (-e^{-y}-xz)\,\mathrm{d}y + (1-xy)\,\mathrm{d}z = 0\\[6pt]
+&\displaystyle (1-xy)\,\mathrm{d}z = (yz-2x)\,\mathrm{d}x + (xz+e^{-y})\,\mathrm{d}y\\[6pt]
+&\displaystyle \mathrm{d}z = \frac{yz-2x}{1-xy}\,\mathrm{d}x + \frac{xz+e^{-y}}{1-xy}\,\mathrm{d}y\\[6pt]
+\end{align*}
+$$
+
+**考点**：隐函数全微分（全微分形式不变性）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
 
 
 xxxx
