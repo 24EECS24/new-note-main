@@ -94,6 +94,50 @@ xxxx
 
 **题目**
 
+已知函数 $y=e^{\sin 2x}+\arcsin\sqrt{x}$，求 $y'$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$y'=2e^{\sin 2x}\cos 2x+\dfrac{1}{2\sqrt{x(1-x)}}$
+
+**解析**
+
+> 由复合函数求导法则：
+>
+> $$y'=e^{\sin 2x}\cdot(\sin 2x)'+\frac{1}{\sqrt{1-(\sqrt{x})^2}}\cdot(\sqrt{x})'$$
+>
+> $$=e^{\sin 2x}\cdot 2\cos 2x+\frac{1}{\sqrt{1-x}}\cdot\frac{1}{2\sqrt{x}}$$
+>
+> $$=2e^{\sin 2x}\cos 2x+\frac{1}{2\sqrt{x(1-x)}}$$
+
+**考点**：复合函数求导（指数 + 反三角）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+xxxx
+
+**题目**
+
 设二元函数 $z=(x-y)\sin(xy)$，求 $x\dfrac{\partial z}{\partial x}-y\dfrac{\partial z}{\partial y}$。
 ?
 ````````col
