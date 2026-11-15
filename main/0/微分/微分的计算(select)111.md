@@ -322,9 +322,9 @@ flexGrow=1
 ````````
 
 
-\(\mathrm dF=F_x\,\mathrm dx+F_y\,\mathrm dy+F_z\,\mathrm dz\)
+\mathrm dF=F_x\,\mathrm dx+F_y\,\mathrm dy+F_z\,\mathrm dz
 
-## 第一步：算三个偏导
+第一步：算三个偏导
 
 \(F=\sin x-xy^2+e^z-z\)
 
@@ -338,7 +338,7 @@ flexGrow=1
 
 \((\cos x-y^2)\mathrm dx-2xy\,\mathrm dy+(e^z-1)\mathrm dz=0\)
 
-## 第三步：解出 dz
+\第三步：解出 dz
 
 \((e^z-1)\mathrm dz=(y^2-\cos x)\mathrm dx+2xy\,\mathrm dy\)
 
