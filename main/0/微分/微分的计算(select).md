@@ -455,6 +455,51 @@ xxxx
 
 **题目**
 
+对于函数 $y=\begin{cases}x=(t+1)^3+1\\ y=\arcsin\sqrt{t}\end{cases}$，求 $\dfrac{dy}{dx}\bigg|_{t=\frac{1}{2}}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{4}{27}$
+
+**解析**
+
+> $$\frac{dx}{dt}=3(t+1)^2,\qquad \frac{dy}{dt}=\frac{1}{\sqrt{1-t}}\cdot\frac{1}{2\sqrt{t}}=\frac{1}{2\sqrt{t(1-t)}}$$
+>
+> $$\frac{dy}{dx}=\frac{dy/dt}{dx/dt}=\frac{1}{2\sqrt{t(1-t)}\cdot 3(t+1)^2}$$
+>
+> 代入 $t=\dfrac12$：
+>
+> $$\frac{dy}{dx}\bigg|_{t=1/2}=\frac{1}{2\cdot\frac12\cdot 3\cdot\frac94}=\frac{4}{27}$$
+
+**考点**：参数方程求导（含反三角复合）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+xxxx
+
+**题目**
+
 设参数方程 $\begin{cases}x=e^{-t}+\cos t\\ y=e^t+\sin t\end{cases}$，则 $\dfrac{dy}{dx}\bigg|_{t=0}=$（　　）
 
 - A. $2$
