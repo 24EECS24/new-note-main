@@ -1173,6 +1173,53 @@ xxxx
 
 **题目**
 
+已知函数 $x=x(y,z)$ 由 $2xz-2xy+\ln y=0$ 确定，则 $\dfrac{\partial x}{\partial z}=$（　　）
+
+- A. $\dfrac{x}{z-y}$
+- B. $\dfrac{y}{x-z}$
+- C. $\dfrac{y}{z-x}$
+- D. $\dfrac{x}{y-z}$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：D
+
+**解析**
+
+> 两边对 $z$ 求偏导（$x$ 是 $y,z$ 的函数）：
+>
+> $$2x+2z\frac{\partial x}{\partial z}-2y\frac{\partial x}{\partial z}=0$$
+>
+> 解得 $\dfrac{\partial x}{\partial z}=\dfrac{-2x}{2(z-y)}=\dfrac{x}{y-z}$。选 D。
+
+**考点**：隐函数（$x$ 为因变量）求偏导
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+xxxx
+
+**题目**
+
 已知函数 $z=z(x,y)$ 由方程 $\sin x-xy^2+e^z-z=0$ 确定，求 $\mathrm{d}z$。
 ?
 ````````col
