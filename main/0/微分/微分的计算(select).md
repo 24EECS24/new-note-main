@@ -89,6 +89,52 @@ $$
 ## 复合函数求导与微分形式不变性
 
 
+
+xxxx
+
+**题目**
+
+设二元函数 $z=(x-y)\sin(xy)$，求 $x\dfrac{\partial z}{\partial x}-y\dfrac{\partial z}{\partial y}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$(x+y)\sin(xy)$
+
+**解析**
+
+> $$\frac{\partial z}{\partial x}=\sin(xy)+(x-y)y\cos(xy)$$
+>
+> $$\frac{\partial z}{\partial y}=-\sin(xy)+(x-y)x\cos(xy)$$
+>
+> $$x\frac{\partial z}{\partial x}-y\frac{\partial z}{\partial y}=x\sin(xy)+xy(x-y)\cos(xy)+y\sin(xy)-xy(x-y)\cos(xy)$$
+>
+> $$=(x+y)\sin(xy)$$
+
+**考点**：偏导数计算（含乘积与链式）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+<!--SR:!fsrs,2026-11-16T07:53:19.981Z,1,0.42437996,5.20002037,2,2,0,0,2026-11-15T07:53:19.981Z,id=eujb5g-->
+
+
+zzzz
+
+
+
 xxxx
 
 **题目**
