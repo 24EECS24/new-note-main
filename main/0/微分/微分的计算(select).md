@@ -1016,6 +1016,46 @@ $$
 ### 求偏导
 
 
+
+xxxx
+
+**题目**
+
+设 $z=xy e^{x^2+y^2}$，则 $\dfrac{\partial z}{\partial x}\bigg|_{\substack{x=0\\y=1}}=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$e$
+
+**解析**
+
+> $$z_x=y e^{x^2+y^2}+xy\cdot 2x e^{x^2+y^2}=y e^{x^2+y^2}(1+2x^2)$$
+>
+> 代入 $(0,1)$ 得 $e$。
+
+**考点**：偏导（乘积 + 链式，一点处）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 xxxx
 
 **题目**
