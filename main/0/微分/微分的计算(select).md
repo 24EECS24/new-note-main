@@ -93,6 +93,53 @@ xxxx
 
 **题目**
 
+已知 $y=(\sin x)^x-\arctan(2+x^2)$，求 $\dfrac{dy}{dx}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{dy}{dx}=(\sin x)^x\big[\ln(\sin x)+x\cot x\big]-\dfrac{2x}{x^4+4x^2+5}$
+
+**解析**
+
+> 幂指部分先化为指数形式：$(\sin x)^x=e^{x\ln(\sin x)}$，由对数求导法：
+>
+> $$\frac{d}{dx}(\sin x)^x=e^{x\ln(\sin x)}\Big[\ln(\sin x)+x\cdot\frac{\cos x}{\sin x}\Big]=(\sin x)^x\Big[\ln(\sin x)+x\cot x\Big]$$
+>
+> 再对 $\arctan(2+x^2)$ 用复合函数求导：
+>
+> $$\frac{d}{dx}\arctan(2+x^2)=\frac{2x}{1+(2+x^2)^2}=\frac{2x}{x^4+4x^2+5}$$
+>
+> 两项相减：
+>
+> $$\frac{dy}{dx}=(\sin x)^x\Big[\ln(\sin x)+x\cot x\Big]-\frac{2x}{x^4+4x^2+5}$$
+
+**考点**：幂指函数对数求导法 + 复合函数求导
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+xxxx
+
+**题目**
+
 设函数 $y=f^2(\cos x)$，其中 $f$ 可导，则 $y'=$（　　）
 
 - A. $2f(\cos x)$
