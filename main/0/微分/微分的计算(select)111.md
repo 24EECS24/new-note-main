@@ -342,7 +342,7 @@ F_x=\cos x-y^2,\qquad F_y=-2xy,\qquad F_z=e^z-1
 
 (e^z-1)\mathrm dz=(y^2-\cos x)\mathrm dx+2xy\,\mathrm dy
 
-\(\boxed{\mathrm dz=\frac{y^2-\cos x}{e^z-1}\,\mathrm dx+\frac{2xy}{e^z-1}\,\mathrm dy}\)
+\boxed{\mathrm dz=\frac{y^2-\cos x}{e^z-1}\,\mathrm dx+\frac{2xy}{e^z-1}\,\mathrm dy}
 
 
 
