@@ -761,6 +761,50 @@ $$
 
 ### 求偏导
 
+
+xxxx
+
+**题目**
+
+$f(x,y)=x^2+\tan\dfrac{xy}{x^2+y^2}$，则 $\dfrac{\partial f(x,y)}{\partial x}\bigg|_{(1,0)}=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$2$
+
+**解析**
+
+> 由商的链式法则：
+>
+> $$f_x=2x+\sec^2\Big(\frac{xy}{x^2+y^2}\Big)\cdot\frac{y(x^2+y^2)-xy\cdot 2x}{(x^2+y^2)^2}$$
+>
+> 代入 $(1,0)$，第二项含因子 $y$ 而为 $0$，故 $f_x(1,0)=2$。
+
+**考点**：复合函数偏导（一点处）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
 设 $z = f(u,v)$，$u = \varphi(x,y)$，$v = w(x,y)$，
 则 $z = f\left[\varphi(x,y), w(x,y)\right]$，
 
