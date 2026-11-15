@@ -924,6 +924,19 @@ flexGrow=20
 >
 > 故 $\mathrm{d}z=\dfrac{yz-2x}{1-xy}\mathrm{d}x+\dfrac{xz+e^{-y}}{1-xy}\mathrm{d}y$。
 
+**另一解法**
+
+$$
+\begin{align*}
+&\displaystyle F = x^2 + e^{-y} + z - xyz = 0\\[6pt]
+&\displaystyle \mathrm{d}F = F_x\,\mathrm{d}x + F_y\,\mathrm{d}y + F_z\,\mathrm{d}z\\[6pt]
+&\displaystyle F_x = 2x - yz,\quad F_y = -e^{-y} - xz,\quad F_z = 1 - xy\\[6pt]
+&\displaystyle \mathrm{d}F = (2x-yz)\,\mathrm{d}x + (-e^{-y}-xz)\,\mathrm{d}y + (1-xy)\,\mathrm{d}z = 0\\[6pt]
+&\displaystyle (1-xy)\,\mathrm{d}z = (yz-2x)\,\mathrm{d}x + (xz+e^{-y})\,\mathrm{d}y\\[6pt]
+&\displaystyle \mathrm{d}z = \frac{yz-2x}{1-xy}\,\mathrm{d}x + \frac{xz+e^{-y}}{1-xy}\,\mathrm{d}y\\[6pt]
+\end{align*}
+$$
+
 **考点**：隐函数全微分（全微分形式不变性）
 
 
