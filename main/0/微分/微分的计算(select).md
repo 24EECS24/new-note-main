@@ -908,7 +908,56 @@ $f_x'$为$f$对标$x$的中间变量位置求偏导，并非对自变量$x$求�
 ````
 `````
 
-### 二元导函数的复合结构 
+### 二阶偏导
+
+xxxx
+
+**题目**
+
+设 $z=e^{x+y}-\ln(x+y)$，则 $\dfrac{\partial^2 z}{\partial x\partial y}\bigg|_{(1,0)}=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$e+1$
+
+**解析**
+
+> 先对 $x$ 求偏导：
+>
+> $$\frac{\partial z}{\partial x}=e^{x+y}-\frac{1}{x+y}$$
+>
+> 再对 $y$ 求偏导：
+>
+> $$\frac{\partial^2 z}{\partial x\partial y}=e^{x+y}+\frac{1}{(x+y)^2}$$
+>
+> 代入 $(1,0)$：$e+1$。
+
+**考点**：二元函数二阶混合偏导
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+<!--SR:!fsrs,2026-11-21T05:35:51.557Z,6,8.2956,1,2,1,0,0,2026-11-15T05:35:51.557Z,id=2ai8tn-->
+
+
+zzzz
+
+
+
+
 
 *二元导函数与其原函数的复合结构相同* 
 
@@ -992,10 +1041,33 @@ flexGrow=1
 ````
 `````
 
+
+
+
 二阶偏导记号约定：$z_{vu}'' = f_{21}'' = (z_v')_u'$，表示先对第2个中间变量$v$求偏导，再对第1个中间变量$u$求偏导。
 根据链式法则，$f_2'$对$y$的偏导为：
 $$\frac{\partial (f_2')}{\partial y} = f_{21}'' \cdot \frac{\partial u}{\partial y} + f_{22}'' \cdot \frac{\partial v}{\partial y}$$
 $z,\ f_1',\ f_2',\ f_3',\ z_x',\ z_x''$ 等等，都为相同的复合结构。
+
+___
+
+
+若函数$f(x,y)$的偏导数$f_x'(x,y)$和$f_y'(x,y)$仍存在偏导数，则
+$f_x'(x,y)$和$f_y'(x,y)$的偏导数为函数$f(x,y)$的二阶偏导数。
+
+第一次求导时，可以为$x$轴、$y$轴两个方向
+第二次求导时，也可以为$x$、$y$轴两个方向
+所以，二阶偏导数实际上有4个：
+
+$$\frac{\partial^2 z}{\partial x^2} = \frac{\partial}{\partial x}\left( \frac{\partial z}{\partial x} \right) = f_{xx}''(x,y) = z_{xx}''$$
+$$\frac{\partial^2 z}{\partial x\partial y} = \frac{\partial}{\partial y}\left( \frac{\partial z}{\partial x} \right) = f_{xy}''(x,y) = z_{xy}''$$
+$$\frac{\partial^2 z}{\partial y^2} = \frac{\partial}{\partial y}\left( \frac{\partial z}{\partial y} \right) = f_{yy}''(x,y) = z_{yy}''$$
+$$\frac{\partial^2 z}{\partial y\partial x} = \frac{\partial}{\partial x}\left( \frac{\partial z}{\partial y} \right) = f_{yx}''(x,y) = z_{yx}''$$
+
+其中，称$f_{xy}''(x,y)$与$f_{yx}''(x,y)$为二阶混合偏导数。
+
+**注**：若$\displaystyle \frac{\partial\left( \frac{\partial f}{\partial x} \right)}{\partial y}$与$\displaystyle \frac{\partial\left( \frac{\partial f}{\partial y} \right)}{\partial x}$在区域$D$内连续，则两者相等，与求导次序无关。
+在大部分情况下，我们只用求两者之一即可。
 
 
 ## 二元隐函数求导(推论)
