@@ -191,6 +191,54 @@ xxxx
 
 **题目**
 
+函数 $f(x)$ 二阶可导，且 $y=f(e^x)$，则 $y''=$（　　）
+
+- A. $f''(e^x)$
+- B. $f''(e^x)e^{2x}$
+- C. $e^x f'(e^x)+e^{2x}f''(e^x)$
+- D. $e^x f'(e^x)+e^x f''(e^x)$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：C
+
+**解析**
+
+> 一阶：$y'=f'(e^x)\cdot e^x=e^x f'(e^x)$。
+>
+> 二阶（乘积 + 链式）：
+>
+> $$y''=e^x f'(e^x)+e^x\cdot f''(e^x)\cdot e^x=e^x f'(e^x)+e^{2x}f''(e^x)$$
+>
+> 选 C。
+
+**考点**：抽象复合函数二阶导（链式 + 乘积）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+xxxx
+
+**题目**
+
 已知 $\displaystyle\int f(x)dx=\ln(x^2+2)+C$，则 $df(x)=$ $\underline{\qquad\qquad}$。
 ?
 ````````col
