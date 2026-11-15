@@ -326,15 +326,15 @@ flexGrow=1
 
 第一步：算三个偏导
 
-\(F=\sin x-xy^2+e^z-z\)
+F=\sin x-xy^2+e^z-z
 
-\(F_x=\cos x-y^2,\qquad F_y=-2xy,\qquad F_z=e^z-1\)
+F_x=\cos x-y^2,\qquad F_y=-2xy,\qquad F_z=e^z-1
 
-## 第二步：代入全微分
+第二步：代入全微分
 
-\(\mathrm dF=(\cos x-y^2)\mathrm dx-2xy\,\mathrm dy+(e^z-1)\mathrm dz\)
+\mathrm dF=(\cos x-y^2)\mathrm dx-2xy\,\mathrm dy+(e^z-1)\mathrm dz
 
-因为方程是 \(F=0\)，所以 \(\mathrm dF=0\)：
+因为方程是 \(F=0\)，所以 \mathrm dF=0\)：
 
 \((\cos x-y^2)\mathrm dx-2xy\,\mathrm dy+(e^z-1)\mathrm dz=0\)
 
