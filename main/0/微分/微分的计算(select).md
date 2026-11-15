@@ -572,6 +572,51 @@ $$
 ## 参数方程求导
 
 
+
+xxxx
+
+**题目**
+
+设函数 $y=y(x)$ 由参数方程 $\begin{cases}x=2\cos^3 t\\ y=2\sin^3 t\end{cases}$ 确定，则 $\dfrac{dy}{dx}\bigg|_{t=\frac{\pi}{4}}=$（　　）
+
+- A. $1$
+- B. $-1$
+- C. $2$
+- D. $-2$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：B
+
+**解析**
+
+> $$\frac{dy}{dx}=\frac{dy/dt}{dx/dt}=\frac{6\sin^2 t\cos t}{-6\cos^2 t\sin t}=-\tan t$$
+>
+> 代入 $t=\dfrac{\pi}{4}$ 得 $-1$。选 B。
+
+**考点**：参数方程求导（星形线）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 xxxx
 
 **题目**
