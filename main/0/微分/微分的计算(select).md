@@ -265,7 +265,24 @@ flexGrow=20
 **另一解法**
 
 $$
+\begin{align*}
 
+
+&f'=e^{-x}-xe^{-x}+\cos x\\[6pt]
+
+&三项分别再导：\\[6pt]
+
+&(e^{-x})'=\underbrace{-e^{-x}}_{\text{链式：外层 }e^u,\ u=-x,\ u'=-1}\\[6pt]
+&(-xe^{-x})'=-(xe^{-x})'=-\big[e^{-x}+x\,(-e^{-x})\big]=-e^{-x}+xe^{-x}\\[6pt]
+&(\cos x)'=-\sin x\\[6pt]
+
+&相加：\\[6pt]
+
+&f''=-e^{-x}-e^{-x}+xe^{-x}-\sin x=(x-2)e^{-x}-\sin x\\[6pt]
+
+
+
+\end{align*}
 $$
 
 **考点**：乘积与复合函数二阶导
