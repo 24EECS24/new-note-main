@@ -305,7 +305,38 @@ flexGrow=20
 > 故 $\mathrm{d}z=\dfrac{y^2-\cos x}{e^z-1}\mathrm{d}x+\dfrac{2xy}{e^z-1}\mathrm{d}y$。
 > 【订正】源题答解析在已正确写出 $F_z=e^z-1$ 的情况下，后续公式误把分母写成 $e^z+1$，且 $\dfrac{\partial z}{\partial x}$ 的分子符号也写反（写成 $\dfrac{\cos x-y^2}{e^z+1}$）。按公式 $-F_x/F_z$ 复算，正确结果应为 $\dfrac{y^2-\cos x}{e^z-1}$，分母是 $e^z-1$，本专题已订正。
 
-另一解法
+**另一解法**
+
+$$
+\begin{align*}
+
+
+&\mathrm dF=F_x\,\mathrm dx+F_y\,\mathrm dy+F_z\,\mathrm dz\\[6pt]
+
+&第一步：算三个偏导\\[6pt]
+
+&F=\sin x-xy^2+e^z-z\\[6pt]
+
+&F_x=\cos x-y^2,\qquad F_y=-2xy,\qquad F_z=e^z-1\\[6pt]
+
+&第二步：代入全微分\\[6pt]
+
+&\mathrm dF=(\cos x-y^2)\mathrm dx-2xy\,\mathrm dy+(e^z-1)\mathrm dz\\[6pt]
+
+&因为方程是 F=0，所以 \mathrm dF=0：\\[6pt]
+
+&(\cos x-y^2)\mathrm dx-2xy\,\mathrm dy+(e^z-1)\mathrm dz=0\\[6pt]
+
+&第三步：解出 dz\\[6pt]
+
+&(e^z-1)\mathrm dz=(y^2-\cos x)\mathrm dx+2xy\,\mathrm dy\\[6pt]
+
+&\boxed{\mathrm dz=\frac{y^2-\cos x}{e^z-1}\,\mathrm dx+\frac{2xy}{e^z-1}\,\mathrm dy}\\[6pt]
+
+
+
+\end{align*}
+$$
 
 
 
