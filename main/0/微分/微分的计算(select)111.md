@@ -293,7 +293,7 @@ flexGrow=20
 
 **解析**
 
-> $\mathrm dF=F_x\,\mathrm dx+F_y\,\mathrm dy+F_z\,\mathrm dz$
+
 > 令 $F(x,y,z)=\sin x-xy^2+e^z-z$，则
 >$\mathrm dF=F_x\,\mathrm dx+F_y\,\mathrm dy+F_z\,\mathrm dz$
 > $$F_x=\cos x-y^2,\qquad F_y=-2xy,\qquad F_z=e^z-1$$
