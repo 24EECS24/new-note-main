@@ -652,7 +652,76 @@ $$
 
 
 
+xxxx
 
+**题目**
+
+设函数 $y=y(x)$ 是由方程 $\cos y=e^{2x+y}+x^3-y^2+3\pi$ 所确定的隐函数，求 $\dfrac{dy}{dx}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{dy}{dx}=\dfrac{2e^{2x+y}+3x^2}{2y-\sin y-e^{2x+y}}$
+
+**解析**
+
+> 两边对 $x$ 求导：
+>
+> $$-\sin y\cdot y'=e^{2x+y}(2+y')+3x^2-2y\cdot y'$$
+>
+> 整理得：
+>
+> $$y'(2y-\sin y-e^{2x+y})=2e^{2x+y}+3x^2$$
+>
+> $$\frac{dy}{dx}=\frac{2e^{2x+y}+3x^2}{2y-\sin y-e^{2x+y}}$$
+
+
+**另一解法** 
+设 $z(x,y) = -\cos y + e^{2x+y} + x^3 - y^2 + 3\pi$。
+
+$$dz = z_x' \cdot dx + z_y' \cdot dy$$
+
+$$
+\begin{align*}
+z_x' &= 2e^{2x+y} + 3x^2 \\[4pt]
+z_y' &= \sin y + e^{2x+y} - 2y
+\end{align*}
+$$
+
+$$
+\begin{align*}
+dz &= 0 \\[4pt]
+&= \left(2e^{2x+y} + 3x^2\right)dx + \left(\sin y + e^{2x+y} - 2y\right)dy
+\end{align*}
+$$
+
+$$
+\Rightarrow \frac{dy}{dx} = \frac{-\left(2e^{2x+y} + 3x^2\right)}{\sin y + e^{2x+y} - 2y}
+$$
+
+
+
+
+**考点**：隐函数求导（含复合）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
 
 
 xxxx
