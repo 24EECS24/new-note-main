@@ -90,6 +90,44 @@ $$
 
 
 
+xxxx
+
+**题目**
+
+设函数 $y=\arctan\sqrt{x}$，求 $\dfrac{dy}{dx}$ 及 $\dfrac{dy}{dx}\big|_{x=1}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{dy}{dx}=\dfrac{1}{2\sqrt{x}(1+x)}$；$\dfrac{dy}{dx}\big|_{x=1}=\dfrac14$
+
+**解析**
+
+> $$\frac{dy}{dx}=\frac{1}{1+(\sqrt{x})^2}\cdot\frac{1}{2\sqrt{x}}=\frac{1}{2\sqrt{x}(1+x)}$$
+>
+> 代入 $x=1$：$\dfrac{dy}{dx}\big|_{x=1}=\dfrac14$。
+
+**考点**：复合函数求导（反三角）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
 
 xxxx
 
