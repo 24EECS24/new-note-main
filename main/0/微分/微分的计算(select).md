@@ -755,6 +755,51 @@ $\displaystyle \because \frac{dx}{dy} = \frac{1}{\frac{dy}{dx}}$
 $\displaystyle \therefore \varphi'(y) = \frac{1}{f'(x)}$ 
 ### 二阶导
 
+
+
+xxxx
+
+**题目**
+
+已知函数 $y=x\arctan x$，则 $y''=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{2}{(1+x^2)^2}$
+
+**解析**
+
+> $$y'=\arctan x+\frac{x}{1+x^2}$$
+>
+> $$y''=\frac{1}{1+x^2}+\frac{1-x^2}{(1+x^2)^2}=\frac{2}{(1+x^2)^2}$$
+
+**考点**：二阶导（反三角乘积）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
+
 `````col
 ````col-md
 flexGrow=1
