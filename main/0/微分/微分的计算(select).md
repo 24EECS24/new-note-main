@@ -915,6 +915,43 @@ xxxx
 
 **题目**
 
+求参数方程 $\begin{cases}x=\dfrac12\cos^3 t\\ y=\dfrac12\sin^3 t\end{cases}$ 的导数 $\dfrac{dy}{dx}=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$-\tan t$
+
+**解析**
+
+> $$\frac{dy}{dx}=\frac{dy/dt}{dx/dt}=\frac{\dfrac32\sin^2 t\cos t}{-\dfrac32\cos^2 t\sin t}=-\tan t$$
+
+**考点**：参数方程求导
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+xxxx
+
+**题目**
+
 设曲线方程为 $\begin{cases}x=2\cos\theta+\sin 2\theta\\ y=2\sin\theta+\cos 2\theta\end{cases}$（$\theta$ 为参数），则 $\dfrac{dy}{dx}\bigg|_{\theta=0}=$　$\underline{\qquad\quad}$。
 ?
 ````````col
