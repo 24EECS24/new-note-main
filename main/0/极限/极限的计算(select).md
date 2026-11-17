@@ -407,7 +407,7 @@ D. 不存在
 【解】
 $$\lim_{x \to \infty} \frac{\arctan x}{x} = \lim_{x \to \infty} \frac{1}{x} \cdot \arctan x = 0.$$
 注:$\arctan x$是有界函数:$|\arctan x| \leqslant \frac{\pi}{2}$.
-<!--SR:!fsrs,2026-11-15T08:42:21.184Z,9,8.2956,1,2,1,0,0,2026-11-06T08:42:21.184Z,id=e59sj3-->
+<!--SR:!fsrs,2026-12-31T04:20:24.805Z,44,46.47643997,1,2,2,0,0,2026-11-17T04:20:24.805Z,id=e59sj3-->
 
 zzzz
 ## 洛必达
