@@ -1686,6 +1686,49 @@ $f_x'$为$f$对标$x$的中间变量位置求偏导，并非对自变量$x$求�
 
 ### 二阶偏导
 
+
+xxxx
+
+**题目**
+
+已知 $u=5+e^{3x-yz}$，则 $\dfrac{\partial^2 u}{\partial x\partial y}=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$-3z e^{3x-yz}$
+
+**解析**
+
+> 先对 $x$ 求偏导：$\dfrac{\partial u}{\partial x}=3e^{3x-yz}$。
+>
+> 再对 $y$ 求偏导：
+>
+> $$\frac{\partial^2 u}{\partial x\partial y}=3e^{3x-yz}\cdot(-z)=-3z e^{3x-yz}$$
+
+**考点**：二阶混合偏导（指数复合）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
 xxxx
 
 **题目**
