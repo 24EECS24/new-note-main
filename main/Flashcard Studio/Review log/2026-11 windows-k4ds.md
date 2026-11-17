@@ -258,3 +258,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794887637461,"c":"nccf77","r":3,"k":1,"ivl":37,"li":6,"s":36.06,"d":1,"ms":37088,"dk":"flashcards/函数/三要素","f":"0/函数/函数三要素(select).md"}
 {"t":1794887685285,"c":"18v9ew","r":3,"k":1,"ivl":38,"li":6,"s":36.06,"d":1,"ms":47674,"dk":"flashcards/函数/三要素","f":"0/函数/函数三要素(select).md"}
 {"t":1794887792687,"c":"24s2rb","r":4,"k":1,"ivl":11,"li":2,"s":11.99,"d":5.71,"ms":60000,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
+{"t":1794888300021,"c":"of28uh","r":3,"k":1,"ivl":51,"li":9,"s":48.73,"d":1,"ms":60000,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
