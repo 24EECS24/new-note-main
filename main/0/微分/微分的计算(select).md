@@ -141,6 +141,47 @@ $$
 
 
 
+
+xxxx
+
+**题目**
+
+设 $y=e^{x\cos x}$，$\mathrm{d}y=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$(\cos x-x\sin x)e^{x\cos x}\mathrm{d}x$
+
+**解析**
+
+> $$y'=e^{x\cos x}\cdot(\cos x-x\sin x)$$
+>
+> 故 $\mathrm{d}y=(\cos x-x\sin x)e^{x\cos x}\mathrm{d}x$。
+
+**考点**：复合函数求导与微分（指数 + 乘积）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
 xxxx
 
 **题目**
