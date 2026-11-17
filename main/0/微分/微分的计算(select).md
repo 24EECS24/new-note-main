@@ -1199,6 +1199,68 @@ $\displaystyle y''(x)=\frac{d^2 y}{dx^2}=\frac{d\left(\frac{dy}{dx}\right)}{dx}=
 
 ## 多项式求导
 ### 对数求导法
+
+
+xxxx
+
+**题目**
+
+求函数 $y=x^{\ln x}$ 的导数。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$y'=x^{\ln x}\cdot\dfrac{2\ln x}{x}=2x^{\ln x-1}\ln x$
+
+**解析**
+
+> 取对数：$\ln y=(\ln x)^2$。
+>
+> 两边对 $x$ 求导：
+>
+> $$\frac{y'}{y}=\frac{2\ln x}{x}$$
+>
+> 故 $y'=x^{\ln x}\cdot\dfrac{2\ln x}{x}=2x^{\ln x-1}\ln x$。
+
+**另一解法：** 
+$$
+\begin{align*}
+y &= e^{\ln x \cdot \ln x} \\[4pt]
+&= e^{(\ln x)^2} \\[8pt]
+y' &= e^{(\ln x)^2} \cdot 2\ln x \cdot \frac{1}{x} \\[8pt]
+&= x^{\ln x} \cdot \frac{2\ln x}{x}
+\end{align*}
+$$
+
+
+
+
+
+**考点**：幂指函数对数求导法
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+
+
+zzzz
+
+
+
 对于多项式相乘、相除、乘方的式子（为了求导的方便）：
 一般先对等式两边同时取对数（前提是两边式子都$>0$），再求导。
 
