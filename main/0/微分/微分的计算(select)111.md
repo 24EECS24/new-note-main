@@ -2157,6 +2157,20 @@ flexGrow=20
 >
 > 故 $y'=x^{\ln x}\cdot\dfrac{2\ln x}{x}=2x^{\ln x-1}\ln x$。
 
+**另一解法：** 
+$$
+\begin{align*}
+y &= e^{\ln x \cdot \ln x} \\[4pt]
+&= e^{(\ln x)^2} \\[8pt]
+y' &= e^{(\ln x)^2} \cdot 2\ln x \cdot \frac{1}{x} \\[8pt]
+&= x^{\ln x} \cdot \frac{2\ln x}{x}
+\end{align*}
+$$
+
+
+
+
+
 **考点**：幂指函数对数求导法
 
 
@@ -2172,17 +2186,6 @@ flexGrow=1
 
 ```````
 ````````
-
-**另一解法：** 
-$$
-\begin{align*}
-y &= e^{\ln x \cdot \ln x} \\[4pt]
-&= e^{(\ln x)^2} \\[8pt]
-y' &= e^{(\ln x)^2} \cdot 2\ln x \cdot \frac{1}{x} \\[8pt]
-&= x^{\ln x} \cdot \frac{2\ln x}{x}
-\end{align*}
-$$
-
 
 
 
