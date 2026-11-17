@@ -983,6 +983,53 @@ $$\left[f(x)^{g(x)}\right]' = f(x)^{g(x)}\left[g'(x)\ln f(x) + g(x)\cdot\frac{f'
 
 
 
+xxxx
+
+**题目**
+
+已知函数 $f(x)=5^x$，则 $f^{(n)}(x)=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$5^x(\ln 5)^n$
+
+**解析**
+
+> 指数函数逐次求导每次都乘一个 $\ln 5$，故 $n$ 阶导数为 $5^x(\ln 5)^n$。
+
+**考点**：高阶导数（指数函数归纳）
+$$
+\begin{align*}
+\left(a^x\right)' &= \left(e^{x\ln a}\right)' \\[4pt]
+&= e^{x\ln a} \cdot \ln a \\[4pt]
+&= a^x \ln a
+\end{align*}
+$$
+
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
 
 xxxx
 
