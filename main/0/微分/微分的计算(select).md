@@ -824,6 +824,45 @@ zzzz
 ## 参数方程求导
 
 
+xxxx
+
+**题目**
+
+设曲线方程为 $\begin{cases}x=2\cos\theta+\sin 2\theta\\ y=2\sin\theta+\cos 2\theta\end{cases}$（$\theta$ 为参数），则 $\dfrac{dy}{dx}\bigg|_{\theta=0}=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$1$
+
+**解析**
+
+> $$\frac{dy}{dx}=\frac{2\cos\theta-2\sin 2\theta}{-2\sin\theta+2\cos 2\theta}$$
+>
+> 代入 $\theta=0$：$\dfrac{2}{2}=1$。
+
+**考点**：参数方程求导（一点处）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 
 xxxx
 
