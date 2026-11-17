@@ -2171,6 +2171,45 @@ xxxx
 
 **题目**
 
+设二元函数 $z=\dfrac{x^2}{3y}+\arcsin(xy)$，求 $xy\dfrac{\partial z}{\partial x}-y^2\dfrac{\partial z}{\partial y}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$x^2$
+
+**解析**
+
+> $$z_x=\frac{2x}{3y}+\frac{y}{\sqrt{1-x^2y^2}},\qquad z_y=-\frac{x^2}{3y^2}+\frac{x}{\sqrt{1-x^2y^2}}$$
+>
+> $$xy\,z_x-y^2z_y=\frac{2x^2}{3}+\frac{xy^2}{\sqrt{1-x^2y^2}}+\frac{x^2}{3}-\frac{xy^2}{\sqrt{1-x^2y^2}}=x^2$$
+
+**考点**：偏导数计算（含反三角复合）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+xxxx
+
+**题目**
+
 已知函数 $x=x(y,z)$ 由 $2xz-2xy+\ln y=0$ 确定，则 $\dfrac{\partial x}{\partial z}=$（　　）
 
 - A. $\dfrac{x}{z-y}$
