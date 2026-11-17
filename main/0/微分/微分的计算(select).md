@@ -2532,6 +2532,76 @@ $$\frac{\partial^2 z}{\partial y\partial x} = \frac{\partial}{\partial x}\left( 
 ### 公式法
 
 
+
+xxxx
+
+**题目**
+
+$xy+xyz=2x-4y$，$xy\neq 0$，求 $\dfrac{\partial z}{\partial x}$，$\dfrac{\partial z}{\partial y}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{\partial z}{\partial x}=\dfrac{4}{x^2}$；$\dfrac{\partial z}{\partial y}=-\dfrac{2}{y^2}$
+
+**解析**
+
+> 方程两边同除以 $xy$，得 $1+z=\dfrac{2}{y}-\dfrac{4}{x}$，即
+>
+> $$z=\frac{2}{y}-\frac{4}{x}-1$$
+>
+> 分别求偏导：
+>
+> $$\frac{\partial z}{\partial x}=\frac{4}{x^2},\qquad \frac{\partial z}{\partial y}=-\frac{2}{y^2}$$
+
+
+**另一解法：** 
+
+$$xy + xyz - 2x + 4y = 0$$
+
+$$
+\frac{\partial z}{\partial x} = -\frac{F_x}{F_z}, \quad \frac{\partial z}{\partial y} = -\frac{F_y}{F_z}
+$$
+
+$$
+\begin{align*}
+F_x' &= y + yz - 2 \\
+F_y' &= x + xz + 4 \\
+F_z' &= xy
+\end{align*}
+$$
+
+$$
+\frac{\partial z}{\partial x} = -\frac{y + yz - 2}{xy}, \quad \frac{\partial z}{\partial y} = -\frac{x + xz + 4}{xy}
+$$
+
+
+
+
+
+
+**考点**：隐函数（先解出 $z$）求偏导
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 xxxx
 
 **题目**
