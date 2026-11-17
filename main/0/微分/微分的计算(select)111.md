@@ -1875,6 +1875,28 @@ flexGrow=1
 
 
 **另一解法：** 
+$$
+\frac{d^2 y}{dx^2} = \frac{d\left( \frac{dy}{dx} \right)}{dx}
+$$
+$$
+dx = -\sin t \cdot dt
+$$
+$$
+dy = -t\sin t \cdot dt
+$$
+$$
+\Rightarrow \frac{dy}{dx} = t
+$$
+$$
+\begin{align*}
+\frac{d^2 y}{dx^2} &= \frac{dt}{dx} \\[4pt]
+&= \frac{dt}{-\sin t \cdot dt} \\[4pt]
+&= -\frac{1}{\sin t}
+\end{align*}
+$$
+$$
+t=\frac{\pi}{4} \Rightarrow \frac{d^2 y}{dx^2} = -\sqrt{2}
+$$
 
 
 zzzz
