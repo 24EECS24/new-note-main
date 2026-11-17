@@ -1783,6 +1783,50 @@ xxxx
 
 **题目**
 
+设 $z=x^2-2xy-y^2$，则 $\dfrac{\partial^2 z}{\partial x\partial y}\bigg|_{(1,2)}=$（　　）
+
+- A. $1$
+- B. $2$
+- C. $-2$
+- D. $-1$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：C
+
+**解析**
+
+> $$z_x=2x-2y,\qquad z_{xy}=-2$$
+>
+> 与点无关，值为 $-2$。选 C。
+
+**考点**：二阶混合偏导
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+xxxx
+
+**题目**
+
 已知 $u=5+e^{3x-yz}$，则 $\dfrac{\partial^2 u}{\partial x\partial y}=$　$\underline{\qquad\quad}$。
 ?
 ````````col
