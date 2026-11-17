@@ -1893,10 +1893,53 @@ $$\frac{\partial^2 z}{\partial y\partial x} = \frac{\partial}{\partial x}\left( 
 
 
 
-公式fa
+### 公式法
 
 
 
+xxxx
+
+
+
+**题目**
+
+若 $F(x,y,z)=\sin(x+3y-2z)=x+3y-2z$ 确定隐函数 $z=z(x,y)$，求 $\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$2$
+
+**解析**
+
+> 令 $G(x,y,z)=\sin(x+3y-2z)-(x+3y-2z)=0$，记 $u=x+3y-2z$，则
+>
+> $$G_x=\cos u-1,\qquad G_y=3\cos u-3,\qquad G_z=-2\cos u+2$$
+>
+> $$\frac{\partial z}{\partial x}=-\frac{G_x}{G_z}=\frac12,\qquad \frac{\partial z}{\partial y}=-\frac{G_y}{G_z}=\frac32$$
+>
+> 故 $\dfrac{\partial z}{\partial x}+\dfrac{\partial z}{\partial y}=\dfrac12+\dfrac32=2$。
+
+**考点**：隐函数求偏导（公式法）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
 
 
 
