@@ -673,7 +673,7 @@ xxxx
 > $x\to\infty$ 时 $\cos x$、$\sin x$ 均为有界量，
 > $x\to\infty$ 时,$x\gg\cos x$ ，$2x\gg\sin x$
 > 原式=$\lim\limits_{x \to \infty}\dfrac{-x}{2x}=-\dfrac{1}{2}$
-<!--SR:!fsrs,2026-11-15T06:55:47.417Z,7,8.2956,1,2,1,0,0,2026-11-08T06:55:47.417Z,id=s17aea-->
+<!--SR:!fsrs,2027-01-01T04:33:35.492Z,45,41.57871783,1,2,2,0,0,2026-11-17T04:33:35.492Z,id=s17aea-->
 
 
 zzzz
