@@ -1778,6 +1778,48 @@ zzzz
 ### 全导
 
 
+
+xxxx
+
+**题目**
+
+设函数 $z=2\sin x^2+e^{2y}-3xy^2$，则 $\mathrm{d}z=$　$\underline{\qquad\quad}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$(4x\cos x^2-3y^2)\mathrm{d}x+(2e^{2y}-6xy)\mathrm{d}y$
+
+**解析**
+
+> 分别求两个偏导：
+>
+> $$z_x=4x\cos x^2-3y^2,\qquad z_y=2e^{2y}-6xy$$
+>
+> 故 $\mathrm{d}z=(4x\cos x^2-3y^2)\mathrm{d}x+(2e^{2y}-6xy)\mathrm{d}y$。
+
+**考点**：全微分计算（偏导合成）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 xxxx
 
 **题目**
