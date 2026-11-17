@@ -2307,6 +2307,50 @@ $$\frac{\partial^2 z}{\partial y\partial x} = \frac{\partial}{\partial x}\left( 
 ### 公式法
 
 
+xxxx
+
+**题目**
+
+设函数 $z=z(x,y)$ 由方程 $x^2+y^3+3xyz^2+2z=1$ 所确定，求 $\dfrac{\partial z}{\partial x}$，$\dfrac{\partial z}{\partial y}$。（其中 $6xyz+2\neq 0$）
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{\partial z}{\partial x}=-\dfrac{2x+3yz^2}{6xyz+2}$；$\dfrac{\partial z}{\partial y}=-\dfrac{3y^2+3xz^2}{6xyz+2}$
+
+**解析**
+
+> 令 $F(x,y,z)=x^2+y^3+3xyz^2+2z-1$，则
+>
+> $$F_x=2x+3yz^2,\qquad F_y=3y^2+3xz^2,\qquad F_z=6xyz+2$$
+>
+> 由隐函数公式：
+>
+> $$\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}=-\frac{2x+3yz^2}{6xyz+2},\qquad \frac{\partial z}{\partial y}=-\frac{F_y}{F_z}=-\frac{3y^2+3xz^2}{6xyz+2}$$
+
+**考点**：隐函数求偏导（公式法）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
 
 xxxx
 
