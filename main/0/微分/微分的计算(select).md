@@ -1273,6 +1273,85 @@ zzzz
 ### 二阶导
 
 
+
+xxxx
+
+**题目**
+
+已知 $\begin{cases}x=2(t-\sin t)\\ y=2(1-\cos t)\end{cases}$，$0\leq t\leq 2\pi$，求 $\dfrac{d^2y}{dx^2}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$-\dfrac{1}{2(1-\cos t)^2}$
+
+**解析**
+
+> $$\frac{dx}{dt}=2(1-\cos t),\qquad \frac{dy}{dt}=2\sin t$$
+>
+> $$\frac{dy}{dx}=\frac{\sin t}{1-\cos t}$$
+>
+> $$\frac{d}{dt}\Big(\frac{dy}{dx}\Big)=\frac{\cos t(1-\cos t)-\sin^2 t}{(1-\cos t)^2}=-\frac{1}{1-\cos t}$$
+>
+> $$\frac{d^2y}{dx^2}=\frac{-1/(1-\cos t)}{2(1-\cos t)}=-\frac{1}{2(1-\cos t)^2}$$
+
+
+**另一解法：** 
+
+
+$dx = 2(1-\cos t)\cdot dt$
+$dy = 2\sin t\cdot dt$
+
+$$\frac{d^2 y}{dx^2} = \frac{d\left( \frac{dy}{dx} \right)}{dx}$$
+
+$$\frac{dy}{dx} = \frac{\sin t}{1-\cos t}$$
+
+$$
+d\left( \frac{\sin t}{1-\cos t} \right) = \frac{\cos t(1-\cos t) - \sin t\cdot \sin t}{(1-\cos t)^2} \cdot dt
+$$
+
+$$
+\frac{d^2 y}{dx^2} = \frac{d\left( \frac{\sin t}{1-\cos t} \right)}{2(1-\cos t)\cdot dt}
+$$
+
+$$
+\begin{align*}
+&= \frac{\cos t(1-\cos t) - \sin t\cdot \sin t}{2(1-\cos t)^3} \\[6pt]
+&= \frac{\cos t - (\cos^2 t + \sin^2 t)}{2(1-\cos t)^3} \\[6pt]
+&= \frac{-1}{2(1-\cos t)^2}
+\end{align*}
+$$
+
+
+
+
+
+
+**考点**：参数方程二阶导（摆线）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
 xxxx
 
 **题目**
