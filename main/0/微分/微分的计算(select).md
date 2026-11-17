@@ -2099,6 +2099,58 @@ $f_x'$为$f$对标$x$的中间变量位置求偏导，并非对自变量$x$求�
 ### 二阶偏导
 
 
+
+xxxx
+
+**题目**
+
+$z=x\ln(x+y)$，求 $\dfrac{\partial^2 z}{\partial x\partial y}=$（　　）
+
+- A. $\dfrac{x}{(x+y)^2}$
+- B. $\dfrac{y}{(x+y)^2}$
+- C. $\dfrac{2x+y}{(x+y)^2}$
+- D. $\dfrac{x+2y}{(x+y)^2}$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：B
+
+**解析**
+
+> 先对 $x$ 求偏导：
+>
+> $$\frac{\partial z}{\partial x}=\ln(x+y)+\frac{x}{x+y}$$
+>
+> 再对 $y$ 求偏导：
+>
+> $$\frac{\partial^2 z}{\partial x\partial y}=\frac{1}{x+y}-\frac{x}{(x+y)^2}=\frac{y}{(x+y)^2}$$
+>
+> 选 B。
+> 【机构分歧】好老师键为 D，按 $\dfrac{\partial^2 z}{\partial x\partial y}=\dfrac{y}{(x+y)^2}$ 应为 B，本专题取 B。
+
+**考点**：二阶混合偏导（含对数）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 xxxx
 
 **题目**
