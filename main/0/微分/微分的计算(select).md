@@ -1892,6 +1892,15 @@ $$\frac{\partial^2 z}{\partial y\partial x} = \frac{\partial}{\partial x}\left( 
 ## 二元隐函数求导(推论)
 
 
+
+gong
+
+
+
+
+
+
+
 ### 偏导
 
 
