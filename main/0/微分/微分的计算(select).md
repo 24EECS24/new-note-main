@@ -1339,6 +1339,50 @@ $$\left[f(x)^{g(x)}\right]' = f(x)^{g(x)}\left[g'(x)\ln f(x) + g(x)\cdot\frac{f'
 
 
 
+xxxx
+
+**题目**
+
+已知 $y=x\ln x$，则 $y'''=$（　　）
+
+- A. $\dfrac{1}{x}$
+- B. $\dfrac{1}{x^2}$
+- C. $-\dfrac{1}{x}$
+- D. $-\dfrac{1}{x^2}$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：D
+
+**解析**
+
+> $$y'=\ln x+1,\qquad y''=\frac{1}{x},\qquad y'''=-\frac{1}{x^2}$$
+>
+> 选 D。
+
+**考点**：高阶导数（对数乘积）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 
 xxxx
 
