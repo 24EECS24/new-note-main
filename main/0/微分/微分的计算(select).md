@@ -1097,6 +1097,92 @@ zzzz
 则：$\displaystyle y'=\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}=\frac{w'(t)}{g'(t)}$ 
 
 ### 二阶导
+
+
+xxxx
+
+**题目**
+
+设 $\begin{cases}x=\cos t\\ y=t\cos t-\sin t\end{cases}$（$t$ 为参数），则 $\dfrac{d^2y}{dx^2}\bigg|_{t=\pi/4}=$（　　）
+
+- A. $-\sqrt{2}$
+- B. $\sqrt{2}$
+- C. $\dfrac{\sqrt{2}}{2}$
+- D. $-\dfrac{\sqrt{2}}{2}$
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：A
+
+**解析**
+
+> $$\frac{dy}{dt}=-t\sin t,\qquad \frac{dx}{dt}=-\sin t$$
+>
+> $$\frac{dy}{dx}=\frac{-t\sin t}{-\sin t}=t$$
+>
+> $$\frac{d^2y}{dx^2}=\frac{d(dy/dx)/dt}{dx/dt}=\frac{1}{-\sin t}=-\frac{1}{\sin t}$$
+>
+> 代入 $t=\dfrac{\pi}{4}$：$-\sqrt{2}$。选 A。
+
+
+**另一解法：** 
+$$
+\frac{d^2 y}{dx^2} = \frac{d\left( \frac{dy}{dx} \right)}{dx}
+$$
+$$
+dx = -\sin t \cdot dt
+$$
+$$
+dy = -t\sin t \cdot dt
+$$
+$$
+\Rightarrow \frac{dy}{dx} = t
+$$
+$$
+\begin{align*}
+\frac{d^2 y}{dx^2} &= \frac{dt}{dx} \\[4pt]
+&= \frac{dt}{-\sin t \cdot dt} \\[4pt]
+&= -\frac{1}{\sin t}
+\end{align*}
+$$
+$$
+t=\frac{\pi}{4} \Rightarrow \frac{d^2 y}{dx^2} = -\sqrt{2}
+$$
+
+
+
+
+
+**考点**：参数方程二阶导
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+
+
+zzzz
+
+
+
+
+
+
+
 设函数$y=y(x)$由参数方程$\begin{cases} x = g(t) \\ y = w(t) \end{cases}$确定，其中，$t$是参数，且$g(t),w(t)$均二阶可导，$g'(t)\neq0$，
 
 则：$\displaystyle y''(x)=\frac{d^2 y}{dx^2}=\frac{d\left(\frac{dy}{dx}\right)}{dx}=\frac{d\left( \frac{w'(t)}{g'(t)}\right)}{dx}=\frac{\frac{d\left( \frac{w'(t)}{g'(t)} \right)}{dt}}{\frac{dx}{dt}}=\frac{\frac{d\left( \frac{w'(t)}{g'(t)} \right)}{dt}}{g'(t)}$ 
