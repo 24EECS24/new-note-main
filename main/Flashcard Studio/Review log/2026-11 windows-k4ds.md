@@ -260,3 +260,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794887792687,"c":"24s2rb","r":4,"k":1,"ivl":11,"li":2,"s":11.99,"d":5.71,"ms":60000,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
 {"t":1794888300021,"c":"of28uh","r":3,"k":1,"ivl":51,"li":9,"s":48.73,"d":1,"ms":60000,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
 {"t":1794888485346,"c":"u1grj6","r":2,"k":1,"ivl":15,"li":3,"s":14.22,"d":4.01,"ms":60000,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
+{"t":1794888607835,"c":"eujb5g","r":4,"k":1,"ivl":5,"li":1,"s":7.49,"d":3.58,"ms":60000,"dk":"flashcards/微分/微分的计算","f":"0/微分/微分的计算(select).md"}
