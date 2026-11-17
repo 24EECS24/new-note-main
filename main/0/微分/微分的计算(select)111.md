@@ -1420,6 +1420,14 @@ flexGrow=20
 > 指数函数逐次求导每次都乘一个 $\ln 5$，故 $n$ 阶导数为 $5^x(\ln 5)^n$。
 
 **考点**：高阶导数（指数函数归纳）
+$$
+\begin{align*}
+\left(a^x\right)' &= \left(e^{x\ln a}\right)' \\[4pt]
+&= e^{x\ln a} \cdot \ln a \\[4pt]
+&= a^x \ln a
+\end{align*}
+$$
+
 
 
 ```````

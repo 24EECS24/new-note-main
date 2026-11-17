@@ -979,6 +979,11 @@ $$\left[f(x)^{g(x)}\right]' = f(x)^{g(x)}\left[g'(x)\ln f(x) + g(x)\cdot\frac{f'
 
 
 
+
+
+
+
+
 xxxx
 
 **题目**
