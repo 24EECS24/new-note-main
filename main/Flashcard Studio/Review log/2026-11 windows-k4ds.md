@@ -333,3 +333,5 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794978009252,"c":"lsa6ks","r":4,"k":2,"ivl":2,"li":0,"s":2.52,"d":6.02,"ms":14378,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
 {"t":1794978041221,"c":"bzbypi","r":3,"k":1,"ivl":36,"li":7,"s":38.91,"d":1,"ms":17846,"dk":"flashcards/函数/三要素","f":"0/函数/函数三要素(select).md"}
 {"t":1794978217201,"c":"bb8xij","r":3,"k":1,"ivl":40,"li":7,"s":38.91,"d":1,"ms":60000,"dk":"flashcards/函数/三要素","f":"0/函数/函数三要素(select).md"}
+{"t":1794978554441,"c":"5ae0w6","r":2,"k":1,"ivl":26,"li":7,"s":26.7,"d":4.01,"ms":60000,"dk":"flashcards/函数/三要素","f":"0/函数/函数三要素(select).md"}
+{"t":1794978577778,"c":"mny00g","r":3,"k":1,"ivl":41,"li":7,"s":38.91,"d":1,"ms":23162,"dk":"flashcards/函数/三要素","f":"0/函数/函数三要素(select).md"}
