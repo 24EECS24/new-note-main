@@ -259,6 +259,36 @@ flexGrow=20
 > $$L(60)=\frac{22400}{60}+\frac{7\times60}{2}\approx583.3,\quad L(80)=280+280=560,\quad L(100)=224+350=574$$
 > $560<574<583.3$，故最经济速度为 $80\,km/h$，最小总费用为 $560$ 元。
 
+**另一解法**：运输成本最低问题
+问以怎样的速度行驶，成本最低。
+成本 = 油钱 + 司机的工费
+$$
+\begin{align*}
+\text{成本} &= 7 \cdot \left[ \frac{280}{x} \cdot \left(5 + \frac{x^2}{560}\right) \right] + \frac{280}{x} \cdot 45 \\[4pt]
+y &= 7 \cdot \frac{280}{x} \cdot \left(5 + \frac{x^2}{560}\right) + \frac{280}{x} \cdot 45 \\[4pt]
+&= \frac{280 \cdot 7 \cdot 5}{x} + \frac{280 \cdot 7 \cdot x}{560} + \frac{280 \cdot 45}{x} \\[4pt]
+&= \frac{280(35 + 45)}{x} + \frac{7}{2}x \\[4pt]
+&= \frac{22400}{x} + \frac{7}{2}x
+\end{align*}
+$$
+
+$$
+\begin{align*}
+&y' = -\frac{22400}{x^2} + \frac{7}{2}\\[4pt]
+&\text{令 } y'=0\\[4pt]
+&\frac{22400}{x^2} = \frac{7}{2}\\[4pt]
+&\frac{1}{x^2} = \frac{7}{2} \cdot \frac{1}{22400}\\[4pt]
+&\frac{1}{x^2} = \frac{1}{6400}\\[4pt]
+&\Rightarrow x_1=80,\ x_2=-80\ (\text{舍去})\\[4pt]
+&y(60) = \frac{22400}{60} + \frac{7}{2} \cdot 60 \approx 373 + 210 = 583\\[4pt]
+&y(80) = \frac{22400}{80} + \frac{7}{2} \cdot 80 = 280 + 280 = 560\\[4pt]
+&y(100) = \frac{22400}{100} + \frac{7}{2} \cdot 100 = 224 + 350 = 574\\[4pt]
+&\Rightarrow \text{在}x=80\text{处取得最小值}560\text{元}
+\end{align*}
+$$
+
+
+
 **考点**
 
 导数求实际问题的最小值（闭区间端点比较）
