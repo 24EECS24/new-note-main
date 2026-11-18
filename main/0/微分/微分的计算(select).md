@@ -2751,6 +2751,76 @@ $$\frac{\partial^2 z}{\partial y\partial x} = \frac{\partial}{\partial x}\left( 
 
 xxxx
 
+**题目** 
+
+设函数 $y=y(x)$ 由方程 $\ln(x^2+y)=x^3y+\sin x$ 确定，求 $\dfrac{dy}{dx}\bigg|_{x=0}$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$1$
+
+**解析**
+
+> 当 $x=0$ 时，$\ln y=0$，故 $y=1$。
+>
+> 方程两边对 $x$ 求导：
+>
+> $$\frac{2x+y'}{x^2+y}=3x^2y+x^3y'+\cos x$$
+>
+> 代入 $(0,1)$：$\dfrac{y'}{1}=1$，故 $y'\big|_{x=0}=1$。
+
+**另一解法：** 
+
+$$F(x,y) = -\ln(x^2+y) + x^3 y + \sin x$$
+
+$$\frac{dy}{dx} = -\frac{F_x'}{F_y'}$$
+
+$$
+\begin{align*}
+F_x' &= -\frac{2x}{x^2+y} + 3x^2 y + \cos x \\[6pt]
+F_y' &= -\frac{1}{x^2+y} + x^3
+\end{align*}
+$$
+
+$$\ln y = 0 \implies  y=1$$
+
+$$F_x'\big|_{(0,1)} = 1,\quad F_y'\big|_{(0,1)} = -1$$
+
+$$\frac{dy}{dx}\bigg|_{x=0} = 1$$
+
+
+
+
+
+
+
+
+**考点**：隐函数求导（一点处）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+xxxx
+
 **题目**
 
 $xy+xyz=2x-4y$，$xy\neq 0$，求 $\dfrac{\partial z}{\partial x}$，$\dfrac{\partial z}{\partial y}$。
