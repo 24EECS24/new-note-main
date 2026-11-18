@@ -134,6 +134,60 @@ $$
 \end{align*}
 $$
 
+
+## 几何意义
+
+
+
+
+xxxx
+
+**题目**
+
+求曲线 $\begin{cases}x=e^t\cos t\\ y=e^t\sin t\end{cases}$ 在 $t=\dfrac{\pi}{2}$ 处的法线方程。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$y=x+e^{\pi/2}$
+
+**解析**
+
+> 当 $t=\dfrac{\pi}{2}$ 时，$x=0$，$y=e^{\pi/2}$。
+>
+> $$\frac{dx}{dt}=e^t(\cos t-\sin t),\qquad \frac{dy}{dt}=e^t(\sin t+\cos t)$$
+>
+> 在 $t=\dfrac{\pi}{2}$ 处：$\dfrac{dx}{dt}=-e^{\pi/2}$，$\dfrac{dy}{dt}=e^{\pi/2}$，故 $\dfrac{dy}{dx}=-1$。
+>
+> 法线斜率为 $1$，法线方程：$y-e^{\pi/2}=x$，即 $y=x+e^{\pi/2}$。
+
+**考点**：参数方程求导 + 平面曲线法线
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
+
+
 # 一元微分
 
 
