@@ -2899,6 +2899,51 @@ $$\frac{\partial^2 z}{\partial y\partial x} = \frac{\partial}{\partial x}\left( 
 ### 公式法
 
 
+xxxx
+
+**题目**
+
+已知函数 $z=f(x,y)$ 由方程 $xz-yz-x+y=0$ 所确定，求全微分 $\mathrm{d}z$。
+?
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\mathrm{d}z=\dfrac{1-z}{x-y}\mathrm{d}x+\dfrac{z-1}{x-y}\mathrm{d}y$
+
+**解析**
+
+> 令 $F(x,y,z)=xz-yz-x+y$，则
+>
+> $$F_x=z-1,\qquad F_y=1-z,\qquad F_z=x-y$$
+>
+> 由隐函数公式：
+>
+> $$\frac{\partial z}{\partial x}=-\frac{F_x}{F_z}=\frac{1-z}{x-y},\qquad \frac{\partial z}{\partial y}=-\frac{F_y}{F_z}=\frac{z-1}{x-y}$$
+>
+> 故 $\mathrm{d}z=\dfrac{1-z}{x-y}\mathrm{d}x+\dfrac{z-1}{x-y}\mathrm{d}y$。
+
+**考点**：隐函数求导 + 全微分（公式法）
+
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 
 xxxx
 
