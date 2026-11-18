@@ -329,3 +329,6 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794977303670,"c":"lsa6ks","r":1,"k":1,"ivl":0.0069,"li":9,"s":1.43,"d":7.03,"ms":60000,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
 {"t":1794977452032,"c":"6e2mnc","r":3,"k":1,"ivl":40,"li":8,"s":38.91,"d":1,"ms":60000,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
 {"t":1794977823149,"c":"mnt6py","r":3,"k":1,"ivl":40,"li":9,"s":44.1,"d":1,"ms":60000,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
+{"t":1794977994732,"c":"0co3a8","r":3,"k":1,"ivl":45,"li":9,"s":44.1,"d":1,"ms":60000,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
+{"t":1794978009252,"c":"lsa6ks","r":4,"k":2,"ivl":2,"li":0,"s":2.52,"d":6.02,"ms":14378,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
+{"t":1794978041221,"c":"bzbypi","r":3,"k":1,"ivl":36,"li":7,"s":38.91,"d":1,"ms":17846,"dk":"flashcards/函数/三要素","f":"0/函数/函数三要素(select).md"}
