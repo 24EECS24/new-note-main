@@ -337,3 +337,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794978577778,"c":"mny00g","r":3,"k":1,"ivl":41,"li":7,"s":38.91,"d":1,"ms":23162,"dk":"flashcards/函数/三要素","f":"0/函数/函数三要素(select).md"}
 {"t":1794978867022,"c":"ehg042","r":3,"k":1,"ivl":27,"li":4,"s":23.88,"d":1,"ms":60000,"dk":"flashcards/微分/导数","f":"0/微分/导数(select).md"}
 {"t":1794979105616,"c":"1xxcpe","r":4,"k":1,"ivl":21,"li":7,"s":23.5,"d":8.04,"ms":60000,"dk":"flashcards/证明题/中值定理","f":"0/证明题/中值定理.md"}
+{"t":1794985459275,"c":"nrhdl1","r":4,"k":0,"n":1,"ivl":8,"li":0,"s":8.3,"d":1,"ms":7491,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
