@@ -303,3 +303,6 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1794976599769,"c":"l5irk8","r":4,"k":0,"n":1,"ivl":10,"li":0,"s":8.3,"d":1,"ms":7044,"dk":"flashcards/微分/微分的计算","f":"0/微分/微分的计算(select).md"}
 {"t":1794976608879,"c":"b9an13","r":4,"k":0,"n":1,"ivl":6,"li":0,"s":8.3,"d":1,"ms":8960,"dk":"flashcards/微分/微分的计算","f":"0/微分/微分的计算(select).md"}
 {"t":1794976616110,"c":"okzjwh","r":4,"k":0,"n":1,"ivl":10,"li":0,"s":8.3,"d":1,"ms":7086,"dk":"flashcards/微分/微分的计算","f":"0/微分/微分的计算(select).md"}
+{"t":1794976677914,"c":"55ulcz","r":4,"k":0,"n":1,"ivl":9,"li":0,"s":8.3,"d":1,"ms":60000,"dk":"flashcards/微分/微分的计算","f":"0/微分/微分的计算(select).md"}
+{"t":1794976685260,"c":"pjgbqf","r":4,"k":0,"n":1,"ivl":10,"li":0,"s":8.3,"d":1,"ms":7160,"dk":"flashcards/微分/微分的计算","f":"0/微分/微分的计算(select).md"}
+{"t":1794976694587,"c":"s2f2ft","r":4,"k":0,"n":1,"ivl":10,"li":0,"s":8.3,"d":1,"ms":9153,"dk":"flashcards/微分/微分的计算","f":"0/微分/微分的计算(select).md"}
