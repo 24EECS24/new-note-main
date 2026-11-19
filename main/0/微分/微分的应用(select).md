@@ -699,6 +699,50 @@ xxxx
 
 **题目**
 
+求曲线 $y=3+\mathrm{e}^{\arctan x}$ 的凹凸区间与拐点。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：凹区间 $\left(-\infty,\dfrac12\right)$，凸区间 $\left(\dfrac12,+\infty\right)$，拐点 $\left(\dfrac12,\,3+\mathrm{e}^{\arctan\frac12}\right)$
+
+**解析**
+
+> $$y'=\frac{\mathrm{e}^{\arctan x}}{1+x^2}$$
+> $$y''=\frac{\mathrm{e}^{\arctan x}\cdot\frac{1}{1+x^2}\cdot(1+x^2)-\mathrm{e}^{\arctan x}\cdot2x}{(1+x^2)^2}=\frac{\mathrm{e}^{\arctan x}(1-2x)}{(1+x^2)^2}$$
+> 令 $y''=0$ 得 $1-2x=0$，即 $x=\dfrac12$。
+> 当 $x<\dfrac12$ 时 $y''>0$，凹区间为 $\left(-\infty,\dfrac12\right)$；当 $x>\dfrac12$ 时 $y''<0$，凸区间为 $\left(\dfrac12,+\infty\right)$。
+> $x=\dfrac12$ 处两侧变号，拐点为 $\left(\dfrac12,\,3+\mathrm{e}^{\arctan\frac12}\right)$。
+
+**考点**
+
+凹凸区间与拐点的计算（商式求导）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+xxxx
+
+**题目**
+
 求曲线 $y=\dfrac{\mathrm{e}^{x}}{1+x}+3x-5$ 的凹凸区间。
 ?
 
