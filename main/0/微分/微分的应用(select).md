@@ -1797,6 +1797,73 @@ xxxx
 
 **题目**
 
+将长为 $4m$ 的铁丝剪成两段，一段围成正方形，余下的围成圆周，如何选择边长与半径，可使两个图形的面积之和为最小。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：正方形边长 $\dfrac{4}{\pi+4}\,m$，圆半径 $\dfrac{2}{\pi+4}\,m$
+
+**解析**
+
+> 设正方形边长为 $x$，圆半径为 $r$，则 $4x+2\pi r=4$，即 $2x+\pi r=2$，得 $r=\dfrac{2-2x}{\pi}$。
+> 面积之和：
+> $$A=x^2+\pi r^2=x^2+\pi\left(\frac{2-2x}{\pi}\right)^2=x^2+\frac{4(1-x)^2}{\pi}$$
+> 求导：
+> $$A'=2x-\frac{8(1-x)}{\pi}=0\ \Rightarrow\ 2\pi x-8+8x=0\ \Rightarrow\ x=\frac{4}{\pi+4}$$
+> $$r=\frac{2-2\cdot\frac{4}{\pi+4}}{\pi}=\frac{2}{\pi+4}$$
+> 此时 $A''=2+\dfrac{8}{\pi}>0$，故为极小值点；由实际问题可知即为最小值点。
+
+**另一解法** 
+$$
+\begin{align*}
+&4=4a+2\pi r \implies r=\frac{2(1-a)}{\pi}\\[4pt]
+&y=a^2+\pi r^2\\[4pt]
+&=a^2+\pi\cdot\frac{2(1-a)}{\pi}\cdot\frac{2(1-a)}{\pi}\\[4pt]
+&=a^2+\frac{2(1-a)\cdot2(1-a)}{\pi}\\[4pt]
+&y=a^2+\frac{(2-2a)^2}{\pi}\\[4pt]
+&y'=2a+\frac{1}{\pi}\cdot2(2-2a)\cdot(-2)\\[4pt]
+&=2a+\frac{-4(2-2a)}{\pi}\\[4pt]
+&\text{当}\ \frac{4(2-2a)}{\pi}=2a\ \text{时，}\ y'=0\\[4pt]
+&8(1-a)=2\pi a\\[4pt]
+&\frac{2\pi}{8}a +a -1=0\\[4pt]
+&a\left(\frac{2\pi}{8}+1\right)=1\\[4pt]
+&a=\frac{4}{4+\pi},\quad r=\frac{2(1-a)}{\pi}=\frac{2}{4+\pi}\\[4pt]
+&y''=2+\frac{8}{\pi}>0 \implies \text{为极小值点}
+\end{align*}
+$$
+
+
+
+
+**考点**
+
+导数求实际问题的最小值（条件化为一元函数）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+xxxx
+
+**题目**
+
 假设货车以 $x\,km/h$ 的速度匀速行驶 $280km$，按照交通惯例规定，货车行驶速度 $x\,km/h$ 需满足 $60\leq x\leq100$，已知柴油价格 $7$ 元$/L$，货车耗油速率为 $\left(5+\dfrac{x^2}{560}\right)L/h$，司机工资每小时 $45$ 元。问：使总行驶成本最低的行驶速度是多少？在此速度下行驶全程的总费用是多少？
 ?
 
