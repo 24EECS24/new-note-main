@@ -401,3 +401,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1795154118478,"c":"1zjkjo","r":4,"k":2,"ivl":2,"li":0,"s":2.39,"d":6.02,"ms":2367,"dk":"flashcards/微分/连续与间断","f":"0/微分/连续与间断(select).md"}
 {"t":1795154173973,"c":"0zen13","r":3,"k":1,"ivl":46,"li":8,"s":44.1,"d":1,"ms":43879,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
 {"t":1795154903848,"c":"lsa6ks","r":4,"k":1,"ivl":13,"li":2,"s":11.68,"d":4.67,"ms":60000,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
+{"t":1795155064251,"c":"3xot7m","r":3,"k":1,"ivl":48,"li":9,"s":44.1,"d":1,"ms":60000,"dk":"flashcards/极限/极限的计算","f":"0/极限/极限的计算(select).md"}
