@@ -365,3 +365,9 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1795147785738,"c":"jzlwmn","r":4,"k":0,"n":1,"ivl":6,"li":0,"s":8.3,"d":1,"ms":3268,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
 {"t":1795147788410,"c":"dyktso","r":4,"k":0,"n":1,"ivl":7,"li":0,"s":8.3,"d":1,"ms":2501,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
 {"t":1795147793368,"c":"16ecny","r":4,"k":0,"n":1,"ivl":10,"li":0,"s":8.3,"d":1,"ms":4554,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
+{"t":1795147834053,"c":"yfzctz","r":4,"k":0,"n":1,"ivl":8,"li":0,"s":8.3,"d":1,"ms":40402,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
+{"t":1795147845588,"c":"d8rkc3","r":4,"k":0,"n":1,"ivl":9,"li":0,"s":8.3,"d":1,"ms":11279,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
+{"t":1795147854096,"c":"pie23f","r":4,"k":0,"n":1,"ivl":7,"li":0,"s":8.3,"d":1,"ms":7951,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
+{"t":1795147864467,"c":"in7m22","r":4,"k":0,"n":1,"ivl":8,"li":0,"s":8.3,"d":1,"ms":10163,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
+{"t":1795147869631,"c":"fc8ctv","r":4,"k":0,"n":1,"ivl":6,"li":0,"s":8.3,"d":1,"ms":4961,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
+{"t":1795147879338,"c":"pnwb84","r":4,"k":0,"n":1,"ivl":7,"li":0,"s":8.3,"d":1,"ms":9515,"dk":"flashcards/微分/微分的应用","f":"0/微分/微分的应用(select).md"}
