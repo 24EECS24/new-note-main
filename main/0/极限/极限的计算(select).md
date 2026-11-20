@@ -1821,6 +1821,21 @@ $$
 $$
 
 
+**另一解法** 
+$$
+\begin{align*}
+\text{原式} &= \lim_{x \to 1} \frac{(x-1)^{\frac{1}{3}} + x - 1}{x - 1} \\[4pt]
+&= \lim_{x \to 1} \left( (x-1)^{-\frac{2}{3}} + 1 \right) \\[4pt]
+&= \lim_{x \to 1} \left( \frac{1}{(x-1)^{\frac{2}{3}}} + 1 \right) \\[4pt]
+&= \infty
+\end{align*}
+$$
+
+
+
+
+
+
 ````
 
 ````col-md
