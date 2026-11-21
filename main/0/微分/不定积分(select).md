@@ -65,6 +65,61 @@ zzzz
 
 
 
+xxxx
+
+**题目**
+
+在 $[a,b]$ 内，$g'(x)=f'(x)$，则下列哪个正确（　）
+
+A. $g(x)=f(x)$
+
+B. $\left(\displaystyle\int g(x)\,dx\right)'=\left(\displaystyle\int f(x)\,dx\right)'$
+
+C. $g(x)=f(x)-C$
+
+D. $\displaystyle\int g(x)\,dx=\int f(x)\,dx$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：C
+
+**解析**
+
+> 由 $g'(x)=f'(x)$，得
+> $$[g(x)-f(x)]'=0$$
+> 故 $g(x)-f(x)$ 在区间内为常数，即 $g(x)=f(x)+C_{0}$，写成 $g(x)=f(x)-C$（$C$ 为任意常数），C 正确。
+>
+> - A：两函数相差一个常数，未必相等，错误。
+> - B：$\left(\displaystyle\int g\,dx\right)'=g(x)$，$\left(\displaystyle\int f\,dx\right)'=f(x)$，而 $g$ 与 $f$ 未必相等，错误。
+> - D：两个不定积分各自含任意常数，不能由 $g'=f'$ 直接断定其相等，错误。
+>
+> 故选 C。
+
+**考点**
+
+导数相同的两个函数相差常数（原函数之间的关系）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
 
 关系示意：$\int f(x)dx \leftarrow f(x) \rightarrow f'(x)$，
 
