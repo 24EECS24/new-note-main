@@ -1135,6 +1135,89 @@ y的取值就不会为0
 ∴ 要规定该形式满足条件$q^2-4pr<0$ 
 
 
+## 求最简式的不定积分
+**1** 
+$\displaystyle \star \int \frac{A}{ax+b} dx$，方法：凑微分，把分子凑为分母的导数。
+例：计算$\displaystyle \int \frac{3}{2x+1} dx$，其中$(2x+1)'=2$ 
+$$
+\begin{align*}
+\int \frac{3}{2x+1} dx &= \frac{3}{2}\int \frac{2}{2x+1} dx \\
+&= \frac{3}{2}\int \frac{1}{2x+1} d(2x+1) \quad \text{凑微分} \\
+&= \frac{3}{2}\ln|2x+1| + C
+\end{align*}
+$$
+**2** 
+$\displaystyle \star \int \frac{A}{(ax+b)^k} dx$ 
+例：计算$\displaystyle \int \frac{3}{(2x-1)^2} dx$，其中$(2x-1)'=2$ 
+$$
+\begin{align*}
+\int \frac{3}{(2x-1)^2} dx &= \frac{3}{2}\int \frac{2}{(2x-1)^2} dx \\
+&= \frac{3}{2}\int \frac{1}{(2x-1)^2} d(2x-1) \\
+&= -\frac{3}{2} \cdot \frac{1}{2x-1} + C
+\end{align*}
+$$
+**3** 
+$\displaystyle \star \int \frac{Ax+B}{px^2+qx+r} dx \quad (q^2-4pr < 0)$ 
+方法：凑微分，构造$\displaystyle \int f[g(x)]\cdot g'(x)dx$的形式，把分子凑为分母的导数。
+例：计算$\displaystyle \int \frac{3x-2}{x^2+1} dx$，其中$(x^2+1)'=2x = g'(x)$
+$$
+\int \frac{3x-2}{x^2+1} dx = \int \frac{3x}{x^2+1} dx - \int \frac{2}{x^2+1} dx
+$$
+
+k=1时可直接通过凑微分、基本积分公式求解：
+$$
+\begin{aligned}
+&= \frac{3}{2}\int \frac{2x}{x^2+1} \, dx - 2\int \frac{1}{x^2+1} \, dx \\
+&= \frac{3}{2}\int \frac{1}{x^2+1} \, d(x^2+1) - 2\int \frac{1}{x^2+1} \, dx \\
+&= \frac{3}{2}\ln|x^2+1| - 2\arctan x + C
+\end{aligned}
+$$
+
+★ 当分母为判别式小于0的二次不可约因式的k次幂时，对应部分分式的一般形式为：
+$$\frac{Ax+B}{(px^2+qx+r)^k} \quad (q^2-4pr<0)$$
+
+分部积分可造出方程，这里我们用分部积分法造出递推式。
+
+e.g. $\displaystyle \int \frac{1}{(1+x^2)^2} \, dx$
+
+$\because k=2$
+$\therefore$ 设$\displaystyle I_2 = \int \frac{1}{(1+x^2)^2} \, dx$，$I_2$不好解
+则$\displaystyle I_1 = \int \frac{1}{1+x^2} \, dx$，$I_1$好解
+
+由导数公式：
+$$\left(\frac{1}{u}\right)' = -\frac{1}{u^2}$$
+
+则用分部积分可以由$I_1$推$I_2$：
+$$
+\begin{aligned}
+\int \frac{1}{1+x^2} \, dx &= \frac{x}{1+x^2} - \int x \, d\left(\frac{1}{1+x^2}\right) \quad \text{分部积分} \\
+&= \frac{x}{1+x^2} + \int x\cdot \frac{2x}{(1+x^2)^2} \, dx \\
+&= \frac{x}{1+x^2} + 2\int \frac{x^2+1-1}{(1+x^2)^2} \, dx
+\end{aligned}
+$$
+
+$$= \frac{x}{1+x^2} + 2\int \frac{1}{x^2+1} dx - 2\int \frac{1}{(1+x^2)^2} dx$$
+
+$$I_1 = \frac{x}{1+x^2} + 2I_1 - 2I_2$$
+
+$$I_2 = \frac{x}{2(1+x^2)} + \frac{1}{2}I_1$$
+
+$$
+\begin{aligned}
+\int \frac{1}{(1+x^2)^2} dx &= \frac{x}{2(1+x^2)} + \frac{1}{2}\int \frac{1}{1+x^2} dx \\
+&= \frac{x}{2(1+x^2)} + \frac{1}{2}\arctan x + C
+\end{aligned}
+$$
+
+若是题目给的是$n$次方，则一样是可以找到$I_n$与$I_{n-1}$的关系。
+
+
+
+
+
+
+
+
 # 二元函数求不定积分
 
 一元函数不定积分：
