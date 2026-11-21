@@ -1073,6 +1073,113 @@ $$
 
 # 特殊函数的不定积分
 
+
+
+
+xxxx
+
+**题目**
+
+$\displaystyle\int x\ln(1+x^{2})\,dx=$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{1}{2}\big[(x^{2}+1)\ln(x^{2}+1)-x^{2}\big]+C$
+
+**解析**
+
+> 用分部积分法，令 $u=\ln(1+x^{2})$，$dv=x\,dx$，则 $du=\dfrac{2x}{1+x^{2}}dx$，$v=\dfrac{x^{2}}{2}$：
+> $$\int x\ln(1+x^{2})\,dx=\frac{x^{2}}{2}\ln(1+x^{2})-\int\frac{x^{2}}{2}\cdot\frac{2x}{1+x^{2}}\,dx=\frac{x^{2}}{2}\ln(1+x^{2})-\int\frac{x^{3}}{1+x^{2}}\,dx$$
+> 对后一项作变形，$x^{3}=x(1+x^{2})-x$，故
+> $$\frac{x^{3}}{1+x^{2}}=x-\frac{x}{1+x^{2}}$$
+> $$\int\frac{x^{3}}{1+x^{2}}\,dx=\int x\,dx-\int\frac{x}{1+x^{2}}\,dx=\frac{x^{2}}{2}-\frac12\ln(1+x^{2})$$
+> 代回整理：
+> $$\text{原式}=\frac{x^{2}}{2}\ln(1+x^{2})-\frac{x^{2}}{2}+\frac12\ln(1+x^{2})+C=\frac12\big[(x^{2}+1)\ln(1+x^{2})-x^{2}\big]+C$$
+
+
+**另一解法**：
+用分部积分的表格法计算不定积分，
+选取$u=\ln(1+x^2)$求导，$v'=x$积分，
+- 求导列：$\ln(1+x^2) \to \frac{2x}{1+x^2}$
+- 积分列：$x \to \frac{1}{2}x^2$
+
+$$
+\begin{align*}
+\text{原式} &= \frac{1}{2}x^2\ln(1+x^2) - \int \frac{1}{2}x^2 \cdot \frac{2x}{1+x^2} \, dx \\[6pt]
+&= \frac{1}{2}x^2\ln(1+x^2) - \int \frac{x^3}{1+x^2} \, dx
+\end{align*}
+$$
+
+对被积函数$\frac{x^3}{1+x^2}$做代数拆分，结合凑微分计算积分：
+$$
+\begin{align*}
+\int \frac{x^3}{1+x^2} dx &= \int \frac{x^3 + x - x}{1+x^2} dx \\[6pt]
+&= \int \frac{x(1+x^2) - x}{1+x^2} dx \\[6pt]
+&= \int x \, dx - \int \frac{x}{1+x^2} dx \\[6pt]
+&= \frac{1}{2}x^2 - \int \frac{x}{1+x^2} dx + C
+\end{align*}
+$$
+
+利用$(1+x^2)'=2x$凑微分计算剩余积分项：
+$$
+\begin{align*}
+\because (1+x^2)' &= 2x, \\
+\therefore \int \frac{x}{1+x^2} dx &= \frac{1}{2}\int \frac{2x}{1+x^2} dx \\[6pt]
+&= \frac{1}{2}\int \frac{1}{1+x^2} d(x^2) \\[6pt]
+&= \frac{1}{2}\int \frac{1}{1+x^2} d(x^2+1) \\[6pt]
+&= \frac{1}{2}\ln(1+x^2) + C
+\end{align*}
+$$
+
+化简得到最终结果：
+$$
+\begin{align*}
+\text{原式} &= \frac{1}{2}x^2\ln(1+x^2) - \frac{1}{2}x^2 + \frac{1}{2}\ln(1+x^2) + C \\[6pt]
+&= \frac{1}{2}\left[(x^2+1)\ln(1+x^2) - x^2\right] + C
+\end{align*}
+$$
+
+
+
+
+
+
+
+**考点**
+
+分部积分法（结合凑微分）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
+
+
+
+
+
+
+
+
 有理函数的积分
 所谓有理函数，就是形如$\frac{P_n(x)}{Q_m(x)}$的函数，其中：
 $\displaystyle P_n(x)$为$x$的$n$次多项式。
