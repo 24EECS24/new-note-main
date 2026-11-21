@@ -1,9 +1,70 @@
+#flashcards/微分/不定积分
+
+
+
+
 - $\cot x$：kāo，$\tan x$ 
 - $\sec x$：sēi, yè, nà, x 
 - $\csc x$：kāo，$\sec x$ 
 
 
 # 概念
+
+
+xxxx
+
+**题目**
+
+下列等式正确的是（　）
+
+A. $\dfrac{d}{dx}\displaystyle\int f(x)\,dx=f(x)$
+
+B. $d\!\left(\displaystyle\int f(x)\,dx\right)=f(x)$
+
+C. $\dfrac{d}{dx}\displaystyle\int f'(x)\,dx=f(x)$
+
+D. $\displaystyle\int f'(x)\,dx=f(x)$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：A
+
+**解析**
+
+> 逐项用积分—微分互逆关系判断：
+>
+> - A：$\left(\displaystyle\int f(x)\,dx\right)'=[F(x)+C]'=f(x)$，正确。
+> - B：$d\!\left(\displaystyle\int f(x)\,dx\right)=d[F(x)+C]=f(x)\,dx$，选项右端少了微分因子 $dx$，错误。
+> - C：$\left(\displaystyle\int f'(x)\,dx\right)'=[f(x)+C]'=f'(x)$，选项写成 $f(x)$，错误。
+> - D：$\displaystyle\int f'(x)\,dx=f(x)+C$，选项少了任意常数 $C$，错误。
+>
+> 故选 A。
+
+**考点**
+
+积分与微分的互逆关系（微分 $dx$ 与任意常数 $C$ 的规范）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
 
 关系示意：$\int f(x)dx \leftarrow f(x) \rightarrow f'(x)$，
 
