@@ -470,6 +470,61 @@ $P_n(x)$为$x$的$n$次多项式
 
 
 # 分部积分法
+
+
+xxxx
+
+**题目**
+
+$f(x)$ 的一个原函数为 $x\arcsin x$，则 $\displaystyle\int xf'(x)\,dx=$（　）
+
+A. $x\arcsin x+C$
+
+B. $\dfrac{x^{2}}{\sqrt{1-x^{2}}}+C$
+
+C. $\dfrac{x}{\sqrt{1-x^{2}}}+\arcsin x+C$
+
+D. $\dfrac{x^{2}}{\sqrt{1-x^{2}}}-x\arcsin x+C$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：B
+
+**解析**
+
+> 由 $x\arcsin x$ 是 $f(x)$ 的一个原函数，对其求导得
+> $$f(x)=(x\arcsin x)'=\arcsin x+\frac{x}{\sqrt{1-x^{2}}}$$
+> 对目标积分用分部积分法，令 $u=x$，$dv=f'(x)\,dx$，则 $du=dx$，$v=f(x)$：
+> $$\int xf'(x)\,dx=xf(x)-\int f(x)\,dx$$
+> 又因为 $\displaystyle\int f(x)\,dx=x\arcsin x+C$，代入得
+> $$xf(x)-x\arcsin x+C=x\left(\arcsin x+\frac{x}{\sqrt{1-x^{2}}}\right)-x\arcsin x+C=\frac{x^{2}}{\sqrt{1-x^{2}}}+C$$
+> 故选 B。
+
+**考点**
+
+分部积分法（结合原函数概念）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
 （$u,v$一般是不同类型的函数）
 $$\int u\mathrm{d}v = uv - \int v\mathrm{d}u$$
 
