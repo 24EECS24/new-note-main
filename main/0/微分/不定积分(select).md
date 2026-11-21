@@ -465,6 +465,89 @@ $$\int f[g(u)]g'(u)du$$
 $x=g(u)$必须是单调可导函数（满足单调才能有反函数），且不要忘记，计算结束后用反函数$u=g^{-1}(x)$回代。
 
 ## 三角函数代换
+
+
+
+
+xxxx
+
+**题目**
+
+计算 $\displaystyle\int\frac{1}{(x^{2}+x^{4})\sqrt{1+x^{2}}}\,dx$。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$-\dfrac{\sqrt{1+x^{2}}}{x}-\dfrac{x}{\sqrt{1+x^{2}}}+C$
+
+**解析**
+
+> 被积函数含 $\sqrt{1+x^{2}}$，作三角代换，令 $x=\tan t$，则 $dx=\sec^{2}t\,dt$，$\sqrt{1+x^{2}}=\sec t$，且
+> $$x^{2}+x^{4}=\tan^{2}t(1+\tan^{2}t)=\tan^{2}t\sec^{2}t$$
+> 于是
+> $$\text{原式}=\int\frac{\sec^{2}t}{\tan^{2}t\sec^{2}t\cdot\sec t}\,dt=\int\frac{1}{\tan^{2}t\sec t}\,dt=\int\frac{\cos^{3}t}{\sin^{2}t}\,dt$$
+> 注意 $\cos t\,dt=d(\sin t)$，且 $\cos^{2}t=1-\sin^{2}t$，令 $u=\sin t$：
+> $$\int\frac{\cos^{3}t}{\sin^{2}t}\,dt=\int\frac{1-\sin^{2}t}{\sin^{2}t}\,d(\sin t)=\int\left(\frac{1}{u^{2}}-1\right)du=-\frac{1}{u}-u+C$$
+> 由 $\tan t=x$ 有 $\sin t=\dfrac{x}{\sqrt{1+x^{2}}}$，回代得
+> $$-\frac{\sqrt{1+x^{2}}}{x}-\frac{x}{\sqrt{1+x^{2}}}+C$$
+
+
+**另一解法** 
+求解不定积分$\displaystyle \int \frac{1}{(x^2+x^4)\sqrt{1+x^2}} \, dx$，看到$\sqrt{1+x^2}$，令$x=\tan t$，推导过程如下：
+$$
+\begin{align*}
+\text{原式} &= \int \frac{1}{(\tan^2 t + \tan^4 t)\cdot \sqrt{1+\tan^2 t}} \, d(\tan t) \\[4pt]
+&= \int \frac{1}{\tan^2 t(1+\tan^2 t)\cdot \sec t} \, d(\tan t) \\[4pt]
+&= \int \frac{\sec^2 t}{\tan^2 t \cdot \sec^2 t \cdot \sec t} \, dt \\[4pt]
+&= \int \frac{1}{\tan^2 t \cdot \sec t} \, dt \\[4pt]
+&= \int \frac{\cos^3 t}{\sin^2 t} \, dt \\[4pt]
+&= \int \frac{\cos^2 t}{\sin^2 t} \, d(\sin t) \\[4pt]
+&= \int \frac{1-\sin^2 t}{\sin^2 t} \, d(\sin t) \\[4pt]
+&= \int \left( \frac{1}{\sin^2 t} - 1 \right) d(\sin t) \\[4pt]
+&= \int \frac{1}{\sin^2 t} d(\sin t) - \int 1 \, d(\sin t) \\[4pt]
+&= -\frac{1}{\sin t} - \sin t + C
+\end{align*}
+$$
+代回$x=\tan t$：
+由$\displaystyle \tan t =x= \frac{对}{临} =\frac{x}{1}$
+可得斜边长为$\sqrt{1+x^2}$，
+因此$\displaystyle \sin t = \frac{对}{斜}= \frac{x}{\sqrt{1+x^2}}$，
+
+$$
+\text{原式} = -\frac{\sqrt{1+x^2}}{x} - \frac{x}{\sqrt{1+x^2}} + C
+$$
+
+
+
+
+
+
+
+**考点**
+
+三角代换（第二类换元法）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
 当被积函数含有如下根式时，可作三角函数代换，这里$a>0$：
 
 `````col
