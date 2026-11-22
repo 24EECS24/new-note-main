@@ -248,6 +248,46 @@ $$
 
 
 
+xxxx
+
+**题目**
+
+不定积分 $\displaystyle\int\frac{1}{x^{2}}\,dx=$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$-\dfrac{1}{x}+C$
+
+**解析**
+
+> 用幂函数积分公式 $\displaystyle\int x^{k}dx=\frac{x^{k+1}}{k+1}+C$，取 $k=-2$：
+> $$\int\frac{1}{x^{2}}\,dx=\int x^{-2}\,dx=\frac{x^{-1}}{-1}+C=-\frac1x+C$$
+
+**考点**
+
+基本积分公式（幂函数）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
 
 
 xxxx
