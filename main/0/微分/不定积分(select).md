@@ -1402,6 +1402,59 @@ $$
 
 
 
+xxxx
+
+**题目**
+
+已知 $f(x)$ 的一个原函数是 $\ln x$，则 $\displaystyle\int xf'(x)\,dx=$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$1-\ln x+C$
+
+**解析**
+
+> 由 $\ln x$ 是 $f(x)$ 的一个原函数，得
+> $$f(x)=(\ln x)'=\frac1x$$
+> 用分部积分法，令 $u=x$，$dv=f'(x)\,dx$，则 $v=f(x)$：
+> $$\int xf'(x)\,dx=xf(x)-\int f(x)\,dx=x\cdot\frac1x-\ln x+C=1-\ln x+C$$
+
+
+**另一解法：** 
+分部积分竖式选元：令$u=x$（对$u$求导得$u'=1$），$\mathrm{d}v=f'(x)\mathrm{d}x$（对$\mathrm{d}v$积分得$v=f(x)$），按分部积分交叉相乘、横向积分的规则计算：
+$$
+\begin{align*}
+\text{原式} &= x f(x) - \int f(x) \mathrm{d}x \\
+&= 1 - \ln x + C
+\end{align*}
+$$
+
+
+
+**考点**
+
+分部积分法（结合原函数概念）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 
 xxxx
 
