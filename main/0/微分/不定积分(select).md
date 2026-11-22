@@ -417,7 +417,69 @@ zzzz
 
 
 
+xxxx
 
+**题目**
+
+计算不定积分 $\displaystyle\int\left(\frac{3}{1+x^{2}}-\frac{2+\ln x}{x\ln x}\right)dx$。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$3\arctan x-2\ln|\ln x|-\ln x+C$
+
+**解析**
+
+> 分项处理。第一项：
+> $$\int\frac{3}{1+x^{2}}\,dx=3\arctan x$$
+> 第二项拆分被积函数：
+> $$\frac{2+\ln x}{x\ln x}=\frac{2}{x\ln x}+\frac{1}{x}$$
+> 其中令 $u=\ln x$，$du=\dfrac1x dx$，有
+> $$\int\frac{2}{x\ln x}\,dx=2\int\frac{du}{u}=2\ln|u|=2\ln|\ln x|$$
+> $$\int\frac{1}{x}\,dx=\ln x$$
+> 故
+> $$\text{原式}=3\arctan x-2\ln|\ln x|-\ln x+C$$
+
+
+**另一解法：** 
+$$
+\begin{align*}
+\text{原式} &= 3\int \frac{1}{1+x^2} \, dx - \int \frac{2+\ln x}{x\ln x} \, dx \\[6pt]
+&= 3\arctan x - \int \frac{2+\ln x}{x\ln x} \, dx \\[10pt]
+\int \frac{2+\ln x}{x\ln x} \, dx
+&= \int \frac{2+\ln x}{\ln x} \, d(\ln x) \\[6pt]
+&= \int \frac{2}{\ln x} \, d(\ln x) + \int 1 \, d(\ln x) \\[6pt]
+&= 2\ln|\ln x| + \ln x + C \\[10pt]
+\text{原式} &= 3\arctan x - 2\ln|\ln x| - \ln x + C
+\end{align*}
+$$
+
+
+
+
+
+
+**考点**
+
+分项积分与凑微分法
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
 
 
 
