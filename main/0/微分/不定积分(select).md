@@ -1240,7 +1240,89 @@ $$\sqrt{\varphi^2(x)+k^2},\quad \sqrt{\varphi^2(x)-k^2},\quad \sqrt{k^2-\varphi^
 
 
 
+xxxx
 
+**题目**
+
+计算不定积分 $\displaystyle\int\frac{1}{\sqrt[3]{x+1}+1}\,dx$。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{3}{2}\sqrt[3]{(x+1)^{2}}-3\sqrt[3]{x+1}+3\ln\left|\sqrt[3]{x+1}+1\right|+C$
+
+**解析**
+
+> 令 $t=\sqrt[3]{x+1}$，则 $x=t^{3}-1$，$dx=3t^{2}dt$。于是
+> $$\text{原式}=\int\frac{3t^{2}}{t+1}\,dt$$
+> 由 $t^{2}=(t+1)(t-1)+1$，得
+> $$\frac{t^{2}}{t+1}=t-1+\frac{1}{t+1}$$
+> 故
+> $$3\int\frac{t^{2}}{t+1}\,dt=3\int\left(t-1+\frac{1}{t+1}\right)dt=\frac32 t^{2}-3t+3\ln|t+1|+C$$
+> 回代 $t=\sqrt[3]{x+1}$：
+> $$\frac32\sqrt[3]{(x+1)^{2}}-3\sqrt[3]{x+1}+3\ln\left|\sqrt[3]{x+1}+1\right|+C$$
+
+
+**另一解法：** 
+设 $\sqrt[3]{x+1} = t$，则：
+$$x+1 = t^3$$
+$$x = t^3 - 1$$
+$$dx = 3t^2 dt$$
+
+
+$$
+\begin{align*}
+\text{原式} &= \int \frac{3t^2}{t+1} \,dt \\[6pt]
+&= 3\int \frac{t^2 + t - t}{t+1} \,dt \\[6pt]
+&= 3\int \frac{t(t+1) - t}{t+1} \,dt \\[6pt]
+&= 3\int \left( t - \frac{t}{t+1} \right) \,dt \\[6pt]
+&= \frac{3}{2}t^2 - 3\int \frac{t}{t+1} \,dt+ C
+\end{align*}
+$$
+
+计算拆分得到的子积分 $\displaystyle \int \frac{t}{t+1} \,dt$：
+$$
+\begin{align*}
+\int \frac{t}{t+1} \,dt &= \int \frac{t+1 - 1}{t+1} \,dt \\[6pt]
+&= \int 1 \,dt - \int \frac{1}{t+1} \,dt \\[6pt]
+&= t - \ln|t+1| + C
+\end{align*}
+$$
+
+
+$$
+\text{原式} = \frac{3}{2}t^2 - 3t + 3\ln|t+1| + C
+$$
+
+回代变量 $t = \sqrt[3]{x+1}$，得到最终结果：
+$$
+\text{原式} = \frac{3}{2}\sqrt[3]{(x+1)^2} - 3\sqrt[3]{x+1} + 3\ln\left|\sqrt[3]{x+1} + 1\right| + C
+$$
+
+
+
+
+**考点**
+
+根式代换（第二类换元法）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
 
 
 
