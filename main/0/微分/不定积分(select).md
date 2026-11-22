@@ -201,6 +201,100 @@ $$
 
 
 
+
+
+xxxx
+
+**题目**
+
+求不定积分 $\displaystyle\int x\left[\sec^{2}x+\sin(2+x^{2})\right]dx$。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$x\tan x+\ln|\cos x|-\dfrac{1}{2}\cos(2+x^{2})+C$
+
+**解析**
+
+> 拆成两个积分分别计算。
+>
+> 第一个用分部积分法，令 $u=x$，$dv=\sec^{2}x\,dx$，则 $du=dx$，$v=\tan x$：
+> $$\int x\sec^{2}x\,dx=x\tan x-\int\tan x\,dx=x\tan x+\ln|\cos x|$$
+> 第二个用凑微分法，注意 $d(2+x^{2})=2x\,dx$：
+> $$\int x\sin(2+x^{2})\,dx=\frac12\int\sin(2+x^{2})\,d(2+x^{2})=-\frac12\cos(2+x^{2})$$
+> 合并得
+> $$x\tan x+\ln|\cos x|-\frac12\cos(2+x^{2})+C$$
+
+
+**另一解法** 
+$$
+\begin{align*}
+\text{原式} &= \int x \sec^2 x \, dx + \int x \sin(2+x^2) \, dx
+\end{align*}
+$$
+
+对$\int x \sec^2 x \, dx$使用分部积分法，分部求导、积分关系如下：
+$$
+\begin{array}{c c c}
+x &  & 1 \\
+\sec^2 x &  & \tan x
+\end{array}
+$$
+
+$$
+\begin{align*}
+\int x \sec^2 x \, dx &= x\tan x - \int \tan x \, dx \\[4pt]
+&= x\tan x - \int \frac{\sin x}{\cos x} \, dx \\[4pt]
+&= x\tan x + \int \frac{1}{\cos x} \, d(\cos x) \\[4pt]
+&= x\tan x + \ln|\cos x| + C
+\end{align*}
+$$
+
+对$\int x \sin(2+x^2) \, dx$使用凑微分法：
+$$
+\begin{align*}
+\int x \sin(2+x^2) \, dx &= \dfrac{1}{2}\int \sin(2+x^2) \, d(x^2+2) \\[4pt]
+&= -\dfrac{1}{2}\cos(x^2+2) + C
+\end{align*}
+$$
+
+合并得最终结果：
+$$
+\begin{align*}
+\text{原式} &= x\tan x + \ln|\cos x| - \dfrac{1}{2}\cos(x^2+2) + C
+\end{align*}
+$$
+
+
+
+
+
+
+**考点**
+
+分部积分法与凑微分法
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
 xxxx
 
 **题目**
@@ -1305,6 +1399,7 @@ $$
 
 
 ## 表格法 
+
 
 
 
