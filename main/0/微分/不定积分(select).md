@@ -1240,6 +1240,11 @@ $$\sqrt{\varphi^2(x)+k^2},\quad \sqrt{\varphi^2(x)-k^2},\quad \sqrt{k^2-\varphi^
 
 
 
+
+
+
+
+
 xxxx
 
 **题目**
