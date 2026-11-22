@@ -223,6 +223,75 @@ $$
 # 凑微分法
 
 
+xxxx
+
+**题目**
+
+已知函数 $f(x)=\tan x$，则 $\displaystyle\int\frac{f'(\sqrt{x})}{\sqrt{x}}\,dx=$（　）
+
+A. $\tan\sqrt{x}+C$
+
+B. $2\tan\sqrt{x}+C$
+
+C. $\dfrac{1}{2}\tan\sqrt{x}+C$
+
+D. $\dfrac{1}{4}\tan\sqrt{x}+C$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：B
+
+**解析**
+
+> 令 $u=\sqrt{x}$，则 $du=\dfrac{1}{2\sqrt{x}}dx$，即 $\dfrac{1}{\sqrt{x}}dx=2\,du$。于是
+> $$\int\frac{f'(\sqrt{x})}{\sqrt{x}}\,dx=2\int f'(u)\,du=2f(u)+C=2\tan u+C=2\tan\sqrt{x}+C$$
+> 故选 B。
+
+**另一解法：** 
+令 $t=\sqrt{x}$，则
+$$x = t^2$$
+$$dx = 2t\,dt$$
+代入积分计算：
+$$
+\begin{align*}
+\int \frac{f'(\sqrt{x})}{\sqrt{x}}dx
+&= \int \frac{f'(t)\cdot 2t}{t}dt \\[6pt]
+&= 2\int f'(t)dt \\[6pt]
+&= 2f(t) + C \\[6pt]
+&= 2\tan(\sqrt{x}) + C
+\end{align*}
+$$
+
+
+
+
+**考点**
+
+凑微分法（第一类换元法）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
 
 
 xxxx
