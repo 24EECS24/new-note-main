@@ -1823,6 +1823,87 @@ $$
 
 **最简式有4种** 
 ### 1~2
+
+
+xxxx
+
+**题目**
+
+$\displaystyle\int\frac{3}{x^{2}-5x+6}\,dx=$ 
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$3\ln\left|\dfrac{x-3}{x-2}\right|+C$
+
+**解析**
+
+> 分母因式分解：$x^{2}-5x+6=(x-2)(x-3)$。作部分分式分解：
+> $$\frac{3}{(x-2)(x-3)}=\frac{A}{x-2}+\frac{B}{x-3}$$
+> 通分后比较分子 $A(x-3)+B(x-2)=3$。令 $x=2$ 得 $-A=3$，即 $A=-3$；令 $x=3$ 得 $B=3$。故
+> $$\frac{3}{(x-2)(x-3)}=\frac{3}{x-3}-\frac{3}{x-2}$$
+> 积分得
+> $$3\ln|x-3|-3\ln|x-2|+C=3\ln\left|\frac{x-3}{x-2}\right|+C$$
+
+
+**另一解法** 
+∵ $x^2-5x+6$ 可因式分解为 $(x-2)(x-3)$
+∴ 对应有理分式可分解为 $\displaystyle \frac{A}{x-2}+\frac{B}{x-3}$ 
+$$
+\frac{A}{x-2} + \frac{B}{x-3} = \frac{3}{x^2-5x+6}
+$$
+$$
+B(x-2) + A(x-3) = 3
+$$
+使用赋值法求解待定系数$A,B$：
+1.  让含$B$的项$B(x-2)$为0，即取$x=2$，代入恒等式得：
+    $$
+    A\cdot (2-3) = 3 \implies -A = 3 \implies A=-3
+    $$
+2.  让含$A$的项$A(x-3)$为0，即取$x=3$，代入恒等式得：
+    $$
+    B\cdot (3-2) = 3 \implies B=3
+    $$
+将求得的系数代回原不定积分，通过凑微分法计算：
+$$
+\begin{align*}
+\text{原式}&=\int\left( \frac{-3}{x-2} + \frac{3}{x-3} \right)dx\\[6pt]
+&=-3\int \frac{1}{x-2}\,d(x-2) + 3\int \frac{1}{x-3}\,d(x-3)\\[6pt]
+&=-3\ln|x-2| + 3\ln|x-3| + C\\[6pt]
+&=3\ln\left| \frac{x-3}{x-2} \right| + C
+\end{align*}
+$$
+
+
+
+**考点**
+
+有理函数的部分分式积分
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
+
+
 若$Q_m(x)$因式分解后出现了$\displaystyle (ax+b)$，
 那么$\displaystyle \frac{P_n(x)}{Q_m(x)}$就会因式分解出
 $$\frac{A}{ax+b}$$ 若$Q_m(x)$因式分解出了$(ax+b)^2$，
