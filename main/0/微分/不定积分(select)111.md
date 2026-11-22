@@ -765,7 +765,7 @@ xxxx
 
 **题目**
 
-$\displaystyle\int\frac{3}{x^{2}-5x+6}\,dx=$
+$\displaystyle\int\frac{3}{x^{2}-5x+6}\,dx=$ 
 ?
 
 ````````col
