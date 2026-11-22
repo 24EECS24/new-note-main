@@ -8,6 +8,54 @@
 - $\csc x$：kāo，$\sec x$ 
 
 
+
+# 易错题
+
+
+
+xxxx
+
+**题目**
+
+计算不定积分 $\displaystyle\int\frac{x}{\sqrt{1+x^{2}}}\,dx=$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\sqrt{1+x^{2}}+C$
+
+**解析**
+
+> 令 $u=1+x^{2}$，则 $du=2x\,dx$，即 $x\,dx=\dfrac12 du$：
+> $$\int\frac{x}{\sqrt{1+x^{2}}}\,dx=\frac12\int u^{-1/2}\,du=u^{1/2}+C=\sqrt{1+x^{2}}+C$$
+
+**考点**
+
+凑微分法（第一类换元法）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
+
 # 概念
 
 
