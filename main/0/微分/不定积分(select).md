@@ -252,6 +252,46 @@ xxxx
 
 **题目**
 
+计算不定积分 $\displaystyle\int\cos^{2}\frac{x}{2}\,dx$。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{x}{2}+\dfrac{1}{2}\sin x+C$
+
+**解析**
+
+> 用半角公式 $\cos^{2}\dfrac{x}{2}=\dfrac{1+\cos x}{2}$：
+> $$\int\cos^{2}\frac{x}{2}\,dx=\frac12\int(1+\cos x)\,dx=\frac{x}{2}+\frac12\sin x+C$$
+
+**考点**
+
+三角恒等变换求不定积分
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+xxxx
+
+**题目**
+
 不定积分 $\displaystyle\int\frac{1}{x^{2}}\,dx=$
 ?
 
