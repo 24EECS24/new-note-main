@@ -1906,6 +1906,77 @@ $$
 ## 循环型分部积分
 
 
+
+xxxx
+
+**题目**
+
+不定积分 $\displaystyle\int e^{2x}\cos 3x\,dx=$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{2}{13}e^{2x}\cos 3x+\dfrac{3}{13}e^{2x}\sin 3x+C$
+
+**解析**
+
+> 这是循环型分部积分，令 $I=\displaystyle\int e^{2x}\cos 3x\,dx$。
+>
+> 第一次分部，令 $u=\cos 3x$，$dv=e^{2x}dx$，则 $v=\dfrac12 e^{2x}$：
+> $$I=\frac12 e^{2x}\cos 3x+\frac32\int e^{2x}\sin 3x\,dx$$
+> 第二次分部，令 $u=\sin 3x$，$dv=e^{2x}dx$：
+> $$\int e^{2x}\sin 3x\,dx=\frac12 e^{2x}\sin 3x-\frac32 I$$
+> 代回：
+> $$I=\frac12 e^{2x}\cos 3x+\frac32\left(\frac12 e^{2x}\sin 3x-\frac32 I\right)=\frac12 e^{2x}\cos 3x+\frac34 e^{2x}\sin 3x-\frac94 I$$
+> 移项得 $\dfrac{13}{4}I=\dfrac12 e^{2x}\cos 3x+\dfrac34 e^{2x}\sin 3x$，故
+> $$I=\frac{2}{13}e^{2x}\cos 3x+\frac{3}{13}e^{2x}\sin 3x+C$$
+
+
+**另一解法：** 
+分部积分表格法（上行对$u=e^{2x}$逐次求导，下行对$dv=\cos3x \,dx$逐次积分）：
+
+| 求导列 | $e^{2x}$ | $2e^{2x}$ | $4e^{2x}$ |
+|--------|----------|-----------|-----------|
+| 积分列 | $\cos3x$ | $\frac{1}{3}\sin3x$ | $-\frac{1}{9}\cos3x$ |
+
+$$
+\begin{align*}
+\int e^{2x}\cos3x \,dx &= \frac{1}{3}e^{2x}\sin3x + \frac{2}{9}e^{2x}\cos3x - \frac{4}{9}\int e^{2x}\cos3x \,dx\\[4pt]
+设\int e^{2x}\cos3x \,dx &= L\\[4pt]
+L &= \frac{1}{3}e^{2x}\sin3x + \frac{2}{9}e^{2x}\cos3x - \frac{4}{9}L\\[4pt]
+L + \frac{4}{9}L &= \frac{1}{3}e^{2x}\sin3x + \frac{2}{9}e^{2x}\cos3x\\[4pt]
+\frac{13}{9}L &= \frac{1}{3}e^{2x}\left(\sin3x + \frac{2}{3}\cos3x\right)\\[4pt]
+L &= \frac{3}{13}e^{2x}\left(\sin3x + \frac{2}{3}\cos3x\right) + C
+\end{align*}
+$$
+
+
+
+
+**考点**
+
+循环型分部积分法
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
 计算$\displaystyle \int  \sin  (\arctan x)\,\mathrm{d}e^{ \arctan x}，令t = \arctan x，原式=\displaystyle\int  \sin  t\,\mathrm{d}e^{t}$，
 使用分部积分法计算时发现，对该积分无论使用多少次分部积分，结果始终是两个不同类型函数乘积的形式。
 
