@@ -199,6 +199,58 @@ $$
 
 # 基本积分公式（10组公式）
 
+
+
+xxxx
+
+**题目**
+
+已知 $f(x)=e^{x}$，则 $\displaystyle\int\left(\frac{f(\ln x)}{x^{2}}+1\right)dx=$（　）
+
+A. $\ln|x|+x+C$
+
+B. $-\ln|x|+x+C$
+
+C. $\dfrac{1}{x}+x+C$
+
+D. $-\dfrac{1}{x}+x+C$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：A
+
+**解析**
+
+> 由 $f(\ln x)=e^{\ln x}=x$，得
+> $$\text{原式}=\int\left(\frac{x}{x^{2}}+1\right)dx=\int\left(\frac{1}{x}+1\right)dx=\ln|x|+x+C$$
+> 故选 A。
+
+**考点**
+
+基本积分公式（对数与幂函数）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
 当$F(x)$不是一个初等函数时，
 那么，有时基本的积分方法是不奏效的。
 
