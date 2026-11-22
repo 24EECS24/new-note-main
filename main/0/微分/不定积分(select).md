@@ -229,6 +229,73 @@ xxxx
 
 **题目**
 
+已知函数 $f(x)=2\sin x\cos x$，则 $f(x)$ 的一个原函数是（　）
+
+A. $\dfrac{1}{2}\sin 2x$
+
+B. $\dfrac{1}{2}\cos 2x$
+
+C. $1-\sin^{2}x$
+
+D. $1-\cos^{2}x$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：D
+
+**解析**
+
+> 先化简 $f(x)=2\sin x\cos x=\sin 2x$，求不定积分：
+> $$\int 2\sin x\cos x\,dx=\int\sin 2x\,dx=-\frac12\cos 2x+C$$
+> 由 $\cos 2x=1-2\sin^{2}x$，得 $-\dfrac12\cos 2x=\sin^{2}x-\dfrac12$，常数并入 $C$ 后一个原函数为 $\sin^{2}x$。又 $\sin^{2}x=1-\cos^{2}x$，故选 D。
+
+
+**另一解法：** 
+$$
+\begin{align*}
+&\int 2\sin x \cos x \, dx \\[4pt]
+&= 2\int \sin x \, d(\sin x) \\[4pt]
+&= 2\cdot \frac{1}{2}\sin^2 x + C \\[4pt]
+&= \sin^2 x + C \\[4pt]
+&= 1-\cos^2 x + C
+\end{align*}
+$$
+
+
+
+**考点**
+
+三角恒等变换求原函数
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
+
+
+xxxx
+
+**题目**
+
 已知 $f(x)=-2x$，则 $\displaystyle\int\frac{f(\tan x)}{\sin^{2}x-1}\,dx=$（　）
 
 A. $\tan^{2}x+C$
