@@ -758,6 +758,81 @@ flexGrow=1
 $$\sqrt{\varphi^2(x)+k^2},\quad \sqrt{\varphi^2(x)-k^2},\quad \sqrt{k^2-\varphi^2(x)}$$
 
 ## 根式代换（举重若轻）
+
+
+
+xxxx
+
+**题目**
+
+求不定积分 $\displaystyle\int\frac{e^{x}}{1+\sqrt{2e^{x}+1}}\,dx$。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\sqrt{2e^{x}+1}-\ln\big(1+\sqrt{2e^{x}+1}\big)+C$
+
+**解析**
+
+> 令 $t=\sqrt{2e^{x}+1}$，则 $t^{2}=2e^{x}+1$，即 $e^{x}=\dfrac{t^{2}-1}{2}$。两边微分得 $2t\,dt=2e^{x}dx$，即 $e^{x}dx=t\,dt$。于是
+> $$\text{原式}=\int\frac{t}{1+t}\,dt=\int\left(1-\frac{1}{1+t}\right)dt=t-\ln|1+t|+C$$
+> 回代 $t=\sqrt{2e^{x}+1}$：
+> $$\sqrt{2e^{x}+1}-\ln\big(1+\sqrt{2e^{x}+1}\big)+C$$
+
+
+**另一解法** 
+对于含$\sqrt{2e^x+1}$的不定积分，该根式不适合三角代换，直接处理较为困难，
+直接设 $t = \sqrt{2e^x + 1}$，
+$$e^x = \frac{t^2 - 1}{2}$$
+$$x = \ln\left( \frac{t^2 - 1}{2} \right)$$
+$$
+\begin{align*}
+dx &= d\left[ \ln\left( \frac{t^2 - 1}{2} \right) \right] \\[4pt]
+&= \frac{2t}{t^2 - 1} \, dt
+\end{align*}
+$$
+
+$$
+\begin{align*}
+\text{原式} &= \int \frac{\frac{t^2 - 1}{2}}{1 + t} \cdot \frac{2t}{t^2 - 1} \, dt \\[4pt]
+&= \int \frac{t}{1 + t} \, dt \\[4pt]
+&= \int \frac{t + 1 - 1}{t + 1} \, dt \\[4pt]
+&= \int 1 \, dt - \int \frac{1}{t + 1} \, d(t+1) \\[4pt]
+&= t - \ln|t + 1| + C
+\end{align*}
+$$
+回代$t = \sqrt{2e^x + 1}$，
+$$\text{原式} = \sqrt{2e^x + 1} - \ln\left(1 + \sqrt{2e^x + 1}\right) + C$$
+
+
+
+
+
+**考点**
+
+根式代换（第二类换元法）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+<!--SR:!fsrs,2026-12-02T03:02:46.609Z,10,8.2956,1,2,1,0,0,2026-11-22T03:02:46.609Z,id=908u4t-->
+
+
+zzzz
+
+
+
 当被积函数含有根式
 
 $\displaystyle \sqrt[n]{ax+b}，\sqrt{\frac{ax+b}{cx+d}}，\sqrt{ae^{bx}+c}$时
