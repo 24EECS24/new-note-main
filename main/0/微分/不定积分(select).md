@@ -1207,6 +1207,13 @@ $$
 
 ## 表格法 
 
+
+
+
+
+
+
+
 计算$\displaystyle \int x^3 e^x\,\mathrm{d}x$ 要用多次分部积分，很麻烦
 
 该方法适用于计算$\displaystyle \int P_n(x)e^{kx}\mathrm{d}x$、$\displaystyle \int P_n(x)\sin ax \mathrm{d}x$、$\displaystyle \int P_n(x)\cos bx \mathrm{d}x$类型的不定积分，
