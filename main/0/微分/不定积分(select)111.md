@@ -1366,7 +1366,7 @@ flexGrow=20
 > $$\int x\sqrt{x-1}\,dx=\int(t^{2}+1)\,t\cdot 2t\,dt=2\int(t^{4}+t^{2})\,dt$$
 > $$=2\left(\frac{t^{5}}{5}+\frac{t^{3}}{3}\right)+C$$
 > 回代 $t=\sqrt{x-1}$：
-> $$\frac{2}{5}(x-1)^{5/2}+\frac{2}{3}(x-1)^{3/2}+C$$
+> $$\frac{2}{5}(x-1)^{\frac{5}{2}}+\frac{2}{3}(x-1)^{\frac{2}{3}}+C$$
 
 **考点**
 
