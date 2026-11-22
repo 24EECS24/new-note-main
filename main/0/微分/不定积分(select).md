@@ -205,6 +205,53 @@ xxxx
 
 **题目**
 
+不定积分 $\displaystyle\int\left(\frac{3}{\sqrt{1-x^{2}}}-\sqrt{1-x}\right)dx=$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$3\arcsin x+\dfrac{2}{3}(1-x)^{3/2}+C$
+
+**解析**
+
+> 分项积分。第一项用基本公式：
+> $$3\int\frac{1}{\sqrt{1-x^{2}}}\,dx=3\arcsin x$$
+> 第二项令 $u=1-x$，$du=-dx$：
+> $$-\int\sqrt{1-x}\,dx=\int\sqrt{u}\,du=\frac{2}{3}u^{3/2}+C=\frac{2}{3}(1-x)^{3/2}+C$$
+> 合并得
+> $$3\arcsin x+\frac{2}{3}(1-x)^{3/2}+C$$
+
+**考点**
+
+基本积分公式与换元法
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
+
+xxxx
+
+**题目**
+
 已知 $f(x)=e^{x}$，则 $\displaystyle\int\left(\frac{f(\ln x)}{x^{2}}+1\right)dx=$（　）
 
 A. $\ln|x|+x+C$
