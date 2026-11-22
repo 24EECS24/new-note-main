@@ -657,6 +657,88 @@ $$
 
 
 # 换元法（凑微分法反过来）
+
+
+
+xxxx
+
+**题目**
+
+不定积分 $\displaystyle\int\frac{1}{e^{3x}+e^{-3x}}\,dx=$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$\dfrac{1}{3}\arctan e^{3x}+C$
+
+**解析**
+
+> 分子分母同乘 $e^{3x}$：
+> $$\frac{1}{e^{3x}+e^{-3x}}=\frac{e^{3x}}{e^{6x}+1}$$
+> 令 $u=e^{3x}$，则 $du=3e^{3x}dx$，即 $e^{3x}dx=\dfrac13 du$：
+> $$\int\frac{e^{3x}}{e^{6x}+1}\,dx=\frac13\int\frac{1}{u^{2}+1}\,du=\frac13\arctan u+C=\frac13\arctan e^{3x}+C$$
+
+**另一解法：** 
+设 $e^{3x}=t$，则：
+$$
+e^{-3x} = t^{-1}
+$$
+$$
+3x = \ln t
+$$
+$$
+x = \frac{\ln t}{3}
+$$
+$$
+dx = \frac{1}{3t} dt
+$$
+
+$$
+\begin{align*}
+\text{原式} &= \int \frac{1}{t + t^{-1}} \cdot \frac{1}{3t} \, dt \\[6pt]
+&= \frac{1}{3}\int \frac{1}{t^2 + 1} \, dt \\[6pt]
+&= \frac{1}{3}\arctan t + C
+\end{align*}
+$$
+
+代回 $e^{3x}=t$，得：
+$$
+\text{原式} = \frac{1}{3}\arctan\left(e^{3x}\right) + C
+$$
+
+
+
+
+**考点**
+
+凑微分法（结合恒等变形）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+
+
+
+
+
 换元法推导步骤：
 $$
 \begin{align*}
