@@ -1906,6 +1906,11 @@ $$
 ```
 ````
 ### 情况2
+
+
+
+
+
 当自由项 $f(x)=e^{\alpha x}[p_{m}(x )cos\beta x+p_{n}(x )sin\beta x]$ 时，
 特解要设为 $y^{*} =e^{\alpha x}[Q_{l}^{(1)}(x)cos\beta x+Q_{l}^{(2)}(x)sin\beta x]x^{k}$ 
 - [*] 对 $y^{*} =e^{\alpha x}[Q_{l}^{(1)}(x)cos\beta x+Q_{l}^{(2)}(x)sin\beta x]x^{k}$ 的详细说明
