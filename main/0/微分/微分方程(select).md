@@ -850,6 +850,76 @@ xxxx
 
 **题目**
 
+求微分方程 $y''-10y'+26y=0$ 的通解。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$y=e^{5x}(C_{1}\cos x+C_{2}\sin x)$
+
+**解析**
+
+> 特征方程为
+> $$r^{2}-10r+26=0$$
+> 解得特征根
+> $$r=\frac{10\pm\sqrt{100-104}}{2}=\frac{10\pm 2i}{2}=5\pm i$$
+> 这是一对共轭复根，其中 $\alpha=5$，$\beta=1$，故通解为
+> $$y=e^{5x}(C_{1}\cos x+C_{2}\sin x)$$
+
+
+**另一解法：** 
+特征方程：$r^2 - 10r + 26 = 0$
+$\Delta = 100 - 4 \times 26 < 0$ 
+$$
+\begin{align*}
+r &= \frac{10 \pm \sqrt{-\Delta i^2} \, }{2} \\[6pt]
+&= \frac{10}{2} \pm \frac{\sqrt{-\Delta}}{2} \, i \\[6pt]
+&= 5 \pm \frac{\sqrt{4}}{2} \, i \\[6pt]
+&= 5 \pm i
+\end{align*}
+$$
+得到特征根的实部与虚部：$\alpha = 5,\ \beta = 1$
+共轭复根情形下的微分方程通解：
+$$
+\begin{align*}
+y &= e^{\alpha x}\left(C_1 \cos \beta x + C_2 \sin \beta x\right) \\[6pt]
+&= e^{5x}\left(C_1 \cos x + C_2 \sin x\right)
+\end{align*}
+$$
+
+
+
+
+
+**考点**
+
+二阶常系数齐次线性微分方程的特征根法（共轭复根情形）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+xxxx
+
+**题目**
+
 微分方程 $y''-3y'-4y=0$ 满足初始条件 $y|_{x=0}=0$，$y'|_{x=0}=-5$ 的特解。
 ?
 
