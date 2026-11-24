@@ -749,6 +749,72 @@ xxxx
 
 **题目**
 
+求微分方程 $\dfrac{dy}{dx}=y+e^{-x}$ 的通解。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$y=-\dfrac{1}{2}e^{-x}+Ce^{x}$
+
+**解析**
+
+> 化为一阶线性微分方程的标准形式：
+> $$y'-y=e^{-x}$$
+> 其中 $p(x)=-1$，$q(x)=e^{-x}$，积分因子为
+> $$e^{\int p\,dx}=e^{-x}$$
+> 方程两边乘积分因子后，左边为全微分：
+> $$(y e^{-x})'=e^{-x}\cdot e^{-x}=e^{-2x}$$
+> 积分得
+> $$y e^{-x}=-\frac{1}{2}e^{-2x}+C$$
+> 整理得通解
+> $$y=-\frac{1}{2}e^{-x}+Ce^{x}$$
+
+
+**另一解法：** 
+$$
+\begin{align*}
+&y'=y+e^{-x}\\[4pt]
+&y'-y=e^{-x}\\[4pt]
+&P=-1,\quad q=e^{-x}\\[4pt]
+&y= e^{-\int -1 \, dx}\cdot\left[\int e^{\int -1 \, dx}\cdot e^{-x} \, dx + c\right]\\[4pt]
+&= e^{x}\cdot\left[\int e^{-2x} \, dx + c\right]\\[4pt]
+&= e^{x}\cdot\left(-\frac{1}{2}e^{-2x}+c\right)
+\end{align*}
+$$
+
+
+
+
+
+**考点**
+
+一阶线性非齐次微分方程的积分因子法
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+xxxx
+
+**题目**
+
 求微分方程 $dy-(y+e^{x})dx=0$ 的通解　　　。
 ?
 
