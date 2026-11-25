@@ -998,6 +998,50 @@ xxxx
 
 **题目**
 
+求微分方程 $xy'+y-x=0$ 的通解。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$y=\dfrac{x}{2}+\dfrac{C}{x}$
+
+**解析**
+
+> 两边除以 $x$，化为一阶线性微分方程的标准形式：
+> $$y'+\frac{1}{x}y=1$$
+> 其中 $p(x)=\dfrac1x$，$q(x)=1$。积分因子为
+> $$e^{\int p\,dx}=e^{\ln x}=x,\qquad e^{-\int p\,dx}=\frac{1}{x}$$
+> 由通解公式：
+> $$y=\frac{1}{x}\left(\int 1\cdot x\,dx+C\right)=\frac{1}{x}\left(\frac{x^{2}}{2}+C\right)=\frac{x}{2}+\frac{C}{x}$$
+
+**考点**
+
+一阶线性微分方程的通解公式
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+xxxx
+
+**题目**
+
 求 $xy'+y=\cos x\ (x>0)$ 的通解。
 ?
 
