@@ -893,6 +893,63 @@ $$
 
 
 
+xxxx
+
+**题目**
+
+求 $xy'+y=\cos x\ (x>0)$ 的通解。
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：$y=\dfrac{\sin x+C}{x}\ (x>0)$
+
+**解析**
+
+> 注意到方程左边恰好是乘积 $xy$ 的导数：
+> $$(xy)'=xy'+y=\cos x$$
+> 两边直接积分：
+> $$xy=\int\cos x\,dx=\sin x+C$$
+> 故通解为
+> $$y=\frac{\sin x+C}{x}\quad(x>0)$$
+
+
+**另一解法：** 
+$$
+\begin{align*}
+&y'+\frac{1}{x}y=\frac{\cos x}{x}\\[4pt]
+&p=\frac{1}{x},\quad q=\frac{\cos x}{x}\\[4pt]
+&y=e^{-\int p\mathrm{d}x}\left[\int e^{\int p\mathrm{d}x}\cdot q\,\mathrm{d}x + C\right]\\[4pt]
+&=\frac{1}{x}\left[\sin x + C\right]
+\end{align*}
+$$
+
+
+
+
+**考点**
+
+一阶线性微分方程（利用乘积导数凑微分求解）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
 
 xxxx
 
