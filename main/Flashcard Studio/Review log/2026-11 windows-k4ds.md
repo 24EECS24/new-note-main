@@ -488,3 +488,4 @@ Review history written by Flashcard Studio. One JSON object per line. Do not edi
 {"t":1795336332799,"c":"s20wmm","r":3,"k":1,"ivl":37,"li":8,"s":38.91,"d":1,"ms":57930,"dk":"flashcards/微分/连续与间断","f":"0/微分/连续与间断(select).md"}
 {"t":1795336362660,"c":"1zjkjo","r":4,"k":1,"ivl":11,"li":2,"s":11.51,"d":4.67,"ms":29711,"dk":"flashcards/微分/连续与间断","f":"0/微分/连续与间断(select).md"}
 {"t":1795603619731,"c":"lvqusn","r":4,"k":0,"n":1,"ivl":7,"li":0,"s":8.3,"d":1,"ms":60000,"dk":"flashcards/微分/微分方程","f":"0/微分/微分方程(select).md"}
+{"t":1795603748331,"c":"jfyw1v","r":4,"k":0,"n":1,"ivl":9,"li":0,"s":8.3,"d":1,"ms":60000,"dk":"flashcards/微分/微分方程","f":"0/微分/微分方程(select).md"}
