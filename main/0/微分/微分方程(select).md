@@ -2424,6 +2424,25 @@ flexGrow=20
 > $$y^{*}=x(ax+b)e^{-x}$$
 > 故选 C。
 
+
+**另一解法：** 
+$$y''-3y'-4y=xe^{-x}$$
+$\alpha=-1$
+看到4个选项$x^k$都不一样，可看k试试。
+$\Delta>0 \Rightarrow$ 特征根$r$中不带$i$。
+对特征方程$r^2-3r-4=0$用十字相乘法因式分解：
+$$
+\begin{array}{c@{\;\,\;}c}
+r & -4 \\
+r & 1
+\end{array}
+$$
+$\Rightarrow r_1=4,\ r_2=-1=\alpha$
+$\Rightarrow k=1 \Rightarrow$ 选C。
+
+
+
+
 **考点**
 
 二阶常系数非齐次方程待定系数法（$\alpha$ 为单根时特解乘 $x$）
