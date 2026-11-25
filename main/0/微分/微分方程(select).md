@@ -898,6 +898,60 @@ xxxx
 
 **题目**
 
+微分方程 $xy'=y+x^{3}$ 的通解是（　）
+
+A. $\dfrac{x^{3}}{3}+C$
+
+B. $\dfrac{x^{3}}{2}+Cx$
+
+C. $\dfrac{x^{3}}{4}+Cx$
+
+D. $\dfrac{x^{3}}{4}+C$
+?
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：B
+
+**解析**
+
+> 两边除以 $x$，化为一阶线性微分方程的标准形式：
+> $$y'-\frac{1}{x}y=x^{2}$$
+> 其中 $p(x)=-\dfrac1x$，$q(x)=x^{2}$。计算积分因子：
+> $$e^{\int p\,dx}=e^{-\ln x}=\frac{1}{x},\qquad e^{-\int p\,dx}=x$$
+> 由通解公式：
+> $$y=x\left(\int x^{2}\cdot\frac{1}{x}\,dx+C\right)=x\left(\int x\,dx+C\right)=x\left(\frac{x^{2}}{2}+C\right)=\frac{x^{3}}{2}+Cx$$
+> 故选 B。
+
+**考点**
+
+一阶线性微分方程的通解（积分因子法）
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+
+```````
+````````
+
+
+zzzz
+
+
+
+
+xxxx
+
+**题目**
+
 求微分方程 $\dfrac{dy}{dx}=y+e^{-x}$ 的通解。
 ?
 
