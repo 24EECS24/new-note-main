@@ -785,7 +785,7 @@ $\therefore \int_a^b f(x)dx$也发散。
 
 注：当你要作比较的时候，关键是比较对象要选的恰当。
 
-## 两个重要结论
+### 两个重要结论
 1.  瑕p积分$\displaystyle \int_0^1 \frac{1}{x^p}dx$的敛散性：
 $$
 \int_0^1 \frac{1}{x^p}dx
