@@ -806,7 +806,7 @@ $$
 $$
 记法：$\displaystyle \int_1^{+\infty}$的$p$越大越收敛。
 
-### 扩展 
+### 两个重要结论扩展 
 
 eg：当$x\to0^+$时，$\sin x \sim x$，即$\lim\limits_{x\to0^+}\frac{\sin x}{x}=1$。
 
