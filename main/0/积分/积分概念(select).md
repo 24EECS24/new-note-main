@@ -150,6 +150,58 @@ $$\int_{a}^{b} f(x)dx = \int_{a}^{c} f(x)dx + \int_{c}^{b} f(x)dx$$
 
 ### 性质4（积分的保号性）
 
+
+**题目**
+
+下列不等式正确的是（　　）
+
+A. $\displaystyle\int_{0}^{\frac{\pi}{4}}\sin^{4}x\,dx>\int_{0}^{\frac{\pi}{4}}\cos^{4}x\,dx$
+
+B. $\displaystyle\int_{0}^{1}e^{-x^{2}}\,dx>1$
+
+C. $\displaystyle\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\cos^{4}x\,dx>\int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\sin^{4}x\,dx$
+
+D. $\displaystyle\int_{-1}^{0}e^{x^{2}}\,dx>1$
+
+````````col
+```````col-md
+flexGrow=20
+===
+
+**答案**：D
+
+**解析**
+
+本题用定积分的**保号性**：在同一区间上，被积函数大的积分值也大。逐项判断：
+
+- A：在 $\left[0,\dfrac{\pi}{4}\right]$ 上 $\sin x\le\cos x$，故 $\sin^{4}x\le\cos^{4}x$，积分也应是前者小于等于后者，A 方向错。
+- B：在 $[0,1]$ 上 $x^{2}\ge0$，故 $e^{-x^{2}}\le e^{0}=1$，于是 $\displaystyle\int_{0}^{1}e^{-x^{2}}dx\le1$，B 错。
+- C：在 $\left[\dfrac{\pi}{4},\dfrac{\pi}{2}\right]$ 上 $\cos x\le\sin x$，故 $\cos^{4}x\le\sin^{4}x$，C 方向错。
+- D：在 $[-1,0]$ 上 $x^{2}\in[0,1]$，故 $e^{x^{2}}\ge e^{0}=1$，且除 $x=0$ 外严格大于 1，于是
+
+$$\int_{-1}^{0}e^{x^{2}}dx>\int_{-1}^{0}1\,dx=1$$
+
+D 正确。
+
+**考点**：定积分保号性（比较被积函数大小，不需算出积分值）。
+
+```````
+
+```````col-md
+flexGrow=1
+===
+
+
+
+
+```````
+````````
+
+
+
+
+
+
 若在区间$[a,b]$上$f(x) \leq g(x)$，则
 $$\int_{a}^{b} f(x)dx \leq \int_{a}^{b} g(x)dx$$
 
